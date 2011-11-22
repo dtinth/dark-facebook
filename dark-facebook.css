@@ -1,3 +1,12 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+@-moz-document domain("facebook.com") {
+/* (generated)
+Wed Nov 23 01:12:50 ICT 2011
+ */
+/**
+ * dark-facebook - a dark theme for facebook
+ * https://github.com/dtinth/dark-facebook
+ */
 body {
   background-color: #252423 !important;
 }
@@ -678,4 +687,5 @@ ul.search li.selected .text * {
 .generic_dialog h2.dialog_title,
 .generic_dialog h2.dialog_title * {
   border-color: #8b5655 !important;
+}
 }
