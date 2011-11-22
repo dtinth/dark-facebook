@@ -109,8 +109,6 @@ body
 
 // dimmed texts
 .uiAttachmentDesc
-.timestamp
-.uiStreamSource
 .fbEmu
 .ego_unit a
 	text-color: $dim-color
@@ -131,6 +129,13 @@ body
 .fbPhotoSnowbox a
 	text-color: $link-color
 
+// dimmed text override
+.uiStreamSource a
+.uiStreamSource
+a.timestamp
+	text-color: $dim-color
+
+// name color
 .uiListItem a.actorName
 .ego_unit .ego_title
 	text-color: $name-color

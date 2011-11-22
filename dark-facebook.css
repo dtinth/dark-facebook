@@ -68,13 +68,9 @@ body * {
   opacity: 0.2 !important;
 }
 .uiAttachmentDesc,
-.timestamp,
-.uiStreamSource,
 .fbEmu,
 .ego_unit a,
 .uiAttachmentDesc *,
-.timestamp *,
-.uiStreamSource *,
 .fbEmu *,
 .ego_unit a * {
   color: #8b8685 !important;
@@ -108,6 +104,14 @@ body * {
 .timelineUnitContainer a *,
 .fbPhotoSnowbox a * {
   color: #8ad !important;
+}
+.uiStreamSource a,
+.uiStreamSource,
+a.timestamp,
+.uiStreamSource a *,
+.uiStreamSource *,
+a.timestamp * {
+  color: #8b8685 !important;
 }
 .uiListItem a.actorName,
 .ego_unit .ego_title,
