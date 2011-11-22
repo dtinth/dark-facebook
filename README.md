@@ -11,7 +11,8 @@ You are welcomed to help make this userstyle more complete by forking this proje
 Get the Userstyle
 -----------------
 
-Just download __dark-facebook.css__ from this repository and add a userstyle to Stylish.
+* [Install at Userstyle.org](http://userstyles.org/styles/56731/facebook-dark-facebook).
+* or download __dark-facebook.css__ from this repository and add to Stylish manually.
 
 
 Development Environment
