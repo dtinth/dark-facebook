@@ -44,7 +44,14 @@ body * {
 .uiSideNavCount * {
   color: #7978aa !important;
 }
-.sideNavItem .imgWrap {
+.sideNavItem .imgWrap,
+.uiStreamPrivacy,
+.attachmentLink .img,
+.uiStreamFooter .img,
+.uiUfiLike .UIImageBlock .UIImageBlock_Image,
+.ego_action .img,
+.fbCurrentStory .img,
+.uiBlingBox .img {
   opacity: 0.6 !important;
 }
 [id="contentCol"] {
@@ -85,6 +92,7 @@ body * {
 .ego_unit .ego_action a,
 .notesBlogText a,
 .timelineUnitContainer a,
+.fbPhotoSnowbox a,
 .UIActionLinks *,
 .attachmentLink *,
 .fbxWelcomeBoxName *,
@@ -97,7 +105,8 @@ body * {
 .uiListItem button *,
 .ego_unit .ego_action a *,
 .notesBlogText a *,
-.timelineUnitContainer a * {
+.timelineUnitContainer a *,
+.fbPhotoSnowbox a * {
   color: #8ad !important;
 }
 .uiListItem a.actorName,
@@ -463,6 +472,12 @@ ul.navigation li a:hover * {
 .uiButton:hover * {
   border-color: #454443 !important;
 }
+.uiStream .uiStreamHeader .uiStreamHeaderChronologicalForm .uiSelectorButton,
+.uiStream .uiStreamHeader .uiStreamHeaderChronologicalForm .uiSelectorButton:active,
+.uiStream .uiStreamHeader .uiStreamHeaderChronologicalForm .uiSelectorButton:focus,
+.uiStream .uiStreamHeader .uiStreamHeaderChronologicalForm .uiSelectorButton:hover {
+  background-color: transparent !important;
+}
 .separator .text,
 .uiStreamHeader .uiSelector {
   background-color: #353433 !important;
@@ -589,7 +604,8 @@ ul.search li.selected .text * {
 .timelineLayout .spinePointer {
   display: none;
 }
-.timelineLayout .fbTimelineCapsule {
+.timelineLayout .fbTimelineCapsule,
+.timelineLayout .fbTimelineTimePeriod {
   background-image: none !important;
 }
 .timelineLayout .profilePicThumb {
@@ -612,4 +628,31 @@ ul.search li.selected .text * {
 }
 .timelineLayout .stickyHeaderWrap .back {
   background-color: #090807 !important;
+}
+.fbPhotoSnowbox {
+  background-color: rgba(53,52,51,0.75) !important;
+}
+.fbPhotoSnowbox .container {
+  background-color: #090807 !important;
+  box-shadow: 0 1px 15px rgba(139,134,133,0.30), 0 0 1px rgba(139,134,133,0.70);
+}
+.fbPhotoSnowbox .container,
+.fbPhotoSnowbox .container * {
+  border-color: #31302f !important;
+}
+.fbPhotoSnowbox .container .arrowLeft a,
+.fbPhotoSnowbox .container .arrowRight a {
+  background-color: #090807 !important;
+}
+.fbPhotoSnowbox .container .arrowLeft a,
+.fbPhotoSnowbox .container .arrowRight a,
+.fbPhotoSnowbox .container .arrowLeft a *,
+.fbPhotoSnowbox .container .arrowRight a * {
+  border-color: #31302f !important;
+}
+.fbPhotoSnowbox .container .arrowLeft a {
+  background-image: url("https://s-static.ak.facebook.com/rsrc.php/v1/yn/r/77uboGPzRks.png") !important;
+}
+.fbPhotoSnowbox .container .arrowRight a {
+  background-image: url("https://s-static.ak.facebook.com/rsrc.php/v1/yi/r/KsODvVMV-0n.png") !important;
 }

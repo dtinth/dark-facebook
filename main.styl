@@ -74,7 +74,22 @@ body
 	colorize: $highlight-background, $highlight-border
 	text-color: $highlight-color
 
+// navigation items
 .sideNavItem .imgWrap
+// shared with links
+.uiStreamPrivacy
+// post type
+.attachmentLink .img
+// posted via icon
+.uiStreamFooter .img
+// like count
+.uiUfiLike .UIImageBlock .UIImageBlock_Image
+// add friend link in sidebar
+.ego_action .img
+// action links
+.fbCurrentStory .img
+// like comments share box
+.uiBlingBox .img
 	dim-image()
 
 
@@ -113,6 +128,7 @@ body
 .ego_unit .ego_action a
 .notesBlogText a
 .timelineUnitContainer a
+.fbPhotoSnowbox a
 	text-color: $link-color
 
 .uiListItem a.actorName
@@ -273,6 +289,8 @@ ui-button()
 			ui-button()
 .uiButton
 	ui-button()
+.uiStream .uiStreamHeader .uiStreamHeaderChronologicalForm .uiSelectorButton, .uiStream .uiStreamHeader .uiStreamHeaderChronologicalForm .uiSelectorButton:active, .uiStream .uiStreamHeader .uiStreamHeaderChronologicalForm .uiSelectorButton:focus, .uiStream .uiStreamHeader .uiStreamHeaderChronologicalForm .uiSelectorButton:hover
+	transparent()
 
 
 
@@ -351,6 +369,7 @@ ul.search
 	.spinePointer
 		display: none
 	.fbTimelineCapsule
+	.fbTimelineTimePeriod
 		background-image: none !important
 	.profilePicThumb
 		colorize: $dark-background, $main-border
@@ -362,3 +381,18 @@ ul.search
 		.back
 			colorize: $dark-background
 
+
+// snowbox (lightbox)
+
+.fbPhotoSnowbox
+	colorize: rgba($main-background, 0.75)
+	.container
+		colorize: $dark-background, $page-border
+		box-shadow: 0 1px 15px rgba($dim-color, 0.3), 0 0 1px rgba($dim-color, 0.7)
+		.arrowLeft, .arrowRight
+			a
+				colorize: $dark-background, $page-border
+		.arrowLeft a
+			background-image: url("https://s-static.ak.facebook.com/rsrc.php/v1/yn/r/77uboGPzRks.png") !important
+		.arrowRight a
+			background-image: url("https://s-static.ak.facebook.com/rsrc.php/v1/yi/r/KsODvVMV-0n.png") !important
