@@ -127,6 +127,7 @@ body
 .notesBlogText a
 .timelineUnitContainer a
 .fbPhotoSnowbox a
+.generic_dialog a
 	text-color: $link-color
 
 // dimmed text override
@@ -388,7 +389,6 @@ ul.search
 
 
 // snowbox (lightbox)
-
 .fbPhotoSnowbox
 	colorize: rgba($main-background, 0.75)
 	.container
@@ -401,3 +401,13 @@ ul.search
 			background-image: url("https://s-static.ak.facebook.com/rsrc.php/v1/yn/r/77uboGPzRks.png") !important
 		.arrowRight a
 			background-image: url("https://s-static.ak.facebook.com/rsrc.php/v1/yi/r/KsODvVMV-0n.png") !important
+
+
+// facebook dialogs
+.generic_dialog
+	.pop_content
+		colorize: $page-background, $page-border
+	.pop_container_advanced
+		background: rgba($dim-color, 0.7) !important
+	h2.dialog_title
+		colorize: $side-header-background, $side-header-border

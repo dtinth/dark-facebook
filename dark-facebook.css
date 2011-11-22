@@ -89,6 +89,7 @@ body * {
 .notesBlogText a,
 .timelineUnitContainer a,
 .fbPhotoSnowbox a,
+.generic_dialog a,
 .UIActionLinks *,
 .attachmentLink *,
 .fbxWelcomeBoxName *,
@@ -102,7 +103,8 @@ body * {
 .ego_unit .ego_action a *,
 .notesBlogText a *,
 .timelineUnitContainer a *,
-.fbPhotoSnowbox a * {
+.fbPhotoSnowbox a *,
+.generic_dialog a * {
   color: #8ad !important;
 }
 .uiStreamSource a,
@@ -659,4 +661,21 @@ ul.search li.selected .text * {
 }
 .fbPhotoSnowbox .container .arrowRight a {
   background-image: url("https://s-static.ak.facebook.com/rsrc.php/v1/yi/r/KsODvVMV-0n.png") !important;
+}
+.generic_dialog .pop_content {
+  background-color: #252423 !important;
+}
+.generic_dialog .pop_content,
+.generic_dialog .pop_content * {
+  border-color: #31302f !important;
+}
+.generic_dialog .pop_container_advanced {
+  background: rgba(139,134,133,0.70) !important;
+}
+.generic_dialog h2.dialog_title {
+  background-color: #683433 !important;
+}
+.generic_dialog h2.dialog_title,
+.generic_dialog h2.dialog_title * {
+  border-color: #8b5655 !important;
 }
