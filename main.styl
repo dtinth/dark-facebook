@@ -1,0 +1,364 @@
+
+$page-background = #252423
+$color = #e9e8e7
+$page-border = $page-background + #0c0c0c
+
+$dim-color = #8b8685
+
+$main-background = #353433
+$main-border = $main-background + #101010
+
+$highlight-background = $main-background + #003
+$highlight-border = $highlight-background + #111
+$highlight-color = $highlight-background + #444
+
+$dark-background = #090807
+$light-background = $main-background + #070707
+$light-border = $light-background + #101010
+$comments-color = $main-background + #001 + #080808
+
+$link-color = #8ad
+$name-color = #bef
+
+$side-header-background = $main-background + #300
+$side-header-border = lighten($side-header-background, 0.2) + #222
+$side-header-text-color = lighten($side-header-background, 60%) + #333
+$side-header-link-color = lighten($side-header-background, 50%)
+
+colorize($background, $border = null)
+	background-color: $background !important
+	if $border != null
+		&, *
+			border-color: $border !important
+
+text-color($color)
+	&, *
+		color: $color !important
+
+transparent()
+	background-color: transparent !important;
+
+dim-image()
+	opacity: 0.6 !important
+
+dim-image-more()
+	opacity: 0.2 !important
+
+
+body
+	colorize: $page-background, $page-border
+	text-color: $color
+	*
+		transparent()
+
+[id="blueBar"]
+	colorize: #090807, $page-border
+
+.uiScrollableAreaTrack
+	transparent()
+
+
+// sidebar navigation
+
+[id="sideNav"] .navHeader
+	text-color: rgba($dim-color, 0.6)
+
+[id="sideNav"]
+	.selectedItem .item
+		colorize: $main-background
+
+.uiSideNav
+	text-color: $dim-color
+
+.uiSideNavCount
+	colorize: $highlight-background, $highlight-border
+	text-color: $highlight-color
+
+.sideNavItem .imgWrap
+	dim-image()
+
+
+// content column
+
+[id="contentCol"]
+	colorize: $main-background, $main-border
+
+
+
+// various arrows
+.ufiNub
+.nub
+.hovercard .arrow
+.uiStream .uiStreamBoulderStyle .highlightSelector a
+	dim-image-more()
+
+// dimmed texts
+.uiAttachmentDesc
+.timestamp
+.uiStreamSource
+.fbEmu
+.ego_unit a
+	text-color: $dim-color
+
+// links
+.UIActionLinks
+.attachmentLink
+.fbxWelcomeBoxName
+.fbCurrent a
+.fbEmuMainBody a
+.fbEmu .title a
+.fbJewelFlyout .blueName
+.messageBody a
+.uiListItem a, .uiListItem button
+.ego_unit .ego_action a
+.notesBlogText a
+.timelineUnitContainer a
+	text-color: $link-color
+
+.uiListItem a.actorName
+.ego_unit .ego_title
+	text-color: $name-color
+
+
+// news feed stories
+.storyHighlightIndicatorWrapper
+	transparent()
+	.img
+		dim-image-more()
+
+.storyContent .uiStreamMessage
+	.actorName
+	.actorDescription
+	&.uiStreamPassive
+		font: 14px/1.2 Helvetica, sans-serif !important;
+		text-color: $dim-color
+		a
+			text-color: $dim-color + #111
+	.actorDescription .actorName, .actorName a, a.passiveName
+		text-color: $name-color
+		font-weight: bold !important
+
+// comments list
+.uiList
+	.ufiItem
+		colorize: $comments-color, $comments-color + #111
+	.uiUfiUnseenItem
+		colorize: $comments-color + #001, $comments-color + #112
+
+
+// text fields
+$text-field-background = #090807
+$text-field-placeholder-color = $dim-color
+
+.uiSearchInput
+.uiTypeahead .wrap
+.inputContainer
+	&, *
+		colorize: $text-field-background
+
+.DOMControl_placeholder
+	text-color: $text-field-placeholder-color
+
+
+// sidebar header
+body:not(.timelineLayout) .uiSideHeader
+	colorize: $side-header-background, $side-header-border
+	text-color: $side-header-text-color
+	a
+		text-color: $side-header-link-color
+
+
+// tooltips
+.uiTooltip
+	transparent()
+.uiTooltipText
+	colorize: $dark-background
+
+
+// overlays
+.uiOverlay
+	colorize: $main-background, $main-border
+
+
+// beeper
+.UIBeeper_Full
+	colorize: $dark-background, $main-border
+
+
+// chat boxes
+.fbNubButton
+	colorize: $page-background, $main-border
+	box-shadow: 0 1px 0 rgba(white, 0.3) !important
+
+
+// scrollbars
+.uiScrollableAreaGripper
+	colorize: $dark-background, $main-border
+
+
+// chat sidebar
+.fbChatSidebar
+	&, .uiTypeahead
+		&, *
+			colorize: $main-background, $main-border
+	&, *
+		box-shadow: none !important
+
+
+// chat popup
+.fbNubFlyout
+	colorize: $dark-background, $main-border
+	.fbNubFlyoutInner
+		colorize: $page-background, $page-border
+	.titlebar
+		colorize: $side-header-background, $side-header-border
+	.fbNubFlyoutHeader
+		colorize: $page-background
+
+
+// hover ticket
+.fbFeedTicker .tickerStoryActive, .fbFeedTicker .tickerStoryClickable:hover
+	colorize: $highlight-background
+
+
+
+// menus
+div.uiMenu
+ul.navigation
+	colorize: $dark-background, $main-border
+	li
+		colorize: $dark-background, $dark-background
+		&, *, a
+			text-color: $color
+		&:hover, a:hover
+			colorize: $highlight-background, $highlight-border
+
+// hovercards
+.hovercard .stage
+	colorize: $dark-background, $main-border
+	.actions
+		colorize: $page-background
+
+
+// jewel flyouts
+.fbJewelFlyout
+	colorize: $light-background, $light-border
+	.notification[style]
+		colorize: $light-background + #111
+	.notification.selected, a:hover
+		colorize: $highlight-background, $highlight-border
+.fbJewelFlyout .jewelHighlight a:hover span, .fbJewelFlyout .jewelHighlight a:active span, .fbJewelFlyout .jewelHighlight a:focus span, .fbJewelFlyout .jewelHighlight a:hover div, .fbJewelFlyout .jewelHighlight a:active div, .fbJewelFlyout .jewelHighlight a:focus div, .fbJewelFlyout .jewelHighlight li.selected a, .fbJewelFlyout .jewelHighlight li.selected .timestamp
+	colorize: $highlight-background, $highlight-border
+	
+.jewelFooter
+	colorize: $side-header-background, $side-header-border
+
+// poll results
+.fbQuestionsPollResultsBar
+	colorize: $dark-background
+.fbQuestionsPollResultsBar .shaded
+	colorize: $page-background
+
+
+
+// selector buttons
+ui-button()
+	colorize: $dark-background, $dark-background
+	background-image: none !important;
+	&:hover
+		colorize: $dark-background, $main-border
+.uiSelectorNormal
+	.uiSelectorButton, .uiButtonSuppressed
+		&, &:active, &:focus, &:hover
+			ui-button()
+.uiButton
+	ui-button()
+
+
+
+
+// legend and splitter
+.separator .text
+.uiStreamHeader .uiSelector
+	colorize: $main-background
+	text-color: $dim-color
+
+
+
+// main search
+.uiTypeaheadView
+	colorize: $dark-background, $main-border
+ul.search
+	colorize: $dark-background, $dark-background
+	li
+		text-color: $dim-color
+		.text
+			text-color: $link-color
+		&.header
+			colorize: $dark-background, $page-border
+			&, .text
+				text-color: $color
+		&.calltoaction
+			colorize: $side-header-background, $side-header-border
+			a
+				&, .text, .seeMore
+					text-color: $side-header-link-color
+		&.selected
+			colorize: $highlight-background, $highlight-border
+			.text
+				text-color: $name-color
+.uiTypeaheadView .bucketed .header .text
+	text-color: $color
+
+
+// more pager
+.uiBoxLightblue
+	colorize: $side-header-background, $side-header-border
+
+
+
+// image
+.fbMainStreamAttachment
+	.uiPhotoThumb, .uiMediaThumb, .uiVideoThumb
+		border: 0 !important
+		img, i
+			margin: 0 3px 3px 0 !important
+			box-shadow: 3px 3px 0 rgba(0,0,0,0.3) !important
+
+// counters
+.jewelCount
+	colorize: $page-background
+
+// timeline
+.timelineLayout
+	[id="contentCol"]
+		colorize: $page-background
+	.fbTimelineTopSection
+	.timelineUnitContainer
+		colorize: $main-background
+	.frame.detail
+	.fbTimelineRibbon
+		colorize: $dark-background
+	.counter
+		colorize: $page-background
+	.topBorder
+	.bottomBorder
+		background-image: none !important
+	.topBorder
+		border-bottom: 1px solid $main-border !important
+	.bottomBorder
+		border-top: 2px solid $main-border !important
+	.spinePointer
+		display: none
+	.fbTimelineCapsule
+		background-image: none !important
+	.profilePicThumb
+		colorize: $dark-background, $main-border
+	.timelineTimestamp .uiSelectorButton
+		transparent()
+		border-width: 0 !important
+	.stickyHeaderWrap
+		colorize: $dark-background, $main-border
+		.back
+			colorize: $dark-background
+

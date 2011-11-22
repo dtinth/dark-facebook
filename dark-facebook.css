@@ -1,0 +1,615 @@
+body {
+  background-color: #252423 !important;
+}
+body,
+body * {
+  border-color: #31302f !important;
+}
+body,
+body * {
+  color: #e9e8e7 !important;
+}
+body * {
+  background-color: transparent !important;
+}
+[id="blueBar"] {
+  background-color: #090807 !important;
+}
+[id="blueBar"],
+[id="blueBar"] * {
+  border-color: #31302f !important;
+}
+.uiScrollableAreaTrack {
+  background-color: transparent !important;
+}
+[id="sideNav"] .navHeader,
+[id="sideNav"] .navHeader * {
+  color: rgba(139,134,133,0.60) !important;
+}
+[id="sideNav"] .selectedItem .item {
+  background-color: #353433 !important;
+}
+.uiSideNav,
+.uiSideNav * {
+  color: #8b8685 !important;
+}
+.uiSideNavCount {
+  background-color: #353466 !important;
+}
+.uiSideNavCount,
+.uiSideNavCount * {
+  border-color: #464577 !important;
+}
+.uiSideNavCount,
+.uiSideNavCount * {
+  color: #7978aa !important;
+}
+.sideNavItem .imgWrap {
+  opacity: 0.6 !important;
+}
+[id="contentCol"] {
+  background-color: #353433 !important;
+}
+[id="contentCol"],
+[id="contentCol"] * {
+  border-color: #454443 !important;
+}
+.ufiNub,
+.nub,
+.hovercard .arrow,
+.uiStream .uiStreamBoulderStyle .highlightSelector a {
+  opacity: 0.2 !important;
+}
+.uiAttachmentDesc,
+.timestamp,
+.uiStreamSource,
+.fbEmu,
+.ego_unit a,
+.uiAttachmentDesc *,
+.timestamp *,
+.uiStreamSource *,
+.fbEmu *,
+.ego_unit a * {
+  color: #8b8685 !important;
+}
+.UIActionLinks,
+.attachmentLink,
+.fbxWelcomeBoxName,
+.fbCurrent a,
+.fbEmuMainBody a,
+.fbEmu .title a,
+.fbJewelFlyout .blueName,
+.messageBody a,
+.uiListItem a,
+.uiListItem button,
+.ego_unit .ego_action a,
+.notesBlogText a,
+.timelineUnitContainer a,
+.UIActionLinks *,
+.attachmentLink *,
+.fbxWelcomeBoxName *,
+.fbCurrent a *,
+.fbEmuMainBody a *,
+.fbEmu .title a *,
+.fbJewelFlyout .blueName *,
+.messageBody a *,
+.uiListItem a *,
+.uiListItem button *,
+.ego_unit .ego_action a *,
+.notesBlogText a *,
+.timelineUnitContainer a * {
+  color: #8ad !important;
+}
+.uiListItem a.actorName,
+.ego_unit .ego_title,
+.uiListItem a.actorName *,
+.ego_unit .ego_title * {
+  color: #bef !important;
+}
+.storyHighlightIndicatorWrapper {
+  background-color: transparent !important;
+}
+.storyHighlightIndicatorWrapper .img {
+  opacity: 0.2 !important;
+}
+.storyContent .uiStreamMessage .actorName,
+.storyContent .uiStreamMessage .actorDescription,
+.storyContent .uiStreamMessage.uiStreamPassive {
+  font: 14px/1.2 Helvetica, sans-serif !important;
+}
+.storyContent .uiStreamMessage .actorName,
+.storyContent .uiStreamMessage .actorDescription,
+.storyContent .uiStreamMessage.uiStreamPassive,
+.storyContent .uiStreamMessage .actorName *,
+.storyContent .uiStreamMessage .actorDescription *,
+.storyContent .uiStreamMessage.uiStreamPassive * {
+  color: #8b8685 !important;
+}
+.storyContent .uiStreamMessage .actorName a,
+.storyContent .uiStreamMessage .actorDescription a,
+.storyContent .uiStreamMessage.uiStreamPassive a,
+.storyContent .uiStreamMessage .actorName a *,
+.storyContent .uiStreamMessage .actorDescription a *,
+.storyContent .uiStreamMessage.uiStreamPassive a * {
+  color: #9c9796 !important;
+}
+.storyContent .uiStreamMessage .actorDescription .actorName,
+.storyContent .uiStreamMessage .actorName a,
+.storyContent .uiStreamMessage a.passiveName {
+  font-weight: bold !important;
+}
+.storyContent .uiStreamMessage .actorDescription .actorName,
+.storyContent .uiStreamMessage .actorName a,
+.storyContent .uiStreamMessage a.passiveName,
+.storyContent .uiStreamMessage .actorDescription .actorName *,
+.storyContent .uiStreamMessage .actorName a *,
+.storyContent .uiStreamMessage a.passiveName * {
+  color: #bef !important;
+}
+.uiList .ufiItem {
+  background-color: #3d3c4c !important;
+}
+.uiList .ufiItem,
+.uiList .ufiItem * {
+  border-color: #4e4d5d !important;
+}
+.uiList .uiUfiUnseenItem {
+  background-color: #3d3c5d !important;
+}
+.uiList .uiUfiUnseenItem,
+.uiList .uiUfiUnseenItem * {
+  border-color: #4e4d6e !important;
+}
+.uiSearchInput,
+.uiTypeahead .wrap,
+.inputContainer,
+.uiSearchInput *,
+.uiTypeahead .wrap *,
+.inputContainer * {
+  background-color: #090807 !important;
+}
+.DOMControl_placeholder,
+.DOMControl_placeholder * {
+  color: #8b8685 !important;
+}
+body:not(.timelineLayout) .uiSideHeader {
+  background-color: #683433 !important;
+}
+body:not(.timelineLayout) .uiSideHeader,
+body:not(.timelineLayout) .uiSideHeader * {
+  border-color: #8b5655 !important;
+}
+body:not(.timelineLayout) .uiSideHeader,
+body:not(.timelineLayout) .uiSideHeader * {
+  color: #ffd4d3 !important;
+}
+body:not(.timelineLayout) .uiSideHeader a,
+body:not(.timelineLayout) .uiSideHeader a * {
+  color: #c58988 !important;
+}
+.uiTooltip {
+  background-color: transparent !important;
+}
+.uiTooltipText {
+  background-color: #090807 !important;
+}
+.uiOverlay {
+  background-color: #353433 !important;
+}
+.uiOverlay,
+.uiOverlay * {
+  border-color: #454443 !important;
+}
+.UIBeeper_Full {
+  background-color: #090807 !important;
+}
+.UIBeeper_Full,
+.UIBeeper_Full * {
+  border-color: #454443 !important;
+}
+.fbNubButton {
+  background-color: #252423 !important;
+  box-shadow: 0 1px 0 rgba(255,255,255,0.30) !important;
+}
+.fbNubButton,
+.fbNubButton * {
+  border-color: #454443 !important;
+}
+.uiScrollableAreaGripper {
+  background-color: #090807 !important;
+}
+.uiScrollableAreaGripper,
+.uiScrollableAreaGripper * {
+  border-color: #454443 !important;
+}
+.fbChatSidebar,
+.fbChatSidebar .uiTypeahead,
+.fbChatSidebar *,
+.fbChatSidebar .uiTypeahead * {
+  background-color: #353433 !important;
+}
+.fbChatSidebar,
+.fbChatSidebar .uiTypeahead,
+.fbChatSidebar *,
+.fbChatSidebar .uiTypeahead *,
+.fbChatSidebar *,
+.fbChatSidebar .uiTypeahead *,
+.fbChatSidebar * *,
+.fbChatSidebar .uiTypeahead * * {
+  border-color: #454443 !important;
+}
+.fbChatSidebar,
+.fbChatSidebar * {
+  box-shadow: none !important;
+}
+.fbNubFlyout {
+  background-color: #090807 !important;
+}
+.fbNubFlyout,
+.fbNubFlyout * {
+  border-color: #454443 !important;
+}
+.fbNubFlyout .fbNubFlyoutInner {
+  background-color: #252423 !important;
+}
+.fbNubFlyout .fbNubFlyoutInner,
+.fbNubFlyout .fbNubFlyoutInner * {
+  border-color: #31302f !important;
+}
+.fbNubFlyout .titlebar {
+  background-color: #683433 !important;
+}
+.fbNubFlyout .titlebar,
+.fbNubFlyout .titlebar * {
+  border-color: #8b5655 !important;
+}
+.fbNubFlyout .fbNubFlyoutHeader {
+  background-color: #252423 !important;
+}
+.fbFeedTicker .tickerStoryActive,
+.fbFeedTicker .tickerStoryClickable:hover {
+  background-color: #353466 !important;
+}
+div.uiMenu,
+ul.navigation {
+  background-color: #090807 !important;
+}
+div.uiMenu,
+ul.navigation,
+div.uiMenu *,
+ul.navigation * {
+  border-color: #454443 !important;
+}
+div.uiMenu li,
+ul.navigation li {
+  background-color: #090807 !important;
+}
+div.uiMenu li,
+ul.navigation li,
+div.uiMenu li *,
+ul.navigation li * {
+  border-color: #090807 !important;
+}
+div.uiMenu li,
+ul.navigation li,
+div.uiMenu li *,
+ul.navigation li *,
+div.uiMenu li a,
+ul.navigation li a,
+div.uiMenu li *,
+ul.navigation li *,
+div.uiMenu li * *,
+ul.navigation li * *,
+div.uiMenu li a *,
+ul.navigation li a * {
+  color: #e9e8e7 !important;
+}
+div.uiMenu li:hover,
+ul.navigation li:hover,
+div.uiMenu li a:hover,
+ul.navigation li a:hover {
+  background-color: #353466 !important;
+}
+div.uiMenu li:hover,
+ul.navigation li:hover,
+div.uiMenu li a:hover,
+ul.navigation li a:hover,
+div.uiMenu li:hover *,
+ul.navigation li:hover *,
+div.uiMenu li a:hover *,
+ul.navigation li a:hover * {
+  border-color: #464577 !important;
+}
+.hovercard .stage {
+  background-color: #090807 !important;
+}
+.hovercard .stage,
+.hovercard .stage * {
+  border-color: #454443 !important;
+}
+.hovercard .stage .actions {
+  background-color: #252423 !important;
+}
+.fbJewelFlyout {
+  background-color: #3c3b3a !important;
+}
+.fbJewelFlyout,
+.fbJewelFlyout * {
+  border-color: #4c4b4a !important;
+}
+.fbJewelFlyout .notification[style] {
+  background-color: #4d4c4b !important;
+}
+.fbJewelFlyout .notification.selected,
+.fbJewelFlyout a:hover {
+  background-color: #353466 !important;
+}
+.fbJewelFlyout .notification.selected,
+.fbJewelFlyout a:hover,
+.fbJewelFlyout .notification.selected *,
+.fbJewelFlyout a:hover * {
+  border-color: #464577 !important;
+}
+.fbJewelFlyout .jewelHighlight a:hover span,
+.fbJewelFlyout .jewelHighlight a:active span,
+.fbJewelFlyout .jewelHighlight a:focus span,
+.fbJewelFlyout .jewelHighlight a:hover div,
+.fbJewelFlyout .jewelHighlight a:active div,
+.fbJewelFlyout .jewelHighlight a:focus div,
+.fbJewelFlyout .jewelHighlight li.selected a,
+.fbJewelFlyout .jewelHighlight li.selected .timestamp {
+  background-color: #353466 !important;
+}
+.fbJewelFlyout .jewelHighlight a:hover span,
+.fbJewelFlyout .jewelHighlight a:active span,
+.fbJewelFlyout .jewelHighlight a:focus span,
+.fbJewelFlyout .jewelHighlight a:hover div,
+.fbJewelFlyout .jewelHighlight a:active div,
+.fbJewelFlyout .jewelHighlight a:focus div,
+.fbJewelFlyout .jewelHighlight li.selected a,
+.fbJewelFlyout .jewelHighlight li.selected .timestamp,
+.fbJewelFlyout .jewelHighlight a:hover span *,
+.fbJewelFlyout .jewelHighlight a:active span *,
+.fbJewelFlyout .jewelHighlight a:focus span *,
+.fbJewelFlyout .jewelHighlight a:hover div *,
+.fbJewelFlyout .jewelHighlight a:active div *,
+.fbJewelFlyout .jewelHighlight a:focus div *,
+.fbJewelFlyout .jewelHighlight li.selected a *,
+.fbJewelFlyout .jewelHighlight li.selected .timestamp * {
+  border-color: #464577 !important;
+}
+.jewelFooter {
+  background-color: #683433 !important;
+}
+.jewelFooter,
+.jewelFooter * {
+  border-color: #8b5655 !important;
+}
+.fbQuestionsPollResultsBar {
+  background-color: #090807 !important;
+}
+.fbQuestionsPollResultsBar .shaded {
+  background-color: #252423 !important;
+}
+.uiSelectorNormal .uiSelectorButton,
+.uiSelectorNormal .uiButtonSuppressed,
+.uiSelectorNormal .uiSelectorButton:active,
+.uiSelectorNormal .uiButtonSuppressed:active,
+.uiSelectorNormal .uiSelectorButton:focus,
+.uiSelectorNormal .uiButtonSuppressed:focus,
+.uiSelectorNormal .uiSelectorButton:hover,
+.uiSelectorNormal .uiButtonSuppressed:hover {
+  background-color: #090807 !important;
+  background-image: none !important;
+}
+.uiSelectorNormal .uiSelectorButton,
+.uiSelectorNormal .uiButtonSuppressed,
+.uiSelectorNormal .uiSelectorButton:active,
+.uiSelectorNormal .uiButtonSuppressed:active,
+.uiSelectorNormal .uiSelectorButton:focus,
+.uiSelectorNormal .uiButtonSuppressed:focus,
+.uiSelectorNormal .uiSelectorButton:hover,
+.uiSelectorNormal .uiButtonSuppressed:hover,
+.uiSelectorNormal .uiSelectorButton *,
+.uiSelectorNormal .uiButtonSuppressed *,
+.uiSelectorNormal .uiSelectorButton:active *,
+.uiSelectorNormal .uiButtonSuppressed:active *,
+.uiSelectorNormal .uiSelectorButton:focus *,
+.uiSelectorNormal .uiButtonSuppressed:focus *,
+.uiSelectorNormal .uiSelectorButton:hover *,
+.uiSelectorNormal .uiButtonSuppressed:hover * {
+  border-color: #090807 !important;
+}
+.uiSelectorNormal .uiSelectorButton:hover,
+.uiSelectorNormal .uiButtonSuppressed:hover,
+.uiSelectorNormal .uiSelectorButton:active:hover,
+.uiSelectorNormal .uiButtonSuppressed:active:hover,
+.uiSelectorNormal .uiSelectorButton:focus:hover,
+.uiSelectorNormal .uiButtonSuppressed:focus:hover,
+.uiSelectorNormal .uiSelectorButton:hover:hover,
+.uiSelectorNormal .uiButtonSuppressed:hover:hover {
+  background-color: #090807 !important;
+}
+.uiSelectorNormal .uiSelectorButton:hover,
+.uiSelectorNormal .uiButtonSuppressed:hover,
+.uiSelectorNormal .uiSelectorButton:active:hover,
+.uiSelectorNormal .uiButtonSuppressed:active:hover,
+.uiSelectorNormal .uiSelectorButton:focus:hover,
+.uiSelectorNormal .uiButtonSuppressed:focus:hover,
+.uiSelectorNormal .uiSelectorButton:hover:hover,
+.uiSelectorNormal .uiButtonSuppressed:hover:hover,
+.uiSelectorNormal .uiSelectorButton:hover *,
+.uiSelectorNormal .uiButtonSuppressed:hover *,
+.uiSelectorNormal .uiSelectorButton:active:hover *,
+.uiSelectorNormal .uiButtonSuppressed:active:hover *,
+.uiSelectorNormal .uiSelectorButton:focus:hover *,
+.uiSelectorNormal .uiButtonSuppressed:focus:hover *,
+.uiSelectorNormal .uiSelectorButton:hover:hover *,
+.uiSelectorNormal .uiButtonSuppressed:hover:hover * {
+  border-color: #454443 !important;
+}
+.uiButton {
+  background-color: #090807 !important;
+  background-image: none !important;
+}
+.uiButton,
+.uiButton * {
+  border-color: #090807 !important;
+}
+.uiButton:hover {
+  background-color: #090807 !important;
+}
+.uiButton:hover,
+.uiButton:hover * {
+  border-color: #454443 !important;
+}
+.separator .text,
+.uiStreamHeader .uiSelector {
+  background-color: #353433 !important;
+}
+.separator .text,
+.uiStreamHeader .uiSelector,
+.separator .text *,
+.uiStreamHeader .uiSelector * {
+  color: #8b8685 !important;
+}
+.uiTypeaheadView {
+  background-color: #090807 !important;
+}
+.uiTypeaheadView,
+.uiTypeaheadView * {
+  border-color: #454443 !important;
+}
+ul.search {
+  background-color: #090807 !important;
+}
+ul.search,
+ul.search * {
+  border-color: #090807 !important;
+}
+ul.search li,
+ul.search li * {
+  color: #8b8685 !important;
+}
+ul.search li .text,
+ul.search li .text * {
+  color: #8ad !important;
+}
+ul.search li.header {
+  background-color: #090807 !important;
+}
+ul.search li.header,
+ul.search li.header * {
+  border-color: #31302f !important;
+}
+ul.search li.header,
+ul.search li.header .text,
+ul.search li.header *,
+ul.search li.header .text * {
+  color: #e9e8e7 !important;
+}
+ul.search li.calltoaction {
+  background-color: #683433 !important;
+}
+ul.search li.calltoaction,
+ul.search li.calltoaction * {
+  border-color: #8b5655 !important;
+}
+ul.search li.calltoaction a,
+ul.search li.calltoaction a .text,
+ul.search li.calltoaction a .seeMore,
+ul.search li.calltoaction a *,
+ul.search li.calltoaction a .text *,
+ul.search li.calltoaction a .seeMore * {
+  color: #c58988 !important;
+}
+ul.search li.selected {
+  background-color: #353466 !important;
+}
+ul.search li.selected,
+ul.search li.selected * {
+  border-color: #464577 !important;
+}
+ul.search li.selected .text,
+ul.search li.selected .text * {
+  color: #bef !important;
+}
+.uiTypeaheadView .bucketed .header .text,
+.uiTypeaheadView .bucketed .header .text * {
+  color: #e9e8e7 !important;
+}
+.uiBoxLightblue {
+  background-color: #683433 !important;
+}
+.uiBoxLightblue,
+.uiBoxLightblue * {
+  border-color: #8b5655 !important;
+}
+.fbMainStreamAttachment .uiPhotoThumb,
+.fbMainStreamAttachment .uiMediaThumb,
+.fbMainStreamAttachment .uiVideoThumb {
+  border: 0 !important;
+}
+.fbMainStreamAttachment .uiPhotoThumb img,
+.fbMainStreamAttachment .uiMediaThumb img,
+.fbMainStreamAttachment .uiVideoThumb img,
+.fbMainStreamAttachment .uiPhotoThumb i,
+.fbMainStreamAttachment .uiMediaThumb i,
+.fbMainStreamAttachment .uiVideoThumb i {
+  margin: 0 3px 3px 0 !important;
+  box-shadow: 3px 3px 0 rgba(0,0,0,0.30) !important;
+}
+.jewelCount {
+  background-color: #252423 !important;
+}
+.timelineLayout [id="contentCol"] {
+  background-color: #252423 !important;
+}
+.timelineLayout .fbTimelineTopSection,
+.timelineLayout .timelineUnitContainer {
+  background-color: #353433 !important;
+}
+.timelineLayout .frame.detail,
+.timelineLayout .fbTimelineRibbon {
+  background-color: #090807 !important;
+}
+.timelineLayout .counter {
+  background-color: #252423 !important;
+}
+.timelineLayout .topBorder,
+.timelineLayout .bottomBorder {
+  background-image: none !important;
+}
+.timelineLayout .topBorder {
+  border-bottom: 1px solid #454443 !important;
+}
+.timelineLayout .bottomBorder {
+  border-top: 2px solid #454443 !important;
+}
+.timelineLayout .spinePointer {
+  display: none;
+}
+.timelineLayout .fbTimelineCapsule {
+  background-image: none !important;
+}
+.timelineLayout .profilePicThumb {
+  background-color: #090807 !important;
+}
+.timelineLayout .profilePicThumb,
+.timelineLayout .profilePicThumb * {
+  border-color: #454443 !important;
+}
+.timelineLayout .timelineTimestamp .uiSelectorButton {
+  background-color: transparent !important;
+  border-width: 0 !important;
+}
+.timelineLayout .stickyHeaderWrap {
+  background-color: #090807 !important;
+}
+.timelineLayout .stickyHeaderWrap,
+.timelineLayout .stickyHeaderWrap * {
+  border-color: #454443 !important;
+}
+.timelineLayout .stickyHeaderWrap .back {
+  background-color: #090807 !important;
+}
