@@ -1,7 +1,7 @@
 dark-facebook
 =============
 
-This is a userstyle for Firefox to make Facebook dark, while using as least image as possible.
+This is a userstyle for Firefox/Stylish and Social Fixer to make Facebook dark, while using as least image as possible.
 For development I use [LiveStyl](https://github.com/dtinth/LiveStyl) for live CSS editing.
 
 Most part has been done already, including some of the timeline layout and there are many parts that need tweaking.
@@ -12,7 +12,8 @@ Installation
 ------------
 
 * [Install at Userstyle.org](http://userstyles.org/styles/56731/facebook-dark-facebook).
-* or download __dark-facebook.css__ from this repository and add to Stylish manually. Make sure you add the correct `@-moz-document` tag.
+* Using Social Fixer, use this theme URL: <https://dark-facebook.appspot.com/dark-facebook.css> (it is a proxy to raw GitHub url, with proper mime type served).
+* Or download __dark-facebook.css__ from this repository and add to Stylish manually. Make sure you add the correct `@-moz-document` tag.
 
 
 
