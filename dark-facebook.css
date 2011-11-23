@@ -1,7 +1,7 @@
 @namespace url(http://www.w3.org/1999/xhtml);
 @-moz-document domain("facebook.com") {
 /* (generated)
-Wed Nov 23 01:12:50 ICT 2011
+Wed Nov 23 10:08:56 ICT 2011
  */
 /**
  * dark-facebook - a dark theme for facebook
@@ -680,6 +680,13 @@ ul.search li.selected .text * {
 }
 .generic_dialog .pop_container_advanced {
   background: rgba(139,134,133,0.70) !important;
+}
+.generic_dialog .dialog_buttons {
+  background-color: #353433 !important;
+}
+.generic_dialog .dialog_buttons,
+.generic_dialog .dialog_buttons * {
+  border-color: #454443 !important;
 }
 .generic_dialog h2.dialog_title {
   background-color: #683433 !important;
