@@ -7,10 +7,18 @@ try {
 	var credentials = JSON.parse(fs.read('userstyles-credentials.json'));
 	var config      = JSON.parse(fs.read('userstyles-config.json'));
 	var css = fs.read(config.filename);
+	var changelog;
+	try {
+		changelog = fs.read(config.changelog);
+	} catch (e) {
+		changelog = '(no changelog available)';
+	}
 } catch (e) {
 	console.log('configuration read error: ' + e);
 	phantom.exit(1);
 }
+
+changelog = '\r\n\r\nChangelog:\r\n' + changelog.split(/\r?\n/).filter(function(x) { return x != ''; }).map(function(x) { return '* ' + x; }).join('\r\n') + '\r\n';
 
 var editLink = 'http://userstyles.org/styles/' + config.styleID + '/edit';
 var page = new WebPage();
@@ -31,10 +39,12 @@ function processPage(status) {
 	setGlobal(page, '__dt_credentials', credentials);
 	setGlobal(page, '__dt_state', processState);
 	setGlobal(page, '__dt_css', css);
+	setGlobal(page, '__dt_changelog', changelog);
 	console.log(page.evaluate(function() { return location.href + ' // ' + document.title; }));
 	var retval = page.evaluate(function() {
+		var changelog_re = /(?:\r?\n)*Changelog:?\r?\n-[\s\S]*$|$/;
 		try {
-			var un, pw, el;
+			var un, pw, el, cl;
 			if ((__dt_state != 1) && (un = document.querySelector('#login-existing')) && (pw = document.querySelector('#password-existing'))) {
 				un.value = __dt_credentials.username;
 				pw.value = __dt_credentials.password;
@@ -44,6 +54,10 @@ function processPage(status) {
 			}
 			if ((__dt_state != 2) && (el = document.querySelector('textarea[name="style[css]"]#css'))) {
 				el.value = __dt_css;
+				if ((cl = document.querySelector('#style_additional_info'))) {
+					cl.value = cl.value.replace(changelog_re, function() { return __dt_changelog; });
+					console.log('additional info\n---------------------------------\n' + cl.value);
+				}
 				if (el.value && el.value != 'undefined' && el.value != 'null') {
 					console.log('css submitted');
 					el.form.submit();
