@@ -1,7 +1,7 @@
 @namespace url(http://www.w3.org/1999/xhtml);
 @-moz-document domain("facebook.com") {
 /* (generated)
-Wed Nov 23 12:23:42 ICT 2011
+Wed Nov 23 15:11:12 ICT 2011
  */
 /**
  * dark-facebook - a dark theme for facebook
@@ -73,7 +73,8 @@ body * {
 .ufiNub,
 .nub,
 .hovercard .arrow,
-.uiStream .uiStreamBoulderStyle .highlightSelector a {
+.uiStream .uiStreamBoulderStyle .highlightSelector a,
+.uiOverlayArrow {
   opacity: 0.2 !important;
 }
 .uiAttachmentDesc,
@@ -238,10 +239,13 @@ body:not(.timelineLayout) .uiSideHeader a * {
   background-color: #090807 !important;
 }
 .uiOverlay {
+  background-color: transparent !important;
+}
+.uiOverlay .uiOverlayContent {
   background-color: #353433 !important;
 }
-.uiOverlay,
-.uiOverlay * {
+.uiOverlay .uiOverlayContent,
+.uiOverlay .uiOverlayContent * {
   border-color: #454443 !important;
 }
 .UIBeeper_Full {
@@ -364,14 +368,20 @@ div.uiMenu li a:hover *,
 ul.navigation li a:hover * {
   border-color: #464577 !important;
 }
-.hovercard .stage {
+.hovercard .stage,
+.HovercardStage {
   background-color: #090807 !important;
 }
 .hovercard .stage,
-.hovercard .stage * {
+.HovercardStage,
+.hovercard .stage *,
+.HovercardStage * {
   border-color: #454443 !important;
 }
-.hovercard .stage .actions {
+.hovercard .stage .actions,
+.HovercardStage .actions,
+.hovercard .stage .uiHovercardFooter,
+.HovercardStage .uiHovercardFooter {
   background-color: #252423 !important;
 }
 .fbJewelFlyout {
@@ -669,10 +679,23 @@ ul.search li.selected .text * {
 }
 .fbPhotoSnowbox .container {
   background-color: #090807 !important;
-  box-shadow: 0 1px 15px rgba(139,134,133,0.30), 0 0 1px rgba(139,134,133,0.70);
+  box-shadow: 0 1px 15px rgba(139,134,133,0.30), 0 0 1px rgba(139,134,133,0.70) !important;
 }
 .fbPhotoSnowbox .container,
 .fbPhotoSnowbox .container * {
+  border-color: #31302f !important;
+}
+.fbPhotoSnowbox .container .photoInfoWrapper {
+  background-color: #252423 !important;
+  margin-left: -12px !important;
+  padding-left: 12px !important;
+  margin-right: -12px !important;
+  padding-right: 12px !important;
+  margin-bottom: -12px !important;
+  padding-bottom: 12px !important;
+}
+.fbPhotoSnowbox .container .photoInfoWrapper,
+.fbPhotoSnowbox .container .photoInfoWrapper * {
   border-color: #31302f !important;
 }
 .fbPhotoSnowbox .container .arrowLeft a,

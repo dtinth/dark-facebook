@@ -8,6 +8,10 @@ mix(color1, color2, weight = 50%)
 	w = weight / 100%
 	color1 * (w) + color2 * (1 - w)
 
+cancel(side, amount, pad = 0)
+	margin-{side}: -(amount) !important
+	padding-{side}: amount + pad !important
+
 $page-background = #252423
 $color = #e9e8e7
 $page-border = $page-background + #0c0c0c
@@ -114,6 +118,7 @@ body
 .nub
 .hovercard .arrow
 .uiStream .uiStreamBoulderStyle .highlightSelector a
+.uiOverlayArrow
 	dim-image-more()
 
 // dimmed texts
@@ -210,7 +215,9 @@ body:not(.timelineLayout) .uiSideHeader
 
 // overlays
 .uiOverlay
-	colorize: $main-background, $main-border
+	transparent()
+	.uiOverlayContent
+		colorize: $main-background, $main-border
 
 
 // beeper
@@ -267,9 +274,9 @@ ul.navigation
 			colorize: $highlight-background, $highlight-border
 
 // hovercards
-.hovercard .stage
+.hovercard .stage, .HovercardStage
 	colorize: $dark-background, $main-border
-	.actions
+	.actions, .uiHovercardFooter
 		colorize: $page-background
 
 
@@ -404,7 +411,12 @@ ul.search
 	colorize: rgba($main-background, 0.75)
 	.container
 		colorize: $dark-background, $page-border
-		box-shadow: 0 1px 15px rgba($dim-color, 0.3), 0 0 1px rgba($dim-color, 0.7)
+		box-shadow: 0 1px 15px rgba($dim-color, 0.3), 0 0 1px rgba($dim-color, 0.7) !important
+		.photoInfoWrapper
+			colorize: $page-background, $page-border
+			cancel: left, 12px
+			cancel: right, 12px
+			cancel: bottom, 12px
 		.arrowLeft, .arrowRight
 			a
 				colorize: $dark-background, $page-border
