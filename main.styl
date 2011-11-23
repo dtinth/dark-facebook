@@ -184,8 +184,10 @@ $text-field-placeholder-color = $dim-color
 .uiSearchInput
 .uiTypeahead .wrap
 .inputContainer
+.MessagingComposerBody
 	&, *
 		colorize: $text-field-background
+		text-color: $color
 
 .DOMControl_placeholder
 	text-color: $text-field-placeholder-color
@@ -422,3 +424,9 @@ ul.search
 		colorize: $main-background, $main-border
 	h2.dialog_title
 		colorize: $side-header-background, $side-header-border
+
+
+// messaging
+[id="MessagingShelf"], .MessagingReadHeader
+	colorize: $main-background, $main-border
+

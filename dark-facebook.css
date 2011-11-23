@@ -1,7 +1,7 @@
 @namespace url(http://www.w3.org/1999/xhtml);
 @-moz-document domain("facebook.com") {
 /* (generated)
-Wed Nov 23 11:32:27 ICT 2011
+Wed Nov 23 12:23:42 ICT 2011
  */
 /**
  * dark-facebook - a dark theme for facebook
@@ -187,10 +187,30 @@ a.timestamp * {
 .uiSearchInput,
 .uiTypeahead .wrap,
 .inputContainer,
+.MessagingComposerBody,
 .uiSearchInput *,
 .uiTypeahead .wrap *,
-.inputContainer * {
+.inputContainer *,
+.MessagingComposerBody * {
   background-color: #090807 !important;
+}
+.uiSearchInput,
+.uiTypeahead .wrap,
+.inputContainer,
+.MessagingComposerBody,
+.uiSearchInput *,
+.uiTypeahead .wrap *,
+.inputContainer *,
+.MessagingComposerBody *,
+.uiSearchInput *,
+.uiTypeahead .wrap *,
+.inputContainer *,
+.MessagingComposerBody *,
+.uiSearchInput * *,
+.uiTypeahead .wrap * *,
+.inputContainer * *,
+.MessagingComposerBody * * {
+  color: #e9e8e7 !important;
 }
 .DOMControl_placeholder,
 .DOMControl_placeholder * {
@@ -694,5 +714,15 @@ ul.search li.selected .text * {
 .generic_dialog h2.dialog_title,
 .generic_dialog h2.dialog_title * {
   border-color: #8b5655 !important;
+}
+[id="MessagingShelf"],
+.MessagingReadHeader {
+  background-color: #353433 !important;
+}
+[id="MessagingShelf"],
+.MessagingReadHeader,
+[id="MessagingShelf"] *,
+.MessagingReadHeader * {
+  border-color: #454443 !important;
 }
 }
