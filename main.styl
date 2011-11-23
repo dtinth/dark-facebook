@@ -65,9 +65,12 @@ $text-field-placeholder-color = $dim-color
 plain-input-style()
 	border-width: 1px !important
 	border-style: solid !important
+	-moz-appearance: none !important
+	-webkit-appearance: none !important
 
 plain-button-style()
 	colorize: $dark-background, $dark-background
+	background-image: none !important
 	plain-input-style()
 	cursor: pointer !important
 	&:hover
@@ -75,6 +78,7 @@ plain-button-style()
 
 text-field-colors()
 	colorize: $text-field-background
+	background-image: none !important
 	text-color: $color
 	
 text-field-style()

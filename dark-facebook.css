@@ -1,4 +1,4 @@
-/* generated: Wed Nov 23 2011 17:32:25 GMT+0700 (ICT) */
+/* generated: Wed Nov 23 2011 17:41:19 GMT+0700 (ICT) */
 /**
  * dark-facebook - a dark theme for facebook
  * https://github.com/dtinth/dark-facebook
@@ -190,6 +190,7 @@ a.timestamp * {
 .inputContainer *,
 .MessagingComposerBody * {
   background-color: #090807 !important;
+  background-image: none !important;
 }
 .uiSearchInput,
 .uiTypeahead .wrap,
@@ -768,8 +769,11 @@ ul.search li.selected .text * {
 }
 #better_fb_cp #bfb_status_older_posts_input {
   background-color: #090807 !important;
+  background-image: none !important;
   border-width: 1px !important;
   border-style: solid !important;
+  -moz-appearance: none !important;
+  -webkit-appearance: none !important;
 }
 #better_fb_cp #bfb_status_older_posts_input,
 #better_fb_cp #bfb_status_older_posts_input * {
@@ -804,8 +808,11 @@ ul.search li.selected .text * {
 #bfb_options .options_dialog .bfb_tab_selected input[type="submit"],
 #bfb_options .options_dialog #bfb_options_content input[type="submit"] {
   background-color: #090807 !important;
+  background-image: none !important;
   border-width: 1px !important;
   border-style: solid !important;
+  -moz-appearance: none !important;
+  -webkit-appearance: none !important;
   cursor: pointer !important;
 }
 #bfb_options .options_dialog .bfb_tab_selected input[type="button"],
@@ -851,8 +858,11 @@ ul.search li.selected .text * {
 #bfb_options input.text,
 #bfb_options #bfb_options_search {
   background-color: #090807 !important;
+  background-image: none !important;
   border-width: 1px !important;
   border-style: solid !important;
+  -moz-appearance: none !important;
+  -webkit-appearance: none !important;
 }
 #bfb_options input.text,
 #bfb_options #bfb_options_search,
@@ -863,8 +873,11 @@ ul.search li.selected .text * {
 #bfb_options input[type="button"],
 #bfb_options input[type="submit"] {
   background-color: #090807 !important;
+  background-image: none !important;
   border-width: 1px !important;
   border-style: solid !important;
+  -moz-appearance: none !important;
+  -webkit-appearance: none !important;
   cursor: pointer !important;
 }
 #bfb_options input[type="button"],
