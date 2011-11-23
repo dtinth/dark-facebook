@@ -18,8 +18,7 @@ try {
 	phantom.exit(1);
 }
 
-changelog = '\r\n\r\nChangelog:\r\n' + changelog.split(/\r?\n/).filter(function(x) { return x != ''; }).map(function(x) { return '* ' + x; }).join('\r\n') + '\r\n';
-
+changelog = '\r\n\r\nChangelog:\r\n' + changelog.split(/\r?\n/).filter(function(x) { return x.match(/^.*?\.styl:/); }).map(function(x) { return x.replace(/\S+\.styl/, ''); }).join('\r\n') + '\r\n';
 var editLink = 'http://userstyles.org/styles/' + config.styleID + '/edit';
 var page = new WebPage();
 
