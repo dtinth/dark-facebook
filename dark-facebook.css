@@ -1,4 +1,4 @@
-/* generated: Wed Nov 23 2011 16:55:53 GMT+0700 (ICT) */
+/* generated: Wed Nov 23 2011 17:24:17 GMT+0700 (ICT) */
 /**
  * dark-facebook - a dark theme for facebook
  * https://github.com/dtinth/dark-facebook
@@ -69,7 +69,7 @@ body * {
 .ufiNub,
 .nub,
 .hovercard .arrow,
-.uiStream .uiStreamBoulderStyle .highlightSelector a,
+.uiStream .uiStreamBoulderStyle .highlightSelector .uiSelectorButton,
 .uiOverlayArrow {
   opacity: 0.2 !important;
 }
@@ -315,53 +315,71 @@ body:not(.timelineLayout) .uiSideHeader a * {
   background-color: #353466 !important;
 }
 div.uiMenu,
-ul.navigation {
+ul.navigation,
+#bfb_options_button_li ul#bfb_option_list {
   background-color: #090807 !important;
 }
 div.uiMenu,
 ul.navigation,
+#bfb_options_button_li ul#bfb_option_list,
 div.uiMenu *,
-ul.navigation * {
+ul.navigation *,
+#bfb_options_button_li ul#bfb_option_list * {
   border-color: #454443 !important;
 }
 div.uiMenu li,
-ul.navigation li {
+ul.navigation li,
+#bfb_options_button_li ul#bfb_option_list li {
   background-color: #090807 !important;
 }
 div.uiMenu li,
 ul.navigation li,
+#bfb_options_button_li ul#bfb_option_list li,
 div.uiMenu li *,
-ul.navigation li * {
+ul.navigation li *,
+#bfb_options_button_li ul#bfb_option_list li * {
   border-color: #090807 !important;
 }
 div.uiMenu li,
 ul.navigation li,
+#bfb_options_button_li ul#bfb_option_list li,
 div.uiMenu li *,
 ul.navigation li *,
+#bfb_options_button_li ul#bfb_option_list li *,
 div.uiMenu li a,
 ul.navigation li a,
+#bfb_options_button_li ul#bfb_option_list li a,
 div.uiMenu li *,
 ul.navigation li *,
+#bfb_options_button_li ul#bfb_option_list li *,
 div.uiMenu li * *,
 ul.navigation li * *,
+#bfb_options_button_li ul#bfb_option_list li * *,
 div.uiMenu li a *,
-ul.navigation li a * {
+ul.navigation li a *,
+#bfb_options_button_li ul#bfb_option_list li a * {
   color: #e9e8e7 !important;
 }
 div.uiMenu li:hover,
 ul.navigation li:hover,
+#bfb_options_button_li ul#bfb_option_list li:hover,
 div.uiMenu li a:hover,
-ul.navigation li a:hover {
+ul.navigation li a:hover,
+#bfb_options_button_li ul#bfb_option_list li a:hover {
   background-color: #353466 !important;
 }
 div.uiMenu li:hover,
 ul.navigation li:hover,
+#bfb_options_button_li ul#bfb_option_list li:hover,
 div.uiMenu li a:hover,
 ul.navigation li a:hover,
+#bfb_options_button_li ul#bfb_option_list li a:hover,
 div.uiMenu li:hover *,
 ul.navigation li:hover *,
+#bfb_options_button_li ul#bfb_option_list li:hover *,
 div.uiMenu li a:hover *,
-ul.navigation li a:hover * {
+ul.navigation li a:hover *,
+#bfb_options_button_li ul#bfb_option_list li a:hover * {
   border-color: #464577 !important;
 }
 .hovercard .stage,
@@ -742,5 +760,126 @@ ul.search li.selected .text * {
 .MessagingReadHeader,
 [id="MessagingShelf"] *,
 .MessagingReadHeader * {
+  border-color: #454443 !important;
+}
+#better_fb_cp,
+#better_fb_cp * {
+  color: #8b8685 !important;
+}
+#better_fb_cp #bfb_status_older_posts_input {
+  background-color: #090807 !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+}
+#better_fb_cp #bfb_status_older_posts_input,
+#better_fb_cp #bfb_status_older_posts_input * {
+  color: #e9e8e7 !important;
+}
+#better_fb_cp input[type="checkbox"] {
+  opacity: 0.6 !important;
+}
+#bfb_options a,
+#bfb_options a * {
+  color: #9cb6df !important;
+}
+#bfb_options .options_dialog {
+  background-color: #090807 !important;
+}
+#bfb_options .options_dialog,
+#bfb_options .options_dialog * {
+  border-color: #31302f !important;
+}
+#bfb_options .options_dialog .bfb_tab_selected,
+#bfb_options .options_dialog #bfb_options_content {
+  background-color: #353433 !important;
+}
+#bfb_options .options_dialog .bfb_tab_selected,
+#bfb_options .options_dialog #bfb_options_content,
+#bfb_options .options_dialog .bfb_tab_selected *,
+#bfb_options .options_dialog #bfb_options_content * {
+  border-color: #454443 !important;
+}
+#bfb_options .options_dialog .bfb_tab_selected input[type="button"],
+#bfb_options .options_dialog #bfb_options_content input[type="button"],
+#bfb_options .options_dialog .bfb_tab_selected input[type="submit"],
+#bfb_options .options_dialog #bfb_options_content input[type="submit"] {
+  background-color: #090807 !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+  cursor: pointer !important;
+}
+#bfb_options .options_dialog .bfb_tab_selected input[type="button"],
+#bfb_options .options_dialog #bfb_options_content input[type="button"],
+#bfb_options .options_dialog .bfb_tab_selected input[type="submit"],
+#bfb_options .options_dialog #bfb_options_content input[type="submit"],
+#bfb_options .options_dialog .bfb_tab_selected input[type="button"] *,
+#bfb_options .options_dialog #bfb_options_content input[type="button"] *,
+#bfb_options .options_dialog .bfb_tab_selected input[type="submit"] *,
+#bfb_options .options_dialog #bfb_options_content input[type="submit"] * {
+  border-color: #090807 !important;
+}
+#bfb_options .options_dialog .bfb_tab_selected input[type="button"]:hover,
+#bfb_options .options_dialog #bfb_options_content input[type="button"]:hover,
+#bfb_options .options_dialog .bfb_tab_selected input[type="submit"]:hover,
+#bfb_options .options_dialog #bfb_options_content input[type="submit"]:hover {
+  background-color: #252423 !important;
+}
+#bfb_options .options_dialog .bfb_tab_selected input[type="button"]:hover,
+#bfb_options .options_dialog #bfb_options_content input[type="button"]:hover,
+#bfb_options .options_dialog .bfb_tab_selected input[type="submit"]:hover,
+#bfb_options .options_dialog #bfb_options_content input[type="submit"]:hover,
+#bfb_options .options_dialog .bfb_tab_selected input[type="button"]:hover *,
+#bfb_options .options_dialog #bfb_options_content input[type="button"]:hover *,
+#bfb_options .options_dialog .bfb_tab_selected input[type="submit"]:hover *,
+#bfb_options .options_dialog #bfb_options_content input[type="submit"]:hover * {
+  border-color: #454443 !important;
+}
+#bfb_options .options_dialog .bfb_tab_search {
+  background-color: #252423 !important;
+}
+#bfb_options .options_dialog .bfb_tab_search,
+#bfb_options .options_dialog .bfb_tab_search * {
+  border-color: #454443 !important;
+}
+#bfb_options .GM_options_header {
+  background-color: #252423 !important;
+}
+#bfb_options .GM_options_header,
+#bfb_options .GM_options_header * {
+  border-color: #31302f !important;
+}
+#bfb_options input.text,
+#bfb_options #bfb_options_search {
+  background-color: #090807 !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+}
+#bfb_options input.text,
+#bfb_options #bfb_options_search,
+#bfb_options input.text *,
+#bfb_options #bfb_options_search * {
+  color: #e9e8e7 !important;
+}
+#bfb_options input[type="button"],
+#bfb_options input[type="submit"] {
+  background-color: #090807 !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+  cursor: pointer !important;
+}
+#bfb_options input[type="button"],
+#bfb_options input[type="submit"],
+#bfb_options input[type="button"] *,
+#bfb_options input[type="submit"] * {
+  border-color: #090807 !important;
+}
+#bfb_options input[type="button"]:hover,
+#bfb_options input[type="submit"]:hover {
+  background-color: #252423 !important;
+}
+#bfb_options input[type="button"]:hover,
+#bfb_options input[type="submit"]:hover,
+#bfb_options input[type="button"]:hover *,
+#bfb_options input[type="submit"]:hover * {
   border-color: #454443 !important;
 }

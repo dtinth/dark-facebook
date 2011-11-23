@@ -58,6 +58,33 @@ dim-image-more()
 	opacity: 0.2 !important
 
 
+
+$text-field-background = #090807
+$text-field-placeholder-color = $dim-color
+
+plain-input-style()
+	border-width: 1px !important
+	border-style: solid !important
+
+plain-button-style()
+	colorize: $dark-background, $dark-background
+	plain-input-style()
+	cursor: pointer !important
+	&:hover
+		colorize: $page-background, $main-border
+
+text-field-colors()
+	colorize: $text-field-background
+	text-color: $color
+	
+text-field-style()
+	text-field-colors()
+	plain-input-style()
+
+
+
+// page elements
+
 body
 	colorize: $page-background, $page-border
 	text-color: $color
@@ -117,7 +144,7 @@ body
 .ufiNub
 .nub
 .hovercard .arrow
-.uiStream .uiStreamBoulderStyle .highlightSelector a
+.uiStream .uiStreamBoulderStyle .highlightSelector .uiSelectorButton
 .uiOverlayArrow
 	dim-image-more()
 
@@ -183,16 +210,13 @@ a.timestamp
 
 
 // text fields
-$text-field-background = #090807
-$text-field-placeholder-color = $dim-color
 
 .uiSearchInput
 .uiTypeahead .wrap
 .inputContainer
 .MessagingComposerBody
 	&, *
-		colorize: $text-field-background
-		text-color: $color
+		text-field-colors()
 
 .DOMControl_placeholder
 	text-color: $text-field-placeholder-color
@@ -265,6 +289,8 @@ body:not(.timelineLayout) .uiSideHeader
 // menus
 div.uiMenu
 ul.navigation
+// social fixer menu
+#bfb_options_button_li ul#bfb_option_list
 	colorize: $dark-background, $main-border
 	li
 		colorize: $dark-background, $dark-background
@@ -442,3 +468,33 @@ ul.search
 [id="MessagingShelf"], .MessagingReadHeader
 	colorize: $main-background, $main-border
 
+
+
+// social fixer / better facebook
+#better_fb_cp
+	text-color: $dim-color
+	#bfb_status_older_posts_input
+		text-field-style()
+	input[type="checkbox"]
+		dim-image()
+
+#bfb_options
+	a
+		text-color: $link-color
+	include-button-style()
+		input[type="button"], input[type="submit"]
+			plain-button-style()
+	.options_dialog
+		colorize: $dark-background, $page-border
+		.bfb_tab_selected
+		#bfb_options_content
+			colorize: $main-background, $main-border
+			include-button-style()
+		.bfb_tab_search
+			colorize: $page-background, $main-border
+	.GM_options_header
+		colorize: $page-background, $page-border
+	input.text
+	#bfb_options_search
+		text-field-style()
+	include-button-style()
