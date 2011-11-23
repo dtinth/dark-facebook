@@ -4,6 +4,10 @@
  * https://github.com/dtinth/dark-facebook
  */
 
+mix(color1, color2, weight = 50%)
+	w = weight / 100%
+	color1 * (w) + color2 * (1 - w)
+
 $page-background = #252423
 $color = #e9e8e7
 $page-border = $page-background + #0c0c0c
@@ -22,7 +26,7 @@ $light-background = $main-background + #070707
 $light-border = $light-background + #101010
 $comments-color = $main-background + #001 + #080808
 
-$link-color = #8ad
+$link-color = mix(#8ad, $color, 80%)
 $name-color = #bef
 
 $side-header-background = $main-background + #300

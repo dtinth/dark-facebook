@@ -1,7 +1,7 @@
 @namespace url(http://www.w3.org/1999/xhtml);
 @-moz-document domain("facebook.com") {
 /* (generated)
-Wed Nov 23 11:07:21 ICT 2011
+Wed Nov 23 11:32:27 ICT 2011
  */
 /**
  * dark-facebook - a dark theme for facebook
@@ -114,7 +114,7 @@ body * {
 .timelineUnitContainer a *,
 .fbPhotoSnowbox a *,
 .generic_dialog a * {
-  color: #8ad !important;
+  color: #9cb6df !important;
 }
 .uiStreamSource a,
 .uiStreamSource,
@@ -523,7 +523,7 @@ ul.search li * {
 }
 ul.search li .text,
 ul.search li .text * {
-  color: #8ad !important;
+  color: #9cb6df !important;
 }
 ul.search li.header {
   background-color: #090807 !important;
