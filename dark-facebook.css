@@ -1,4 +1,4 @@
-/* generated: Wed Nov 23 2011 17:41:19 GMT+0700 (ICT) */
+/* generated: Wed Nov 23 2011 17:42:05 GMT+0700 (ICT) */
 /**
  * dark-facebook - a dark theme for facebook
  * https://github.com/dtinth/dark-facebook
@@ -856,6 +856,7 @@ ul.search li.selected .text * {
   border-color: #31302f !important;
 }
 #bfb_options input.text,
+#bfb_options textarea,
 #bfb_options #bfb_options_search {
   background-color: #090807 !important;
   background-image: none !important;
@@ -865,8 +866,10 @@ ul.search li.selected .text * {
   -webkit-appearance: none !important;
 }
 #bfb_options input.text,
+#bfb_options textarea,
 #bfb_options #bfb_options_search,
 #bfb_options input.text *,
+#bfb_options textarea *,
 #bfb_options #bfb_options_search * {
   color: #e9e8e7 !important;
 }
