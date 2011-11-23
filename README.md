@@ -11,10 +11,15 @@ You are welcomed to help make this userstyle more complete by forking this proje
 Installation
 ------------
 
-* [Install at Userstyle.org](http://userstyles.org/styles/56731/facebook-dark-facebook).
-* Using Social Fixer, use this theme URL: <https://dark-facebook.appspot.com/dark-facebook.css> (it is a proxy to raw GitHub url, with proper mime type served).
+[Stylish](http://userstyles.org/):
+
+* [__Install directly at Userstyle.org__](http://userstyles.org/styles/56731/facebook-dark-facebook). This allows you to update the code to the latest version easily.
 * Or download __dark-facebook.css__ from this repository and add to Stylish manually. Make sure you add the correct `@-moz-document` tag.
 
+
+[Social Fixer for Facebook](https://socialfixer.com/)
+
+* Use this theme URL: <https://dark-facebook.appspot.com/dark-facebook.css> (it is a proxy to raw GitHub url, with proper mime type served).
 
 
 
