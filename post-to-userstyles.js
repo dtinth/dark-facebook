@@ -41,7 +41,7 @@ function processPage(status) {
 	setGlobal(page, '__dt_changelog', changelog);
 	console.log(page.evaluate(function() { return location.href + ' // ' + document.title; }));
 	var retval = page.evaluate(function() {
-		var changelog_re = /(?:\r?\n)*Changelog:?\r?\n-[\s\S]*$|$/;
+		var changelog_re = /(?:\r?\n)*Changelog:?\r?\n\*[\s\S]*$|$/;
 		try {
 			var un, pw, el, cl;
 			if ((__dt_state != 1) && (un = document.querySelector('#login-existing')) && (pw = document.querySelector('#password-existing'))) {
@@ -66,7 +66,7 @@ function processPage(status) {
 				}
 				return 2;
 			}
-			if (document.querySelector('#style-info')) {
+			if (location.pathname.match(/^\/styles\/\d+\/.*/) && ~location.search.indexOf('r=')) {
 				console.log('finished');
 				return -1;
 			}
