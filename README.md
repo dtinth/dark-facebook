@@ -23,6 +23,27 @@ Installation
 
 
 
+Styling Details
+---------------
+
+First, everything is given a transparent background color, a gray border color,
+and white text color, and then the userstyle adds background colors to things, as well as
+tweaking the text and border colors of various elements.
+
+For bright images that don't go well with the dark theme, they are darkened by reducing the opacity
+thus making it look more blended to the style.
+
+`!important` should be used in all declarations, because without it,
+in Stylish the injected style declaration seem to lose and Facebook's default style seems to win.
+
+For coloring things, a variable name should be used, with `colorize` mixin which sets the background
+color of the element and also the border color, if given, and automatically adding `!important` to it.
+
+To customize text colors, use `text-color` mixin (like a property) which sets the text color
+of that element and all its descendant, along with `!important`.
+
+
+
 Development Environment
 -----------------------
 
