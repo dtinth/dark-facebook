@@ -1,8 +1,4 @@
-@namespace url(http://www.w3.org/1999/xhtml);
-@-moz-document domain("facebook.com") {
-/* (generated)
-Wed Nov 23 15:11:12 ICT 2011
- */
+/* generated: Wed Nov 23 2011 16:55:53 GMT+0700 (ICT) */
 /**
  * dark-facebook - a dark theme for facebook
  * https://github.com/dtinth/dark-facebook
@@ -747,5 +743,4 @@ ul.search li.selected .text * {
 [id="MessagingShelf"] *,
 .MessagingReadHeader * {
   border-color: #454443 !important;
-}
 }
