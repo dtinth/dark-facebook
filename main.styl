@@ -498,3 +498,14 @@ ul.search
 	#bfb_options_search
 		text-field-style()
 	include-button-style()
+
+.bfb_tabs
+	.bfb_tab
+		colorize: $main-background, $main-border
+		text-color: $dim-color
+	.bfb_tab_selected
+		colorize: $main-border, $main-border
+		text-color: $color
+
+.bfb_post_action_container:not(:hover)
+	dim-image-more()
