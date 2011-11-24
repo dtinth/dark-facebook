@@ -2,7 +2,7 @@
 all: dark-facebook.css
 
 dark-facebook.css: main.styl
-	curl http://localhost:25531/get -odark-facebook.css
+	node server.js compile > dark-facebook.css
 
 publish: publish-to-userstyles publish-to-gae
 

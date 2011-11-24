@@ -47,9 +47,13 @@ of that element and all its descendant, along with `!important`.
 Development Environment
 -----------------------
 
+Install LiveStyl first:
+
+	npm install livestyl
+
 I work on a Mac but maybe you can use it on Linux or Windows (maybe with Cygwin).
 
-    node /path/to/LiveStyl/livestyl.js main.styl
+	node server.js
 
 And then go to `http://localhost:25531/` and run the bookmarklet on Facebook.
 Your changes will be applied when you save the file.

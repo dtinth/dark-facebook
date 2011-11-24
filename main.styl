@@ -28,7 +28,7 @@ $highlight-color = $highlight-background + #444
 $dark-background = #090807
 $light-background = $main-background + #070707
 $light-border = $light-background + #101010
-$comments-color = $main-background + #001 + #080808
+$comments-background = $main-background + #001 + #080808
 
 $link-color = mix(#8ad, $color, 80%)
 $name-color = #bef
@@ -208,9 +208,9 @@ a.timestamp
 // comments list
 .uiList
 	.ufiItem
-		colorize: $comments-color, $comments-color + #111
+		colorize: $comments-background, $comments-background + #111
 	.uiUfiUnseenItem
-		colorize: $comments-color + #001, $comments-color + #112
+		colorize: $comments-background + #001, $comments-background + #112
 
 
 // text fields
@@ -482,6 +482,11 @@ ul.search
 	input[type="checkbox"]
 		dim-image()
 
+.bfb_dialog
+	colorize: $comments-background, $comments-background + #222
+	.type_selected
+		colorize: $side-header-background, $side-header-border
+
 #bfb_options
 	a
 		text-color: $link-color
@@ -514,3 +519,6 @@ ul.search
 
 .bfb_post_action_container:not(:hover)
 	dim-image-more()
+
+.bfb_image_preview
+	colorize: $dark-background, $main-border
