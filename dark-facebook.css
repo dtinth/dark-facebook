@@ -1,4 +1,4 @@
-/* generated: Thu Nov 24 2011 11:50:40 GMT+0700 (ICT) *//**
+/* generated: Thu Nov 24 2011 13:52:03 GMT+0700 (ICT) *//**
  * dark-facebook - a dark theme for facebook
  * https://github.com/dtinth/dark-facebook
  */
@@ -943,5 +943,87 @@ ul.search li.selected .text * {
 .bfb_image_preview,
 .bfb_image_preview * {
   border-color: #454443 !important;
+}
+.UIPage_LoggedOut {
+  width: 100% !important;
+  height: 100% !important;
+}
+.UIPage_LoggedOut .loggedOut#blueBarHolder {
+  top: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  width: auto !important;
+  height: auto !important;
+  position: absolute !important;
+  z-index: 100 !important;
+}
+.UIPage_LoggedOut .loggedOut#blueBarHolder #blueBar {
+  top: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  width: auto !important;
+  height: auto !important;
+  position: absolute !important;
+}
+.UIPage_LoggedOut .loggedOut#blueBarHolder #blueBar .rfloat {
+  float: none !important;
+}
+.UIPage_LoggedOut .loggedOut#blueBarHolder #blueBar .rfloat .menu_login_container {
+  background-color: #353433 !important;
+  border-style: dotted !important;
+  border-width: 1px !important;
+  top: 50% !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: 50% !important;
+  width: 480px !important;
+  height: 120px !important;
+  position: absolute !important;
+  margin-top: -61px !important;
+  margin-left: -241px !important;
+}
+.UIPage_LoggedOut .loggedOut#blueBarHolder #blueBar .rfloat .menu_login_container,
+.UIPage_LoggedOut .loggedOut#blueBarHolder #blueBar .rfloat .menu_login_container * {
+  border-color: #454443 !important;
+}
+.UIPage_LoggedOut .loggedOut#blueBarHolder #blueBar .rfloat .menu_login_container table {
+  margin: 20px auto 0 !important;
+}
+.UIPage_LoggedOut .loggedOut#blueBarHolder #blueBar .rfloat .menu_login_container table .uiButton input {
+  border-width: 0 !important;
+}
+.UIPage_LoggedOut #globalContainer {
+  top: 100% !important;
+  right: 0 !important;
+  bottom: auto !important;
+  left: 0 !important;
+  width: auto !important;
+  height: auto !important;
+  position: absolute !important;
+}
+.UIPage_LoggedOut .gradient {
+  background-color: #353433 !important;
+  background-image: none !important;
+}
+.UIPage_LoggedOut .gradient,
+.UIPage_LoggedOut .gradient * {
+  border-color: #454443 !important;
+}
+.UIPage_LoggedOut input,
+.UIPage_LoggedOut select {
+  background-color: #090807 !important;
+  background-image: none !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+  -moz-appearance: none !important;
+  -webkit-appearance: none !important;
+}
+.UIPage_LoggedOut input,
+.UIPage_LoggedOut select,
+.UIPage_LoggedOut input *,
+.UIPage_LoggedOut select * {
+  color: #e9e8e7 !important;
 }
 
