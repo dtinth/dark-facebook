@@ -1,4 +1,4 @@
-/* generated: Thu Nov 24 2011 13:52:03 GMT+0700 (ICT) *//**
+/* generated: Thu Nov 24 2011 16:53:06 GMT+0700 (ICT) *//**
  * dark-facebook - a dark theme for facebook
  * https://github.com/dtinth/dark-facebook
  */
@@ -699,8 +699,15 @@ ul.search li.selected .text * {
 .fbPhotoSnowbox .container * {
   border-color: #31302f !important;
 }
+.fbPhotoSnowbox .container .stageWrapper {
+  padding-bottom: 12px !important;
+}
+.fbPhotoSnowbox .container .stageWrapper .stageActions {
+  bottom: -36px !important;
+}
 .fbPhotoSnowbox .container .photoInfoWrapper {
   background-color: #252423 !important;
+  padding-top: 36px !important;
   margin-left: -12px !important;
   padding-left: 12px !important;
   margin-right: -12px !important;
