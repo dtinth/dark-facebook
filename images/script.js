@@ -140,7 +140,7 @@ function iop(src) {
 }
 
 var t = {
-	pixelManipulate: function(src, callback) {
+	pixelManipulate: function(callback) {
 		return function(canvas, next) {
 			var ctx = canvas.getContext('2d');
 			var data = ctx.getImageData(0, 0, canvas.width, canvas.height);
@@ -166,8 +166,8 @@ var t = {
 			next(canvas);
 		};
 	},
-	crop: function(src, x1, y1, x2, y2) {
-		return t.pixelManipulate(src, function(pixel, x, y) {
+	crop: function(x1, y1, x2, y2) {
+		return t.pixelManipulate(function(pixel, x, y) {
 			if (!((x1 <= x && x < x2) && (y1 <= y && y < y2))) {
 				pixel[0] = 0;
 				pixel[1] = 0;
@@ -176,11 +176,11 @@ var t = {
 			}
 		});
 	},
-	darken: function(src, rx, gx, bx) {
+	darken: function(rx, gx, bx) {
 		if (rx == null) rx = 1;
 		if (gx == null) gx = 1;
 		if (bx == null) bx = 1;
-		return t.pixelManipulate(src, function(pixel) {
+		return t.pixelManipulate(function(pixel) {
 			var value = (pixel[0] + pixel[1] + pixel[2]) / 3 / 255;
 			value = 1 - value;
 			pixel[0] = Math.pow(value, rx) * 255;
