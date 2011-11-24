@@ -3,6 +3,9 @@
 var options = {
 	postprocess: function(css, callback) {
 		callback(null, '/* generated: ' + new Date().toString() + ' */' + css);
+	},
+	stylus: function(o, stylus) {
+		return o.define('url', stylus.url());
 	}
 };
 

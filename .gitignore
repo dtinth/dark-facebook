@@ -3,3 +3,5 @@ userstyles-credentials.json
 *.swo
 *.swn
 node_modules
+.DS_Store
+images/fb-*.png
