@@ -522,3 +522,51 @@ ul.search
 
 .bfb_image_preview
 	colorize: $dark-background, $main-border
+
+
+
+// logged out pages
+
+set-position(t = auto, r = auto, b = auto, l = auto, w = auto, h = auto)
+	top: t !important
+	right: r !important
+	bottom: b !important
+	left: l !important
+	width: w !important
+	height: h !important
+
+absolute(t = auto, r = auto, b = auto, l = auto, w = auto, h = auto)
+	set-position: t, r, b, l, w, h
+	position: absolute !important
+
+center(w, h, x = 0, y = 0)
+	absolute: 50%, auto, auto, 50%, w, h
+	margin-top: (y - h / 2) !important
+	margin-left: (x - w / 2) !important
+
+.UIPage_LoggedOut
+	width: 100% !important
+	height: 100% !important
+	.loggedOut#blueBarHolder
+		absolute: 0, 0, 0, 0
+		#blueBar
+			absolute: 0, 0, 0, 0
+			.rfloat
+				float: none !important
+				.menu_login_container
+					colorize: $main-background, $main-border
+					border-style: dotted !important
+					border-width: 1px !important
+					center: 480px, 120px, -1px, -1px
+					table
+						margin: 20px auto 0 !important
+						.uiButton input
+							border-width: 0 !important
+		z-index: 100 !important
+	#globalContainer
+		absolute: 100%, 0, auto, 0
+	.gradient
+		colorize: $main-background, $main-border
+		background-image: none !important
+	input, select
+		text-field-style()
