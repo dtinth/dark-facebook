@@ -1,4 +1,4 @@
-/* generated: Fri Nov 25 2011 18:30:25 GMT+0700 (ICT) *//**
+/* generated: Fri Nov 25 2011 21:59:36 GMT+0700 (ICT) *//**
  * dark-facebook - a dark theme for facebook
  * https://github.com/dtinth/dark-facebook
  */
@@ -220,30 +220,30 @@ a.timestamp * {
   border-color: #4e4d6e !important;
 }
 .uiSearchInput,
-.uiTypeahead .wrap,
+[id="globalContainer"] .uiTypeahead .wrap,
 .inputContainer,
 .MessagingComposerBody,
 .uiSearchInput *,
-.uiTypeahead .wrap *,
+[id="globalContainer"] .uiTypeahead .wrap *,
 .inputContainer *,
 .MessagingComposerBody * {
   background-color: #090807 !important;
   background-image: none !important;
 }
 .uiSearchInput,
-.uiTypeahead .wrap,
+[id="globalContainer"] .uiTypeahead .wrap,
 .inputContainer,
 .MessagingComposerBody,
 .uiSearchInput *,
-.uiTypeahead .wrap *,
+[id="globalContainer"] .uiTypeahead .wrap *,
 .inputContainer *,
 .MessagingComposerBody *,
 .uiSearchInput *,
-.uiTypeahead .wrap *,
+[id="globalContainer"] .uiTypeahead .wrap *,
 .inputContainer *,
 .MessagingComposerBody *,
 .uiSearchInput * *,
-.uiTypeahead .wrap * *,
+[id="globalContainer"] .uiTypeahead .wrap * *,
 .inputContainer * *,
 .MessagingComposerBody * * {
   color: #e9e8e7 !important;
@@ -525,7 +525,8 @@ ul.navigation li a:hover *,
 .fbJewelFlyout * {
   border-color: #4c4b4a !important;
 }
-.fbJewelFlyout .notification[style] {
+.fbJewelFlyout .notification[style],
+.fbJewelFlyout .jewelItemNew {
   background-color: #4d4c4b !important;
 }
 .fbJewelFlyout .notification.selected,
