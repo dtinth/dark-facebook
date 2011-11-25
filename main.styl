@@ -85,6 +85,19 @@ text-field-style()
 	text-field-colors()
 	plain-input-style()
 
+// menus
+menu-style()
+	colorize: $dark-background, $main-border
+	li
+		colorize: $dark-background, $dark-background
+		&, *, a
+			text-color: $color
+		&:hover, a:hover
+			colorize: $highlight-background, $highlight-border
+
+menu-style-fix()
+	.uiMenuInner
+		menu-style()
 
 
 // page elements
@@ -177,6 +190,8 @@ body
 .fbPhotoSnowbox a
 .generic_dialog a
 	text-color: $link-color
+	.uiTooltipText
+		text-color: $color
 
 // dimmed text override
 .uiStreamSource a
@@ -249,6 +264,7 @@ body:not(.timelineLayout) .uiSideHeader
 	transparent()
 	.uiOverlayContent
 		colorize: $main-background, $main-border
+		menu-style-fix()
 
 
 // beeper
@@ -283,6 +299,7 @@ body:not(.timelineLayout) .uiSideHeader
 		colorize: $page-background, $page-border
 	.titlebar
 		colorize: $side-header-background, $side-header-border
+		menu-style-fix()
 	.fbNubFlyoutHeader
 		colorize: $page-background
 
@@ -298,13 +315,8 @@ div.uiMenu
 ul.navigation
 // social fixer menu
 #bfb_options_button_li ul#bfb_option_list
-	colorize: $dark-background, $main-border
-	li
-		colorize: $dark-background, $dark-background
-		&, *, a
-			text-color: $color
-		&:hover, a:hover
-			colorize: $highlight-background, $highlight-border
+	menu-style()
+
 
 // hovercards
 .hovercard .stage, .HovercardStage

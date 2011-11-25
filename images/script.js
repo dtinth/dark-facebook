@@ -1,5 +1,6 @@
 
 var Canvas = require('canvas');
+var Chain = require('./chained-action');
 var fs = require('fs');
 var spawn = require('child_process').spawn;
 
@@ -8,53 +9,7 @@ function log() {
 	for (var i = 0; i < log.depth; i ++) x.unshift(i == 0 ? '|-' : '| ');
 	console.log.apply(console, x);
 }
-
 log.depth = 0;
-
-var alreadyRun = {};
-
-function runTask(taskName, next) {
-	if (alreadyRun[taskName]) return next();
-	alreadyRun[taskName] = true;
-	var task = tasks[taskName];
-	log('running: ' + taskName);
-	log.depth++;
-	function cont() {
-		log.depth--;
-		next();
-	}
-	if (!task) {
-		if (taskName == 'all') {
-			runAll(cont);
-		} else {
-			log('!!! error: task not found');
-		}
-	}
-	if (typeof task == 'string') {
-		loadImage(taskName, task, cont);
-	} else if (typeof task == 'function') {
-		task(taskName, cont);
-	} else if (task instanceof EffectChain) {
-		task.run(taskName, cont);
-	}
-}
-
-function runTaskList(list, next) {
-	var i = 0;
-	function loop() {
-		if (i >= list.length) {
-			log('all done');
-			next();
-			return;
-		}
-		runTask(list[i], cont);
-	}
-	function cont() {
-		i++;
-		loop();
-	}
-	loop();
-}
 
 function runCommand(cmd, args, callback) {
 	var proc = spawn(cmd, args);
@@ -69,31 +24,9 @@ function runCommand(cmd, args, callback) {
 	proc.on('exit', callback);
 }
 
-function runAll(next) {
-	var list = [];
-	for (var i in tasks) {
-		list.push(i);
-	}
-	runTaskList(list, next);
-}
-
-
-
-
-function EffectChain(source, filter) {
-	this._source = source;
-	this._filter = filter;
-}
-
-EffectChain.prototype = {
-	chain: function(filter) {
-		return new EffectChain(this, filter);
-	},
-	run: function(dest, callback) {
-		this._filter(this._source, dest, callback);
-	},
+var fx = new Chain({
 	fetch: function(src) {
-		return this.chain(function(source, dest, next) {
+		return this.chain(function(dest, next) {
 			var loaded = false;
 			try {
 				if (fs.statSync(dest)) {
@@ -116,9 +49,9 @@ EffectChain.prototype = {
 		});
 	},
 	load: function(filename) {
-		return this.chain(function(source, dest, next) {
-			log('loading image: ' + filename);
-			runTask(filename, function() {
+		return this.runTask(filename).chain(function(dest, next) {
+			this.source.run(function() {
+				log('loading image: ' + filename);
 				var image = new Canvas.Image()
 				image.src = fs.readFileSync(filename);
 				var canvas = new Canvas(image.width, image.height);
@@ -129,8 +62,8 @@ EffectChain.prototype = {
 		});
 	},
 	save: function() {
-		return this.chain(function(source, dest, next) {
-			source.run(dest, function(canvas) {
+		return this.chain(function(dest, next) {
+			this.source.run(dest, function(canvas) {
 				log('saving image to: ' + dest);
 				fs.writeFileSync(dest, canvas.toBuffer());
 				next(dest);
@@ -138,15 +71,15 @@ EffectChain.prototype = {
 		});
 	},
 	compress: function() {
-		return this.chain(function(source, dest, next) {
+		return this.chain(function(dest, next) {
 			if (process.env.COMPRESS_PNG != '1') {
-				return source.run(dest, function(filename) {
+				return this.source.run(dest, function(filename) {
 					log('compression disabled, export COMPRESS_PNG=1 to enable');
 					next(filename);
 				});
 			}
 			var tempnam = 'TMP-' + dest;
-			source.run(tempnam, function(outnam) {
+			this.source.run(tempnam, function(outnam) {
 				if (typeof outnam != 'string') {
 					throw new Error('invalid output format. forgot to call save()?');
 				}
@@ -166,8 +99,8 @@ EffectChain.prototype = {
 		});
 	},
 	pixelManipulate: function(desc, callback) {
-		return this.chain(function(source, dest, next) {
-			source.run(dest, function(canvas) {
+		return this.chain(function(dest, next) {
+			this.source.run(dest, function(canvas) {
 				log('pixel manipulation: ' + desc);
 				var ctx = canvas.getContext('2d');
 				var data = ctx.getImageData(0, 0, canvas.width, canvas.height);
@@ -257,10 +190,51 @@ EffectChain.prototype = {
 			pixel[1] = Math.pow(pixel[1] / 255, gx);
 			pixel[2] = Math.pow(pixel[2] / 255, bx);
 		});
+	},
+	runTask: function(taskName) {
+		return this.chain(function(callback) {
+			if (tasksTrack[taskName]) { // already run
+				return callback();
+			}
+			var task = tasks[taskName];
+			if (!task) {
+				if (taskName == 'all') {
+					task = fx;
+					for (var k in tasks) {
+						task = task.runTask(k);
+					}
+					if (task === fx) {
+						log('!!! no tasks available');
+						return;
+					}
+					task = task.chain(function(taskName, callback) {
+						log('running all tasks');
+						this.source.run(callback);
+					});
+				} else {
+					log('!!! invalid task: ' + taskName);
+					return;
+				}
+			}
+			function runThisTask() {
+				log('running task: ' + taskName);
+				log.depth ++;
+				task.run(taskName, function() {
+					tasksTrack[taskName] = true;
+					log.depth --;
+					callback();
+				});
+			}
+			if (this.source && this.source.run) {
+				this.source.run(runThisTask);
+			} else {
+				runThisTask();
+			}
+		});
 	}
-};
+});
 
-var fx = new EffectChain();
+var tasksTrack = {};
 
 var tasks = {
 	"fb-sprite1.png":      fx.fetch("https://s-static.ak.facebook.com/rsrc.php/v1/yj/r/HqOfhywhWvc.png"),
@@ -272,13 +246,13 @@ var tasks = {
 };
 
 function run() {
-	var list = [];
-	for (var i = 2; i < process.argv.length; i ++) {
-		list.push(process.argv[i]);
-	}
-	if (list.length == 0) list.push('all');
-	runTaskList(list, function() {
-		log('finished');
+	var chain = fx;
+	for (var i = 2; i < process.argv.length; i ++)
+		chain = chain.runTask(process.argv[i]);
+	if (chain === fx)
+		chain = chain.runTask('all');
+	chain.run(function() {
+		log('all done!');
 	});
 }
 
