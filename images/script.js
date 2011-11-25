@@ -50,7 +50,7 @@ var fx = new Chain({
 	},
 	load: function(filename) {
 		return this.runTask(filename).chain(function(dest, next) {
-			this.source.run(function() {
+			this.source.run(dest, function() {
 				log('loading image: ' + filename);
 				var image = new Canvas.Image()
 				image.src = fs.readFileSync(filename);
@@ -59,6 +59,16 @@ var fx = new Chain({
 				ctx.drawImage(image, 0, 0);
 				next(canvas);
 			});
+		});
+	},
+	create: function(width, height) {
+		return this.chain(function(dest, next) {
+			next(new Canvas(width, height));
+		});
+	},
+	canvas: function(canvas) {
+		return this.chain(function(dest, next) {
+			next(canvas);
 		});
 	},
 	save: function() {
@@ -127,9 +137,10 @@ var fx = new Chain({
 			});
 		});
 	},
-	crop: function(x1, y1, x2, y2) {
+	crop: function(x1, y1, x2, y2, mode) {
+		if (!mode) mode = 'in';
 		return this.pixelManipulate('crop: (' + x1 + ',' + y1 + '), (' + x2 + ',' + y2 + ')', function(pixel, x, y) {
-			if (!((x1 <= x && x < x2) && (y1 <= y && y < y2))) {
+			if ((mode == 'in') ^ ((x1 <= x && x < x2) && (y1 <= y && y < y2))) {
 				pixel[0] = 0;
 				pixel[1] = 0;
 				pixel[2] = 0;
@@ -162,7 +173,7 @@ var fx = new Chain({
 				if (l[i].source <= v && v < l[i + 1].source) {
 					var vv = (v - l[i].source) / (l[i + 1].source - l[i].source);
 					for (var j = 0; j < 3; j ++) {
-						pixel[j] = l[i].dest[j] * vv + l[i + 1].dest[j] * (1 - vv);
+						pixel[j] = l[i].dest[j] * (1 - vv) + l[i + 1].dest[j] * vv;
 					}
 				}
 			}
@@ -185,16 +196,16 @@ var fx = new Chain({
 		});
 	},
 	curve: function(rx, gx, bx) {
-		return this.pixelManipulate(function(pixel) {
-			pixel[0] = Math.pow(pixel[0] / 255, rx);
-			pixel[1] = Math.pow(pixel[1] / 255, gx);
-			pixel[2] = Math.pow(pixel[2] / 255, bx);
+		return this.pixelManipulate('curve: ' + rx + ', ' + gx + ', ' + bx, function(pixel) {
+			pixel[0] = Math.pow(pixel[0] / 255, rx) * 255;
+			pixel[1] = Math.pow(pixel[1] / 255, gx) * 255;
+			pixel[2] = Math.pow(pixel[2] / 255, bx) * 255;
 		});
 	},
 	runTask: function(taskName) {
-		return this.chain(function(callback) {
+		return this.chain(function(dest, callback) {
 			if (tasksTrack[taskName]) { // already run
-				return callback();
+				return callback.apply(null, tasksTrack[taskName].result);
 			}
 			var task = tasks[taskName];
 			if (!task) {
@@ -209,7 +220,7 @@ var fx = new Chain({
 					}
 					task = task.chain(function(taskName, callback) {
 						log('running all tasks');
-						this.source.run(callback);
+						this.source.run(dest, callback);
 					});
 				} else {
 					log('!!! invalid task: ' + taskName);
@@ -220,29 +231,80 @@ var fx = new Chain({
 				log('running task: ' + taskName);
 				log.depth ++;
 				task.run(taskName, function() {
-					tasksTrack[taskName] = true;
+					tasksTrack[taskName] = { result: Array.prototype.slice.call(arguments) };
 					log.depth --;
-					callback();
+					callback.apply(null, arguments);
 				});
 			}
 			if (this.source && this.source.run) {
-				this.source.run(runThisTask);
+				this.source.run(dest, runThisTask);
 			} else {
 				runThisTask();
+			}
+		});
+	},
+	require: function(taskName) {
+		return this.runTask(taskName);
+	},
+	linearGradient: function(x1, y1, x2, y2, gtask) {
+		return this.chain(function(dest, next) {
+			this.source.run(dest, function(canvas) {
+				log('drawing gradient (' + x1 + ',' + y1 + '), (' + x2 + ',' + y2 + ')');
+				var ctx = canvas.getContext('2d');
+				var gradient = ctx.createLinearGradient(x1, y1, x2, y2);
+				ctx.save();
+				gtask.run(gradient, function() {
+					ctx.fillStyle = gradient;
+					ctx.fillRect(0, 0, canvas.width, canvas.height);
+					ctx.restore();
+					next(canvas);
+				});
+			});
+		});
+	},
+	verticalGradient: function(gradient) {
+		return this.chain(function(dest, next) {
+			this.source.run(dest, function(canvas) {
+				var lgtask = fx.canvas(canvas).linearGradient(0, 0, 0, canvas.height, gradient);
+				lgtask.run(dest, next);
+			});
+		});
+	}
+});
+
+fx.gradient = new Chain({
+	add: function(pos, color) {
+		return this.chain(function(gradient, callback) {
+			function pass() {
+				log('adding color stop at ' + pos + ', color = ' + color);
+				gradient.addColorStop(pos, color);
+				callback();
+			}
+			if (this.source.run) {
+				this.source.run(gradient, pass);
+			} else {
+				pass();
 			}
 		});
 	}
 });
 
+
 var tasksTrack = {};
+
 
 var tasks = {
 	"fb-sprite1.png":      fx.fetch("https://s-static.ak.facebook.com/rsrc.php/v1/yj/r/HqOfhywhWvc.png"),
+	"fb-sprite2.png":      fx.fetch("https://s-static.ak.facebook.com/rsrc.php/v1/yH/r/ZIre3H19AvO.png"),
 	"fb-timeline1.png":    fx.fetch("https://s-static.ak.facebook.com/rsrc.php/v1/yU/r/R8qnmwdGS8-.png"),
 	"fb-timeline2.png":    fx.fetch("https://s-static.ak.facebook.com/rsrc.php/v1/yD/r/N8eF8pLkCCD.png"),
 	"stream-button.png":   fx.load("fb-sprite1.png").darken().crop(0, 454, 64, 480).save().compress(),
 	"timeline-sprite.png": fx.load("fb-timeline1.png").crop(111, 14, 294, 88).colorize({ 'FFFFFF': '353433', 'E8EAF1': '252423', '95A3C2': '8B8685' }).save().compress(),
-	"timeline-bar.png":    fx.load("fb-timeline2.png").darken().save().compress()
+	"timeline-bar.png":    fx.load("fb-timeline2.png").darken().save().compress(),
+	"top-bar.png":         fx.create(1, 37).verticalGradient(fx.gradient.add(0, '#353433').add(1, '#090807')).save(),
+	"jewel":               fx.load("fb-sprite2.png").crop(0, 0, 104, 277).crop(0, 138, 104, 245, 'out').crop(0, 0, 31, 138, 'out').crop(80, 0, 104, 138, 'out'),
+	"jewel.png":           fx.require("jewel").colorize({ '000000': '8b8685', 'FFFFFF': '090807' }).save(),
+	"jewel-normal.png":    fx.require("jewel").curve(1.2, 1.2, 1.2).colorize({ '000000': '090807', '8B8685': '8B8685', 'CCCCCC': 'e9e8e7' }).save()
 };
 
 function run() {
@@ -251,7 +313,7 @@ function run() {
 		chain = chain.runTask(process.argv[i]);
 	if (chain === fx)
 		chain = chain.runTask('all');
-	chain.run(function() {
+	chain.run('main', function() {
 		log('all done!');
 	});
 }
