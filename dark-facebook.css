@@ -1,4 +1,4 @@
-/* generated: Fri Nov 25 2011 22:02:22 GMT+0700 (ICT) *//**
+/* generated: Fri Nov 25 2011 22:15:27 GMT+0700 (ICT) *//**
  * dark-facebook - a dark theme for facebook
  * https://github.com/dtinth/dark-facebook
  */
@@ -517,6 +517,51 @@ ul.navigation li a:hover *,
 .slimHeader #fbMessagesJewel.openToggler a.jewelButton,
 .slimHeader #fbRequestsJewel.openToggler a.jewelButton {
   background-image: url("data:image/png;base64,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") !important;
+}
+.slimHeader #fbRequestsJewel a.jewelButton {
+  background-position: -31px -2px !important;
+}
+.slimHeader #fbRequestsJewel a.jewelButton:active,
+.slimHeader #fbRequestsJewel a.jewelButton:focus,
+.slimHeader #fbRequestsJewel a.jewelButton:hover {
+  background-position: -56px -37px !important;
+}
+.slimHeader #fbRequestsJewel.hasNew a.jewelButton {
+  background-position: -31px -37px !important;
+}
+.slimHeader #fbRequestsJewel.openToggler a.jewelButton:link,
+.slimHeader #fbRequestsJewel.openToggler a.jewelButton:visited {
+  background-position: -56px -2px !important;
+}
+.slimHeader #fbMessagesJewel a.jewelButton {
+  background-position: 0 -247px !important;
+}
+.slimHeader #fbMessagesJewel a.jewelButton:active,
+.slimHeader #fbMessagesJewel a.jewelButton:focus,
+.slimHeader #fbMessagesJewel a.jewelButton:hover {
+  background-position: -75px -247px !important;
+}
+.slimHeader #fbMessagesJewel.hasNew a.jewelButton {
+  background-position: -50px -247px !important;
+}
+.slimHeader #fbMessagesJewel.openToggler a.jewelButton:link,
+.slimHeader #fbMessagesJewel.openToggler a.jewelButton:visited {
+  background-position: -25px -247px !important;
+}
+.slimHeader #fbNotificationsJewel a.jewelButton {
+  background-position: -31px -72px !important;
+}
+.slimHeader #fbNotificationsJewel a.jewelButton:active,
+.slimHeader #fbNotificationsJewel a.jewelButton:focus,
+.slimHeader #fbNotificationsJewel a.jewelButton:hover {
+  background-position: -56px -107px !important;
+}
+.slimHeader #fbNotificationsJewel.hasNew a.jewelButton {
+  background-position: -31px -107px !important;
+}
+.slimHeader #fbNotificationsJewel.openToggler a.jewelButton:link,
+.slimHeader #fbNotificationsJewel.openToggler a.jewelButton:visited {
+  background-position: -56px -72px !important;
 }
 .fbJewelFlyout {
   background-color: #3c3b3a !important;
