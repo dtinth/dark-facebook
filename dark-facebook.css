@@ -1,4 +1,4 @@
-/* generated: Fri Nov 25 2011 21:59:36 GMT+0700 (ICT) *//**
+/* generated: Fri Nov 25 2011 22:02:22 GMT+0700 (ICT) *//**
  * dark-facebook - a dark theme for facebook
  * https://github.com/dtinth/dark-facebook
  */
@@ -219,33 +219,33 @@ a.timestamp * {
 .uiList .uiUfiUnseenItem * {
   border-color: #4e4d6e !important;
 }
-.uiSearchInput,
+[id="globalContainer"] .uiSearchInput,
 [id="globalContainer"] .uiTypeahead .wrap,
-.inputContainer,
-.MessagingComposerBody,
-.uiSearchInput *,
+[id="globalContainer"] .inputContainer,
+[id="globalContainer"] .MessagingComposerBody,
+[id="globalContainer"] .uiSearchInput *,
 [id="globalContainer"] .uiTypeahead .wrap *,
-.inputContainer *,
-.MessagingComposerBody * {
+[id="globalContainer"] .inputContainer *,
+[id="globalContainer"] .MessagingComposerBody * {
   background-color: #090807 !important;
   background-image: none !important;
 }
-.uiSearchInput,
+[id="globalContainer"] .uiSearchInput,
 [id="globalContainer"] .uiTypeahead .wrap,
-.inputContainer,
-.MessagingComposerBody,
-.uiSearchInput *,
+[id="globalContainer"] .inputContainer,
+[id="globalContainer"] .MessagingComposerBody,
+[id="globalContainer"] .uiSearchInput *,
 [id="globalContainer"] .uiTypeahead .wrap *,
-.inputContainer *,
-.MessagingComposerBody *,
-.uiSearchInput *,
+[id="globalContainer"] .inputContainer *,
+[id="globalContainer"] .MessagingComposerBody *,
+[id="globalContainer"] .uiSearchInput *,
 [id="globalContainer"] .uiTypeahead .wrap *,
-.inputContainer *,
-.MessagingComposerBody *,
-.uiSearchInput * *,
+[id="globalContainer"] .inputContainer *,
+[id="globalContainer"] .MessagingComposerBody *,
+[id="globalContainer"] .uiSearchInput * *,
 [id="globalContainer"] .uiTypeahead .wrap * *,
-.inputContainer * *,
-.MessagingComposerBody * * {
+[id="globalContainer"] .inputContainer * *,
+[id="globalContainer"] .MessagingComposerBody * * {
   color: #e9e8e7 !important;
 }
 .DOMControl_placeholder,
