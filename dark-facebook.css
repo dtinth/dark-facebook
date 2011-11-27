@@ -1,4 +1,4 @@
-/* generated: Fri Nov 25 2011 22:15:27 GMT+0700 (ICT) *//**
+/* generated: Sun Nov 27 2011 19:14:34 GMT+0700 (ICT) *//**
  * dark-facebook - a dark theme for facebook
  * https://github.com/dtinth/dark-facebook
  */
@@ -315,12 +315,15 @@ body:not(.timelineLayout) .uiSideHeader a * {
 .uiOverlay .uiOverlayContent .uiMenuInner li a:hover * {
   border-color: #464577 !important;
 }
+.uiOverlay .uiOverlayContent .uiMenuInner li.uiMenuSeparator {
+  border-color: #31302f !important;
+}
 .UIBeeper_Full {
-  background-color: #090807 !important;
+  background-color: #683433 !important;
 }
 .UIBeeper_Full,
 .UIBeeper_Full * {
-  border-color: #454443 !important;
+  border-color: #8b5655 !important;
 }
 .fbNubButton {
   background-color: #252423 !important;
@@ -410,6 +413,9 @@ body:not(.timelineLayout) .uiSideHeader a * {
 .fbNubFlyout .titlebar .uiMenuInner li a:hover * {
   border-color: #464577 !important;
 }
+.fbNubFlyout .titlebar .uiMenuInner li.uiMenuSeparator {
+  border-color: #31302f !important;
+}
 .fbNubFlyout .fbNubFlyoutHeader {
   background-color: #252423 !important;
 }
@@ -419,71 +425,95 @@ body:not(.timelineLayout) .uiSideHeader a * {
 }
 div.uiMenu,
 ul.navigation,
-#bfb_options_button_li ul#bfb_option_list {
+#bfb_options_button_li ul#bfb_option_list,
+#fbf-bookmark-list {
   background-color: #090807 !important;
 }
 div.uiMenu,
 ul.navigation,
 #bfb_options_button_li ul#bfb_option_list,
+#fbf-bookmark-list,
 div.uiMenu *,
 ul.navigation *,
-#bfb_options_button_li ul#bfb_option_list * {
+#bfb_options_button_li ul#bfb_option_list *,
+#fbf-bookmark-list * {
   border-color: #454443 !important;
 }
 div.uiMenu li,
 ul.navigation li,
-#bfb_options_button_li ul#bfb_option_list li {
+#bfb_options_button_li ul#bfb_option_list li,
+#fbf-bookmark-list li {
   background-color: #090807 !important;
 }
 div.uiMenu li,
 ul.navigation li,
 #bfb_options_button_li ul#bfb_option_list li,
+#fbf-bookmark-list li,
 div.uiMenu li *,
 ul.navigation li *,
-#bfb_options_button_li ul#bfb_option_list li * {
+#bfb_options_button_li ul#bfb_option_list li *,
+#fbf-bookmark-list li * {
   border-color: #090807 !important;
 }
 div.uiMenu li,
 ul.navigation li,
 #bfb_options_button_li ul#bfb_option_list li,
+#fbf-bookmark-list li,
 div.uiMenu li *,
 ul.navigation li *,
 #bfb_options_button_li ul#bfb_option_list li *,
+#fbf-bookmark-list li *,
 div.uiMenu li a,
 ul.navigation li a,
 #bfb_options_button_li ul#bfb_option_list li a,
+#fbf-bookmark-list li a,
 div.uiMenu li *,
 ul.navigation li *,
 #bfb_options_button_li ul#bfb_option_list li *,
+#fbf-bookmark-list li *,
 div.uiMenu li * *,
 ul.navigation li * *,
 #bfb_options_button_li ul#bfb_option_list li * *,
+#fbf-bookmark-list li * *,
 div.uiMenu li a *,
 ul.navigation li a *,
-#bfb_options_button_li ul#bfb_option_list li a * {
+#bfb_options_button_li ul#bfb_option_list li a *,
+#fbf-bookmark-list li a * {
   color: #e9e8e7 !important;
 }
 div.uiMenu li:hover,
 ul.navigation li:hover,
 #bfb_options_button_li ul#bfb_option_list li:hover,
+#fbf-bookmark-list li:hover,
 div.uiMenu li a:hover,
 ul.navigation li a:hover,
-#bfb_options_button_li ul#bfb_option_list li a:hover {
+#bfb_options_button_li ul#bfb_option_list li a:hover,
+#fbf-bookmark-list li a:hover {
   background-color: #353466 !important;
 }
 div.uiMenu li:hover,
 ul.navigation li:hover,
 #bfb_options_button_li ul#bfb_option_list li:hover,
+#fbf-bookmark-list li:hover,
 div.uiMenu li a:hover,
 ul.navigation li a:hover,
 #bfb_options_button_li ul#bfb_option_list li a:hover,
+#fbf-bookmark-list li a:hover,
 div.uiMenu li:hover *,
 ul.navigation li:hover *,
 #bfb_options_button_li ul#bfb_option_list li:hover *,
+#fbf-bookmark-list li:hover *,
 div.uiMenu li a:hover *,
 ul.navigation li a:hover *,
-#bfb_options_button_li ul#bfb_option_list li a:hover * {
+#bfb_options_button_li ul#bfb_option_list li a:hover *,
+#fbf-bookmark-list li a:hover * {
   border-color: #464577 !important;
+}
+div.uiMenu li.uiMenuSeparator,
+ul.navigation li.uiMenuSeparator,
+#bfb_options_button_li ul#bfb_option_list li.uiMenuSeparator,
+#fbf-bookmark-list li.uiMenuSeparator {
+  border-color: #31302f !important;
 }
 .hovercard .stage,
 .HovercardStage {
@@ -719,6 +749,60 @@ ul.navigation li a:hover *,
 .separator .text *,
 .uiStreamHeader .uiSelector * {
   color: #8b8685 !important;
+}
+.separator .text .uiMenuInner,
+.uiStreamHeader .uiSelector .uiMenuInner {
+  background-color: #090807 !important;
+}
+.separator .text .uiMenuInner,
+.uiStreamHeader .uiSelector .uiMenuInner,
+.separator .text .uiMenuInner *,
+.uiStreamHeader .uiSelector .uiMenuInner * {
+  border-color: #454443 !important;
+}
+.separator .text .uiMenuInner li,
+.uiStreamHeader .uiSelector .uiMenuInner li {
+  background-color: #090807 !important;
+}
+.separator .text .uiMenuInner li,
+.uiStreamHeader .uiSelector .uiMenuInner li,
+.separator .text .uiMenuInner li *,
+.uiStreamHeader .uiSelector .uiMenuInner li * {
+  border-color: #090807 !important;
+}
+.separator .text .uiMenuInner li,
+.uiStreamHeader .uiSelector .uiMenuInner li,
+.separator .text .uiMenuInner li *,
+.uiStreamHeader .uiSelector .uiMenuInner li *,
+.separator .text .uiMenuInner li a,
+.uiStreamHeader .uiSelector .uiMenuInner li a,
+.separator .text .uiMenuInner li *,
+.uiStreamHeader .uiSelector .uiMenuInner li *,
+.separator .text .uiMenuInner li * *,
+.uiStreamHeader .uiSelector .uiMenuInner li * *,
+.separator .text .uiMenuInner li a *,
+.uiStreamHeader .uiSelector .uiMenuInner li a * {
+  color: #e9e8e7 !important;
+}
+.separator .text .uiMenuInner li:hover,
+.uiStreamHeader .uiSelector .uiMenuInner li:hover,
+.separator .text .uiMenuInner li a:hover,
+.uiStreamHeader .uiSelector .uiMenuInner li a:hover {
+  background-color: #353466 !important;
+}
+.separator .text .uiMenuInner li:hover,
+.uiStreamHeader .uiSelector .uiMenuInner li:hover,
+.separator .text .uiMenuInner li a:hover,
+.uiStreamHeader .uiSelector .uiMenuInner li a:hover,
+.separator .text .uiMenuInner li:hover *,
+.uiStreamHeader .uiSelector .uiMenuInner li:hover *,
+.separator .text .uiMenuInner li a:hover *,
+.uiStreamHeader .uiSelector .uiMenuInner li a:hover * {
+  border-color: #464577 !important;
+}
+.separator .text .uiMenuInner li.uiMenuSeparator,
+.uiStreamHeader .uiSelector .uiMenuInner li.uiMenuSeparator {
+  border-color: #31302f !important;
 }
 .uiTypeaheadView {
   background-color: #090807 !important;

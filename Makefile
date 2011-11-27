@@ -1,7 +1,7 @@
 
 all: dark-facebook.css
 
-dark-facebook.css: main.styl
+dark-facebook.css: src/main.styl
 	node server.js compile > dark-facebook.css
 
 publish: publish-to-userstyles publish-to-gae

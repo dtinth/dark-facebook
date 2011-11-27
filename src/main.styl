@@ -94,6 +94,8 @@ menu-style()
 			text-color: $color
 		&:hover, a:hover
 			colorize: $highlight-background, $highlight-border
+		&.uiMenuSeparator
+			border-color: $page-border !important
 
 menu-style-fix()
 	.uiMenuInner
@@ -273,7 +275,7 @@ body:not(.timelineLayout) .uiSideHeader
 
 // beeper
 .UIBeeper_Full
-	colorize: $dark-background, $main-border
+	colorize: $side-header-background, $side-header-border
 
 
 // chat boxes
@@ -319,6 +321,8 @@ div.uiMenu
 ul.navigation
 // social fixer menu
 #bfb_options_button_li ul#bfb_option_list
+// ffixer
+#fbf-bookmark-list
 	menu-style()
 
 
@@ -399,6 +403,7 @@ ui-button()
 .uiStreamHeader .uiSelector
 	colorize: $main-background
 	text-color: $dim-color
+	menu-style-fix()
 
 
 

@@ -9,7 +9,7 @@ var options = {
 	}
 };
 
-var main = 'main.styl';
+var main = 'src/main.styl';
 
 if (process.argv[2] == 'compile') {
 
