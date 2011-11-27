@@ -1,8 +1,10 @@
 dark-facebook
 =============
 
-This is a userstyle for Firefox/Stylish and Social Fixer to make Facebook dark, while using as least image as possible.
+This is a userstyle for [Stylish](http://userstyles.org/), Firefox and Chrome, and [Social Fixer](http://socialfixer.com/) to make Facebook dark, while using as least image as possible.
 For development I use [LiveStyl](https://github.com/dtinth/LiveStyl) for live CSS editing.
+
+![Preview](http://dl.dropbox.com/u/25097375/Documentation%20Images/dark-facebook/how%20it%20looks%20like%21.png)
 
 Most part has been done already, including some of the timeline layout and there are many parts that need tweaking.
 You are welcomed to help make this userstyle more complete by forking this project.
@@ -41,6 +43,8 @@ color of the element and also the border color, if given, and automatically addi
 
 To customize text colors, use `text-color` mixin (like a property) which sets the text color
 of that element and all its descendant, along with `!important`.
+
+Some images are generated programmatically from the Facebook sprites, you can see all the generation code in `src/images/` directory.
 
 
 
