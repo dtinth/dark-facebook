@@ -4,4 +4,4 @@ userstyles-credentials.json
 *.swn
 node_modules
 .DS_Store
-images/fb-*.png
+src/images/fb-*.png

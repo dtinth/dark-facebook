@@ -1,4 +1,4 @@
-/* generated: Sun Nov 27 2011 19:14:34 GMT+0700 (ICT) *//**
+/* generated: Sun Nov 27 2011 19:20:23 GMT+0700 (ICT) *//**
  * dark-facebook - a dark theme for facebook
  * https://github.com/dtinth/dark-facebook
  */
@@ -320,6 +320,7 @@ body:not(.timelineLayout) .uiSideHeader a * {
 }
 .UIBeeper_Full {
   background-color: #683433 !important;
+  box-shadow: 0 0 8px rgba(139,86,85,0.50);
 }
 .UIBeeper_Full,
 .UIBeeper_Full * {
