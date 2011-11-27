@@ -1,4 +1,4 @@
-/* generated: Sun Nov 27 2011 19:29:22 GMT+0700 (ICT) *//**
+/* generated: Sun Nov 27 2011 23:43:00 GMT+0700 (SE Asia Standard Time) *//**
  * dark-facebook - a dark theme for facebook
  * https://github.com/dtinth/dark-facebook
  */
@@ -516,6 +516,13 @@ ul.navigation li.uiMenuSeparator,
 #fbf-bookmark-list li.uiMenuSeparator {
   border-color: #31302f !important;
 }
+.FlyoutFriendListMenuNUX {
+  background-color: #353433 !important;
+}
+.FlyoutFriendListMenuNUX,
+.FlyoutFriendListMenuNUX * {
+  border-color: #454443 !important;
+}
 .hovercard .stage,
 .HovercardStage {
   background-color: #090807 !important;
@@ -812,6 +819,23 @@ ul.navigation li.uiMenuSeparator,
 .uiTypeaheadView * {
   border-color: #454443 !important;
 }
+.uiTypeaheadView ul.compact li {
+  background-color: #090807 !important;
+}
+.uiTypeaheadView ul.compact li,
+.uiTypeaheadView ul.compact li * {
+  border-color: #090807 !important;
+}
+.uiTypeaheadView ul.compact li.selected,
+.uiTypeaheadView ul.compact li.selected * {
+  background-color: #353466 !important;
+}
+.uiTypeaheadView ul.compact li.selected,
+.uiTypeaheadView ul.compact li.selected *,
+.uiTypeaheadView ul.compact li.selected *,
+.uiTypeaheadView ul.compact li.selected * * {
+  border-color: #464577 !important;
+}
 ul.search {
   background-color: #090807 !important;
 }
@@ -892,7 +916,7 @@ ul.search li.selected .text * {
   box-shadow: 3px 3px 0 rgba(0,0,0,0.30) !important;
 }
 .jewelCount {
-  background-color: #252423 !important;
+  background-color: #ac3433 !important;
 }
 .timelineLayout [id="contentCol"] {
   background-color: #252423 !important;

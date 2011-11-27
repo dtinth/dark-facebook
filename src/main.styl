@@ -24,6 +24,7 @@ $main-border = $main-background + #101010
 $highlight-background = $main-background + #003
 $highlight-border = $highlight-background + #111
 $highlight-color = $highlight-background + #444
+$attn-background = $main-background + #700
 
 $dark-background = #090807
 $light-background = $main-background + #070707
@@ -326,6 +327,10 @@ ul.navigation
 #fbf-bookmark-list
 	menu-style()
 
+// try lists menu
+.FlyoutFriendListMenuNUX
+	colorize: $main-background, $main-border
+
 
 // hovercards
 .hovercard .stage, .HovercardStage
@@ -411,6 +416,14 @@ ui-button()
 // main search
 .uiTypeaheadView
 	colorize: $dark-background, $main-border
+	// username completion
+	ul.compact
+		li
+			colorize: $dark-background, $dark-background
+			&.selected
+				&, *
+					colorize: $highlight-background, $highlight-border
+			
 ul.search
 	colorize: $dark-background, $dark-background
 	li
@@ -450,7 +463,8 @@ ul.search
 
 // counters
 .jewelCount
-	colorize: $page-background
+	colorize: $attn-background
+	
 
 // timeline
 .timelineLayout
