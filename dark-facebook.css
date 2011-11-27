@@ -1,4 +1,4 @@
-/* generated: Sun Nov 27 2011 19:20:23 GMT+0700 (ICT) *//**
+/* generated: Sun Nov 27 2011 19:29:22 GMT+0700 (ICT) *//**
  * dark-facebook - a dark theme for facebook
  * https://github.com/dtinth/dark-facebook
  */
@@ -1336,6 +1336,12 @@ ul.search li.selected .text * {
 #blueBar .topNavLink *,
 #blueBar .DOMControl_placeholder * {
   color: #8b8685 !important;
+}
+#blueBar #pageNav a {
+  color: #8b8685 !important;
+}
+#blueBar #navAccountLink .menuPulldown {
+  opacity: 0.6 !important;
 }
 .slimHeader #pageNav li.tinyman:after,
 .slimHeader #pageNav li.middleLink:after {

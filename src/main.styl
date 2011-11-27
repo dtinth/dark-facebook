@@ -640,7 +640,7 @@ center(w, h, x = 0, y = 0)
 	.uiTypeahead
 		background: $page-background !important
 		box-shadow: inset 0 2px 5px $dark-background !important
-		border-color: $main-border !important;
+		border-color: $main-border !important
 		.wrap
 			&, .innerWrap
 				&, .uiSearchInput
@@ -649,11 +649,15 @@ center(w, h, x = 0, y = 0)
 							background-color: transparent !important
 		.search
 			border-color: $main-border !important
-			border-top-width: 0 !important;
-			margin-left: -1px !important;
-			margin-right: -1px !important;
+			border-top-width: 0 !important
+			margin-left: -1px !important
+			margin-right: -1px !important
 	.topNavLink
 	.DOMControl_placeholder
 		text-color: $dim-color
+	#pageNav a
+		color: $dim-color !important
+	#navAccountLink .menuPulldown
+		dim-image()
 .slimHeader #pageNav li.tinyman:after, .slimHeader #pageNav li.middleLink:after
 	background: mix($dim-color, $dark-background, 50%) !important
