@@ -266,6 +266,25 @@ body:not(.timelineLayout) .uiSideHeader
 	colorize: $dark-background
 
 
+// another version of tooltip in facebook
+.uiTooltipX
+	.content
+		colorize: $dark-background, $dark-background
+		text-color: $color
+tooltipx-border(pos)
+	.uiTooltipX i.arrow
+		border-{pos}-color: $dark-background !important
+.aboveleft, .aboveright, .abovecenter
+	tooltipx-border: top
+.belowleft, .belowright, .belowcenter
+	tooltipx-border: bottom
+.left
+	tooltipx-border: left
+.right
+	tooltipx-border: right
+	
+
+
 // overlays
 .uiOverlay
 	transparent()

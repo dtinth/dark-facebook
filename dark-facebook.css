@@ -1,4 +1,4 @@
-/* generated: Sun Nov 27 2011 23:43:00 GMT+0700 (SE Asia Standard Time) *//**
+/* generated: Mon Nov 28 2011 11:08:07 GMT+0700 (SE Asia Standard Time) *//**
  * dark-facebook - a dark theme for facebook
  * https://github.com/dtinth/dark-facebook
  */
@@ -272,6 +272,33 @@ body:not(.timelineLayout) .uiSideHeader a * {
 }
 .uiTooltipText {
   background-color: #090807 !important;
+}
+.uiTooltipX .content {
+  background-color: #090807 !important;
+}
+.uiTooltipX .content,
+.uiTooltipX .content * {
+  border-color: #090807 !important;
+}
+.uiTooltipX .content,
+.uiTooltipX .content * {
+  color: #e9e8e7 !important;
+}
+.aboveleft .uiTooltipX i.arrow,
+.aboveright .uiTooltipX i.arrow,
+.abovecenter .uiTooltipX i.arrow {
+  border-top-color: #090807 !important;
+}
+.belowleft .uiTooltipX i.arrow,
+.belowright .uiTooltipX i.arrow,
+.belowcenter .uiTooltipX i.arrow {
+  border-bottom-color: #090807 !important;
+}
+.left .uiTooltipX i.arrow {
+  border-left-color: #090807 !important;
+}
+.right .uiTooltipX i.arrow {
+  border-right-color: #090807 !important;
 }
 .uiOverlay {
   background-color: transparent !important;
