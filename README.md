@@ -6,6 +6,8 @@ For development I use [LiveStyl](https://github.com/dtinth/LiveStyl) for live CS
 
 ![Preview](http://dl.dropbox.com/u/25097375/Documentation%20Images/dark-facebook/how%20it%20looks%20like%21.png)
 
+The color scheme of this theme is based on one used in [thaiWitter](http://tw.dt.in.th/) and [all](http://me.dt.in.th/) [my](http://dt.in.th/) [other projects](http://dtinth.github.com/).
+
 Most part has been done already, including some of the timeline layout and there are many parts that need tweaking.
 You are welcomed to help make this userstyle more complete by forking this project.
 
@@ -27,6 +29,8 @@ Installation
 
 Styling Details
 ---------------
+
+In this userstyle, the main source code is in `src/main.styl`. It uses [Stylus](http://learnboost.github.com/stylus/) language, which is awesome.
 
 First, everything is given a transparent background color, a gray border color,
 and white text color, and then the userstyle adds background colors to things, as well as
@@ -50,6 +54,8 @@ Some images are generated programmatically from the Facebook sprites, you can se
 
 Development Environment
 -----------------------
+
+__Windows Users:__ See the [Setup Guide for Windows](https://github.com/dtinth/dark-facebook/wiki/Windows-How-To-Setup).
 
 Install LiveStyl first:
 
