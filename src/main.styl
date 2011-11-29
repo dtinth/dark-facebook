@@ -241,11 +241,12 @@ a.timestamp
 // text fields
 [id="globalContainer"]
 	.uiSearchInput
-	.uiTypeahead .wrap
 	.inputContainer
 	.MessagingComposerBody
-		&, *
-			text-field-colors()
+	.uiTypeahead
+		text-field-colors()
+	.fbChatTypeahead input
+		background-image: none !important
 
 .DOMControl_placeholder
 	text-color: $text-field-placeholder-color
@@ -694,3 +695,24 @@ center(w, h, x = 0, y = 0)
 		dim-image()
 .slimHeader #pageNav li.tinyman:after, .slimHeader #pageNav li.middleLink:after
 	background: mix($dim-color, $dark-background, 50%) !important
+
+
+
+// booklets.... possibly on sharing pages
+[id="booklet"]
+	[id="pageheader"]
+		colorize: $side-header-background, $side-header-border
+
+
+// fix highlighting
+.uiMentionsInput
+	colorize: $dark-background, $main-border
+	.uiTypeahead
+		transparent()
+
+.highlighter
+	.highlighterContent
+		color: $dark-background !important
+		b
+			color: rgba($dark-background,0) !important
+			background: rgba($link-color,0.3) !important

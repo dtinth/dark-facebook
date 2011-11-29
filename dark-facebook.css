@@ -1,4 +1,4 @@
-/* generated: Mon Nov 28 2011 11:08:07 GMT+0700 (SE Asia Standard Time) *//**
+/* generated: Tue Nov 29 2011 19:35:44 GMT+0700 (SE Asia Standard Time) *//**
  * dark-facebook - a dark theme for facebook
  * https://github.com/dtinth/dark-facebook
  */
@@ -220,33 +220,24 @@ a.timestamp * {
   border-color: #4e4d6e !important;
 }
 [id="globalContainer"] .uiSearchInput,
-[id="globalContainer"] .uiTypeahead .wrap,
 [id="globalContainer"] .inputContainer,
 [id="globalContainer"] .MessagingComposerBody,
-[id="globalContainer"] .uiSearchInput *,
-[id="globalContainer"] .uiTypeahead .wrap *,
-[id="globalContainer"] .inputContainer *,
-[id="globalContainer"] .MessagingComposerBody * {
+[id="globalContainer"] .uiTypeahead {
   background-color: #090807 !important;
   background-image: none !important;
 }
 [id="globalContainer"] .uiSearchInput,
-[id="globalContainer"] .uiTypeahead .wrap,
 [id="globalContainer"] .inputContainer,
 [id="globalContainer"] .MessagingComposerBody,
+[id="globalContainer"] .uiTypeahead,
 [id="globalContainer"] .uiSearchInput *,
-[id="globalContainer"] .uiTypeahead .wrap *,
 [id="globalContainer"] .inputContainer *,
 [id="globalContainer"] .MessagingComposerBody *,
-[id="globalContainer"] .uiSearchInput *,
-[id="globalContainer"] .uiTypeahead .wrap *,
-[id="globalContainer"] .inputContainer *,
-[id="globalContainer"] .MessagingComposerBody *,
-[id="globalContainer"] .uiSearchInput * *,
-[id="globalContainer"] .uiTypeahead .wrap * *,
-[id="globalContainer"] .inputContainer * *,
-[id="globalContainer"] .MessagingComposerBody * * {
+[id="globalContainer"] .uiTypeahead * {
   color: #e9e8e7 !important;
+}
+[id="globalContainer"] .fbChatTypeahead input {
+  background-image: none !important;
 }
 .DOMControl_placeholder,
 .DOMControl_placeholder * {
@@ -1397,5 +1388,29 @@ ul.search li.selected .text * {
 .slimHeader #pageNav li.tinyman:after,
 .slimHeader #pageNav li.middleLink:after {
   background: #4b4747 !important;
+}
+[id="booklet"] [id="pageheader"] {
+  background-color: #683433 !important;
+}
+[id="booklet"] [id="pageheader"],
+[id="booklet"] [id="pageheader"] * {
+  border-color: #8b5655 !important;
+}
+.uiMentionsInput {
+  background-color: #090807 !important;
+}
+.uiMentionsInput,
+.uiMentionsInput * {
+  border-color: #454443 !important;
+}
+.uiMentionsInput .uiTypeahead {
+  background-color: transparent !important;
+}
+.highlighter .highlighterContent {
+  color: #090807 !important;
+}
+.highlighter .highlighterContent b {
+  color: rgba(9,8,7,0.00) !important;
+  background: rgba(156,182,223,0.30) !important;
 }
 
