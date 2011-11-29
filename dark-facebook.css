@@ -1,4 +1,4 @@
-/* generated: Mon Nov 28 2011 20:17:37 GMT+0700 (ICT) *//**
+/* generated: Tue Nov 29 2011 19:35:44 GMT+0700 (SE Asia Standard Time) *//**
  * dark-facebook - a dark theme for facebook
  * https://github.com/dtinth/dark-facebook
  */
@@ -28,33 +28,31 @@ body * {
 .uiScrollableAreaTrack {
   background-color: transparent !important;
 }
-[id="sideNav"] {
-  opacity: 0.6 !important;
-}
 [id="sideNav"] .navHeader,
 [id="sideNav"] .navHeader * {
-  color: #9b9796 !important;
+  color: rgba(139,134,133,0.60) !important;
 }
 [id="sideNav"] .selectedItem .item {
-  background-color: #403f3e !important;
-  box-shadow: 0px 2px 0 #090807;
+  background-color: #353433 !important;
+  box-shadow: 0px 2px 0 #1d1b1b;
 }
-[id="sideNav"] .uiSideNav,
-[id="sideNav"] .uiSideNav * {
-  color: #cfc7c6 !important;
+.uiSideNav,
+.uiSideNav * {
+  color: #8b8685 !important;
 }
-[id="sideNav"] .uiSideNavCount {
-  background-color: #403f93 !important;
-  box-shadow: inset 0 0 1px #5c5baf !important;
+.uiSideNavCount {
+  background-color: #353466 !important;
+  box-shadow: inset 0 0 1px #464577 !important;
 }
-[id="sideNav"] .uiSideNavCount,
-[id="sideNav"] .uiSideNavCount * {
-  border-color: #5c5baf !important;
+.uiSideNavCount,
+.uiSideNavCount * {
+  border-color: #464577 !important;
 }
-[id="sideNav"] .uiSideNavCount,
-[id="sideNav"] .uiSideNavCount * {
-  color: #aaa9fd !important;
+.uiSideNavCount,
+.uiSideNavCount * {
+  color: #7978aa !important;
 }
+.sideNavItem .imgWrap,
 .uiStreamPrivacy,
 .attachmentLink .img,
 .uiStreamFooter .img,
@@ -222,33 +220,24 @@ a.timestamp * {
   border-color: #4e4d6e !important;
 }
 [id="globalContainer"] .uiSearchInput,
-[id="globalContainer"] .uiTypeahead .wrap,
 [id="globalContainer"] .inputContainer,
 [id="globalContainer"] .MessagingComposerBody,
-[id="globalContainer"] .uiSearchInput *,
-[id="globalContainer"] .uiTypeahead .wrap *,
-[id="globalContainer"] .inputContainer *,
-[id="globalContainer"] .MessagingComposerBody * {
+[id="globalContainer"] .uiTypeahead {
   background-color: #090807 !important;
   background-image: none !important;
 }
 [id="globalContainer"] .uiSearchInput,
-[id="globalContainer"] .uiTypeahead .wrap,
 [id="globalContainer"] .inputContainer,
 [id="globalContainer"] .MessagingComposerBody,
+[id="globalContainer"] .uiTypeahead,
 [id="globalContainer"] .uiSearchInput *,
-[id="globalContainer"] .uiTypeahead .wrap *,
 [id="globalContainer"] .inputContainer *,
 [id="globalContainer"] .MessagingComposerBody *,
-[id="globalContainer"] .uiSearchInput *,
-[id="globalContainer"] .uiTypeahead .wrap *,
-[id="globalContainer"] .inputContainer *,
-[id="globalContainer"] .MessagingComposerBody *,
-[id="globalContainer"] .uiSearchInput * *,
-[id="globalContainer"] .uiTypeahead .wrap * *,
-[id="globalContainer"] .inputContainer * *,
-[id="globalContainer"] .MessagingComposerBody * * {
+[id="globalContainer"] .uiTypeahead * {
   color: #e9e8e7 !important;
+}
+[id="globalContainer"] .fbChatTypeahead input {
+  background-image: none !important;
 }
 .DOMControl_placeholder,
 .DOMControl_placeholder * {
@@ -1399,5 +1388,29 @@ ul.search li.selected .text * {
 .slimHeader #pageNav li.tinyman:after,
 .slimHeader #pageNav li.middleLink:after {
   background: #4b4747 !important;
+}
+[id="booklet"] [id="pageheader"] {
+  background-color: #683433 !important;
+}
+[id="booklet"] [id="pageheader"],
+[id="booklet"] [id="pageheader"] * {
+  border-color: #8b5655 !important;
+}
+.uiMentionsInput {
+  background-color: #090807 !important;
+}
+.uiMentionsInput,
+.uiMentionsInput * {
+  border-color: #454443 !important;
+}
+.uiMentionsInput .uiTypeahead {
+  background-color: transparent !important;
+}
+.highlighter .highlighterContent {
+  color: #090807 !important;
+}
+.highlighter .highlighterContent b {
+  color: rgba(9,8,7,0.00) !important;
+  background: rgba(156,182,223,0.30) !important;
 }
 
