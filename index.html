@@ -67,7 +67,7 @@ function gotlist(data) {
 		var c = data.data[i];
 		if (c.commit && typeof(c.commit.message) == 'string') {
 			if (c.commit.message.match(/main\.styl:/)) {
-				var msg = '<a href="' + c.commit.url + '">' + c.commit.author.date.substr(0, 10) + '</a> ' + c.commit.message.replace(/main\.styl:\s*/, '');
+				var msg = '<a href="https://github.com/dtinth/dark-facebook/commit/' + c.sha + '">' + c.commit.author.date.substr(0, 10) + '</a> ' + c.commit.message.replace(/main\.styl:\s*/, '');
 				document.write('<li>' + msg + '</li>');
 			}
 		}
