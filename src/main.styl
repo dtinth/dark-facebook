@@ -127,7 +127,7 @@ body
 [id="blueBar"]
 	colorize: $dark-background, $page-border
 	border-color: $main-border !important
-	background: url('images/top-bar.png') top left repeat-x !important
+	background: $dark-background url('images/top-bar.png') top left repeat-x !important
 
 .uiScrollableAreaTrack
 	transparent()
@@ -290,7 +290,7 @@ body:not(.timelineLayout) .uiSideHeader
 // tooltips
 .uiTooltip
 	transparent()
-.uiTooltipText
+.uiTooltipText, .fbPlotTooltipText
 	colorize: $dark-background
 
 
@@ -710,11 +710,14 @@ center(w, h, x = 0, y = 0)
 
 // make search bar look awesome
 
+search-bar-style()
+	background: $page-background !important
+	box-shadow: inset 0 2px 5px $dark-background !important
+	border-color: $main-border !important
+
 #blueBar
 	.uiTypeahead
-		background: $page-background !important
-		box-shadow: inset 0 2px 5px $dark-background !important
-		border-color: $main-border !important
+		search-bar-style()
 		.wrap
 			&, .innerWrap
 				&, .uiSearchInput
@@ -769,3 +772,29 @@ div.photocrop
 		b
 			color: rgba($dark-background,0) !important
 			background: rgba($link-color,0.3) !important
+
+
+
+
+
+// and now for developers.facebook.com
+
+.devsitePage
+	.body .content
+		colorize: $main-background, $main-border
+		background-image: none !important
+		.uiHeader
+			colorize: $side-header-background, $side-header-border
+		.insightsDateHeader
+			colorize: $highlight-background, $highlight-border
+			.insightsDateRange
+				text-field-colors()
+	.menu
+		background: $dark-background url('images/top-bar.png') top left repeat-x !important
+		.content
+			a.l
+				text-color: $dim-color
+			border: 0 !important
+			.uiTypeahead
+				search-bar-style()
+

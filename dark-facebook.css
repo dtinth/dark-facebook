@@ -3,11 +3,11 @@
  * https://github.com/dtinth/dark-facebook
  */
 /* this is compiled source code, for original source code see src/main.styl */
-/* generated: Sat Dec 03 2011 13:13:50 GMT+0700 (ICT) */body{background-color:#252423 !important;}
+/* generated: Sat Dec 03 2011 16:47:19 GMT+0700 (ICT) */body{background-color:#252423 !important;}
 body,body *{border-color:#31302f !important}
 body,body *{color:#e9e8e7 !important}
 body *{background-color:transparent !important}
-[id="blueBar"]{background-color:#090807 !important;border-color:#454443 !important;background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAlCAIAAAAMShT+AAAABmJLR0QA/wD/AP+gvaeTAAAAI0lEQVQImWMwMTZi+v//P9P///+Z/v37B2cjY2zi1BZDEgcAqkxsYcwzyNgAAAAASUVORK5CYII=") top left repeat-x !important}
+[id="blueBar"]{background-color:#090807 !important;border-color:#454443 !important;background:#090807 url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAlCAIAAAAMShT+AAAABmJLR0QA/wD/AP+gvaeTAAAAI0lEQVQImWMwMTZi+v//P9P///+Z/v37B2cjY2zi1BZDEgcAqkxsYcwzyNgAAAAASUVORK5CYII=") top left repeat-x !important}
 [id="blueBar"],[id="blueBar"] *{border-color:#31302f !important}
 .uiScrollableAreaTrack{background-color:transparent !important}
 [id="sideNav"]{opacity:.6 !important;}
@@ -50,7 +50,7 @@ body:not(.timelineLayout) .uiSideHeader,body:not(.timelineLayout) .uiSideHeader 
 body:not(.timelineLayout) .uiSideHeader,body:not(.timelineLayout) .uiSideHeader *{color:#ffd4d3 !important}
 body:not(.timelineLayout) .uiSideHeader a,body:not(.timelineLayout) .uiSideHeader a *{color:#c58988 !important}
 .uiTooltip{background-color:transparent !important}
-.uiTooltipText{background-color:#090807 !important;}
+.uiTooltipText,.fbPlotTooltipText{background-color:#090807 !important;}
 .uiTooltipX .content{background-color:#090807 !important;}
 .uiTooltipX .content,.uiTooltipX .content *{border-color:#090807 !important}
 .uiTooltipX .content,.uiTooltipX .content *{color:#e9e8e7 !important}
@@ -288,4 +288,16 @@ div.photocrop .viewport div{background-color:rgba(255,255,255,0.50) !important;b
 .uiMentionsInput .uiTypeahead{background-color:transparent !important}
 .highlighter .highlighterContent{color:#090807 !important;}
 .highlighter .highlighterContent b{color:rgba(9,8,7,0.00) !important;background:rgba(156,182,223,0.30) !important}
+.devsitePage .body .content{background-color:#353433 !important;background-image:none !important;}
+.devsitePage .body .content,.devsitePage .body .content *{border-color:#454443 !important}
+.devsitePage .body .content .uiHeader{background-color:#683433 !important;}
+.devsitePage .body .content .uiHeader,.devsitePage .body .content .uiHeader *{border-color:#8b5655 !important}
+.devsitePage .body .content .insightsDateHeader{background-color:#353466 !important;}
+.devsitePage .body .content .insightsDateHeader,.devsitePage .body .content .insightsDateHeader *{border-color:#464577 !important}
+.devsitePage .body .content .insightsDateHeader .insightsDateRange{background-color:#090807 !important;background-image:none !important;}
+.devsitePage .body .content .insightsDateHeader .insightsDateRange,.devsitePage .body .content .insightsDateHeader .insightsDateRange *{color:#e9e8e7 !important}
+.devsitePage .menu{background:#090807 url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAlCAIAAAAMShT+AAAABmJLR0QA/wD/AP+gvaeTAAAAI0lEQVQImWMwMTZi+v//P9P///+Z/v37B2cjY2zi1BZDEgcAqkxsYcwzyNgAAAAASUVORK5CYII=") top left repeat-x !important;}
+.devsitePage .menu .content{border:0 !important;}
+.devsitePage .menu .content a.l,.devsitePage .menu .content a.l *{color:#8b8685 !important}
+.devsitePage .menu .content .uiTypeahead{background:#252423 !important;box-shadow:inset 0 2px 5px #090807 !important;border-color:#454443 !important}
 
