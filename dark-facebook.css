@@ -1,1453 +1,288 @@
-/* generated: Sat Dec 03 2011 12:11:07 GMT+0700 (ICT) *//**
+/**
  * dark-facebook - a dark theme for facebook
  * https://github.com/dtinth/dark-facebook
  */
-body {
-  background-color: #252423 !important;
-}
-body,
-body * {
-  border-color: #31302f !important;
-}
-body,
-body * {
-  color: #e9e8e7 !important;
-}
-body * {
-  background-color: transparent !important;
-}
-[id="blueBar"] {
-  background-color: #090807 !important;
-  border-color: #454443 !important;
-  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAlCAIAAAAMShT+AAAABmJLR0QA/wD/AP+gvaeTAAAAI0lEQVQImWMwMTZi+v//P9P///+Z/v37B2cjY2zi1BZDEgcAqkxsYcwzyNgAAAAASUVORK5CYII=") top left repeat-x !important;
-}
-[id="blueBar"],
-[id="blueBar"] * {
-  border-color: #31302f !important;
-}
-.uiScrollableAreaTrack {
-  background-color: transparent !important;
-}
-[id="sideNav"] {
-  opacity: 0.6 !important;
-}
-[id="sideNav"] .navHeader,
-[id="sideNav"] .navHeader * {
-  color: #9b9796 !important;
-}
-[id="sideNav"] .selectedItem .item {
-  background-color: #403f3e !important;
-  box-shadow: 0px 2px 0 #090807;
-}
-[id="sideNav"] .uiSideNav,
-[id="sideNav"] .uiSideNav * {
-  color: #cfc7c6 !important;
-}
-[id="sideNav"] .uiSideNavCount {
-  background-color: #403f93 !important;
-  box-shadow: inset 0 0 1px #5c5baf !important;
-}
-[id="sideNav"] .uiSideNavCount,
-[id="sideNav"] .uiSideNavCount * {
-  border-color: #5c5baf !important;
-}
-[id="sideNav"] .uiSideNavCount,
-[id="sideNav"] .uiSideNavCount * {
-  color: #aaa9fd !important;
-}
-.uiStreamPrivacy,
-.attachmentLink .img,
-.uiStreamFooter .img,
-.uiUfiLike .UIImageBlock .UIImageBlock_Image,
-.ego_action .img,
-.fbCurrentStory .img,
-.uiBlingBox .img {
-  opacity: 0.6 !important;
-}
-[id="contentCol"] {
-  background-color: #353433 !important;
-}
-[id="contentCol"],
-[id="contentCol"] * {
-  border-color: #454443 !important;
-}
-.ufiNub,
-.nub,
-.hovercard .arrow,
-.uiOverlayArrow,
-#bfb_options_button img {
-  opacity: 0.2 !important;
-}
-.uiStream .uiStreamBoulderStyle .highlightSelector .uiSelectorButton {
-  background-image: url("data:image/png;base64,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") !important;
-}
-.uiAttachmentDesc,
-.fbEmu,
-.ego_unit a,
-.uiAttachmentDesc *,
-.fbEmu *,
-.ego_unit a * {
-  color: #8b8685 !important;
-}
-.UIActionLinks,
-.attachmentLink,
-.fbxWelcomeBoxName,
-.fbCurrent a,
-.fbEmuMainBody a,
-.fbEmu .title a,
-.fbJewelFlyout .blueName,
-.messageBody a,
-.uiListItem a,
-.uiListItem button,
-.ego_unit .ego_action a,
-.notesBlogText a,
-.timelineUnitContainer a,
-.fbPhotoSnowbox a,
-.generic_dialog a,
-.UIActionLinks *,
-.attachmentLink *,
-.fbxWelcomeBoxName *,
-.fbCurrent a *,
-.fbEmuMainBody a *,
-.fbEmu .title a *,
-.fbJewelFlyout .blueName *,
-.messageBody a *,
-.uiListItem a *,
-.uiListItem button *,
-.ego_unit .ego_action a *,
-.notesBlogText a *,
-.timelineUnitContainer a *,
-.fbPhotoSnowbox a *,
-.generic_dialog a * {
-  color: #9cb6df !important;
-}
-.UIActionLinks .uiTooltipText,
-.attachmentLink .uiTooltipText,
-.fbxWelcomeBoxName .uiTooltipText,
-.fbCurrent a .uiTooltipText,
-.fbEmuMainBody a .uiTooltipText,
-.fbEmu .title a .uiTooltipText,
-.fbJewelFlyout .blueName .uiTooltipText,
-.messageBody a .uiTooltipText,
-.uiListItem a .uiTooltipText,
-.uiListItem button .uiTooltipText,
-.ego_unit .ego_action a .uiTooltipText,
-.notesBlogText a .uiTooltipText,
-.timelineUnitContainer a .uiTooltipText,
-.fbPhotoSnowbox a .uiTooltipText,
-.generic_dialog a .uiTooltipText,
-.UIActionLinks .uiTooltipText *,
-.attachmentLink .uiTooltipText *,
-.fbxWelcomeBoxName .uiTooltipText *,
-.fbCurrent a .uiTooltipText *,
-.fbEmuMainBody a .uiTooltipText *,
-.fbEmu .title a .uiTooltipText *,
-.fbJewelFlyout .blueName .uiTooltipText *,
-.messageBody a .uiTooltipText *,
-.uiListItem a .uiTooltipText *,
-.uiListItem button .uiTooltipText *,
-.ego_unit .ego_action a .uiTooltipText *,
-.notesBlogText a .uiTooltipText *,
-.timelineUnitContainer a .uiTooltipText *,
-.fbPhotoSnowbox a .uiTooltipText *,
-.generic_dialog a .uiTooltipText * {
-  color: #e9e8e7 !important;
-}
-.uiStreamSource a,
-.uiStreamSource,
-a.timestamp,
-.uiStreamSource a *,
-.uiStreamSource *,
-a.timestamp * {
-  color: #8b8685 !important;
-}
-.uiListItem a.actorName,
-.ego_unit .ego_title,
-.uiListItem a.actorName *,
-.ego_unit .ego_title * {
-  color: #bef !important;
-}
-.storyHighlightIndicatorWrapper {
-  background-color: transparent !important;
-}
-.storyHighlightIndicatorWrapper .img {
-  opacity: 0.2 !important;
-}
-.storyContent .uiStreamMessage .actorName,
-.storyContent .uiStreamMessage .actorDescription,
-.storyContent .uiStreamMessage.uiStreamPassive {
-  font: 14px/1.2 Helvetica, sans-serif !important;
-}
-.storyContent .uiStreamMessage .actorName,
-.storyContent .uiStreamMessage .actorDescription,
-.storyContent .uiStreamMessage.uiStreamPassive,
-.storyContent .uiStreamMessage .actorName *,
-.storyContent .uiStreamMessage .actorDescription *,
-.storyContent .uiStreamMessage.uiStreamPassive * {
-  color: #8b8685 !important;
-}
-.storyContent .uiStreamMessage .actorName a,
-.storyContent .uiStreamMessage .actorDescription a,
-.storyContent .uiStreamMessage.uiStreamPassive a,
-.storyContent .uiStreamMessage .actorName a *,
-.storyContent .uiStreamMessage .actorDescription a *,
-.storyContent .uiStreamMessage.uiStreamPassive a * {
-  color: #9c9796 !important;
-}
-.storyContent .uiStreamMessage .actorDescription .actorName,
-.storyContent .uiStreamMessage .actorName a,
-.storyContent .uiStreamMessage a.passiveName {
-  font-weight: bold !important;
-}
-.storyContent .uiStreamMessage .actorDescription .actorName,
-.storyContent .uiStreamMessage .actorName a,
-.storyContent .uiStreamMessage a.passiveName,
-.storyContent .uiStreamMessage .actorDescription .actorName *,
-.storyContent .uiStreamMessage .actorName a *,
-.storyContent .uiStreamMessage a.passiveName * {
-  color: #bef !important;
-}
-.uiList .ufiItem {
-  background-color: #3d3c4c !important;
-}
-.uiList .ufiItem,
-.uiList .ufiItem * {
-  border-color: #4e4d5d !important;
-}
-.uiList .uiUfiUnseenItem {
-  background-color: #3d3c5d !important;
-}
-.uiList .uiUfiUnseenItem,
-.uiList .uiUfiUnseenItem * {
-  border-color: #4e4d6e !important;
-}
-[id="globalContainer"] .uiSearchInput,
-[id="globalContainer"] .inputContainer,
-[id="globalContainer"] .MessagingComposerBody,
-[id="globalContainer"] .uiTypeahead {
-  background-color: #090807 !important;
-  background-image: none !important;
-}
-[id="globalContainer"] .uiSearchInput,
-[id="globalContainer"] .inputContainer,
-[id="globalContainer"] .MessagingComposerBody,
-[id="globalContainer"] .uiTypeahead,
-[id="globalContainer"] .uiSearchInput *,
-[id="globalContainer"] .inputContainer *,
-[id="globalContainer"] .MessagingComposerBody *,
-[id="globalContainer"] .uiTypeahead * {
-  color: #e9e8e7 !important;
-}
-[id="globalContainer"] .fbChatTypeahead input {
-  background-image: none !important;
-}
-.DOMControl_placeholder,
-.DOMControl_placeholder * {
-  color: #8b8685 !important;
-}
-body:not(.timelineLayout) .uiSideHeader {
-  background-color: #683433 !important;
-}
-body:not(.timelineLayout) .uiSideHeader,
-body:not(.timelineLayout) .uiSideHeader * {
-  border-color: #8b5655 !important;
-}
-body:not(.timelineLayout) .uiSideHeader,
-body:not(.timelineLayout) .uiSideHeader * {
-  color: #ffd4d3 !important;
-}
-body:not(.timelineLayout) .uiSideHeader a,
-body:not(.timelineLayout) .uiSideHeader a * {
-  color: #c58988 !important;
-}
-.uiTooltip {
-  background-color: transparent !important;
-}
-.uiTooltipText {
-  background-color: #090807 !important;
-}
-.uiTooltipX .content {
-  background-color: #090807 !important;
-}
-.uiTooltipX .content,
-.uiTooltipX .content * {
-  border-color: #090807 !important;
-}
-.uiTooltipX .content,
-.uiTooltipX .content * {
-  color: #e9e8e7 !important;
-}
-.aboveleft .uiTooltipX i.arrow,
-.aboveright .uiTooltipX i.arrow,
-.abovecenter .uiTooltipX i.arrow {
-  border-top-color: #090807 !important;
-}
-.belowleft .uiTooltipX i.arrow,
-.belowright .uiTooltipX i.arrow,
-.belowcenter .uiTooltipX i.arrow {
-  border-bottom-color: #090807 !important;
-}
-.left .uiTooltipX i.arrow {
-  border-left-color: #090807 !important;
-}
-.right .uiTooltipX i.arrow {
-  border-right-color: #090807 !important;
-}
-.uiOverlay {
-  background-color: transparent !important;
-}
-.uiOverlay .uiOverlayContent {
-  background-color: #353433 !important;
-}
-.uiOverlay .uiOverlayContent,
-.uiOverlay .uiOverlayContent * {
-  border-color: #454443 !important;
-}
-.uiOverlay .uiOverlayContent .uiMenuInner {
-  background-color: #090807 !important;
-}
-.uiOverlay .uiOverlayContent .uiMenuInner,
-.uiOverlay .uiOverlayContent .uiMenuInner * {
-  border-color: #454443 !important;
-}
-.uiOverlay .uiOverlayContent .uiMenuInner li {
-  background-color: #090807 !important;
-}
-.uiOverlay .uiOverlayContent .uiMenuInner li,
-.uiOverlay .uiOverlayContent .uiMenuInner li * {
-  border-color: #090807 !important;
-}
-.uiOverlay .uiOverlayContent .uiMenuInner li,
-.uiOverlay .uiOverlayContent .uiMenuInner li *,
-.uiOverlay .uiOverlayContent .uiMenuInner li a,
-.uiOverlay .uiOverlayContent .uiMenuInner li *,
-.uiOverlay .uiOverlayContent .uiMenuInner li * *,
-.uiOverlay .uiOverlayContent .uiMenuInner li a * {
-  color: #e9e8e7 !important;
-}
-.uiOverlay .uiOverlayContent .uiMenuInner li:hover,
-.uiOverlay .uiOverlayContent .uiMenuInner li a:hover {
-  background-color: #353466 !important;
-}
-.uiOverlay .uiOverlayContent .uiMenuInner li:hover,
-.uiOverlay .uiOverlayContent .uiMenuInner li a:hover,
-.uiOverlay .uiOverlayContent .uiMenuInner li:hover *,
-.uiOverlay .uiOverlayContent .uiMenuInner li a:hover * {
-  border-color: #464577 !important;
-}
-.uiOverlay .uiOverlayContent .uiMenuInner li.uiMenuSeparator {
-  border-color: #31302f !important;
-}
-.UIBeeper_Full {
-  background-color: #683433 !important;
-  box-shadow: 0 0 8px rgba(139,86,85,0.50);
-}
-.UIBeeper_Full,
-.UIBeeper_Full * {
-  border-color: #8b5655 !important;
-}
-.fbNubButton {
-  background-color: #252423 !important;
-  box-shadow: 0 1px 0 rgba(255,255,255,0.30) !important;
-}
-.fbNubButton,
-.fbNubButton * {
-  border-color: #454443 !important;
-}
-.uiScrollableAreaGripper {
-  background-color: #090807 !important;
-}
-.uiScrollableAreaGripper,
-.uiScrollableAreaGripper * {
-  border-color: #454443 !important;
-}
-.fbChatSidebar,
-.fbChatSidebar .uiTypeahead,
-.fbChatSidebar *,
-.fbChatSidebar .uiTypeahead * {
-  background-color: #353433 !important;
-}
-.fbChatSidebar,
-.fbChatSidebar .uiTypeahead,
-.fbChatSidebar *,
-.fbChatSidebar .uiTypeahead *,
-.fbChatSidebar *,
-.fbChatSidebar .uiTypeahead *,
-.fbChatSidebar * *,
-.fbChatSidebar .uiTypeahead * * {
-  border-color: #454443 !important;
-}
-.fbChatSidebar,
-.fbChatSidebar * {
-  box-shadow: none !important;
-}
-.fbNubFlyout {
-  background-color: #090807 !important;
-}
-.fbNubFlyout,
-.fbNubFlyout * {
-  border-color: #454443 !important;
-}
-.fbNubFlyout .fbNubFlyoutInner {
-  background-color: #252423 !important;
-}
-.fbNubFlyout .fbNubFlyoutInner,
-.fbNubFlyout .fbNubFlyoutInner * {
-  border-color: #31302f !important;
-}
-.fbNubFlyout .titlebar {
-  background-color: #683433 !important;
-}
-.fbNubFlyout .titlebar,
-.fbNubFlyout .titlebar * {
-  border-color: #8b5655 !important;
-}
-.fbNubFlyout .titlebar .uiMenuInner {
-  background-color: #090807 !important;
-}
-.fbNubFlyout .titlebar .uiMenuInner,
-.fbNubFlyout .titlebar .uiMenuInner * {
-  border-color: #454443 !important;
-}
-.fbNubFlyout .titlebar .uiMenuInner li {
-  background-color: #090807 !important;
-}
-.fbNubFlyout .titlebar .uiMenuInner li,
-.fbNubFlyout .titlebar .uiMenuInner li * {
-  border-color: #090807 !important;
-}
-.fbNubFlyout .titlebar .uiMenuInner li,
-.fbNubFlyout .titlebar .uiMenuInner li *,
-.fbNubFlyout .titlebar .uiMenuInner li a,
-.fbNubFlyout .titlebar .uiMenuInner li *,
-.fbNubFlyout .titlebar .uiMenuInner li * *,
-.fbNubFlyout .titlebar .uiMenuInner li a * {
-  color: #e9e8e7 !important;
-}
-.fbNubFlyout .titlebar .uiMenuInner li:hover,
-.fbNubFlyout .titlebar .uiMenuInner li a:hover {
-  background-color: #353466 !important;
-}
-.fbNubFlyout .titlebar .uiMenuInner li:hover,
-.fbNubFlyout .titlebar .uiMenuInner li a:hover,
-.fbNubFlyout .titlebar .uiMenuInner li:hover *,
-.fbNubFlyout .titlebar .uiMenuInner li a:hover * {
-  border-color: #464577 !important;
-}
-.fbNubFlyout .titlebar .uiMenuInner li.uiMenuSeparator {
-  border-color: #31302f !important;
-}
-.fbNubFlyout .fbNubFlyoutHeader {
-  background-color: #252423 !important;
-}
-.fbFeedTicker .tickerStoryActive,
-.fbFeedTicker .tickerStoryClickable:hover {
-  background-color: #353466 !important;
-}
-div.uiMenu,
-ul.navigation,
-#bfb_options_button_li ul#bfb_option_list,
-#fbf-bookmark-list {
-  background-color: #090807 !important;
-}
-div.uiMenu,
-ul.navigation,
-#bfb_options_button_li ul#bfb_option_list,
-#fbf-bookmark-list,
-div.uiMenu *,
-ul.navigation *,
-#bfb_options_button_li ul#bfb_option_list *,
-#fbf-bookmark-list * {
-  border-color: #454443 !important;
-}
-div.uiMenu li,
-ul.navigation li,
-#bfb_options_button_li ul#bfb_option_list li,
-#fbf-bookmark-list li {
-  background-color: #090807 !important;
-}
-div.uiMenu li,
-ul.navigation li,
-#bfb_options_button_li ul#bfb_option_list li,
-#fbf-bookmark-list li,
-div.uiMenu li *,
-ul.navigation li *,
-#bfb_options_button_li ul#bfb_option_list li *,
-#fbf-bookmark-list li * {
-  border-color: #090807 !important;
-}
-div.uiMenu li,
-ul.navigation li,
-#bfb_options_button_li ul#bfb_option_list li,
-#fbf-bookmark-list li,
-div.uiMenu li *,
-ul.navigation li *,
-#bfb_options_button_li ul#bfb_option_list li *,
-#fbf-bookmark-list li *,
-div.uiMenu li a,
-ul.navigation li a,
-#bfb_options_button_li ul#bfb_option_list li a,
-#fbf-bookmark-list li a,
-div.uiMenu li *,
-ul.navigation li *,
-#bfb_options_button_li ul#bfb_option_list li *,
-#fbf-bookmark-list li *,
-div.uiMenu li * *,
-ul.navigation li * *,
-#bfb_options_button_li ul#bfb_option_list li * *,
-#fbf-bookmark-list li * *,
-div.uiMenu li a *,
-ul.navigation li a *,
-#bfb_options_button_li ul#bfb_option_list li a *,
-#fbf-bookmark-list li a * {
-  color: #e9e8e7 !important;
-}
-div.uiMenu li:hover,
-ul.navigation li:hover,
-#bfb_options_button_li ul#bfb_option_list li:hover,
-#fbf-bookmark-list li:hover,
-div.uiMenu li a:hover,
-ul.navigation li a:hover,
-#bfb_options_button_li ul#bfb_option_list li a:hover,
-#fbf-bookmark-list li a:hover {
-  background-color: #353466 !important;
-}
-div.uiMenu li:hover,
-ul.navigation li:hover,
-#bfb_options_button_li ul#bfb_option_list li:hover,
-#fbf-bookmark-list li:hover,
-div.uiMenu li a:hover,
-ul.navigation li a:hover,
-#bfb_options_button_li ul#bfb_option_list li a:hover,
-#fbf-bookmark-list li a:hover,
-div.uiMenu li:hover *,
-ul.navigation li:hover *,
-#bfb_options_button_li ul#bfb_option_list li:hover *,
-#fbf-bookmark-list li:hover *,
-div.uiMenu li a:hover *,
-ul.navigation li a:hover *,
-#bfb_options_button_li ul#bfb_option_list li a:hover *,
-#fbf-bookmark-list li a:hover * {
-  border-color: #464577 !important;
-}
-div.uiMenu li.uiMenuSeparator,
-ul.navigation li.uiMenuSeparator,
-#bfb_options_button_li ul#bfb_option_list li.uiMenuSeparator,
-#fbf-bookmark-list li.uiMenuSeparator {
-  border-color: #31302f !important;
-}
-.FlyoutFriendListMenuNUX {
-  background-color: #353433 !important;
-}
-.FlyoutFriendListMenuNUX,
-.FlyoutFriendListMenuNUX * {
-  border-color: #454443 !important;
-}
-.hovercard .stage,
-.HovercardStage {
-  background-color: #090807 !important;
-}
-.hovercard .stage,
-.HovercardStage,
-.hovercard .stage *,
-.HovercardStage * {
-  border-color: #454443 !important;
-}
-.hovercard .stage .actions,
-.HovercardStage .actions,
-.hovercard .stage .uiHovercardFooter,
-.HovercardStage .uiHovercardFooter {
-  background-color: #252423 !important;
-}
-#jewelContainer .fbJewel.openToggler .jewelButton {
-  background-color: #090807 !important;
-}
-#jewelContainer .fbJewel.openToggler .jewelButton,
-#jewelContainer .fbJewel.openToggler .jewelButton * {
-  border-color: #4c4b4a !important;
-}
-.slimHeader #fbNotificationsJewel a.jewelButton,
-.slimHeader #fbMessagesJewel a.jewelButton,
-.slimHeader #fbRequestsJewel a.jewelButton {
-  background-image: url("data:image/png;base64,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") !important;
-}
-.slimHeader #fbNotificationsJewel.hasNew a.jewelButton,
-.slimHeader #fbMessagesJewel.hasNew a.jewelButton,
-.slimHeader #fbRequestsJewel.hasNew a.jewelButton {
-  background-image: url("data:image/png;base64,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") !important;
-}
-.slimHeader #fbNotificationsJewel.openToggler a.jewelButton,
-.slimHeader #fbMessagesJewel.openToggler a.jewelButton,
-.slimHeader #fbRequestsJewel.openToggler a.jewelButton {
-  background-image: url("data:image/png;base64,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") !important;
-}
-.slimHeader #fbRequestsJewel a.jewelButton {
-  background-position: -31px -2px !important;
-}
-.slimHeader #fbRequestsJewel a.jewelButton:active,
-.slimHeader #fbRequestsJewel a.jewelButton:focus,
-.slimHeader #fbRequestsJewel a.jewelButton:hover {
-  background-position: -56px -37px !important;
-}
-.slimHeader #fbRequestsJewel.hasNew a.jewelButton {
-  background-position: -31px -37px !important;
-}
-.slimHeader #fbRequestsJewel.openToggler a.jewelButton:link,
-.slimHeader #fbRequestsJewel.openToggler a.jewelButton:visited {
-  background-position: -56px -2px !important;
-}
-.slimHeader #fbMessagesJewel a.jewelButton {
-  background-position: 0 -247px !important;
-}
-.slimHeader #fbMessagesJewel a.jewelButton:active,
-.slimHeader #fbMessagesJewel a.jewelButton:focus,
-.slimHeader #fbMessagesJewel a.jewelButton:hover {
-  background-position: -75px -247px !important;
-}
-.slimHeader #fbMessagesJewel.hasNew a.jewelButton {
-  background-position: -50px -247px !important;
-}
-.slimHeader #fbMessagesJewel.openToggler a.jewelButton:link,
-.slimHeader #fbMessagesJewel.openToggler a.jewelButton:visited {
-  background-position: -25px -247px !important;
-}
-.slimHeader #fbNotificationsJewel a.jewelButton {
-  background-position: -31px -72px !important;
-}
-.slimHeader #fbNotificationsJewel a.jewelButton:active,
-.slimHeader #fbNotificationsJewel a.jewelButton:focus,
-.slimHeader #fbNotificationsJewel a.jewelButton:hover {
-  background-position: -56px -107px !important;
-}
-.slimHeader #fbNotificationsJewel.hasNew a.jewelButton {
-  background-position: -31px -107px !important;
-}
-.slimHeader #fbNotificationsJewel.openToggler a.jewelButton:link,
-.slimHeader #fbNotificationsJewel.openToggler a.jewelButton:visited {
-  background-position: -56px -72px !important;
-}
-.fbJewelFlyout {
-  background-color: #3c3b3a !important;
-}
-.fbJewelFlyout,
-.fbJewelFlyout * {
-  border-color: #4c4b4a !important;
-}
-.fbJewelFlyout .notification[style],
-.fbJewelFlyout .jewelItemNew {
-  background-color: #4d4c4b !important;
-}
-.fbJewelFlyout .notification.selected,
-.fbJewelFlyout a:hover {
-  background-color: #353466 !important;
-}
-.fbJewelFlyout .notification.selected,
-.fbJewelFlyout a:hover,
-.fbJewelFlyout .notification.selected *,
-.fbJewelFlyout a:hover * {
-  border-color: #464577 !important;
-}
-.fbJewelFlyout .jewelHeader {
-  background-color: #090807 !important;
-}
-.fbJewelFlyout .jewelHeader,
-.fbJewelFlyout .jewelHeader * {
-  border-color: #454443 !important;
-}
-.fbJewelFlyout .jewelHighlight a:hover span,
-.fbJewelFlyout .jewelHighlight a:active span,
-.fbJewelFlyout .jewelHighlight a:focus span,
-.fbJewelFlyout .jewelHighlight a:hover div,
-.fbJewelFlyout .jewelHighlight a:active div,
-.fbJewelFlyout .jewelHighlight a:focus div,
-.fbJewelFlyout .jewelHighlight li.selected a,
-.fbJewelFlyout .jewelHighlight li.selected .timestamp {
-  background-color: #353466 !important;
-}
-.fbJewelFlyout .jewelHighlight a:hover span,
-.fbJewelFlyout .jewelHighlight a:active span,
-.fbJewelFlyout .jewelHighlight a:focus span,
-.fbJewelFlyout .jewelHighlight a:hover div,
-.fbJewelFlyout .jewelHighlight a:active div,
-.fbJewelFlyout .jewelHighlight a:focus div,
-.fbJewelFlyout .jewelHighlight li.selected a,
-.fbJewelFlyout .jewelHighlight li.selected .timestamp,
-.fbJewelFlyout .jewelHighlight a:hover span *,
-.fbJewelFlyout .jewelHighlight a:active span *,
-.fbJewelFlyout .jewelHighlight a:focus span *,
-.fbJewelFlyout .jewelHighlight a:hover div *,
-.fbJewelFlyout .jewelHighlight a:active div *,
-.fbJewelFlyout .jewelHighlight a:focus div *,
-.fbJewelFlyout .jewelHighlight li.selected a *,
-.fbJewelFlyout .jewelHighlight li.selected .timestamp * {
-  border-color: #464577 !important;
-}
-.jewelFooter {
-  background-color: #683433 !important;
-}
-.jewelFooter,
-.jewelFooter * {
-  border-color: #8b5655 !important;
-}
-.fbQuestionsPollResultsBar {
-  background-color: #090807 !important;
-}
-.fbQuestionsPollResultsBar .shaded {
-  background-color: #252423 !important;
-}
-.uiSelectorNormal .uiSelectorButton,
-.uiSelectorNormal .uiButtonSuppressed,
-.uiSelectorNormal .uiSelectorButton:active,
-.uiSelectorNormal .uiButtonSuppressed:active,
-.uiSelectorNormal .uiSelectorButton:focus,
-.uiSelectorNormal .uiButtonSuppressed:focus,
-.uiSelectorNormal .uiSelectorButton:hover,
-.uiSelectorNormal .uiButtonSuppressed:hover {
-  background-color: #090807 !important;
-  background-image: none !important;
-}
-.uiSelectorNormal .uiSelectorButton,
-.uiSelectorNormal .uiButtonSuppressed,
-.uiSelectorNormal .uiSelectorButton:active,
-.uiSelectorNormal .uiButtonSuppressed:active,
-.uiSelectorNormal .uiSelectorButton:focus,
-.uiSelectorNormal .uiButtonSuppressed:focus,
-.uiSelectorNormal .uiSelectorButton:hover,
-.uiSelectorNormal .uiButtonSuppressed:hover,
-.uiSelectorNormal .uiSelectorButton *,
-.uiSelectorNormal .uiButtonSuppressed *,
-.uiSelectorNormal .uiSelectorButton:active *,
-.uiSelectorNormal .uiButtonSuppressed:active *,
-.uiSelectorNormal .uiSelectorButton:focus *,
-.uiSelectorNormal .uiButtonSuppressed:focus *,
-.uiSelectorNormal .uiSelectorButton:hover *,
-.uiSelectorNormal .uiButtonSuppressed:hover * {
-  border-color: #090807 !important;
-}
-.uiSelectorNormal .uiSelectorButton:hover,
-.uiSelectorNormal .uiButtonSuppressed:hover,
-.uiSelectorNormal .uiSelectorButton:active:hover,
-.uiSelectorNormal .uiButtonSuppressed:active:hover,
-.uiSelectorNormal .uiSelectorButton:focus:hover,
-.uiSelectorNormal .uiButtonSuppressed:focus:hover,
-.uiSelectorNormal .uiSelectorButton:hover:hover,
-.uiSelectorNormal .uiButtonSuppressed:hover:hover {
-  background-color: #090807 !important;
-}
-.uiSelectorNormal .uiSelectorButton:hover,
-.uiSelectorNormal .uiButtonSuppressed:hover,
-.uiSelectorNormal .uiSelectorButton:active:hover,
-.uiSelectorNormal .uiButtonSuppressed:active:hover,
-.uiSelectorNormal .uiSelectorButton:focus:hover,
-.uiSelectorNormal .uiButtonSuppressed:focus:hover,
-.uiSelectorNormal .uiSelectorButton:hover:hover,
-.uiSelectorNormal .uiButtonSuppressed:hover:hover,
-.uiSelectorNormal .uiSelectorButton:hover *,
-.uiSelectorNormal .uiButtonSuppressed:hover *,
-.uiSelectorNormal .uiSelectorButton:active:hover *,
-.uiSelectorNormal .uiButtonSuppressed:active:hover *,
-.uiSelectorNormal .uiSelectorButton:focus:hover *,
-.uiSelectorNormal .uiButtonSuppressed:focus:hover *,
-.uiSelectorNormal .uiSelectorButton:hover:hover *,
-.uiSelectorNormal .uiButtonSuppressed:hover:hover * {
-  border-color: #454443 !important;
-}
-.uiButton {
-  background-color: #090807 !important;
-  background-image: none !important;
-}
-.uiButton,
-.uiButton * {
-  border-color: #090807 !important;
-}
-.uiButton:hover {
-  background-color: #090807 !important;
-}
-.uiButton:hover,
-.uiButton:hover * {
-  border-color: #454443 !important;
-}
-.uiStream .uiStreamHeader .uiStreamHeaderChronologicalForm .uiSelectorButton,
-.uiStream .uiStreamHeader .uiStreamHeaderChronologicalForm .uiSelectorButton:active,
-.uiStream .uiStreamHeader .uiStreamHeaderChronologicalForm .uiSelectorButton:focus,
-.uiStream .uiStreamHeader .uiStreamHeaderChronologicalForm .uiSelectorButton:hover {
-  background-color: transparent !important;
-}
-.enableBeeper#fbNotificationsFlyout {
-  background-color: #683433 !important;
-  box-shadow: 0 0 8px rgba(139,86,85,0.50);
-}
-.enableBeeper#fbNotificationsFlyout .beeperNub {
-  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAABmJLR0QA/wD/AP+gvaeTAAAAbUlEQVQoka3MPQ6AIAyG4ZfEkeDJ4EZO3EhPpmHHCRKRnxrs1H5tHxCUdzZ6Z6PkVkmwEAIAWmu2/ej+dJcJO68LgNWYIdpclFiqEVoNW5gEfQUjbIQ+BinWQ3PzFWuhagaroWoWK9HlDwzIxg38EmHrnypgMgAAAABJRU5ErkJggg==") 0 0 no-repeat !important;
-}
-.enableBeeper#fbNotificationsFlyout,
-.enableBeeper#fbNotificationsFlyout * {
-  border-color: #8b5655 !important;
-}
-#fbNotificationsList .notification.fbJewelBeep {
-  background-color: #683433 !important;
-}
-#fbNotificationsList .notification.fbJewelBeep,
-#fbNotificationsList .notification.fbJewelBeep * {
-  border-color: #8b5655 !important;
-}
-.separator .text,
-.uiStreamHeader .uiSelector {
-  background-color: #353433 !important;
-}
-.separator .text,
-.uiStreamHeader .uiSelector,
-.separator .text *,
-.uiStreamHeader .uiSelector * {
-  color: #8b8685 !important;
-}
-.separator .text .uiMenuInner,
-.uiStreamHeader .uiSelector .uiMenuInner {
-  background-color: #090807 !important;
-}
-.separator .text .uiMenuInner,
-.uiStreamHeader .uiSelector .uiMenuInner,
-.separator .text .uiMenuInner *,
-.uiStreamHeader .uiSelector .uiMenuInner * {
-  border-color: #454443 !important;
-}
-.separator .text .uiMenuInner li,
-.uiStreamHeader .uiSelector .uiMenuInner li {
-  background-color: #090807 !important;
-}
-.separator .text .uiMenuInner li,
-.uiStreamHeader .uiSelector .uiMenuInner li,
-.separator .text .uiMenuInner li *,
-.uiStreamHeader .uiSelector .uiMenuInner li * {
-  border-color: #090807 !important;
-}
-.separator .text .uiMenuInner li,
-.uiStreamHeader .uiSelector .uiMenuInner li,
-.separator .text .uiMenuInner li *,
-.uiStreamHeader .uiSelector .uiMenuInner li *,
-.separator .text .uiMenuInner li a,
-.uiStreamHeader .uiSelector .uiMenuInner li a,
-.separator .text .uiMenuInner li *,
-.uiStreamHeader .uiSelector .uiMenuInner li *,
-.separator .text .uiMenuInner li * *,
-.uiStreamHeader .uiSelector .uiMenuInner li * *,
-.separator .text .uiMenuInner li a *,
-.uiStreamHeader .uiSelector .uiMenuInner li a * {
-  color: #e9e8e7 !important;
-}
-.separator .text .uiMenuInner li:hover,
-.uiStreamHeader .uiSelector .uiMenuInner li:hover,
-.separator .text .uiMenuInner li a:hover,
-.uiStreamHeader .uiSelector .uiMenuInner li a:hover {
-  background-color: #353466 !important;
-}
-.separator .text .uiMenuInner li:hover,
-.uiStreamHeader .uiSelector .uiMenuInner li:hover,
-.separator .text .uiMenuInner li a:hover,
-.uiStreamHeader .uiSelector .uiMenuInner li a:hover,
-.separator .text .uiMenuInner li:hover *,
-.uiStreamHeader .uiSelector .uiMenuInner li:hover *,
-.separator .text .uiMenuInner li a:hover *,
-.uiStreamHeader .uiSelector .uiMenuInner li a:hover * {
-  border-color: #464577 !important;
-}
-.separator .text .uiMenuInner li.uiMenuSeparator,
-.uiStreamHeader .uiSelector .uiMenuInner li.uiMenuSeparator {
-  border-color: #31302f !important;
-}
-.uiTypeaheadView {
-  background-color: #090807 !important;
-}
-.uiTypeaheadView,
-.uiTypeaheadView * {
-  border-color: #454443 !important;
-}
-.uiTypeaheadView ul.compact li {
-  background-color: #090807 !important;
-}
-.uiTypeaheadView ul.compact li,
-.uiTypeaheadView ul.compact li * {
-  border-color: #090807 !important;
-}
-.uiTypeaheadView ul.compact li.selected,
-.uiTypeaheadView ul.compact li.selected * {
-  background-color: #353466 !important;
-}
-.uiTypeaheadView ul.compact li.selected,
-.uiTypeaheadView ul.compact li.selected *,
-.uiTypeaheadView ul.compact li.selected *,
-.uiTypeaheadView ul.compact li.selected * * {
-  border-color: #464577 !important;
-}
-ul.search {
-  background-color: #090807 !important;
-}
-ul.search,
-ul.search * {
-  border-color: #090807 !important;
-}
-ul.search li,
-ul.search li * {
-  color: #8b8685 !important;
-}
-ul.search li .text,
-ul.search li .text * {
-  color: #9cb6df !important;
-}
-ul.search li.header {
-  background-color: #3c3b3a !important;
-}
-ul.search li.header,
-ul.search li.header * {
-  border-color: #31302f !important;
-}
-ul.search li.header,
-ul.search li.header .text,
-ul.search li.header *,
-ul.search li.header .text * {
-  color: #e9e8e7 !important;
-}
-ul.search li.calltoaction {
-  background-color: #683433 !important;
-}
-ul.search li.calltoaction,
-ul.search li.calltoaction * {
-  border-color: #8b5655 !important;
-}
-ul.search li.calltoaction a,
-ul.search li.calltoaction a .text,
-ul.search li.calltoaction a .seeMore,
-ul.search li.calltoaction a *,
-ul.search li.calltoaction a .text *,
-ul.search li.calltoaction a .seeMore * {
-  color: #c58988 !important;
-}
-ul.search li.selected {
-  background-color: #353466 !important;
-}
-ul.search li.selected,
-ul.search li.selected * {
-  border-color: #464577 !important;
-}
-ul.search li.selected .text,
-ul.search li.selected .text * {
-  color: #bef !important;
-}
-.uiTypeaheadView .bucketed .header .text,
-.uiTypeaheadView .bucketed .header .text * {
-  color: #e9e8e7 !important;
-}
-.uiBoxLightblue {
-  background-color: #683433 !important;
-}
-.uiBoxLightblue,
-.uiBoxLightblue * {
-  border-color: #8b5655 !important;
-}
-.fbMainStreamAttachment .uiPhotoThumb,
-.fbMainStreamAttachment .uiMediaThumb,
-.fbMainStreamAttachment .uiVideoThumb {
-  border: 0 !important;
-}
-.fbMainStreamAttachment .uiPhotoThumb img,
-.fbMainStreamAttachment .uiMediaThumb img,
-.fbMainStreamAttachment .uiVideoThumb img,
-.fbMainStreamAttachment .uiPhotoThumb i,
-.fbMainStreamAttachment .uiMediaThumb i,
-.fbMainStreamAttachment .uiVideoThumb i {
-  margin: 0 3px 3px 0 !important;
-  box-shadow: 3px 3px 0 rgba(0,0,0,0.30) !important;
-}
-.jewelCount {
-  background-color: #ac3433 !important;
-}
-.timelineLayout [id="contentCol"] {
-  background-color: #252423 !important;
-}
-.timelineLayout .fbTimelineTopSection,
-.timelineLayout .timelineUnitContainer {
-  background-color: #353433 !important;
-}
-.timelineLayout .frame.detail,
-.timelineLayout .fbTimelineRibbon {
-  background-color: #090807 !important;
-}
-.timelineLayout .counter {
-  background-color: #252423 !important;
-}
-.timelineLayout .topBorder,
-.timelineLayout .bottomBorder {
-  background-image: none !important;
-}
-.timelineLayout .topBorder {
-  border-bottom: 1px solid #454443 !important;
-}
-.timelineLayout .bottomBorder {
-  border-top: 2px solid #454443 !important;
-}
-.timelineLayout .spinePointer {
-  display: none;
-}
-.timelineLayout .spineHoverPlus {
-  background-image: url("data:image/png;base64,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") !important;
-}
-.timelineLayout .fbTimelineCapsule,
-.timelineLayout .fbTimelineTimePeriod {
-  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAABCAIAAACUgoPjAAAABmJLR0QA/wD/AP+gvaeTAAAAEklEQVQImWM0MDBgYGBgYGAAAASUAJIpSBKMAAAAAElFTkSuQmCC") !important;
-}
-.timelineLayout .profilePicThumb {
-  background-color: #090807 !important;
-}
-.timelineLayout .profilePicThumb,
-.timelineLayout .profilePicThumb * {
-  border-color: #454443 !important;
-}
-.timelineLayout .timelineTimestamp .uiSelectorButton {
-  background-color: transparent !important;
-  border-width: 0 !important;
-}
-.timelineLayout .stickyHeaderWrap {
-  background-color: #090807 !important;
-}
-.timelineLayout .stickyHeaderWrap,
-.timelineLayout .stickyHeaderWrap * {
-  border-color: #454443 !important;
-}
-.timelineLayout .stickyHeaderWrap .back {
-  background-color: #090807 !important;
-}
-.fbPhotoSnowbox {
-  background-color: rgba(53,52,51,0.75) !important;
-}
-.fbPhotoSnowbox .container {
-  background-color: #090807 !important;
-  box-shadow: 0 1px 15px rgba(139,134,133,0.30), 0 0 1px rgba(139,134,133,0.70) !important;
-}
-.fbPhotoSnowbox .container,
-.fbPhotoSnowbox .container * {
-  border-color: #31302f !important;
-}
-.fbPhotoSnowbox .container .stageWrapper {
-  padding-bottom: 12px !important;
-}
-.fbPhotoSnowbox .container .stageWrapper .stageActions {
-  bottom: -36px !important;
-}
-.fbPhotoSnowbox .container .photoInfoWrapper {
-  background-color: #252423 !important;
-  padding-top: 36px !important;
-  margin-left: -12px !important;
-  padding-left: 12px !important;
-  margin-right: -12px !important;
-  padding-right: 12px !important;
-  margin-bottom: -12px !important;
-  padding-bottom: 12px !important;
-}
-.fbPhotoSnowbox .container .photoInfoWrapper,
-.fbPhotoSnowbox .container .photoInfoWrapper * {
-  border-color: #31302f !important;
-}
-.fbPhotoSnowbox .container .arrowLeft a,
-.fbPhotoSnowbox .container .arrowRight a {
-  background-color: #090807 !important;
-}
-.fbPhotoSnowbox .container .arrowLeft a,
-.fbPhotoSnowbox .container .arrowRight a,
-.fbPhotoSnowbox .container .arrowLeft a *,
-.fbPhotoSnowbox .container .arrowRight a * {
-  border-color: #31302f !important;
-}
-.fbPhotoSnowbox .container .arrowLeft a {
-  background-image: url("https://s-static.ak.facebook.com/rsrc.php/v1/yn/r/77uboGPzRks.png") !important;
-}
-.fbPhotoSnowbox .container .arrowRight a {
-  background-image: url("https://s-static.ak.facebook.com/rsrc.php/v1/yi/r/KsODvVMV-0n.png") !important;
-}
-.generic_dialog .pop_content {
-  background-color: #252423 !important;
-}
-.generic_dialog .pop_content,
-.generic_dialog .pop_content * {
-  border-color: #31302f !important;
-}
-.generic_dialog .pop_container_advanced {
-  background: rgba(139,134,133,0.70) !important;
-}
-.generic_dialog .dialog_buttons {
-  background-color: #353433 !important;
-}
-.generic_dialog .dialog_buttons,
-.generic_dialog .dialog_buttons * {
-  border-color: #454443 !important;
-}
-.generic_dialog h2.dialog_title {
-  background-color: #683433 !important;
-}
-.generic_dialog h2.dialog_title,
-.generic_dialog h2.dialog_title * {
-  border-color: #8b5655 !important;
-}
-[id="MessagingShelf"],
-.MessagingReadHeader {
-  background-color: #353433 !important;
-}
-[id="MessagingShelf"],
-.MessagingReadHeader,
-[id="MessagingShelf"] *,
-.MessagingReadHeader * {
-  border-color: #454443 !important;
-}
-#better_fb_cp,
-#better_fb_cp * {
-  color: #8b8685 !important;
-}
-#better_fb_cp #bfb_status_older_posts_input {
-  background-color: #090807 !important;
-  background-image: none !important;
-  border-width: 1px !important;
-  border-style: solid !important;
-  -moz-appearance: none !important;
-  -webkit-appearance: none !important;
-}
-#better_fb_cp #bfb_status_older_posts_input,
-#better_fb_cp #bfb_status_older_posts_input * {
-  color: #e9e8e7 !important;
-}
-#better_fb_cp input[type="checkbox"] {
-  opacity: 0.6 !important;
-}
-.bfb_dialog {
-  background-color: #3d3c4c !important;
-}
-.bfb_dialog,
-.bfb_dialog * {
-  border-color: #5f5e6e !important;
-}
-.bfb_dialog .type_selected {
-  background-color: #683433 !important;
-}
-.bfb_dialog .type_selected,
-.bfb_dialog .type_selected * {
-  border-color: #8b5655 !important;
-}
-#bfb_options a,
-#bfb_options a * {
-  color: #9cb6df !important;
-}
-#bfb_options .options_dialog {
-  background-color: #090807 !important;
-}
-#bfb_options .options_dialog,
-#bfb_options .options_dialog * {
-  border-color: #31302f !important;
-}
-#bfb_options .options_dialog .bfb_tab_selected,
-#bfb_options .options_dialog #bfb_options_content {
-  background-color: #353433 !important;
-}
-#bfb_options .options_dialog .bfb_tab_selected,
-#bfb_options .options_dialog #bfb_options_content,
-#bfb_options .options_dialog .bfb_tab_selected *,
-#bfb_options .options_dialog #bfb_options_content * {
-  border-color: #454443 !important;
-}
-#bfb_options .options_dialog .bfb_tab_selected input[type="button"],
-#bfb_options .options_dialog #bfb_options_content input[type="button"],
-#bfb_options .options_dialog .bfb_tab_selected input[type="submit"],
-#bfb_options .options_dialog #bfb_options_content input[type="submit"] {
-  background-color: #090807 !important;
-  background-image: none !important;
-  border-width: 1px !important;
-  border-style: solid !important;
-  -moz-appearance: none !important;
-  -webkit-appearance: none !important;
-  cursor: pointer !important;
-}
-#bfb_options .options_dialog .bfb_tab_selected input[type="button"],
-#bfb_options .options_dialog #bfb_options_content input[type="button"],
-#bfb_options .options_dialog .bfb_tab_selected input[type="submit"],
-#bfb_options .options_dialog #bfb_options_content input[type="submit"],
-#bfb_options .options_dialog .bfb_tab_selected input[type="button"] *,
-#bfb_options .options_dialog #bfb_options_content input[type="button"] *,
-#bfb_options .options_dialog .bfb_tab_selected input[type="submit"] *,
-#bfb_options .options_dialog #bfb_options_content input[type="submit"] * {
-  border-color: #090807 !important;
-}
-#bfb_options .options_dialog .bfb_tab_selected input[type="button"]:hover,
-#bfb_options .options_dialog #bfb_options_content input[type="button"]:hover,
-#bfb_options .options_dialog .bfb_tab_selected input[type="submit"]:hover,
-#bfb_options .options_dialog #bfb_options_content input[type="submit"]:hover {
-  background-color: #252423 !important;
-}
-#bfb_options .options_dialog .bfb_tab_selected input[type="button"]:hover,
-#bfb_options .options_dialog #bfb_options_content input[type="button"]:hover,
-#bfb_options .options_dialog .bfb_tab_selected input[type="submit"]:hover,
-#bfb_options .options_dialog #bfb_options_content input[type="submit"]:hover,
-#bfb_options .options_dialog .bfb_tab_selected input[type="button"]:hover *,
-#bfb_options .options_dialog #bfb_options_content input[type="button"]:hover *,
-#bfb_options .options_dialog .bfb_tab_selected input[type="submit"]:hover *,
-#bfb_options .options_dialog #bfb_options_content input[type="submit"]:hover * {
-  border-color: #454443 !important;
-}
-#bfb_options .options_dialog .bfb_tab_search {
-  background-color: #252423 !important;
-}
-#bfb_options .options_dialog .bfb_tab_search,
-#bfb_options .options_dialog .bfb_tab_search * {
-  border-color: #454443 !important;
-}
-#bfb_options .GM_options_header {
-  background-color: #252423 !important;
-}
-#bfb_options .GM_options_header,
-#bfb_options .GM_options_header * {
-  border-color: #31302f !important;
-}
-#bfb_options input.text,
-#bfb_options textarea,
-#bfb_options #bfb_options_search {
-  background-color: #090807 !important;
-  background-image: none !important;
-  border-width: 1px !important;
-  border-style: solid !important;
-  -moz-appearance: none !important;
-  -webkit-appearance: none !important;
-}
-#bfb_options input.text,
-#bfb_options textarea,
-#bfb_options #bfb_options_search,
-#bfb_options input.text *,
-#bfb_options textarea *,
-#bfb_options #bfb_options_search * {
-  color: #e9e8e7 !important;
-}
-#bfb_options input[type="button"],
-#bfb_options input[type="submit"] {
-  background-color: #090807 !important;
-  background-image: none !important;
-  border-width: 1px !important;
-  border-style: solid !important;
-  -moz-appearance: none !important;
-  -webkit-appearance: none !important;
-  cursor: pointer !important;
-}
-#bfb_options input[type="button"],
-#bfb_options input[type="submit"],
-#bfb_options input[type="button"] *,
-#bfb_options input[type="submit"] * {
-  border-color: #090807 !important;
-}
-#bfb_options input[type="button"]:hover,
-#bfb_options input[type="submit"]:hover {
-  background-color: #252423 !important;
-}
-#bfb_options input[type="button"]:hover,
-#bfb_options input[type="submit"]:hover,
-#bfb_options input[type="button"]:hover *,
-#bfb_options input[type="submit"]:hover * {
-  border-color: #454443 !important;
-}
-.bfb_tabs .bfb_tab {
-  background-color: #353433 !important;
-}
-.bfb_tabs .bfb_tab,
-.bfb_tabs .bfb_tab * {
-  border-color: #454443 !important;
-}
-.bfb_tabs .bfb_tab,
-.bfb_tabs .bfb_tab * {
-  color: #8b8685 !important;
-}
-.bfb_tabs .bfb_tab_selected {
-  background-color: #454443 !important;
-}
-.bfb_tabs .bfb_tab_selected,
-.bfb_tabs .bfb_tab_selected * {
-  border-color: #454443 !important;
-}
-.bfb_tabs .bfb_tab_selected,
-.bfb_tabs .bfb_tab_selected * {
-  color: #e9e8e7 !important;
-}
-.bfb_post_action_container:not(:hover) {
-  opacity: 0.2 !important;
-}
-.bfb_image_preview {
-  background-color: #090807 !important;
-}
-.bfb_image_preview,
-.bfb_image_preview * {
-  border-color: #454443 !important;
-}
-.UIPage_LoggedOut {
-  width: 100% !important;
-  height: 100% !important;
-}
-.UIPage_LoggedOut .loggedOut#blueBarHolder {
-  top: 0 !important;
-  right: 0 !important;
-  bottom: 0 !important;
-  left: 0 !important;
-  width: auto !important;
-  height: auto !important;
-  position: absolute !important;
-  z-index: 100 !important;
-}
-.UIPage_LoggedOut .loggedOut#blueBarHolder #blueBar {
-  top: 0 !important;
-  right: 0 !important;
-  bottom: 0 !important;
-  left: 0 !important;
-  width: auto !important;
-  height: auto !important;
-  position: absolute !important;
-}
-.UIPage_LoggedOut .loggedOut#blueBarHolder #blueBar .rfloat {
-  float: none !important;
-}
-.UIPage_LoggedOut .loggedOut#blueBarHolder #blueBar .rfloat .menu_login_container {
-  background-color: #353433 !important;
-  border-style: dotted !important;
-  border-width: 1px !important;
-  top: 50% !important;
-  right: auto !important;
-  bottom: auto !important;
-  left: 50% !important;
-  width: 480px !important;
-  height: 120px !important;
-  position: absolute !important;
-  margin-top: -61px !important;
-  margin-left: -241px !important;
-}
-.UIPage_LoggedOut .loggedOut#blueBarHolder #blueBar .rfloat .menu_login_container,
-.UIPage_LoggedOut .loggedOut#blueBarHolder #blueBar .rfloat .menu_login_container * {
-  border-color: #454443 !important;
-}
-.UIPage_LoggedOut .loggedOut#blueBarHolder #blueBar .rfloat .menu_login_container table {
-  margin: 20px auto 0 !important;
-}
-.UIPage_LoggedOut .loggedOut#blueBarHolder #blueBar .rfloat .menu_login_container table .uiButton input {
-  border-width: 0 !important;
-}
-.UIPage_LoggedOut #globalContainer {
-  top: 100% !important;
-  right: 0 !important;
-  bottom: auto !important;
-  left: 0 !important;
-  width: auto !important;
-  height: auto !important;
-  position: absolute !important;
-}
-.UIPage_LoggedOut .gradient {
-  background-color: #353433 !important;
-  background-image: none !important;
-}
-.UIPage_LoggedOut .gradient,
-.UIPage_LoggedOut .gradient * {
-  border-color: #454443 !important;
-}
-.UIPage_LoggedOut input,
-.UIPage_LoggedOut select {
-  background-color: #090807 !important;
-  background-image: none !important;
-  border-width: 1px !important;
-  border-style: solid !important;
-  -moz-appearance: none !important;
-  -webkit-appearance: none !important;
-}
-.UIPage_LoggedOut input,
-.UIPage_LoggedOut select,
-.UIPage_LoggedOut input *,
-.UIPage_LoggedOut select * {
-  color: #e9e8e7 !important;
-}
-#blueBar .uiTypeahead {
-  background: #252423 !important;
-  box-shadow: inset 0 2px 5px #090807 !important;
-  border-color: #454443 !important;
-}
-#blueBar .uiTypeahead .wrap,
-#blueBar .uiTypeahead .wrap .innerWrap,
-#blueBar .uiTypeahead .wrap .uiSearchInput,
-#blueBar .uiTypeahead .wrap .innerWrap .uiSearchInput,
-#blueBar .uiTypeahead .wrap span,
-#blueBar .uiTypeahead .wrap .innerWrap span,
-#blueBar .uiTypeahead .wrap .uiSearchInput span,
-#blueBar .uiTypeahead .wrap .innerWrap .uiSearchInput span,
-#blueBar .uiTypeahead .wrap input,
-#blueBar .uiTypeahead .wrap .innerWrap input,
-#blueBar .uiTypeahead .wrap .uiSearchInput input,
-#blueBar .uiTypeahead .wrap .innerWrap .uiSearchInput input,
-#blueBar .uiTypeahead .wrap span input,
-#blueBar .uiTypeahead .wrap .innerWrap span input,
-#blueBar .uiTypeahead .wrap .uiSearchInput span input,
-#blueBar .uiTypeahead .wrap .innerWrap .uiSearchInput span input,
-#blueBar .uiTypeahead .wrap button,
-#blueBar .uiTypeahead .wrap .innerWrap button,
-#blueBar .uiTypeahead .wrap .uiSearchInput button,
-#blueBar .uiTypeahead .wrap .innerWrap .uiSearchInput button,
-#blueBar .uiTypeahead .wrap span button,
-#blueBar .uiTypeahead .wrap .innerWrap span button,
-#blueBar .uiTypeahead .wrap .uiSearchInput span button,
-#blueBar .uiTypeahead .wrap .innerWrap .uiSearchInput span button {
-  background-color: transparent !important;
-}
-#blueBar .uiTypeahead .search {
-  border-color: #454443 !important;
-  border-top-width: 0 !important;
-  margin-left: -1px !important;
-  margin-right: -1px !important;
-}
-#blueBar .topNavLink,
-#blueBar .DOMControl_placeholder,
-#blueBar .topNavLink *,
-#blueBar .DOMControl_placeholder * {
-  color: #8b8685 !important;
-}
-#blueBar #pageNav a {
-  color: #8b8685 !important;
-}
-#blueBar #navAccountLink .menuPulldown {
-  opacity: 0.6 !important;
-}
-.slimHeader #pageNav li.tinyman:after,
-.slimHeader #pageNav li.middleLink:after {
-  background: #4b4747 !important;
-}
-div.photocrop .bg {
-  background-color: #000 !important;
-}
-div.photocrop .viewport {
-  box-shadow: 0 1px 10px rgba(0,0,0,0.50) !important;
-}
-div.photocrop .viewport div {
-  background-color: rgba(255,255,255,0.50) !important;
-  border-radius: 10px !important;
-  box-shadow: inset 0 0 5px #fff, 0 1px 2px #000 !important;
-  opacity: 1 !important;
-}
-[id="booklet"] [id="pageheader"] {
-  background-color: #683433 !important;
-}
-[id="booklet"] [id="pageheader"],
-[id="booklet"] [id="pageheader"] * {
-  border-color: #8b5655 !important;
-}
-.uiMentionsInput {
-  background-color: #090807 !important;
-}
-.uiMentionsInput,
-.uiMentionsInput * {
-  border-color: #454443 !important;
-}
-.uiMentionsInput .uiTypeahead {
-  background-color: transparent !important;
-}
-.highlighter .highlighterContent {
-  color: #090807 !important;
-}
-.highlighter .highlighterContent b {
-  color: rgba(9,8,7,0.00) !important;
-  background: rgba(156,182,223,0.30) !important;
-}
+/* this is compiled source code, for original source code see src/main.styl */
+/* generated: Sat Dec 03 2011 12:42:23 GMT+0700 (ICT) */body{background-color:#252423 !important;}
+body,body *{border-color:#31302f !important}
+body,body *{color:#e9e8e7 !important}
+body *{background-color:transparent !important}
+[id="blueBar"]{background-color:#090807 !important;border-color:#454443 !important;background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAlCAIAAAAMShT+AAAABmJLR0QA/wD/AP+gvaeTAAAAH0lEQVQIW2MwMTZi+v//Pxj/+/cPzkbG2MSpLYYkDgCqTGxhLHWh5gAAAABJRU5ErkJggg==") top left repeat-x !important}
+[id="blueBar"],[id="blueBar"] *{border-color:#31302f !important}
+.uiScrollableAreaTrack{background-color:transparent !important}
+[id="sideNav"]{opacity:.6 !important;}
+[id="sideNav"] .navHeader,[id="sideNav"] .navHeader *{color:#9b9796 !important}
+[id="sideNav"] .selectedItem .item{background-color:#403f3e !important;box-shadow:0 2px 0 #090807}
+[id="sideNav"] .uiSideNav,[id="sideNav"] .uiSideNav *{color:#cfc7c6 !important}
+[id="sideNav"] .uiSideNavCount{background-color:#403f93 !important;box-shadow:inset 0 0 1px #5c5baf !important}
+[id="sideNav"] .uiSideNavCount,[id="sideNav"] .uiSideNavCount *{border-color:#5c5baf !important}
+[id="sideNav"] .uiSideNavCount,[id="sideNav"] .uiSideNavCount *{color:#aaa9fd !important}
+.uiStreamPrivacy,.attachmentLink .img,.uiStreamFooter .img,.uiUfiLike .UIImageBlock .UIImageBlock_Image,.ego_action .img,.fbCurrentStory .img,.uiBlingBox .img{opacity:.6 !important}
+[id="contentCol"]{background-color:#353433 !important;}
+[id="contentCol"],[id="contentCol"] *{border-color:#454443 !important}
+.ufiNub,.nub,.hovercard .arrow,.uiOverlayArrow,#bfb_options_button img{opacity:.2 !important}
+.uiStream .uiStreamBoulderStyle .highlightSelector .uiSelectorButton{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfUAAALFCAMAAADtBIoTAAAASFBMVEUAAAD///////9KSkqbm5syMjKnp6dSUlJCQkK/v7/m5uY+Pj5TU1Oenp5CQkJISEhEREQhISEeHh6EhIRRUVFycnITExMAAAAAn8htAAAADnRSTlMABg7n2afd6asECnyvoxeee9YAAAI7SURBVHhe7MAxAQAAAMIg+6c2xF5YBwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAnP2613UQhgEo3FygveGnSSng93/TykgRkcvQoVJl6RzJGVi/wSZ0D1sXQnO3NSG0T1sbAHCqLjZVF5uqr7avqhPqhDqhTqgT6oQ6oU6oo75l0fJWq89JtDTX6ousmizu1VHPOZf3UE8plfdQF5HyelZHvbDr1OoKvk+truD7+FdHXbJm93rS7F4Xzf1eR72wi1VX9vdrrqD7V0dd8tkNn85uePnZDU/8uRHqhDqhTqhTHP5tQ4zjzTbGOF1tUwTAZ/2frf/846sdOCYAAABAGGT/1HbYDasAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAONVaYBGribolAAAAAElFTkSuQmCC") !important}
+.uiAttachmentDesc,.fbEmu,.ego_unit a,.uiAttachmentDesc *,.fbEmu *,.ego_unit a *{color:#8b8685 !important}
+.UIActionLinks,.attachmentLink,.fbxWelcomeBoxName,.fbCurrent a,.fbEmuMainBody a,.fbEmu .title a,.fbJewelFlyout .blueName,.messageBody a,.uiListItem a,.uiListItem button,.ego_unit .ego_action a,.notesBlogText a,.timelineUnitContainer a,.fbPhotoSnowbox a,.generic_dialog a,.UIActionLinks *,.attachmentLink *,.fbxWelcomeBoxName *,.fbCurrent a *,.fbEmuMainBody a *,.fbEmu .title a *,.fbJewelFlyout .blueName *,.messageBody a *,.uiListItem a *,.uiListItem button *,.ego_unit .ego_action a *,.notesBlogText a *,.timelineUnitContainer a *,.fbPhotoSnowbox a *,.generic_dialog a *{color:#9cb6df !important}
+.UIActionLinks .uiTooltipText,.attachmentLink .uiTooltipText,.fbxWelcomeBoxName .uiTooltipText,.fbCurrent a .uiTooltipText,.fbEmuMainBody a .uiTooltipText,.fbEmu .title a .uiTooltipText,.fbJewelFlyout .blueName .uiTooltipText,.messageBody a .uiTooltipText,.uiListItem a .uiTooltipText,.uiListItem button .uiTooltipText,.ego_unit .ego_action a .uiTooltipText,.notesBlogText a .uiTooltipText,.timelineUnitContainer a .uiTooltipText,.fbPhotoSnowbox a .uiTooltipText,.generic_dialog a .uiTooltipText,.UIActionLinks .uiTooltipText *,.attachmentLink .uiTooltipText *,.fbxWelcomeBoxName .uiTooltipText *,.fbCurrent a .uiTooltipText *,.fbEmuMainBody a .uiTooltipText *,.fbEmu .title a .uiTooltipText *,.fbJewelFlyout .blueName .uiTooltipText *,.messageBody a .uiTooltipText *,.uiListItem a .uiTooltipText *,.uiListItem button .uiTooltipText *,.ego_unit .ego_action a .uiTooltipText *,.notesBlogText a .uiTooltipText *,.timelineUnitContainer a .uiTooltipText *,.fbPhotoSnowbox a .uiTooltipText *,.generic_dialog a .uiTooltipText *{color:#e9e8e7 !important}
+.uiStreamSource a,.uiStreamSource,a.timestamp,.uiStreamSource a *,.uiStreamSource *,a.timestamp *{color:#8b8685 !important}
+.uiListItem a.actorName,.ego_unit .ego_title,.uiListItem a.actorName *,.ego_unit .ego_title *{color:#bef !important}
+.storyHighlightIndicatorWrapper{background-color:transparent !important;}
+.storyHighlightIndicatorWrapper .img{opacity:.2 !important}
+.storyContent .uiStreamMessage .actorName,.storyContent .uiStreamMessage .actorDescription,.storyContent .uiStreamMessage.uiStreamPassive{font:14px/1.2 Helvetica,sans-serif !important;}
+.storyContent .uiStreamMessage .actorName,.storyContent .uiStreamMessage .actorDescription,.storyContent .uiStreamMessage.uiStreamPassive,.storyContent .uiStreamMessage .actorName *,.storyContent .uiStreamMessage .actorDescription *,.storyContent .uiStreamMessage.uiStreamPassive *{color:#8b8685 !important}
+.storyContent .uiStreamMessage .actorName a,.storyContent .uiStreamMessage .actorDescription a,.storyContent .uiStreamMessage.uiStreamPassive a,.storyContent .uiStreamMessage .actorName a *,.storyContent .uiStreamMessage .actorDescription a *,.storyContent .uiStreamMessage.uiStreamPassive a *{color:#9c9796 !important}
+.storyContent .uiStreamMessage .actorDescription .actorName,.storyContent .uiStreamMessage .actorName a,.storyContent .uiStreamMessage a.passiveName{font-weight:bold !important}
+.storyContent .uiStreamMessage .actorDescription .actorName,.storyContent .uiStreamMessage .actorName a,.storyContent .uiStreamMessage a.passiveName,.storyContent .uiStreamMessage .actorDescription .actorName *,.storyContent .uiStreamMessage .actorName a *,.storyContent .uiStreamMessage a.passiveName *{color:#bef !important}
+.uiList .ufiItem{background-color:#3d3c4c !important;}
+.uiList .ufiItem,.uiList .ufiItem *{border-color:#4e4d5d !important}
+.uiList .uiUfiUnseenItem{background-color:#3d3c5d !important;}
+.uiList .uiUfiUnseenItem,.uiList .uiUfiUnseenItem *{border-color:#4e4d6e !important}
+[id="globalContainer"] .uiSearchInput,[id="globalContainer"] .inputContainer,[id="globalContainer"] .MessagingComposerBody,[id="globalContainer"] .uiTypeahead{background-color:#090807 !important;background-image:none !important;}
+[id="globalContainer"] .uiSearchInput,[id="globalContainer"] .inputContainer,[id="globalContainer"] .MessagingComposerBody,[id="globalContainer"] .uiTypeahead,[id="globalContainer"] .uiSearchInput *,[id="globalContainer"] .inputContainer *,[id="globalContainer"] .MessagingComposerBody *,[id="globalContainer"] .uiTypeahead *{color:#e9e8e7 !important}
+[id="globalContainer"] .fbChatTypeahead input{background-image:none !important}
+.DOMControl_placeholder,.DOMControl_placeholder *{color:#8b8685 !important}
+body:not(.timelineLayout) .uiSideHeader{background-color:#683433 !important;}
+body:not(.timelineLayout) .uiSideHeader,body:not(.timelineLayout) .uiSideHeader *{border-color:#8b5655 !important}
+body:not(.timelineLayout) .uiSideHeader,body:not(.timelineLayout) .uiSideHeader *{color:#ffd4d3 !important}
+body:not(.timelineLayout) .uiSideHeader a,body:not(.timelineLayout) .uiSideHeader a *{color:#c58988 !important}
+.uiTooltip{background-color:transparent !important}
+.uiTooltipText{background-color:#090807 !important;}
+.uiTooltipX .content{background-color:#090807 !important;}
+.uiTooltipX .content,.uiTooltipX .content *{border-color:#090807 !important}
+.uiTooltipX .content,.uiTooltipX .content *{color:#e9e8e7 !important}
+.aboveleft .uiTooltipX i.arrow,.aboveright .uiTooltipX i.arrow,.abovecenter .uiTooltipX i.arrow{border-top-color:#090807 !important}
+.belowleft .uiTooltipX i.arrow,.belowright .uiTooltipX i.arrow,.belowcenter .uiTooltipX i.arrow{border-bottom-color:#090807 !important}
+.left .uiTooltipX i.arrow{border-left-color:#090807 !important}
+.right .uiTooltipX i.arrow{border-right-color:#090807 !important}
+.uiOverlay{background-color:transparent !important;}
+.uiOverlay .uiOverlayContent{background-color:#353433 !important;}
+.uiOverlay .uiOverlayContent,.uiOverlay .uiOverlayContent *{border-color:#454443 !important}
+.uiOverlay .uiOverlayContent .uiMenuInner{background-color:#090807 !important;}
+.uiOverlay .uiOverlayContent .uiMenuInner,.uiOverlay .uiOverlayContent .uiMenuInner *{border-color:#454443 !important}
+.uiOverlay .uiOverlayContent .uiMenuInner li{background-color:#090807 !important;}
+.uiOverlay .uiOverlayContent .uiMenuInner li,.uiOverlay .uiOverlayContent .uiMenuInner li *{border-color:#090807 !important}
+.uiOverlay .uiOverlayContent .uiMenuInner li,.uiOverlay .uiOverlayContent .uiMenuInner li *,.uiOverlay .uiOverlayContent .uiMenuInner li a,.uiOverlay .uiOverlayContent .uiMenuInner li *,.uiOverlay .uiOverlayContent .uiMenuInner li * *,.uiOverlay .uiOverlayContent .uiMenuInner li a *{color:#e9e8e7 !important}
+.uiOverlay .uiOverlayContent .uiMenuInner li:hover,.uiOverlay .uiOverlayContent .uiMenuInner li a:hover{background-color:#353466 !important;}
+.uiOverlay .uiOverlayContent .uiMenuInner li:hover,.uiOverlay .uiOverlayContent .uiMenuInner li a:hover,.uiOverlay .uiOverlayContent .uiMenuInner li:hover *,.uiOverlay .uiOverlayContent .uiMenuInner li a:hover *{border-color:#464577 !important}
+.uiOverlay .uiOverlayContent .uiMenuInner li.uiMenuSeparator{border-color:#31302f !important}
+.UIBeeper_Full{background-color:#683433 !important;box-shadow:0 0 8px rgba(139,86,85,0.50)}
+.UIBeeper_Full,.UIBeeper_Full *{border-color:#8b5655 !important}
+.fbNubButton{background-color:#252423 !important;box-shadow:0 1px 0 rgba(255,255,255,0.30) !important}
+.fbNubButton,.fbNubButton *{border-color:#454443 !important}
+.uiScrollableAreaGripper{background-color:#090807 !important;}
+.uiScrollableAreaGripper,.uiScrollableAreaGripper *{border-color:#454443 !important}
+.fbChatSidebar,.fbChatSidebar .uiTypeahead,.fbChatSidebar *,.fbChatSidebar .uiTypeahead *{background-color:#353433 !important;}
+.fbChatSidebar,.fbChatSidebar .uiTypeahead,.fbChatSidebar *,.fbChatSidebar .uiTypeahead *,.fbChatSidebar *,.fbChatSidebar .uiTypeahead *,.fbChatSidebar * *,.fbChatSidebar .uiTypeahead * *{border-color:#454443 !important}
+.fbChatSidebar,.fbChatSidebar *{box-shadow:none !important}
+.fbNubFlyout{background-color:#090807 !important;}
+.fbNubFlyout,.fbNubFlyout *{border-color:#454443 !important}
+.fbNubFlyout .fbNubFlyoutInner{background-color:#252423 !important;}
+.fbNubFlyout .fbNubFlyoutInner,.fbNubFlyout .fbNubFlyoutInner *{border-color:#31302f !important}
+.fbNubFlyout .titlebar{background-color:#683433 !important;}
+.fbNubFlyout .titlebar,.fbNubFlyout .titlebar *{border-color:#8b5655 !important}
+.fbNubFlyout .titlebar .uiMenuInner{background-color:#090807 !important;}
+.fbNubFlyout .titlebar .uiMenuInner,.fbNubFlyout .titlebar .uiMenuInner *{border-color:#454443 !important}
+.fbNubFlyout .titlebar .uiMenuInner li{background-color:#090807 !important;}
+.fbNubFlyout .titlebar .uiMenuInner li,.fbNubFlyout .titlebar .uiMenuInner li *{border-color:#090807 !important}
+.fbNubFlyout .titlebar .uiMenuInner li,.fbNubFlyout .titlebar .uiMenuInner li *,.fbNubFlyout .titlebar .uiMenuInner li a,.fbNubFlyout .titlebar .uiMenuInner li *,.fbNubFlyout .titlebar .uiMenuInner li * *,.fbNubFlyout .titlebar .uiMenuInner li a *{color:#e9e8e7 !important}
+.fbNubFlyout .titlebar .uiMenuInner li:hover,.fbNubFlyout .titlebar .uiMenuInner li a:hover{background-color:#353466 !important;}
+.fbNubFlyout .titlebar .uiMenuInner li:hover,.fbNubFlyout .titlebar .uiMenuInner li a:hover,.fbNubFlyout .titlebar .uiMenuInner li:hover *,.fbNubFlyout .titlebar .uiMenuInner li a:hover *{border-color:#464577 !important}
+.fbNubFlyout .titlebar .uiMenuInner li.uiMenuSeparator{border-color:#31302f !important}
+.fbNubFlyout .fbNubFlyoutHeader{background-color:#252423 !important;}
+.fbFeedTicker .tickerStoryActive,.fbFeedTicker .tickerStoryClickable:hover{background-color:#353466 !important;}
+div.uiMenu,ul.navigation,#bfb_options_button_li ul#bfb_option_list,#fbf-bookmark-list{background-color:#090807 !important;}
+div.uiMenu,ul.navigation,#bfb_options_button_li ul#bfb_option_list,#fbf-bookmark-list,div.uiMenu *,ul.navigation *,#bfb_options_button_li ul#bfb_option_list *,#fbf-bookmark-list *{border-color:#454443 !important}
+div.uiMenu li,ul.navigation li,#bfb_options_button_li ul#bfb_option_list li,#fbf-bookmark-list li{background-color:#090807 !important;}
+div.uiMenu li,ul.navigation li,#bfb_options_button_li ul#bfb_option_list li,#fbf-bookmark-list li,div.uiMenu li *,ul.navigation li *,#bfb_options_button_li ul#bfb_option_list li *,#fbf-bookmark-list li *{border-color:#090807 !important}
+div.uiMenu li,ul.navigation li,#bfb_options_button_li ul#bfb_option_list li,#fbf-bookmark-list li,div.uiMenu li *,ul.navigation li *,#bfb_options_button_li ul#bfb_option_list li *,#fbf-bookmark-list li *,div.uiMenu li a,ul.navigation li a,#bfb_options_button_li ul#bfb_option_list li a,#fbf-bookmark-list li a,div.uiMenu li *,ul.navigation li *,#bfb_options_button_li ul#bfb_option_list li *,#fbf-bookmark-list li *,div.uiMenu li * *,ul.navigation li * *,#bfb_options_button_li ul#bfb_option_list li * *,#fbf-bookmark-list li * *,div.uiMenu li a *,ul.navigation li a *,#bfb_options_button_li ul#bfb_option_list li a *,#fbf-bookmark-list li a *{color:#e9e8e7 !important}
+div.uiMenu li:hover,ul.navigation li:hover,#bfb_options_button_li ul#bfb_option_list li:hover,#fbf-bookmark-list li:hover,div.uiMenu li a:hover,ul.navigation li a:hover,#bfb_options_button_li ul#bfb_option_list li a:hover,#fbf-bookmark-list li a:hover{background-color:#353466 !important;}
+div.uiMenu li:hover,ul.navigation li:hover,#bfb_options_button_li ul#bfb_option_list li:hover,#fbf-bookmark-list li:hover,div.uiMenu li a:hover,ul.navigation li a:hover,#bfb_options_button_li ul#bfb_option_list li a:hover,#fbf-bookmark-list li a:hover,div.uiMenu li:hover *,ul.navigation li:hover *,#bfb_options_button_li ul#bfb_option_list li:hover *,#fbf-bookmark-list li:hover *,div.uiMenu li a:hover *,ul.navigation li a:hover *,#bfb_options_button_li ul#bfb_option_list li a:hover *,#fbf-bookmark-list li a:hover *{border-color:#464577 !important}
+div.uiMenu li.uiMenuSeparator,ul.navigation li.uiMenuSeparator,#bfb_options_button_li ul#bfb_option_list li.uiMenuSeparator,#fbf-bookmark-list li.uiMenuSeparator{border-color:#31302f !important}
+.FlyoutFriendListMenuNUX{background-color:#353433 !important;}
+.FlyoutFriendListMenuNUX,.FlyoutFriendListMenuNUX *{border-color:#454443 !important}
+.hovercard .stage,.HovercardStage{background-color:#090807 !important;}
+.hovercard .stage,.HovercardStage,.hovercard .stage *,.HovercardStage *{border-color:#454443 !important}
+.hovercard .stage .actions,.HovercardStage .actions,.hovercard .stage .uiHovercardFooter,.HovercardStage .uiHovercardFooter{background-color:#252423 !important;}
+#jewelContainer .fbJewel.openToggler .jewelButton{background-color:#090807 !important;}
+#jewelContainer .fbJewel.openToggler .jewelButton,#jewelContainer .fbJewel.openToggler .jewelButton *{border-color:#4c4b4a !important}
+.slimHeader #fbNotificationsJewel a.jewelButton,.slimHeader #fbMessagesJewel a.jewelButton,.slimHeader #fbRequestsJewel a.jewelButton{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGgAAAIfCAMAAACremnDAAAAbFBMVEUAAAA1MjI1NDM0MTE5NjY4NDI2NDQXFxc0MDA6NzUyMC48Ojk6Nzc6NzcyLy8cFhYdFxc0MTE5NjU0MzE1MzEhHBwxLS08OTg2NDM3NTMzLy8wLiszMTEvLStGQ0JFQkFBPj1EQUBCQD9DQD9JmA0/AAAAHnRSTlMAs8mxs5OXLHCxlenptZMuLJeztck2gee16ZdwcnIoX2RvAAABkklEQVR4Xu3XS24aQRiF0b/BQBzbsZ3381Zh73+PkRuQnBFSoBhY5yzg/1SiGdz6fwCfp7qI3lpdwjLJRZ7UkrSq3muwvKgpWV4k1JJ2kdBcG+s6ydUlQpWkFkmyuECoJcN/pMX8luukxppakjbVVRbDO/tSm77WMMuWnbastO1Uo7QctBr6OeTg8J8FALA5bU6b0+a0OW1Om3MMAOC+qvcfPzc12IenmpJsn97XUJ+2VR/zu5Lt96HvabXzLmkD37TZHvbwc5LtfY3yeNgkPS8ea5TbJFW9f8nsduhO7ZU8ZWdoaC6NDt3sS3WVF99qlHVmu887Wdcom8z6vrSpYVaZ7f5Iqxrobh/6ldzVUKtd6DmrGuxhfZP6s36oIwAAbM5T2Zw2p81pc9qcAAAAAAAAAAAAAAAAQH9l6Km8UqfJK2891Hs/R+j4qSTnCiUZFRLaOyVz/FSSvlN1Quj4qX9eekro+Km5cbrjp87UOX4qdTapNwMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+AgBHZdkQ/khAAAAAAElFTkSuQmCC") !important}
+.slimHeader #fbNotificationsJewel.hasNew a.jewelButton,.slimHeader #fbMessagesJewel.hasNew a.jewelButton,.slimHeader #fbRequestsJewel.hasNew a.jewelButton{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGgAAAIfCAMAAACremnDAAAAgVBMVEUAAACYlJOalpQHBgQAAACXk5IHBQVpZGQGBgWVkJCVkI4HBgQHBAQHBQWRi4oHBgRdXV2AfXyAfHpNS0qQjIwFBQWdl5aWkZBPTEt7e3aNiYaVkZBsaWiRjYualJMIBwWrpqUJCAdtamlUUVCZlZQ5NzZYVVRwbWxsaWiXk5I6ODfxHjljAAAAIHRSTlMAs8mzLLGTLqmTlbFyl/e1LKmr94Fw6Zf1NnC16XK16fbjhhQAAAFnSURBVHhe7dzHctswFIbRS6rYiXt6zw/JLXn/B8xQtqwnAJ3E5yxYVt9cLLDBDOrZAAAAAMA41CyS1BxWSWYZKZPpNU9oSFazhJLkfwndJ9nMETpJshiTZOy/dpX0H2lMMrb7pLXqachkONlknKGTDItNhnc995+91aLrVpSD3fe/H2oHtXu8MAAAAAAAHFUlHz5eVmevUkMmr6urr2n1Lb9bkh9952lVi3ZaN31nunw6+MjkqHq5SnLo5E31cr4LJZ+zc979bHSvbyitf+j6sdQ2mfyqXt7uB1ncJMmn6uU4+9L7qXRcvSy3+1Al2S6rm/XdY+hLcreuji62D6Fke1Fdrdvtder7bVtXZ8uzn61Oz5b1ggAAAAAAAAAAAAAAAEAO8veFhJIIHQi1B+l6bWyeVEuq5ghV6xl6WLHJ9FM9Ja1mMVenWj0bAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+AMN4D8rjB4vCwAAAABJRU5ErkJggg==") !important}
+.slimHeader #fbNotificationsJewel.openToggler a.jewelButton,.slimHeader #fbMessagesJewel.openToggler a.jewelButton,.slimHeader #fbRequestsJewel.openToggler a.jewelButton{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGgAAAIfCAMAAACremnDAAAAM1BMVEUAAACJhIOJhIKJhIOAgHqJhIKJhYOKhIOJgoKJhIOIgoKJhIKFgHqIgoKEgICJhIOLhoUXwUfgAAAAEHRSTlMAs5fJLJOx6XC1cpUugTbnqxyvYAAAASBJREFUeF7t2Utu3DAQhsHWYySPYyf//U+bEReyc4AmEqRqQ+0+NNCgFqwGANtSUySpGY4kU0bK5TrmhJbkmBLKy8xQ/zLkZcZ6b3nZJoQyVKttzHJ0Z2rJZaklW3fnLi2fvSs35KiR65Iv4/tfDwEAAAAAwEdVcq57NXukllx+VKtnqpa8V5Jn8zxDvfXOtN8PH7l8VJc1yVcna3U5Ryj5meHsfhu99YZS/aEzQ9WSy6/qst6DvPUuw54/Snu1edyhJI/eK+gyBnp2X6ojNObpta9n6r3/NwEAAAAAAAAAAAAAAAAAAABAvvn7QkJJhG5C35t9cquaFqr2e6GmmNWp1H8MAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfgMh7RrenwbvSQAAAABJRU5ErkJggg==") !important}
+.slimHeader #fbRequestsJewel a.jewelButton{background-position:-31px -2px !important;}
+.slimHeader #fbRequestsJewel a.jewelButton:active,.slimHeader #fbRequestsJewel a.jewelButton:focus,.slimHeader #fbRequestsJewel a.jewelButton:hover{background-position:-56px -37px !important}
+.slimHeader #fbRequestsJewel.hasNew a.jewelButton{background-position:-31px -37px !important}
+.slimHeader #fbRequestsJewel.openToggler a.jewelButton:link,.slimHeader #fbRequestsJewel.openToggler a.jewelButton:visited{background-position:-56px -2px !important}
+.slimHeader #fbMessagesJewel a.jewelButton{background-position:0 -247px !important;}
+.slimHeader #fbMessagesJewel a.jewelButton:active,.slimHeader #fbMessagesJewel a.jewelButton:focus,.slimHeader #fbMessagesJewel a.jewelButton:hover{background-position:-75px -247px !important}
+.slimHeader #fbMessagesJewel.hasNew a.jewelButton{background-position:-50px -247px !important}
+.slimHeader #fbMessagesJewel.openToggler a.jewelButton:link,.slimHeader #fbMessagesJewel.openToggler a.jewelButton:visited{background-position:-25px -247px !important}
+.slimHeader #fbNotificationsJewel a.jewelButton{background-position:-31px -72px !important;}
+.slimHeader #fbNotificationsJewel a.jewelButton:active,.slimHeader #fbNotificationsJewel a.jewelButton:focus,.slimHeader #fbNotificationsJewel a.jewelButton:hover{background-position:-56px -107px !important}
+.slimHeader #fbNotificationsJewel.hasNew a.jewelButton{background-position:-31px -107px !important}
+.slimHeader #fbNotificationsJewel.openToggler a.jewelButton:link,.slimHeader #fbNotificationsJewel.openToggler a.jewelButton:visited{background-position:-56px -72px !important}
+.fbJewelFlyout{background-color:#3c3b3a !important;}
+.fbJewelFlyout,.fbJewelFlyout *{border-color:#4c4b4a !important}
+.fbJewelFlyout .notification[style],.fbJewelFlyout .jewelItemNew{background-color:#4d4c4b !important;}
+.fbJewelFlyout .notification.selected,.fbJewelFlyout a:hover{background-color:#353466 !important;}
+.fbJewelFlyout .notification.selected,.fbJewelFlyout a:hover,.fbJewelFlyout .notification.selected *,.fbJewelFlyout a:hover *{border-color:#464577 !important}
+.fbJewelFlyout .jewelHeader{background-color:#090807 !important;}
+.fbJewelFlyout .jewelHeader,.fbJewelFlyout .jewelHeader *{border-color:#454443 !important}
+.fbJewelFlyout .jewelHighlight a:hover span,.fbJewelFlyout .jewelHighlight a:active span,.fbJewelFlyout .jewelHighlight a:focus span,.fbJewelFlyout .jewelHighlight a:hover div,.fbJewelFlyout .jewelHighlight a:active div,.fbJewelFlyout .jewelHighlight a:focus div,.fbJewelFlyout .jewelHighlight li.selected a,.fbJewelFlyout .jewelHighlight li.selected .timestamp{background-color:#353466 !important;}
+.fbJewelFlyout .jewelHighlight a:hover span,.fbJewelFlyout .jewelHighlight a:active span,.fbJewelFlyout .jewelHighlight a:focus span,.fbJewelFlyout .jewelHighlight a:hover div,.fbJewelFlyout .jewelHighlight a:active div,.fbJewelFlyout .jewelHighlight a:focus div,.fbJewelFlyout .jewelHighlight li.selected a,.fbJewelFlyout .jewelHighlight li.selected .timestamp,.fbJewelFlyout .jewelHighlight a:hover span *,.fbJewelFlyout .jewelHighlight a:active span *,.fbJewelFlyout .jewelHighlight a:focus span *,.fbJewelFlyout .jewelHighlight a:hover div *,.fbJewelFlyout .jewelHighlight a:active div *,.fbJewelFlyout .jewelHighlight a:focus div *,.fbJewelFlyout .jewelHighlight li.selected a *,.fbJewelFlyout .jewelHighlight li.selected .timestamp *{border-color:#464577 !important}
+.jewelFooter{background-color:#683433 !important;}
+.jewelFooter,.jewelFooter *{border-color:#8b5655 !important}
+.fbQuestionsPollResultsBar{background-color:#090807 !important;}
+.fbQuestionsPollResultsBar .shaded{background-color:#252423 !important;}
+.uiSelectorNormal .uiSelectorButton,.uiSelectorNormal .uiButtonSuppressed,.uiSelectorNormal .uiSelectorButton:active,.uiSelectorNormal .uiButtonSuppressed:active,.uiSelectorNormal .uiSelectorButton:focus,.uiSelectorNormal .uiButtonSuppressed:focus,.uiSelectorNormal .uiSelectorButton:hover,.uiSelectorNormal .uiButtonSuppressed:hover{background-color:#090807 !important;background-image:none !important;}
+.uiSelectorNormal .uiSelectorButton,.uiSelectorNormal .uiButtonSuppressed,.uiSelectorNormal .uiSelectorButton:active,.uiSelectorNormal .uiButtonSuppressed:active,.uiSelectorNormal .uiSelectorButton:focus,.uiSelectorNormal .uiButtonSuppressed:focus,.uiSelectorNormal .uiSelectorButton:hover,.uiSelectorNormal .uiButtonSuppressed:hover,.uiSelectorNormal .uiSelectorButton *,.uiSelectorNormal .uiButtonSuppressed *,.uiSelectorNormal .uiSelectorButton:active *,.uiSelectorNormal .uiButtonSuppressed:active *,.uiSelectorNormal .uiSelectorButton:focus *,.uiSelectorNormal .uiButtonSuppressed:focus *,.uiSelectorNormal .uiSelectorButton:hover *,.uiSelectorNormal .uiButtonSuppressed:hover *{border-color:#090807 !important}
+.uiSelectorNormal .uiSelectorButton:hover,.uiSelectorNormal .uiButtonSuppressed:hover,.uiSelectorNormal .uiSelectorButton:active:hover,.uiSelectorNormal .uiButtonSuppressed:active:hover,.uiSelectorNormal .uiSelectorButton:focus:hover,.uiSelectorNormal .uiButtonSuppressed:focus:hover,.uiSelectorNormal .uiSelectorButton:hover:hover,.uiSelectorNormal .uiButtonSuppressed:hover:hover{background-color:#090807 !important;}
+.uiSelectorNormal .uiSelectorButton:hover,.uiSelectorNormal .uiButtonSuppressed:hover,.uiSelectorNormal .uiSelectorButton:active:hover,.uiSelectorNormal .uiButtonSuppressed:active:hover,.uiSelectorNormal .uiSelectorButton:focus:hover,.uiSelectorNormal .uiButtonSuppressed:focus:hover,.uiSelectorNormal .uiSelectorButton:hover:hover,.uiSelectorNormal .uiButtonSuppressed:hover:hover,.uiSelectorNormal .uiSelectorButton:hover *,.uiSelectorNormal .uiButtonSuppressed:hover *,.uiSelectorNormal .uiSelectorButton:active:hover *,.uiSelectorNormal .uiButtonSuppressed:active:hover *,.uiSelectorNormal .uiSelectorButton:focus:hover *,.uiSelectorNormal .uiButtonSuppressed:focus:hover *,.uiSelectorNormal .uiSelectorButton:hover:hover *,.uiSelectorNormal .uiButtonSuppressed:hover:hover *{border-color:#454443 !important}
+.uiButton{background-color:#090807 !important;background-image:none !important;}
+.uiButton,.uiButton *{border-color:#090807 !important}
+.uiButton:hover{background-color:#090807 !important;}
+.uiButton:hover,.uiButton:hover *{border-color:#454443 !important}
+.uiStream .uiStreamHeader .uiStreamHeaderChronologicalForm .uiSelectorButton,.uiStream .uiStreamHeader .uiStreamHeaderChronologicalForm .uiSelectorButton:active,.uiStream .uiStreamHeader .uiStreamHeaderChronologicalForm .uiSelectorButton:focus,.uiStream .uiStreamHeader .uiStreamHeaderChronologicalForm .uiSelectorButton:hover{background-color:transparent !important}
+.enableBeeper#fbNotificationsFlyout{background-color:#683433 !important;box-shadow:0 0 8px rgba(139,86,85,0.50)}
+.enableBeeper#fbNotificationsFlyout .beeperNub{background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAAR0lEQVR42qXMsQ0AEBQAUTuxAD1z2MAABie/UlwjuUuufemnPfqJk+thq9X4oRabJcdADQbUYAIlJlBiAiUmUGICJeZRYBK9DFT0Ja9GnUIAAAAASUVORK5CYII=") 0 0 no-repeat !important}
+.enableBeeper#fbNotificationsFlyout,.enableBeeper#fbNotificationsFlyout *{border-color:#8b5655 !important}
+#fbNotificationsList .notification.fbJewelBeep{background-color:#683433 !important;}
+#fbNotificationsList .notification.fbJewelBeep,#fbNotificationsList .notification.fbJewelBeep *{border-color:#8b5655 !important}
+.separator .text,.uiStreamHeader .uiSelector{background-color:#353433 !important;}
+.separator .text,.uiStreamHeader .uiSelector,.separator .text *,.uiStreamHeader .uiSelector *{color:#8b8685 !important}
+.separator .text .uiMenuInner,.uiStreamHeader .uiSelector .uiMenuInner{background-color:#090807 !important;}
+.separator .text .uiMenuInner,.uiStreamHeader .uiSelector .uiMenuInner,.separator .text .uiMenuInner *,.uiStreamHeader .uiSelector .uiMenuInner *{border-color:#454443 !important}
+.separator .text .uiMenuInner li,.uiStreamHeader .uiSelector .uiMenuInner li{background-color:#090807 !important;}
+.separator .text .uiMenuInner li,.uiStreamHeader .uiSelector .uiMenuInner li,.separator .text .uiMenuInner li *,.uiStreamHeader .uiSelector .uiMenuInner li *{border-color:#090807 !important}
+.separator .text .uiMenuInner li,.uiStreamHeader .uiSelector .uiMenuInner li,.separator .text .uiMenuInner li *,.uiStreamHeader .uiSelector .uiMenuInner li *,.separator .text .uiMenuInner li a,.uiStreamHeader .uiSelector .uiMenuInner li a,.separator .text .uiMenuInner li *,.uiStreamHeader .uiSelector .uiMenuInner li *,.separator .text .uiMenuInner li * *,.uiStreamHeader .uiSelector .uiMenuInner li * *,.separator .text .uiMenuInner li a *,.uiStreamHeader .uiSelector .uiMenuInner li a *{color:#e9e8e7 !important}
+.separator .text .uiMenuInner li:hover,.uiStreamHeader .uiSelector .uiMenuInner li:hover,.separator .text .uiMenuInner li a:hover,.uiStreamHeader .uiSelector .uiMenuInner li a:hover{background-color:#353466 !important;}
+.separator .text .uiMenuInner li:hover,.uiStreamHeader .uiSelector .uiMenuInner li:hover,.separator .text .uiMenuInner li a:hover,.uiStreamHeader .uiSelector .uiMenuInner li a:hover,.separator .text .uiMenuInner li:hover *,.uiStreamHeader .uiSelector .uiMenuInner li:hover *,.separator .text .uiMenuInner li a:hover *,.uiStreamHeader .uiSelector .uiMenuInner li a:hover *{border-color:#464577 !important}
+.separator .text .uiMenuInner li.uiMenuSeparator,.uiStreamHeader .uiSelector .uiMenuInner li.uiMenuSeparator{border-color:#31302f !important}
+.uiTypeaheadView{background-color:#090807 !important;}
+.uiTypeaheadView,.uiTypeaheadView *{border-color:#454443 !important}
+.uiTypeaheadView ul.compact li{background-color:#090807 !important;}
+.uiTypeaheadView ul.compact li,.uiTypeaheadView ul.compact li *{border-color:#090807 !important}
+.uiTypeaheadView ul.compact li.selected,.uiTypeaheadView ul.compact li.selected *{background-color:#353466 !important;}
+.uiTypeaheadView ul.compact li.selected,.uiTypeaheadView ul.compact li.selected *,.uiTypeaheadView ul.compact li.selected *,.uiTypeaheadView ul.compact li.selected * *{border-color:#464577 !important}
+ul.search{background-color:#090807 !important;}
+ul.search,ul.search *{border-color:#090807 !important}
+ul.search li,ul.search li *{color:#8b8685 !important}
+ul.search li .text,ul.search li .text *{color:#9cb6df !important}
+ul.search li.header{background-color:#3c3b3a !important;}
+ul.search li.header,ul.search li.header *{border-color:#31302f !important}
+ul.search li.header,ul.search li.header .text,ul.search li.header *,ul.search li.header .text *{color:#e9e8e7 !important}
+ul.search li.calltoaction{background-color:#683433 !important;}
+ul.search li.calltoaction,ul.search li.calltoaction *{border-color:#8b5655 !important}
+ul.search li.calltoaction a,ul.search li.calltoaction a .text,ul.search li.calltoaction a .seeMore,ul.search li.calltoaction a *,ul.search li.calltoaction a .text *,ul.search li.calltoaction a .seeMore *{color:#c58988 !important}
+ul.search li.selected{background-color:#353466 !important;}
+ul.search li.selected,ul.search li.selected *{border-color:#464577 !important}
+ul.search li.selected .text,ul.search li.selected .text *{color:#bef !important}
+.uiTypeaheadView .bucketed .header .text,.uiTypeaheadView .bucketed .header .text *{color:#e9e8e7 !important}
+.uiBoxLightblue{background-color:#683433 !important;}
+.uiBoxLightblue,.uiBoxLightblue *{border-color:#8b5655 !important}
+.fbMainStreamAttachment .uiPhotoThumb,.fbMainStreamAttachment .uiMediaThumb,.fbMainStreamAttachment .uiVideoThumb{border:0 !important;}
+.fbMainStreamAttachment .uiPhotoThumb img,.fbMainStreamAttachment .uiMediaThumb img,.fbMainStreamAttachment .uiVideoThumb img,.fbMainStreamAttachment .uiPhotoThumb i,.fbMainStreamAttachment .uiMediaThumb i,.fbMainStreamAttachment .uiVideoThumb i{margin:0 3px 3px 0 !important;box-shadow:3px 3px 0 rgba(0,0,0,0.30) !important}
+.jewelCount{background-color:#ac3433 !important;}
+.timelineLayout [id="contentCol"]{background-color:#252423 !important;}
+.timelineLayout .fbTimelineTopSection,.timelineLayout .timelineUnitContainer{background-color:#353433 !important;}
+.timelineLayout .frame.detail,.timelineLayout .fbTimelineRibbon{background-color:#090807 !important;}
+.timelineLayout .counter{background-color:#252423 !important;}
+.timelineLayout .topBorder,.timelineLayout .bottomBorder{background-image:none !important}
+.timelineLayout .topBorder{border-bottom:1px solid #454443 !important}
+.timelineLayout .bottomBorder{border-top:2px solid #454443 !important}
+.timelineLayout .spinePointer{display:none}
+.timelineLayout .spineHoverPlus{background-image:url("data:image/png;base64,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") !important}
+.timelineLayout .fbTimelineCapsule,.timelineLayout .fbTimelineTimePeriod{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAABCAAAAAA+i0toAAAAAmJLR0QA/4ePzL8AAAAMSURBVAgdYzAwMAAAASQAkRBtujgAAAAASUVORK5CYII=") !important}
+.timelineLayout .profilePicThumb{background-color:#090807 !important;}
+.timelineLayout .profilePicThumb,.timelineLayout .profilePicThumb *{border-color:#454443 !important}
+.timelineLayout .timelineTimestamp .uiSelectorButton{background-color:transparent !important;border-width:0 !important}
+.timelineLayout .stickyHeaderWrap{background-color:#090807 !important;}
+.timelineLayout .stickyHeaderWrap,.timelineLayout .stickyHeaderWrap *{border-color:#454443 !important}
+.timelineLayout .stickyHeaderWrap .back{background-color:#090807 !important;}
+.fbPhotoSnowbox{background-color:rgba(53,52,51,0.75) !important;}
+.fbPhotoSnowbox .container{background-color:#090807 !important;box-shadow:0 1px 15px rgba(139,134,133,0.30),0 0 1px rgba(139,134,133,0.70) !important;}
+.fbPhotoSnowbox .container,.fbPhotoSnowbox .container *{border-color:#31302f !important}
+.fbPhotoSnowbox .container .stageWrapper{padding-bottom:12px !important;}
+.fbPhotoSnowbox .container .stageWrapper .stageActions{bottom:-36px !important}
+.fbPhotoSnowbox .container .photoInfoWrapper{background-color:#252423 !important;padding-top:36px !important;margin-left:-12px !important;padding-left:12px !important;margin-right:-12px !important;padding-right:12px !important;margin-bottom:-12px !important;padding-bottom:12px !important}
+.fbPhotoSnowbox .container .photoInfoWrapper,.fbPhotoSnowbox .container .photoInfoWrapper *{border-color:#31302f !important}
+.fbPhotoSnowbox .container .arrowLeft a,.fbPhotoSnowbox .container .arrowRight a{background-color:#090807 !important;}
+.fbPhotoSnowbox .container .arrowLeft a,.fbPhotoSnowbox .container .arrowRight a,.fbPhotoSnowbox .container .arrowLeft a *,.fbPhotoSnowbox .container .arrowRight a *{border-color:#31302f !important}
+.fbPhotoSnowbox .container .arrowLeft a{background-image:url("https://s-static.ak.facebook.com/rsrc.php/v1/yn/r/77uboGPzRks.png") !important}
+.fbPhotoSnowbox .container .arrowRight a{background-image:url("https://s-static.ak.facebook.com/rsrc.php/v1/yi/r/KsODvVMV-0n.png") !important}
+.generic_dialog .pop_content{background-color:#252423 !important;}
+.generic_dialog .pop_content,.generic_dialog .pop_content *{border-color:#31302f !important}
+.generic_dialog .pop_container_advanced{background:rgba(139,134,133,0.70) !important}
+.generic_dialog .dialog_buttons{background-color:#353433 !important;}
+.generic_dialog .dialog_buttons,.generic_dialog .dialog_buttons *{border-color:#454443 !important}
+.generic_dialog h2.dialog_title{background-color:#683433 !important;}
+.generic_dialog h2.dialog_title,.generic_dialog h2.dialog_title *{border-color:#8b5655 !important}
+[id="MessagingShelf"],.MessagingReadHeader{background-color:#353433 !important;}
+[id="MessagingShelf"],.MessagingReadHeader,[id="MessagingShelf"] *,.MessagingReadHeader *{border-color:#454443 !important}
+#better_fb_cp,#better_fb_cp *{color:#8b8685 !important}
+#better_fb_cp #bfb_status_older_posts_input{background-color:#090807 !important;background-image:none !important;border-width:1px !important;border-style:solid !important;-moz-appearance:none !important;-webkit-appearance:none !important}
+#better_fb_cp #bfb_status_older_posts_input,#better_fb_cp #bfb_status_older_posts_input *{color:#e9e8e7 !important}
+#better_fb_cp input[type="checkbox"]{opacity:.6 !important}
+.bfb_dialog{background-color:#3d3c4c !important;}
+.bfb_dialog,.bfb_dialog *{border-color:#5f5e6e !important}
+.bfb_dialog .type_selected{background-color:#683433 !important;}
+.bfb_dialog .type_selected,.bfb_dialog .type_selected *{border-color:#8b5655 !important}
+#bfb_options a,#bfb_options a *{color:#9cb6df !important}
+#bfb_options .options_dialog{background-color:#090807 !important;}
+#bfb_options .options_dialog,#bfb_options .options_dialog *{border-color:#31302f !important}
+#bfb_options .options_dialog .bfb_tab_selected,#bfb_options .options_dialog #bfb_options_content{background-color:#353433 !important;}
+#bfb_options .options_dialog .bfb_tab_selected,#bfb_options .options_dialog #bfb_options_content,#bfb_options .options_dialog .bfb_tab_selected *,#bfb_options .options_dialog #bfb_options_content *{border-color:#454443 !important}
+#bfb_options .options_dialog .bfb_tab_selected input[type="button"],#bfb_options .options_dialog #bfb_options_content input[type="button"],#bfb_options .options_dialog .bfb_tab_selected input[type="submit"],#bfb_options .options_dialog #bfb_options_content input[type="submit"]{background-color:#090807 !important;background-image:none !important;border-width:1px !important;border-style:solid !important;-moz-appearance:none !important;-webkit-appearance:none !important;cursor:pointer !important;}
+#bfb_options .options_dialog .bfb_tab_selected input[type="button"],#bfb_options .options_dialog #bfb_options_content input[type="button"],#bfb_options .options_dialog .bfb_tab_selected input[type="submit"],#bfb_options .options_dialog #bfb_options_content input[type="submit"],#bfb_options .options_dialog .bfb_tab_selected input[type="button"] *,#bfb_options .options_dialog #bfb_options_content input[type="button"] *,#bfb_options .options_dialog .bfb_tab_selected input[type="submit"] *,#bfb_options .options_dialog #bfb_options_content input[type="submit"] *{border-color:#090807 !important}
+#bfb_options .options_dialog .bfb_tab_selected input[type="button"]:hover,#bfb_options .options_dialog #bfb_options_content input[type="button"]:hover,#bfb_options .options_dialog .bfb_tab_selected input[type="submit"]:hover,#bfb_options .options_dialog #bfb_options_content input[type="submit"]:hover{background-color:#252423 !important;}
+#bfb_options .options_dialog .bfb_tab_selected input[type="button"]:hover,#bfb_options .options_dialog #bfb_options_content input[type="button"]:hover,#bfb_options .options_dialog .bfb_tab_selected input[type="submit"]:hover,#bfb_options .options_dialog #bfb_options_content input[type="submit"]:hover,#bfb_options .options_dialog .bfb_tab_selected input[type="button"]:hover *,#bfb_options .options_dialog #bfb_options_content input[type="button"]:hover *,#bfb_options .options_dialog .bfb_tab_selected input[type="submit"]:hover *,#bfb_options .options_dialog #bfb_options_content input[type="submit"]:hover *{border-color:#454443 !important}
+#bfb_options .options_dialog .bfb_tab_search{background-color:#252423 !important;}
+#bfb_options .options_dialog .bfb_tab_search,#bfb_options .options_dialog .bfb_tab_search *{border-color:#454443 !important}
+#bfb_options .GM_options_header{background-color:#252423 !important;}
+#bfb_options .GM_options_header,#bfb_options .GM_options_header *{border-color:#31302f !important}
+#bfb_options input.text,#bfb_options textarea,#bfb_options #bfb_options_search{background-color:#090807 !important;background-image:none !important;border-width:1px !important;border-style:solid !important;-moz-appearance:none !important;-webkit-appearance:none !important}
+#bfb_options input.text,#bfb_options textarea,#bfb_options #bfb_options_search,#bfb_options input.text *,#bfb_options textarea *,#bfb_options #bfb_options_search *{color:#e9e8e7 !important}
+#bfb_options input[type="button"],#bfb_options input[type="submit"]{background-color:#090807 !important;background-image:none !important;border-width:1px !important;border-style:solid !important;-moz-appearance:none !important;-webkit-appearance:none !important;cursor:pointer !important;}
+#bfb_options input[type="button"],#bfb_options input[type="submit"],#bfb_options input[type="button"] *,#bfb_options input[type="submit"] *{border-color:#090807 !important}
+#bfb_options input[type="button"]:hover,#bfb_options input[type="submit"]:hover{background-color:#252423 !important;}
+#bfb_options input[type="button"]:hover,#bfb_options input[type="submit"]:hover,#bfb_options input[type="button"]:hover *,#bfb_options input[type="submit"]:hover *{border-color:#454443 !important}
+.bfb_tabs .bfb_tab{background-color:#353433 !important;}
+.bfb_tabs .bfb_tab,.bfb_tabs .bfb_tab *{border-color:#454443 !important}
+.bfb_tabs .bfb_tab,.bfb_tabs .bfb_tab *{color:#8b8685 !important}
+.bfb_tabs .bfb_tab_selected{background-color:#454443 !important;}
+.bfb_tabs .bfb_tab_selected,.bfb_tabs .bfb_tab_selected *{border-color:#454443 !important}
+.bfb_tabs .bfb_tab_selected,.bfb_tabs .bfb_tab_selected *{color:#e9e8e7 !important}
+.bfb_post_action_container:not(:hover){opacity:.2 !important}
+.bfb_image_preview{background-color:#090807 !important;}
+.bfb_image_preview,.bfb_image_preview *{border-color:#454443 !important}
+.UIPage_LoggedOut{width:100% !important;height:100% !important;}
+.UIPage_LoggedOut .loggedOut#blueBarHolder{top:0 !important;right:0 !important;bottom:0 !important;left:0 !important;width:auto !important;height:auto !important;position:absolute !important;z-index:100 !important}
+.UIPage_LoggedOut .loggedOut#blueBarHolder #blueBar{top:0 !important;right:0 !important;bottom:0 !important;left:0 !important;width:auto !important;height:auto !important;position:absolute !important;}
+.UIPage_LoggedOut .loggedOut#blueBarHolder #blueBar .rfloat{float:none !important;}
+.UIPage_LoggedOut .loggedOut#blueBarHolder #blueBar .rfloat .menu_login_container{background-color:#353433 !important;border-style:dotted !important;border-width:1px !important;top:50% !important;right:auto !important;bottom:auto !important;left:50% !important;width:480px !important;height:120px !important;position:absolute !important;margin-top:-61px !important;margin-left:-241px !important;}
+.UIPage_LoggedOut .loggedOut#blueBarHolder #blueBar .rfloat .menu_login_container,.UIPage_LoggedOut .loggedOut#blueBarHolder #blueBar .rfloat .menu_login_container *{border-color:#454443 !important}
+.UIPage_LoggedOut .loggedOut#blueBarHolder #blueBar .rfloat .menu_login_container table{margin:20px auto 0 !important;}
+.UIPage_LoggedOut .loggedOut#blueBarHolder #blueBar .rfloat .menu_login_container table .uiButton input{border-width:0 !important}
+.UIPage_LoggedOut #globalContainer{top:100% !important;right:0 !important;bottom:auto !important;left:0 !important;width:auto !important;height:auto !important;position:absolute !important}
+.UIPage_LoggedOut .gradient{background-color:#353433 !important;background-image:none !important}
+.UIPage_LoggedOut .gradient,.UIPage_LoggedOut .gradient *{border-color:#454443 !important}
+.UIPage_LoggedOut input,.UIPage_LoggedOut select{background-color:#090807 !important;background-image:none !important;border-width:1px !important;border-style:solid !important;-moz-appearance:none !important;-webkit-appearance:none !important}
+.UIPage_LoggedOut input,.UIPage_LoggedOut select,.UIPage_LoggedOut input *,.UIPage_LoggedOut select *{color:#e9e8e7 !important}
+#blueBar .uiTypeahead{background:#252423 !important;box-shadow:inset 0 2px 5px #090807 !important;border-color:#454443 !important;}
+#blueBar .uiTypeahead .wrap,#blueBar .uiTypeahead .wrap .innerWrap,#blueBar .uiTypeahead .wrap .uiSearchInput,#blueBar .uiTypeahead .wrap .innerWrap .uiSearchInput,#blueBar .uiTypeahead .wrap span,#blueBar .uiTypeahead .wrap .innerWrap span,#blueBar .uiTypeahead .wrap .uiSearchInput span,#blueBar .uiTypeahead .wrap .innerWrap .uiSearchInput span,#blueBar .uiTypeahead .wrap input,#blueBar .uiTypeahead .wrap .innerWrap input,#blueBar .uiTypeahead .wrap .uiSearchInput input,#blueBar .uiTypeahead .wrap .innerWrap .uiSearchInput input,#blueBar .uiTypeahead .wrap span input,#blueBar .uiTypeahead .wrap .innerWrap span input,#blueBar .uiTypeahead .wrap .uiSearchInput span input,#blueBar .uiTypeahead .wrap .innerWrap .uiSearchInput span input,#blueBar .uiTypeahead .wrap button,#blueBar .uiTypeahead .wrap .innerWrap button,#blueBar .uiTypeahead .wrap .uiSearchInput button,#blueBar .uiTypeahead .wrap .innerWrap .uiSearchInput button,#blueBar .uiTypeahead .wrap span button,#blueBar .uiTypeahead .wrap .innerWrap span button,#blueBar .uiTypeahead .wrap .uiSearchInput span button,#blueBar .uiTypeahead .wrap .innerWrap .uiSearchInput span button{background-color:transparent !important}
+#blueBar .uiTypeahead .search{border-color:#454443 !important;border-top-width:0 !important;margin-left:-1px !important;margin-right:-1px !important}
+#blueBar .topNavLink,#blueBar .DOMControl_placeholder,#blueBar .topNavLink *,#blueBar .DOMControl_placeholder *{color:#8b8685 !important}
+#blueBar #pageNav a{color:#8b8685 !important}
+#blueBar #navAccountLink .menuPulldown{opacity:.6 !important}
+.slimHeader #pageNav li.tinyman:after,.slimHeader #pageNav li.middleLink:after{background:#4b4747 !important}
+div.photocrop .bg{background-color:#000 !important}
+div.photocrop .viewport{box-shadow:0 1px 10px rgba(0,0,0,0.50) !important;}
+div.photocrop .viewport div{background-color:rgba(255,255,255,0.50) !important;border-radius:10px !important;box-shadow:inset 0 0 5px #fff,0 1px 2px #000 !important;opacity:1 !important}
+[id="booklet"] [id="pageheader"]{background-color:#683433 !important;}
+[id="booklet"] [id="pageheader"],[id="booklet"] [id="pageheader"] *{border-color:#8b5655 !important}
+.uiMentionsInput{background-color:#090807 !important;}
+.uiMentionsInput,.uiMentionsInput *{border-color:#454443 !important}
+.uiMentionsInput .uiTypeahead{background-color:transparent !important}
+.highlighter .highlighterContent{color:#090807 !important;}
+.highlighter .highlighterContent b{color:rgba(9,8,7,0.00) !important;background:rgba(156,182,223,0.30) !important}
 

@@ -48,6 +48,16 @@ var fx = new Chain({
 			});
 		});
 	},
+	require: function(taskName) {
+		return this.runTask(taskName).chain(function(dest, next) {
+			this.source.run(dest, function(src) {
+				log('requiring task: ' + taskName);
+				var canvas = new Canvas(src.width, src.height);
+				canvas.getContext('2d').putImageData(src.getContext('2d').getImageData(0, 0, src.width, src.height), 0, 0);
+				next(canvas);
+			});
+		});
+	},
 	load: function(filename) {
 		return this.runTask(filename).chain(function(dest, next) {
 			this.source.run(dest, function() {
@@ -148,6 +158,31 @@ var fx = new Chain({
 			}
 		});
 	},
+	chooseAreas: function(areas, mode) {
+		if (!mode) mode = 'in';
+		return this.pixelManipulate('select areas: ' + JSON.stringify(areas), function(pixel, x, y) {
+			var match = false;
+			for (var i = 0; i < areas.length; i ++) {
+				var area = areas[i];
+				if (area[0] <= x && x < area[2] && area[1] <= y && y < area[3]) {
+					match = true;
+					break
+				}
+			}
+			if ((mode == 'in') ^ match) {
+				pixel[0] = 0;
+				pixel[1] = 0;
+				pixel[2] = 0;
+				pixel[3] = 0;
+			}
+		});
+	},
+	choose: function() {
+		return this.chooseAreas(Array.prototype.slice.call(arguments), 'in');
+	},
+	chooseOut: function() {
+		return this.chooseAreas(Array.prototype.slice.call(arguments), 'out');
+	},
 	colorize: function(o) {
 		function parse(c) {
 			return [parseInt(c.substr(0, 2), 16), parseInt(c.substr(2, 2), 16), parseInt(c.substr(4, 2), 16)];
@@ -243,9 +278,6 @@ var fx = new Chain({
 			}
 		});
 	},
-	require: function(taskName) {
-		return this.runTask(taskName);
-	},
 	linearGradient: function(x1, y1, x2, y2, gtask) {
 		return this.chain(function(dest, next) {
 			this.source.run(dest, function(canvas) {
@@ -304,9 +336,14 @@ var tasks = {
 	"timeline-bar.png":        fx.load("fb-timeline2.png").darken().save().compress(),
 	"top-bar.png":             fx.create(1, 37).verticalGradient(fx.gradient.add(0, '#353433').add(1, '#090807')).save(),
 	"jewel":                   fx.load("fb-sprite2.png").crop(0, 0, 104, 277).crop(0, 138, 104, 245, 'out').crop(0, 0, 31, 138, 'out').crop(80, 0, 104, 138, 'out'),
-	"jewel.png":               fx.require("jewel").colorize({ '000000': '8b8685', 'FFFFFF': '090807' }).save(),
-	"jewel-new.png":           fx.require("jewel").colorize({ '3b5998': '090807', 'a7b4d1': 'aba6a5' }).save(),
-	"jewel-normal.png":        fx.require("jewel").curve(1.2, 1.2, 1.2).colorize({ '000000': '090807', '8B8685': '8B8685', 'CCCCCC': 'e9e8e7' }).save(),
+	"jewel.png":               fx.require("jewel").colorize({ '000000': '8b8685', 'FFFFFF': '090807' })
+		.choose([56, 2, 80, 32], [56, 74, 80, 104], [25, 250, 50, 280]).save(),
+	"jewel-new.png":           fx.require("jewel").colorize({ '3b5998': '090807', 'a7b4d1': 'aba6a5' })
+		.choose([30, 40, 56, 70], [30, 110, 56, 140], [50, 250, 75, 280]).save(),
+	"jewel-normal.png":        fx.require("jewel").curve(1.2, 1.2, 1.2).colorize({ '000000': '090807', '8B8685': '8B8685', 'CCCCCC': 'e9e8e7' })
+		.chooseOut([56, 2, 80, 32], [56, 74, 80, 104], [25, 250, 50, 280])
+		.chooseOut([30, 40, 56, 70], [30, 110, 56, 140], [50, 250, 75, 280])
+		.save(),
 	"jewel-beeper-nub.png":    fx.load("fb-jewel-beeper-nub.png").colorize({ 'ECEFF5': '683433', 'B4B9C5': '8b5655' }).save()
 };
 
