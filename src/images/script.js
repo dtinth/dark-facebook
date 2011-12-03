@@ -82,13 +82,14 @@ var fx = new Chain({
 		});
 	},
 	save: function() {
-		return this.chain(function(dest, next) {
+		var c = this.chain(function(dest, next) {
 			this.source.run(dest, function(canvas) {
 				log('saving image to: ' + dest);
 				fs.writeFileSync(dest, canvas.toBuffer());
 				next(dest);
 			});
 		});
+		return (process.env.COMPRESS_PNG == '1') ? c.compress() : c;
 	},
 	compress: function() {
 		return this.chain(function(dest, next) {
@@ -326,14 +327,14 @@ var tasksTrack = {};
 
 
 var tasks = {
-	"fb-sprite1.png":          fx.fetch("https://s-static.ak.facebook.com/rsrc.php/v1/yj/r/HqOfhywhWvc.png"),
+	"fb-sprite1.png":          fx.fetch("https://s-static.ak.facebook.com/rsrc.php/v1/yi/r/OrgKHI3gO4x.png"),
 	"fb-sprite2.png":          fx.fetch("https://s-static.ak.facebook.com/rsrc.php/v1/yH/r/ZIre3H19AvO.png"),
 	"fb-timeline1.png":        fx.fetch("https://s-static.ak.facebook.com/rsrc.php/v1/yU/r/R8qnmwdGS8-.png"),
 	"fb-timeline2.png":        fx.fetch("https://s-static.ak.facebook.com/rsrc.php/v1/yD/r/N8eF8pLkCCD.png"),
 	"fb-jewel-beeper-nub.png": fx.fetch("https://s-static.ak.facebook.com/rsrc.php/v1/y0/r/G33Rt32pMDF.png"),
-	"stream-button.png":       fx.load("fb-sprite1.png").darken().crop(0, 454, 64, 480).save().compress(),
-	"timeline-sprite.png":     fx.load("fb-timeline1.png").crop(111, 14, 294, 88).colorize({ 'FFFFFF': '353433', 'E8EAF1': '252423', '95A3C2': '8B8685' }).save().compress(),
-	"timeline-bar.png":        fx.load("fb-timeline2.png").darken().save().compress(),
+	"stream-button.png":       fx.load("fb-sprite1.png").darken().crop(0, 415, 64, 442).save(),
+	"timeline-sprite.png":     fx.load("fb-timeline1.png").crop(111, 14, 294, 88).colorize({ 'FFFFFF': '353433', 'E8EAF1': '252423', '95A3C2': '8B8685' }).save(),
+	"timeline-bar.png":        fx.load("fb-timeline2.png").darken().save(),
 	"top-bar.png":             fx.create(1, 37).verticalGradient(fx.gradient.add(0, '#353433').add(1, '#090807')).save(),
 	"jewel":                   fx.load("fb-sprite2.png").crop(0, 0, 104, 277).crop(0, 138, 104, 245, 'out').crop(0, 0, 31, 138, 'out').crop(80, 0, 104, 138, 'out'),
 	"jewel.png":               fx.require("jewel").colorize({ '000000': '8b8685', 'FFFFFF': '090807' })
