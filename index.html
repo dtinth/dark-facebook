@@ -22,11 +22,13 @@ h1, p.tag { background: #252423; }
 p.tag { margin: 0; padding: 0 0 32px; font: 22px Times New Roman, Times, serif; color: #454443; }
 p.preview { margin: 0; padding: 32px 0; background: #000; }
 p.preview img { max-width: 100%; width: 720px; }
-.install { display: inline-block; width: 320px; text-align: left; margin: 32px 16px; vertical-align: top; }
+.install, .lbox { text-align: left; margin: 32px 0; padding: 0 16px; vertical-align: top; }
+.lbox { width: 672px; margin: 32px auto; }
+.install { width: 320px; display: inline-block;  }
 .install p { margin: 0; }
 h2 { font: 400 30px Varela, sans-serif; margin: 0 0 10px; padding: 0; text-shadow: 0 1px 5px rgba(0,0,0,0.5); }
 h2 span, .install p { color: #7b7675; font: 12px Helvetica, sans-serif; text-shadow: none; }
-ul { margin: 24px 0 32px; padding: 0 0 0 20px; }
+ul { margin: 24px 0 0; padding: 0 0 0 20px; }
 li { color: #8b8685; margin: 0 0 10px; word-wrap: break-word; }
 li a { color: #9b9695; }
 </style><body>
@@ -56,4 +58,28 @@ li a { color: #9b9695; }
 </ul>
 </div>
 
+<div class=lbox>
+<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fdtinth.github.com%2Fdark-facebook%2F&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=dark&amp;font=verdana&amp;height=35&amp;appId=226149997397258" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:35px;" allowTransparency="true"></iframe>
+</div>
+
+<script>
+function gotlist(data) {
+	if (!data || !data.data || !data.data.length) return;
+	document.write('<ul id="commits">');
+	for (var i = 0; i < data.data.length; i ++) {
+		var c = data.data[i];
+		if (c.commit && typeof(c.commit.message) == 'string') {
+			if (c.commit.message.match(/main\.styl:/)) {
+				var msg = '<a href="' + c.commit.url + '">' + c.commit.author.date.substr(0, 10) + '</a> ' + c.commit.message.replace(/main\.styl:\s*/, '');
+				document.write('<li>' + msg + '</li>');
+			}
+		}
+	}
+	document.write('</ul>');
+}
+</script>
+<div class=lbox>
+	<h2>Changelog</h2>
+	<script src="https://api.github.com/repos/dtinth/dark-facebook/commits?sha=master&amp;callback=gotlist"></script>
+</div>
 
