@@ -294,17 +294,20 @@ var tasksTrack = {};
 
 
 var tasks = {
-	"fb-sprite1.png":      fx.fetch("https://s-static.ak.facebook.com/rsrc.php/v1/yj/r/HqOfhywhWvc.png"),
-	"fb-sprite2.png":      fx.fetch("https://s-static.ak.facebook.com/rsrc.php/v1/yH/r/ZIre3H19AvO.png"),
-	"fb-timeline1.png":    fx.fetch("https://s-static.ak.facebook.com/rsrc.php/v1/yU/r/R8qnmwdGS8-.png"),
-	"fb-timeline2.png":    fx.fetch("https://s-static.ak.facebook.com/rsrc.php/v1/yD/r/N8eF8pLkCCD.png"),
-	"stream-button.png":   fx.load("fb-sprite1.png").darken().crop(0, 454, 64, 480).save().compress(),
-	"timeline-sprite.png": fx.load("fb-timeline1.png").crop(111, 14, 294, 88).colorize({ 'FFFFFF': '353433', 'E8EAF1': '252423', '95A3C2': '8B8685' }).save().compress(),
-	"timeline-bar.png":    fx.load("fb-timeline2.png").darken().save().compress(),
-	"top-bar.png":         fx.create(1, 37).verticalGradient(fx.gradient.add(0, '#353433').add(1, '#090807')).save(),
-	"jewel":               fx.load("fb-sprite2.png").crop(0, 0, 104, 277).crop(0, 138, 104, 245, 'out').crop(0, 0, 31, 138, 'out').crop(80, 0, 104, 138, 'out'),
-	"jewel.png":           fx.require("jewel").colorize({ '000000': '8b8685', 'FFFFFF': '090807' }).save(),
-	"jewel-normal.png":    fx.require("jewel").curve(1.2, 1.2, 1.2).colorize({ '000000': '090807', '8B8685': '8B8685', 'CCCCCC': 'e9e8e7' }).save()
+	"fb-sprite1.png":          fx.fetch("https://s-static.ak.facebook.com/rsrc.php/v1/yj/r/HqOfhywhWvc.png"),
+	"fb-sprite2.png":          fx.fetch("https://s-static.ak.facebook.com/rsrc.php/v1/yH/r/ZIre3H19AvO.png"),
+	"fb-timeline1.png":        fx.fetch("https://s-static.ak.facebook.com/rsrc.php/v1/yU/r/R8qnmwdGS8-.png"),
+	"fb-timeline2.png":        fx.fetch("https://s-static.ak.facebook.com/rsrc.php/v1/yD/r/N8eF8pLkCCD.png"),
+	"fb-jewel-beeper-nub.png": fx.fetch("https://s-static.ak.facebook.com/rsrc.php/v1/y0/r/G33Rt32pMDF.png"),
+	"stream-button.png":       fx.load("fb-sprite1.png").darken().crop(0, 454, 64, 480).save().compress(),
+	"timeline-sprite.png":     fx.load("fb-timeline1.png").crop(111, 14, 294, 88).colorize({ 'FFFFFF': '353433', 'E8EAF1': '252423', '95A3C2': '8B8685' }).save().compress(),
+	"timeline-bar.png":        fx.load("fb-timeline2.png").darken().save().compress(),
+	"top-bar.png":             fx.create(1, 37).verticalGradient(fx.gradient.add(0, '#353433').add(1, '#090807')).save(),
+	"jewel":                   fx.load("fb-sprite2.png").crop(0, 0, 104, 277).crop(0, 138, 104, 245, 'out').crop(0, 0, 31, 138, 'out').crop(80, 0, 104, 138, 'out'),
+	"jewel.png":               fx.require("jewel").colorize({ '000000': '8b8685', 'FFFFFF': '090807' }).save(),
+	"jewel-new.png":           fx.require("jewel").colorize({ '3b5998': '090807', 'a7b4d1': 'aba6a5' }).save(),
+	"jewel-normal.png":        fx.require("jewel").curve(1.2, 1.2, 1.2).colorize({ '000000': '090807', '8B8685': '8B8685', 'CCCCCC': 'e9e8e7' }).save(),
+	"jewel-beeper-nub.png":    fx.load("fb-jewel-beeper-nub.png").colorize({ 'ECEFF5': '683433', 'B4B9C5': '8b5655' }).save()
 };
 
 function run() {

@@ -325,6 +325,7 @@ tooltipx-border(pos)
 	box-shadow: 0 0 8px rgba($side-header-border, 0.5)
 
 
+
 // chat boxes
 .fbNubButton
 	colorize: $page-background, $main-border
@@ -391,6 +392,8 @@ ul.navigation
 	#fbNotificationsJewel, #fbMessagesJewel, #fbRequestsJewel
 		a.jewelButton
 			background-image: url('images/jewel-normal.png') !important
+		&.hasNew a.jewelButton
+			background-image: url('images/jewel-new.png') !important
 		&.openToggler a.jewelButton
 			background-image: url('images/jewel.png') !important
 	jewel-bg($normal, $active, $new, $open)
@@ -447,6 +450,16 @@ ui-button()
 	transparent()
 
 
+
+// the notifications beeper, new in facebook
+.enableBeeper#fbNotificationsFlyout
+	.beeperNub
+		background: url('images/jewel-beeper-nub.png') 0 0 no-repeat !important
+	colorize: $side-header-background, $side-header-border
+	box-shadow: 0 0 8px rgba($side-header-border, 0.5)
+#fbNotificationsList
+	.notification.fbJewelBeep
+		colorize: $side-header-background, $side-header-border
 
 
 // legend and splitter
