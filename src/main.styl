@@ -296,7 +296,7 @@ body:not(.timelineLayout) .uiSideHeader
 
 // another version of tooltip in facebook
 .uiTooltipX
-	.content
+	.content, .tooltipContent
 		colorize: $dark-background, $dark-background
 		text-color: $color
 tooltipx-border(pos)
@@ -562,6 +562,18 @@ ul.search
 		.back
 			colorize: $dark-background
 
+
+// snowlift (facebook's new lightbox)
+.fbPhotoSnowliftInner
+	colorize: rgba($main-background, 0.75)
+	.fbPhotoSnowliftContainer
+		colorize: $dark-background, $page-border
+		box-shadow: 0 1px 15px rgba($dim-color, 0.3), 0 0 1px rgba($dim-color, 0.7) !important
+
+.snowliftOverlayBar
+	colorize: rgba($dark-background, 0.45)
+	a.buttonLink
+		colorize: rgba($dark-background, 0.7), $main-border
 
 // snowbox (lightbox)
 .fbPhotoSnowbox
