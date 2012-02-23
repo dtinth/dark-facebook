@@ -3,7 +3,7 @@
  * https://github.com/dtinth/dark-facebook
  */
 /* this is compiled source code, for original source code see src/main.styl */
-/* generated: Wed Feb 08 2012 13:44:37 GMT+0700 (ICT) */body{background-color:#252423 !important;}
+/* generated: Fri Feb 24 2012 00:27:48 GMT+0700 (ICT) */body{background-color:#252423 !important;}
 body,body *{border-color:#31302f !important}
 body,body *{color:#e9e8e7 !important}
 body *{background-color:transparent !important}
@@ -294,6 +294,7 @@ div.photocrop .viewport div{background-color:rgba(255,255,255,0.50) !important;b
 .uiMentionsInput .uiTypeahead{background-color:transparent !important}
 .highlighter .highlighterContent{color:#090807 !important;}
 .highlighter .highlighterContent b{color:rgba(9,8,7,0.00) !important;background:rgba(156,182,223,0.30) !important}
+.uiScrollableAreaGripper{background-color:#8b8685 !important}
 .devsitePage .body .content{background-color:#353433 !important;background-image:none !important;}
 .devsitePage .body .content,.devsitePage .body .content *{border-color:#454443 !important}
 .devsitePage .body .content .uiHeader{background-color:#683433 !important;}
@@ -306,4 +307,9 @@ div.photocrop .viewport div{background-color:rgba(255,255,255,0.50) !important;b
 .devsitePage .menu .content{border:0 !important;}
 .devsitePage .menu .content a.l,.devsitePage .menu .content a.l *{color:#8b8685 !important}
 .devsitePage .menu .content .uiTypeahead{background:#252423 !important;box-shadow:inset 0 2px 5px #090807 !important;border-color:#454443 !important}
+#headerArea .groupsSlimBarTop{background-color:rgba(9,8,7,0.85) !important;}
+#headerArea .groupsSlimBarTop,#headerArea .groupsSlimBarTop *{border-color:#454443 !important}
+#headerArea .groupHugFrame .mask{background:#090807 !important}
+.fbDockChatTab .sheetContainer .sheet{background-color:#353433 !important;}
+.fbDockChatTab .sheetContainer .sheet,.fbDockChatTab .sheetContainer .sheet *{border-color:#454443 !important}
 
