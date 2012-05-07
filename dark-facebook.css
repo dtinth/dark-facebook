@@ -3,7 +3,7 @@
  * https://github.com/dtinth/dark-facebook
  */
 /* this is compiled source code, for original source code see src/main.styl */
-/* generated: Fri Feb 24 2012 00:27:48 GMT+0700 (ICT) */body{background-color:#252423 !important;}
+/* generated: Mon May 07 2012 18:38:13 GMT+0700 (ICT) */body{background-color:#252423 !important;}
 body,body *{border-color:#31302f !important}
 body,body *{color:#e9e8e7 !important}
 body *{background-color:transparent !important}
@@ -226,6 +226,12 @@ ul.search li.selected .text,ul.search li.selected .text *{color:#bef !important}
 .generic_dialog .dialog_buttons,.generic_dialog .dialog_buttons *{border-color:#454443 !important}
 .generic_dialog h2.dialog_title{background-color:#683433 !important;}
 .generic_dialog h2.dialog_title,.generic_dialog h2.dialog_title *{border-color:#8b5655 !important}
+.uiDialog{background-color:#252423 !important;}
+.uiDialog,.uiDialog *{border-color:#31302f !important}
+.uiDialog .dialogFooter{background-color:#353433 !important;}
+.uiDialog .dialogFooter,.uiDialog .dialogFooter *{border-color:#454443 !important}
+.uiDialog .dialogTitle{background-color:#683433 !important;}
+.uiDialog .dialogTitle,.uiDialog .dialogTitle *{border-color:#8b5655 !important}
 [id="MessagingShelf"],.MessagingReadHeader{background-color:#353433 !important;}
 [id="MessagingShelf"],.MessagingReadHeader,[id="MessagingShelf"] *,.MessagingReadHeader *{border-color:#454443 !important}
 #better_fb_cp,#better_fb_cp *{color:#8b8685 !important}
@@ -312,4 +318,7 @@ div.photocrop .viewport div{background-color:rgba(255,255,255,0.50) !important;b
 #headerArea .groupHugFrame .mask{background:#090807 !important}
 .fbDockChatTab .sheetContainer .sheet{background-color:#353433 !important;}
 .fbDockChatTab .sheetContainer .sheet,.fbDockChatTab .sheetContainer .sheet *{border-color:#454443 !important}
+.groupsJumpBarTop{border-top-color:rgba(0,0,0,0.50) !important;background:#090807 !important;}
+.groupsJumpBarTop .groupsCleanLink{border-top:0 !important}
+.groupsJumpBarTop .groupsCleanLinksSelected{background:#353433 !important;color:#e9e8e7 !important}
 

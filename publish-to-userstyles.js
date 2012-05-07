@@ -31,6 +31,10 @@ function setGlobal(page, name, data) {
 	return page.evaluate(new Function(fn));
 };
 
+fs.write('/tmp/df-changelog.txt', changelog, 'w');
+fs.write('/tmp/df-css.txt', css, 'w');
+phantom.exit(0);
+
 page.onLoadFinished = processPage;
 page.open(editLink);
 page.onConsoleMessage = function (msg) { console.log('page : ' + msg); };
