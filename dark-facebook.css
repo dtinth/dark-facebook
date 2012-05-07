@@ -3,7 +3,7 @@
  * https://github.com/dtinth/dark-facebook
  */
 /* this is compiled source code, for original source code see src/main.styl */
-/* generated: Mon May 07 2012 18:38:13 GMT+0700 (ICT) */body{background-color:#252423 !important;}
+/* generated: Mon May 07 2012 18:40:26 GMT+0700 (ICT) */body{background-color:#252423 !important;}
 body,body *{border-color:#31302f !important}
 body,body *{color:#e9e8e7 !important}
 body *{background-color:transparent !important}
@@ -319,6 +319,7 @@ div.photocrop .viewport div{background-color:rgba(255,255,255,0.50) !important;b
 .fbDockChatTab .sheetContainer .sheet{background-color:#353433 !important;}
 .fbDockChatTab .sheetContainer .sheet,.fbDockChatTab .sheetContainer .sheet *{border-color:#454443 !important}
 .groupsJumpBarTop{border-top-color:rgba(0,0,0,0.50) !important;background:#090807 !important;}
-.groupsJumpBarTop .groupsCleanLink{border-top:0 !important}
-.groupsJumpBarTop .groupsCleanLinksSelected{background:#353433 !important;color:#e9e8e7 !important}
+.groupsJumpBarTop .groupsCleanLink{border-top-color:rgba(0,0,0,0.10) !important}
+.groupsJumpBarTop .groupsCleanLinksSelected{background:#353433 !important;}
+.groupsJumpBarTop .groupsCleanLinksSelected,.groupsJumpBarTop .groupsCleanLinksSelected *{color:#e9e8e7 !important}
 
