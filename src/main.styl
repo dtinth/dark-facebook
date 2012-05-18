@@ -611,12 +611,16 @@ ul.search
 	h2.dialog_title
 		colorize: $side-header-background, $side-header-border
 
-.uiDialog
+.uiDialog, .cx-uiDialog__content
 	colorize: $page-background, $page-border
-	.dialogFooter
-		colorize: $main-background, $main-border
-	.dialogTitle
-		colorize: $side-header-background, $side-header-border
+.cx-uiDialog__border
+	border-color: black !important;
+.cx-uiDialog__body
+	border-color: $main-border !important
+.uiDialog .dialogFooter, .cx-uiDialog__footer
+	colorize: $main-background, $main-border
+.uiDialog .dialogTitle, .cx-uiDialog__title
+	colorize: $side-header-background, $side-header-border
 
 
 // messaging
