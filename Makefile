@@ -4,8 +4,8 @@ all: dark-facebook.css
 dark-facebook.css: src/main.styl
 	node server.js compile > dark-facebook.css
 
-publish: publish-to-userstyles publish-to-gae
-
+publish: publish-to-gae
+# publish-to-userstyles 
 publish-to-gae:
 	curl -s https://dark-facebook.appspot.com/ping
 
