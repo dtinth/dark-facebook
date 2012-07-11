@@ -31,8 +31,8 @@ function setGlobal(page, name, data) {
 	return page.evaluate(new Function(fn));
 };
 
-fs.write('/tmp/df-changelog.txt', changelog, 'w');
-fs.write('/tmp/df-css.txt', css, 'w');
+fs.write('userstyles-changelog.txt', changelog, 'w');
+fs.write('userstyles-css.txt', css, 'w');
 phantom.exit(0);
 
 page.onLoadFinished = processPage;

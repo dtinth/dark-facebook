@@ -390,30 +390,8 @@ ul.navigation
 #jewelContainer .fbJewel.openToggler
 	.jewelButton
 		colorize: $dark-background, $light-border
-.slimHeader
-	#fbNotificationsJewel, #fbMessagesJewel, #fbRequestsJewel
-		a.jewelButton
-			background-image: url('images/jewel-normal.png') !important
-		&.hasNew a.jewelButton
-			background-image: url('images/jewel-new.png') !important
-		&.openToggler a.jewelButton
-			background-image: url('images/jewel.png') !important
-	jewel-bg($normal, $active, $new, $open)
-		a.jewelButton
-			background-position: $normal !important
-			&:active, &:focus, &:hover
-				background-position: $active !important
-		&.hasNew a.jewelButton
-			background-position: $new !important
-		&.openToggler a.jewelButton
-			&:link, &:visited
-				background-position: $open !important
-	#fbRequestsJewel
-		jewel-bg: -31px -2px, -56px -37px, -31px -37px, -56px -2px
-	#fbMessagesJewel
-		jewel-bg: 0 -247px, -75px -247px, -50px -247px, -25px -247px
-	#fbNotificationsJewel
-		jewel-bg: -31px -72px, -56px -107px, -31px -107px, -56px -72px
+		border-top-width: 1px !important;
+		border-top-style: solid !important;
 
 .fbJewelFlyout
 	colorize: $light-background, $light-border
@@ -427,6 +405,9 @@ ul.navigation
 	colorize: $highlight-background, $highlight-border
 .jewelFooter
 	colorize: $side-header-background, $side-header-border
+
+.notifNegativeBase .fbJewelFlyout, #tinymanNavWrapper .fbJewelFlyout
+	top: 31px !important;
 
 // poll results
 .fbQuestionsPollResultsBar
@@ -450,7 +431,10 @@ ui-button()
 	ui-button()
 .uiStream .uiStreamHeader .uiStreamHeaderChronologicalForm .uiSelectorButton, .uiStream .uiStreamHeader .uiStreamHeaderChronologicalForm .uiSelectorButton:active, .uiStream .uiStreamHeader .uiStreamHeaderChronologicalForm .uiSelectorButton:focus, .uiStream .uiStreamHeader .uiStreamHeaderChronologicalForm .uiSelectorButton:hover
 	transparent()
-
+.uiButtonConfirm
+	background: darken($highlight-background, 30%) !important;
+	&:hover
+		background: $highlight-background !important;
 
 
 // the notifications beeper, new in facebook
@@ -611,15 +595,15 @@ ul.search
 	h2.dialog_title
 		colorize: $side-header-background, $side-header-border
 
-.uiDialog, .cx-uiDialog__content
+.uiDialog, .cx-uiDialog__content, .-cx-PRIVATE-uiDialog__content
 	colorize: $page-background, $page-border
-.cx-uiDialog__border
+.cx-uiDialog__border, .-cx-PRIVATE-uiDialog__border
 	border-color: black !important;
-.cx-uiDialog__body
+.cx-uiDialog__body, .-cx-PRIVATE-uiDialog__body
 	border-color: $main-border !important
-.uiDialog .dialogFooter, .cx-uiDialog__footer
+.uiDialog .dialogFooter, .cx-uiDialog__footer, .-cx-PRIVATE-uiDialog__footer
 	colorize: $main-background, $main-border
-.uiDialog .dialogTitle, .cx-uiDialog__title
+.uiDialog .dialogTitle, .cx-uiDialog__title, .-cx-PRIVATE-uiDialog__title
 	colorize: $side-header-background, $side-header-border
 
 

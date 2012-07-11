@@ -3,7 +3,7 @@
  * https://github.com/dtinth/dark-facebook
  */
 /* this is compiled source code, for original source code see src/main.styl */
-/* generated: Fri May 18 2012 13:29:38 GMT+0700 (ICT) */body{background-color:#252423 !important;}
+/* generated: Wed Jul 11 2012 09:22:38 GMT+0700 (ICT) */body{background-color:#252423 !important;}
 body,body *{border-color:#31302f !important}
 body,body *{color:#e9e8e7 !important}
 body *{background-color:transparent !important}
@@ -107,23 +107,8 @@ div.uiMenu li.uiMenuSeparator,ul.navigation li.uiMenuSeparator,#bfb_options_butt
 .hovercard .stage,.HovercardStage{background-color:#090807 !important;}
 .hovercard .stage,.HovercardStage,.hovercard .stage *,.HovercardStage *{border-color:#454443 !important}
 .hovercard .stage .actions,.HovercardStage .actions,.hovercard .stage .uiHovercardFooter,.HovercardStage .uiHovercardFooter{background-color:#252423 !important;}
-#jewelContainer .fbJewel.openToggler .jewelButton{background-color:#090807 !important;}
+#jewelContainer .fbJewel.openToggler .jewelButton{background-color:#090807 !important;border-top-width:1px !important;border-top-style:solid !important}
 #jewelContainer .fbJewel.openToggler .jewelButton,#jewelContainer .fbJewel.openToggler .jewelButton *{border-color:#4c4b4a !important}
-.slimHeader #fbNotificationsJewel a.jewelButton,.slimHeader #fbMessagesJewel a.jewelButton,.slimHeader #fbRequestsJewel a.jewelButton{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGgAAAIfCAMAAACremnDAAAAbFBMVEUAAAA1MjI1NDM0MTE5NjY4NDI2NDQXFxc0MDA6NzUyMC48Ojk6Nzc6NzcyLy8cFhYdFxc0MTE5NjU0MzE1MzEhHBwxLS08OTg2NDM3NTMzLy8wLiszMTEvLStGQ0JFQkFBPj1EQUBCQD9DQD9JmA0/AAAAHnRSTlMAs8mxs5OXLHCxlenptZMuLJeztck2gee16ZdwcnIoX2RvAAABkklEQVR4Xu3XS24aQRiF0b/BQBzbsZ3381Zh73+PkRuQnBFSoBhY5yzg/1SiGdz6fwCfp7qI3lpdwjLJRZ7UkrSq3muwvKgpWV4k1JJ2kdBcG+s6ydUlQpWkFkmyuECoJcN/pMX8luukxppakjbVVRbDO/tSm77WMMuWnbastO1Uo7QctBr6OeTg8J8FALA5bU6b0+a0OW1Om3MMAOC+qvcfPzc12IenmpJsn97XUJ+2VR/zu5Lt96HvabXzLmkD37TZHvbwc5LtfY3yeNgkPS8ea5TbJFW9f8nsduhO7ZU8ZWdoaC6NDt3sS3WVF99qlHVmu887Wdcom8z6vrSpYVaZ7f5Iqxrobh/6ldzVUKtd6DmrGuxhfZP6s36oIwAAbM5T2Zw2p81pc9qcAAAAAAAAAAAAAAAAQH9l6Km8UqfJK2891Hs/R+j4qSTnCiUZFRLaOyVz/FSSvlN1Quj4qX9eekro+Km5cbrjp87UOX4qdTapNwMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+AgBHZdkQ/khAAAAAAElFTkSuQmCC") !important}
-.slimHeader #fbNotificationsJewel.hasNew a.jewelButton,.slimHeader #fbMessagesJewel.hasNew a.jewelButton,.slimHeader #fbRequestsJewel.hasNew a.jewelButton{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGgAAAIfCAMAAACremnDAAAAgVBMVEUAAACYlJOalpQHBgQAAACXk5IHBQVpZGQGBgWVkJCVkI4HBgQHBAQHBQWRi4oHBgRdXV2AfXyAfHpNS0qQjIwFBQWdl5aWkZBPTEt7e3aNiYaVkZBsaWiRjYualJMIBwWrpqUJCAdtamlUUVCZlZQ5NzZYVVRwbWxsaWiXk5I6ODfxHjljAAAAIHRSTlMAs8mzLLGTLqmTlbFyl/e1LKmr94Fw6Zf1NnC16XK16fbjhhQAAAFnSURBVHhe7dzHctswFIbRS6rYiXt6zw/JLXn/B8xQtqwnAJ3E5yxYVt9cLLDBDOrZAAAAAMA41CyS1BxWSWYZKZPpNU9oSFazhJLkfwndJ9nMETpJshiTZOy/dpX0H2lMMrb7pLXqachkONlknKGTDItNhnc995+91aLrVpSD3fe/H2oHtXu8MAAAAAAAHFUlHz5eVmevUkMmr6urr2n1Lb9bkh9952lVi3ZaN31nunw6+MjkqHq5SnLo5E31cr4LJZ+zc979bHSvbyitf+j6sdQ2mfyqXt7uB1ncJMmn6uU4+9L7qXRcvSy3+1Al2S6rm/XdY+hLcreuji62D6Fke1Fdrdvtder7bVtXZ8uzn61Oz5b1ggAAAAAAAAAAAAAAAEAO8veFhJIIHQi1B+l6bWyeVEuq5ghV6xl6WLHJ9FM9Ja1mMVenWj0bAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+AMN4D8rjB4vCwAAAABJRU5ErkJggg==") !important}
-.slimHeader #fbNotificationsJewel.openToggler a.jewelButton,.slimHeader #fbMessagesJewel.openToggler a.jewelButton,.slimHeader #fbRequestsJewel.openToggler a.jewelButton{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGgAAAIfCAMAAACremnDAAAAM1BMVEUAAACJhIOJhIKJhIOAgHqJhIKJhYOKhIOJgoKJhIOIgoKJhIKFgHqIgoKEgICJhIOLhoUXwUfgAAAAEHRSTlMAs5fJLJOx6XC1cpUugTbnqxyvYAAAASBJREFUeF7t2Utu3DAQhsHWYySPYyf//U+bEReyc4AmEqRqQ+0+NNCgFqwGANtSUySpGY4kU0bK5TrmhJbkmBLKy8xQ/zLkZcZ6b3nZJoQyVKttzHJ0Z2rJZaklW3fnLi2fvSs35KiR65Iv4/tfDwEAAAAAwEdVcq57NXukllx+VKtnqpa8V5Jn8zxDvfXOtN8PH7l8VJc1yVcna3U5Ryj5meHsfhu99YZS/aEzQ9WSy6/qst6DvPUuw54/Snu1edyhJI/eK+gyBnp2X6ojNObpta9n6r3/NwEAAAAAAAAAAAAAAAAAAABAvvn7QkJJhG5C35t9cquaFqr2e6GmmNWp1H8MAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfgMh7RrenwbvSQAAAABJRU5ErkJggg==") !important}
-.slimHeader #fbRequestsJewel a.jewelButton{background-position:-31px -2px !important;}
-.slimHeader #fbRequestsJewel a.jewelButton:active,.slimHeader #fbRequestsJewel a.jewelButton:focus,.slimHeader #fbRequestsJewel a.jewelButton:hover{background-position:-56px -37px !important}
-.slimHeader #fbRequestsJewel.hasNew a.jewelButton{background-position:-31px -37px !important}
-.slimHeader #fbRequestsJewel.openToggler a.jewelButton:link,.slimHeader #fbRequestsJewel.openToggler a.jewelButton:visited{background-position:-56px -2px !important}
-.slimHeader #fbMessagesJewel a.jewelButton{background-position:0 -247px !important;}
-.slimHeader #fbMessagesJewel a.jewelButton:active,.slimHeader #fbMessagesJewel a.jewelButton:focus,.slimHeader #fbMessagesJewel a.jewelButton:hover{background-position:-75px -247px !important}
-.slimHeader #fbMessagesJewel.hasNew a.jewelButton{background-position:-50px -247px !important}
-.slimHeader #fbMessagesJewel.openToggler a.jewelButton:link,.slimHeader #fbMessagesJewel.openToggler a.jewelButton:visited{background-position:-25px -247px !important}
-.slimHeader #fbNotificationsJewel a.jewelButton{background-position:-31px -72px !important;}
-.slimHeader #fbNotificationsJewel a.jewelButton:active,.slimHeader #fbNotificationsJewel a.jewelButton:focus,.slimHeader #fbNotificationsJewel a.jewelButton:hover{background-position:-56px -107px !important}
-.slimHeader #fbNotificationsJewel.hasNew a.jewelButton{background-position:-31px -107px !important}
-.slimHeader #fbNotificationsJewel.openToggler a.jewelButton:link,.slimHeader #fbNotificationsJewel.openToggler a.jewelButton:visited{background-position:-56px -72px !important}
 .fbJewelFlyout{background-color:#3c3b3a !important;}
 .fbJewelFlyout,.fbJewelFlyout *{border-color:#4c4b4a !important}
 .fbJewelFlyout .notification[style],.fbJewelFlyout .jewelItemNew{background-color:#4d4c4b !important;}
@@ -135,6 +120,7 @@ div.uiMenu li.uiMenuSeparator,ul.navigation li.uiMenuSeparator,#bfb_options_butt
 .fbJewelFlyout .jewelHighlight a:hover span,.fbJewelFlyout .jewelHighlight a:active span,.fbJewelFlyout .jewelHighlight a:focus span,.fbJewelFlyout .jewelHighlight a:hover div,.fbJewelFlyout .jewelHighlight a:active div,.fbJewelFlyout .jewelHighlight a:focus div,.fbJewelFlyout .jewelHighlight li.selected a,.fbJewelFlyout .jewelHighlight li.selected .timestamp,.fbJewelFlyout .jewelHighlight a:hover span *,.fbJewelFlyout .jewelHighlight a:active span *,.fbJewelFlyout .jewelHighlight a:focus span *,.fbJewelFlyout .jewelHighlight a:hover div *,.fbJewelFlyout .jewelHighlight a:active div *,.fbJewelFlyout .jewelHighlight a:focus div *,.fbJewelFlyout .jewelHighlight li.selected a *,.fbJewelFlyout .jewelHighlight li.selected .timestamp *{border-color:#464577 !important}
 .jewelFooter{background-color:#683433 !important;}
 .jewelFooter,.jewelFooter *{border-color:#8b5655 !important}
+.notifNegativeBase .fbJewelFlyout,#tinymanNavWrapper .fbJewelFlyout{top:31px !important}
 .fbQuestionsPollResultsBar{background-color:#090807 !important;}
 .fbQuestionsPollResultsBar .shaded{background-color:#252423 !important;}
 .uiSelectorNormal .uiSelectorButton,.uiSelectorNormal .uiButtonSuppressed,.uiSelectorNormal .uiSelectorButton:active,.uiSelectorNormal .uiButtonSuppressed:active,.uiSelectorNormal .uiSelectorButton:focus,.uiSelectorNormal .uiButtonSuppressed:focus,.uiSelectorNormal .uiSelectorButton:hover,.uiSelectorNormal .uiButtonSuppressed:hover{background-color:#090807 !important;background-image:none !important;}
@@ -146,6 +132,8 @@ div.uiMenu li.uiMenuSeparator,ul.navigation li.uiMenuSeparator,#bfb_options_butt
 .uiButton:hover{background-color:#090807 !important;}
 .uiButton:hover,.uiButton:hover *{border-color:#454443 !important}
 .uiStream .uiStreamHeader .uiStreamHeaderChronologicalForm .uiSelectorButton,.uiStream .uiStreamHeader .uiStreamHeaderChronologicalForm .uiSelectorButton:active,.uiStream .uiStreamHeader .uiStreamHeaderChronologicalForm .uiSelectorButton:focus,.uiStream .uiStreamHeader .uiStreamHeaderChronologicalForm .uiSelectorButton:hover{background-color:transparent !important}
+.uiButtonConfirm{background:#252447 !important;}
+.uiButtonConfirm:hover{background:#353466 !important}
 .enableBeeper#fbNotificationsFlyout{background-color:#683433 !important;box-shadow:0 0 8px rgba(139,86,85,0.50)}
 .enableBeeper#fbNotificationsFlyout .beeperNub{background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALAgMAAAACZ0XQAAAADFBMVEUAAABoNDN3QkGDTk3YBgUVAAAAAXRSTlMAQObYZgAAAD5JREFUeF4NyTENwDAMBdEvdQ8fS6HxvZSC6aQ4AsFkMoVEb3nDnaQp0AU9X+PwxnDh8UteziabEVhkMxbmD53ND7B+/8SwAAAAAElFTkSuQmCC") 0 0 no-repeat !important}
 .enableBeeper#fbNotificationsFlyout,.enableBeeper#fbNotificationsFlyout *{border-color:#8b5655 !important}
@@ -226,14 +214,14 @@ ul.search li.selected .text,ul.search li.selected .text *{color:#bef !important}
 .generic_dialog .dialog_buttons,.generic_dialog .dialog_buttons *{border-color:#454443 !important}
 .generic_dialog h2.dialog_title{background-color:#683433 !important;}
 .generic_dialog h2.dialog_title,.generic_dialog h2.dialog_title *{border-color:#8b5655 !important}
-.uiDialog,.cx-uiDialog__content{background-color:#252423 !important;}
-.uiDialog,.cx-uiDialog__content,.uiDialog *,.cx-uiDialog__content *{border-color:#31302f !important}
-.cx-uiDialog__border{border-color:#000 !important}
-.cx-uiDialog__body{border-color:#454443 !important}
-.uiDialog .dialogFooter,.cx-uiDialog__footer{background-color:#353433 !important;}
-.uiDialog .dialogFooter,.cx-uiDialog__footer,.uiDialog .dialogFooter *,.cx-uiDialog__footer *{border-color:#454443 !important}
-.uiDialog .dialogTitle,.cx-uiDialog__title{background-color:#683433 !important;}
-.uiDialog .dialogTitle,.cx-uiDialog__title,.uiDialog .dialogTitle *,.cx-uiDialog__title *{border-color:#8b5655 !important}
+.uiDialog,.cx-uiDialog__content,.-cx-PRIVATE-uiDialog__content{background-color:#252423 !important;}
+.uiDialog,.cx-uiDialog__content,.-cx-PRIVATE-uiDialog__content,.uiDialog *,.cx-uiDialog__content *,.-cx-PRIVATE-uiDialog__content *{border-color:#31302f !important}
+.cx-uiDialog__border,.-cx-PRIVATE-uiDialog__border{border-color:#000 !important}
+.cx-uiDialog__body,.-cx-PRIVATE-uiDialog__body{border-color:#454443 !important}
+.uiDialog .dialogFooter,.cx-uiDialog__footer,.-cx-PRIVATE-uiDialog__footer{background-color:#353433 !important;}
+.uiDialog .dialogFooter,.cx-uiDialog__footer,.-cx-PRIVATE-uiDialog__footer,.uiDialog .dialogFooter *,.cx-uiDialog__footer *,.-cx-PRIVATE-uiDialog__footer *{border-color:#454443 !important}
+.uiDialog .dialogTitle,.cx-uiDialog__title,.-cx-PRIVATE-uiDialog__title{background-color:#683433 !important;}
+.uiDialog .dialogTitle,.cx-uiDialog__title,.-cx-PRIVATE-uiDialog__title,.uiDialog .dialogTitle *,.cx-uiDialog__title *,.-cx-PRIVATE-uiDialog__title *{border-color:#8b5655 !important}
 [id="MessagingShelf"],.MessagingReadHeader{background-color:#353433 !important;}
 [id="MessagingShelf"],.MessagingReadHeader,[id="MessagingShelf"] *,.MessagingReadHeader *{border-color:#454443 !important}
 #better_fb_cp,#better_fb_cp *{color:#8b8685 !important}
