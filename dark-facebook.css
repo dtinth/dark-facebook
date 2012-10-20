@@ -3,7 +3,7 @@
  * https://github.com/dtinth/dark-facebook
  */
 /* this is compiled source code, for original source code see src/main.styl */
-/* generated: Sat Oct 20 2012 15:54:58 GMT+0700 (ICT) */body{background-color:#252423 !important;}
+/* generated: Sat Oct 20 2012 16:05:26 GMT+0700 (ICT) */body{background-color:#252423 !important;}
 body,body *{border-color:#31302f !important}
 body,body *{color:#e9e8e7 !important}
 body *{background-color:transparent !important}
@@ -190,19 +190,20 @@ ul.search li.selected .text,ul.search li.selected .text *{color:#bef !important}
 .timelineLayout .stickyHeaderWrap{background-color:#090807 !important;}
 .timelineLayout .stickyHeaderWrap,.timelineLayout .stickyHeaderWrap *{border-color:#454443 !important}
 .timelineLayout .stickyHeaderWrap .back{background-color:#090807 !important;}
+.uiLayer{background-color:rgba(53,52,51,0.75) !important;}
 .fbPhotoSnowlift{background-color:rgba(53,52,51,0.75) !important;}
 .fbPhotoSnowlift .fbPhotoSnowliftContainer{background-color:#090807 !important;box-shadow:0 1px 15px rgba(139,134,133,0.30),0 0 1px rgba(139,134,133,0.70) !important}
 .fbPhotoSnowlift .fbPhotoSnowliftContainer,.fbPhotoSnowlift .fbPhotoSnowliftContainer *{border-color:#31302f !important}
 .snowliftOverlayBar{background-color:rgba(9,8,7,0.45) !important;}
 .snowliftOverlayBar a.buttonLink{background-color:rgba(9,8,7,0.70) !important;}
 .snowliftOverlayBar a.buttonLink,.snowliftOverlayBar a.buttonLink *{border-color:#454443 !important}
-.generic_dialog .pop_content{background-color:#252423 !important;}
-.generic_dialog .pop_content,.generic_dialog .pop_content *{border-color:#31302f !important}
-.generic_dialog .pop_container_advanced{background:rgba(139,134,133,0.70) !important}
-.generic_dialog .dialog_buttons{background-color:#353433 !important;}
-.generic_dialog .dialog_buttons,.generic_dialog .dialog_buttons *{border-color:#454443 !important}
-.generic_dialog h2.dialog_title{background-color:#683433 !important;}
-.generic_dialog h2.dialog_title,.generic_dialog h2.dialog_title *{border-color:#8b5655 !important}
+.generic_dialog .pop_content,._1yv .pop_content,.generic_dialog ._t,._1yv ._t{background-color:#252423 !important;}
+.generic_dialog .pop_content,._1yv .pop_content,.generic_dialog ._t,._1yv ._t,.generic_dialog .pop_content *,._1yv .pop_content *,.generic_dialog ._t *,._1yv ._t *{border-color:#31302f !important}
+.generic_dialog .pop_container_advanced,._1yv .pop_container_advanced,.generic_dialog ._1yu,._1yv ._1yu{background:rgba(139,134,133,0.70) !important;border-color:rgba(139,134,133,0.70) !important}
+.generic_dialog .dialog_buttons,._1yv .dialog_buttons,.generic_dialog .uiOverlayFooter,._1yv .uiOverlayFooter{background-color:#353433 !important;}
+.generic_dialog .dialog_buttons,._1yv .dialog_buttons,.generic_dialog .uiOverlayFooter,._1yv .uiOverlayFooter,.generic_dialog .dialog_buttons *,._1yv .dialog_buttons *,.generic_dialog .uiOverlayFooter *,._1yv .uiOverlayFooter *{border-color:#454443 !important}
+.generic_dialog h2.dialog_title,._1yv h2.dialog_title,.generic_dialog ._1yw,._1yv ._1yw{background-color:#683433 !important;}
+.generic_dialog h2.dialog_title,._1yv h2.dialog_title,.generic_dialog ._1yw,._1yv ._1yw,.generic_dialog h2.dialog_title *,._1yv h2.dialog_title *,.generic_dialog ._1yw *,._1yv ._1yw *{border-color:#8b5655 !important}
 .uiDialog,.cx-uiDialog__content,.-cx-PRIVATE-uiDialog__content{background-color:#252423 !important;}
 .uiDialog,.cx-uiDialog__content,.-cx-PRIVATE-uiDialog__content,.uiDialog *,.cx-uiDialog__content *,.-cx-PRIVATE-uiDialog__content *{border-color:#31302f !important}
 .cx-uiDialog__border,.-cx-PRIVATE-uiDialog__border{border-color:#000 !important}

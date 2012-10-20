@@ -548,6 +548,9 @@ ul.search
 
 
 // snowlift (facebook's new lightbox)
+.uiLayer
+	colorize: rgba($main-background, 0.75)
+
 .fbPhotoSnowlift
 	colorize: rgba($main-background, 0.75)
 	.fbPhotoSnowliftContainer
@@ -560,14 +563,15 @@ ul.search
 		colorize: rgba($dark-background, 0.7), $main-border
 
 // facebook dialogs
-.generic_dialog
-	.pop_content
+.generic_dialog, ._1yv
+	.pop_content, ._t
 		colorize: $page-background, $page-border
-	.pop_container_advanced
+	.pop_container_advanced, ._1yu
 		background: rgba($dim-color, 0.7) !important
-	.dialog_buttons
+		border-color: rgba($dim-color, 0.7) !important
+	.dialog_buttons, .uiOverlayFooter
 		colorize: $main-background, $main-border
-	h2.dialog_title
+	h2.dialog_title, ._1yw
 		colorize: $side-header-background, $side-header-border
 
 .uiDialog, .cx-uiDialog__content, .-cx-PRIVATE-uiDialog__content
