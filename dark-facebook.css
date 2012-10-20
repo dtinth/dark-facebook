@@ -3,7 +3,7 @@
  * https://github.com/dtinth/dark-facebook
  */
 /* this is compiled source code, for original source code see src/main.styl */
-/* generated: Wed Jul 11 2012 09:22:38 GMT+0700 (ICT) */body{background-color:#252423 !important;}
+/* generated: Sat Oct 20 2012 15:54:58 GMT+0700 (ICT) */body{background-color:#252423 !important;}
 body,body *{border-color:#31302f !important}
 body,body *{color:#e9e8e7 !important}
 body *{background-color:transparent !important}
@@ -37,10 +37,10 @@ body *{background-color:transparent !important}
 .storyContent .uiStreamMessage .actorName a,.storyContent .uiStreamMessage .actorDescription a,.storyContent .uiStreamMessage.uiStreamPassive a,.storyContent .uiStreamMessage .actorName a *,.storyContent .uiStreamMessage .actorDescription a *,.storyContent .uiStreamMessage.uiStreamPassive a *{color:#9c9796 !important}
 .storyContent .uiStreamMessage .actorDescription .actorName,.storyContent .uiStreamMessage .actorName a,.storyContent .uiStreamMessage a.passiveName{font-weight:bold !important}
 .storyContent .uiStreamMessage .actorDescription .actorName,.storyContent .uiStreamMessage .actorName a,.storyContent .uiStreamMessage a.passiveName,.storyContent .uiStreamMessage .actorDescription .actorName *,.storyContent .uiStreamMessage .actorName a *,.storyContent .uiStreamMessage a.passiveName *{color:#bef !important}
-.uiList .ufiItem{background-color:#3d3c4c !important;}
-.uiList .ufiItem,.uiList .ufiItem *{border-color:#4e4d5d !important}
-.uiList .uiUfiUnseenItem{background-color:#3d3c5d !important;}
-.uiList .uiUfiUnseenItem,.uiList .uiUfiUnseenItem *{border-color:#4e4d6e !important}
+.UFIList .UFIRow{background-color:#3d3c4c !important;}
+.UFIList .UFIRow,.UFIList .UFIRow *{border-color:#4e4d5d !important}
+.UFIList .UFIUnseenItem{background-color:#3d3c5d !important;}
+.UFIList .UFIUnseenItem,.UFIList .UFIUnseenItem *{border-color:#4e4d6e !important}
 [id="globalContainer"] .uiSearchInput,[id="globalContainer"] .inputContainer,[id="globalContainer"] .MessagingComposerBody,[id="globalContainer"] .uiTypeahead{background-color:#090807 !important;background-image:none !important;}
 [id="globalContainer"] .uiSearchInput,[id="globalContainer"] .inputContainer,[id="globalContainer"] .MessagingComposerBody,[id="globalContainer"] .uiTypeahead,[id="globalContainer"] .uiSearchInput *,[id="globalContainer"] .inputContainer *,[id="globalContainer"] .MessagingComposerBody *,[id="globalContainer"] .uiTypeahead *{color:#e9e8e7 !important}
 [id="globalContainer"] .fbChatTypeahead input{background-image:none !important}
@@ -190,23 +190,12 @@ ul.search li.selected .text,ul.search li.selected .text *{color:#bef !important}
 .timelineLayout .stickyHeaderWrap{background-color:#090807 !important;}
 .timelineLayout .stickyHeaderWrap,.timelineLayout .stickyHeaderWrap *{border-color:#454443 !important}
 .timelineLayout .stickyHeaderWrap .back{background-color:#090807 !important;}
-.fbPhotoSnowliftInner{background-color:rgba(53,52,51,0.75) !important;}
-.fbPhotoSnowliftInner .fbPhotoSnowliftContainer{background-color:#090807 !important;box-shadow:0 1px 15px rgba(139,134,133,0.30),0 0 1px rgba(139,134,133,0.70) !important}
-.fbPhotoSnowliftInner .fbPhotoSnowliftContainer,.fbPhotoSnowliftInner .fbPhotoSnowliftContainer *{border-color:#31302f !important}
+.fbPhotoSnowlift{background-color:rgba(53,52,51,0.75) !important;}
+.fbPhotoSnowlift .fbPhotoSnowliftContainer{background-color:#090807 !important;box-shadow:0 1px 15px rgba(139,134,133,0.30),0 0 1px rgba(139,134,133,0.70) !important}
+.fbPhotoSnowlift .fbPhotoSnowliftContainer,.fbPhotoSnowlift .fbPhotoSnowliftContainer *{border-color:#31302f !important}
 .snowliftOverlayBar{background-color:rgba(9,8,7,0.45) !important;}
 .snowliftOverlayBar a.buttonLink{background-color:rgba(9,8,7,0.70) !important;}
 .snowliftOverlayBar a.buttonLink,.snowliftOverlayBar a.buttonLink *{border-color:#454443 !important}
-.fbPhotoSnowbox{background-color:rgba(53,52,51,0.75) !important;}
-.fbPhotoSnowbox .container{background-color:#090807 !important;box-shadow:0 1px 15px rgba(139,134,133,0.30),0 0 1px rgba(139,134,133,0.70) !important;}
-.fbPhotoSnowbox .container,.fbPhotoSnowbox .container *{border-color:#31302f !important}
-.fbPhotoSnowbox .container .stageWrapper{padding-bottom:12px !important;}
-.fbPhotoSnowbox .container .stageWrapper .stageActions{bottom:-36px !important}
-.fbPhotoSnowbox .container .photoInfoWrapper{background-color:#252423 !important;padding-top:36px !important;margin-left:-12px !important;padding-left:12px !important;margin-right:-12px !important;padding-right:12px !important;margin-bottom:-12px !important;padding-bottom:12px !important}
-.fbPhotoSnowbox .container .photoInfoWrapper,.fbPhotoSnowbox .container .photoInfoWrapper *{border-color:#31302f !important}
-.fbPhotoSnowbox .container .arrowLeft a,.fbPhotoSnowbox .container .arrowRight a{background-color:#090807 !important;}
-.fbPhotoSnowbox .container .arrowLeft a,.fbPhotoSnowbox .container .arrowRight a,.fbPhotoSnowbox .container .arrowLeft a *,.fbPhotoSnowbox .container .arrowRight a *{border-color:#31302f !important}
-.fbPhotoSnowbox .container .arrowLeft a{background-image:url("https://s-static.ak.facebook.com/rsrc.php/v1/yn/r/77uboGPzRks.png") !important}
-.fbPhotoSnowbox .container .arrowRight a{background-image:url("https://s-static.ak.facebook.com/rsrc.php/v1/yi/r/KsODvVMV-0n.png") !important}
 .generic_dialog .pop_content{background-color:#252423 !important;}
 .generic_dialog .pop_content,.generic_dialog .pop_content *{border-color:#31302f !important}
 .generic_dialog .pop_container_advanced{background:rgba(139,134,133,0.70) !important}
