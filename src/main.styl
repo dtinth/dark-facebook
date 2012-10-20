@@ -258,10 +258,10 @@ a.timestamp
 		font-weight: bold !important
 
 // comments list
-.uiList
-	.ufiItem
+.UFIList
+	.UFIRow
 		colorize: $comments-background, $comments-background + #111
-	.uiUfiUnseenItem
+	.UFIUnseenItem
 		colorize: $comments-background + #001, $comments-background + #112
 
 
@@ -548,7 +548,7 @@ ul.search
 
 
 // snowlift (facebook's new lightbox)
-.fbPhotoSnowliftInner
+.fbPhotoSnowlift
 	colorize: rgba($main-background, 0.75)
 	.fbPhotoSnowliftContainer
 		colorize: $dark-background, $page-border
@@ -558,31 +558,6 @@ ul.search
 	colorize: rgba($dark-background, 0.45)
 	a.buttonLink
 		colorize: rgba($dark-background, 0.7), $main-border
-
-// snowbox (lightbox)
-.fbPhotoSnowbox
-	colorize: rgba($main-background, 0.75)
-	.container
-		colorize: $dark-background, $page-border
-		box-shadow: 0 1px 15px rgba($dim-color, 0.3), 0 0 1px rgba($dim-color, 0.7) !important
-		.stageWrapper
-			padding-bottom: 12px !important;
-			.stageActions
-				bottom: -36px !important;
-		.photoInfoWrapper
-			colorize: $page-background, $page-border
-			padding-top: 36px !important;
-			cancel: left, 12px
-			cancel: right, 12px
-			cancel: bottom, 12px
-		.arrowLeft, .arrowRight
-			a
-				colorize: $dark-background, $page-border
-		.arrowLeft a
-			background-image: url("https://s-static.ak.facebook.com/rsrc.php/v1/yn/r/77uboGPzRks.png") !important
-		.arrowRight a
-			background-image: url("https://s-static.ak.facebook.com/rsrc.php/v1/yi/r/KsODvVMV-0n.png") !important
-
 
 // facebook dialogs
 .generic_dialog
@@ -621,6 +596,8 @@ ul.search
 	input[type="checkbox"]
 		dim-image()
 
+
+// better face book
 .bfb_dialog
 	colorize: $comments-background, $comments-background + #222
 	.type_selected
