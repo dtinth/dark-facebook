@@ -108,7 +108,7 @@ menu-style()
 			text-color: $color
 		&:hover, a:hover
 			colorize: $highlight-background, $highlight-border
-		&.uiMenuSeparator
+		&.uiMenuSeparator, &.uiMenuXSeparator
 			border-color: $page-border !important
 
 menu-style-fix()
@@ -190,11 +190,11 @@ body
 	dim-image-more()
 
 // stream story drop down
-.uiStream .uiStreamBoulderStyle .highlightSelector .uiSelectorButton
+.uiStreamContextButton
 	background-image: url('images/stream-button.png') !important
-.uiStream .uiStreamBoulderStyle .highlightSelector .uiSelectorButton { background-position: 0 -415px !important }
-.uiStream .uiStreamBoulderStyle .highlightSelector .uiSelectorButton:hover { background-position: -21px -415px !important }
-.uiStream .uiStreamBoulderStyle .highlightSelector .openToggler .uiSelectorButton { background-position: -42px -415px !important }
+	background-position: 0 -415px !important
+.highlightSelector .uiStreamContextButton:hover { background-position: -21px -415px !important }
+.highlightSelector.openToggler .uiStreamContextButton { background-position: -42px -415px !important }
 
 // dimmed texts
 .uiAttachmentDesc
@@ -333,6 +333,9 @@ tooltipx-border(pos)
 	colorize: $page-background, $main-border
 	box-shadow: 0 1px 0 rgba(white, 0.3) !important
 
+// chat sheet info
+.sheetContainer .sheet
+	colorize: $dark-background, $main-border
 
 // scrollbars
 .uiScrollableAreaGripper
@@ -368,6 +371,7 @@ tooltipx-border(pos)
 
 // menus
 div.uiMenu
+.uiMenuXWrapper
 ul.navigation
 // social fixer menu
 #bfb_options_button_li ul#bfb_option_list
@@ -499,6 +503,8 @@ ul.search
 
 // image
 .fbMainStreamAttachment
+	.uiScaledImageContainer
+		box-shadow: 3px 3px 0 rgba(0,0,0,0.3) !important
 	.uiPhotoThumb, .uiMediaThumb, .uiVideoThumb
 		border: 0 !important
 		img, i
