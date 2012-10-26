@@ -3,7 +3,7 @@
  * https://github.com/dtinth/dark-facebook
  */
 /* this is compiled source code, for original source code see src/main.styl */
-/* generated: Sat Oct 20 2012 16:43:21 GMT+0700 (ICT) */body{background-color:#252423 !important;}
+/* generated: Fri Oct 26 2012 21:17:22 GMT+0700 (ICT) */body{background-color:#252423 !important;}
 body,body *{border-color:#31302f !important}
 body,body *{color:#e9e8e7 !important}
 body *{background-color:transparent !important}
@@ -172,6 +172,11 @@ ul.search li.selected .text,ul.search li.selected .text *{color:#bef !important}
 .uiTypeaheadView .bucketed .header .text,.uiTypeaheadView .bucketed .header .text *{color:#e9e8e7 !important}
 .uiBoxLightblue{background-color:#683433 !important;}
 .uiBoxLightblue,.uiBoxLightblue *{border-color:#8b5655 !important}
+.uiProgressBar{background-color:#090807 !important;}
+.uiProgressBar,.uiProgressBar *{border-color:#454443 !important}
+.uiProgressBar .fill{background-color:#8b8685 !important;}
+.clickToTagMessage{background-color:#090807 !important;}
+.footerBox,.typeaheadBackdrop{background-color:#090807 !important;}
 .fbMainStreamAttachment .uiScaledImageContainer{box-shadow:3px 3px 0 rgba(0,0,0,0.30) !important}
 .fbMainStreamAttachment .uiPhotoThumb,.fbMainStreamAttachment .uiMediaThumb,.fbMainStreamAttachment .uiVideoThumb{border:0 !important;}
 .fbMainStreamAttachment .uiPhotoThumb img,.fbMainStreamAttachment .uiMediaThumb img,.fbMainStreamAttachment .uiVideoThumb img,.fbMainStreamAttachment .uiPhotoThumb i,.fbMainStreamAttachment .uiMediaThumb i,.fbMainStreamAttachment .uiVideoThumb i{margin:0 3px 3px 0 !important;box-shadow:3px 3px 0 rgba(0,0,0,0.30) !important}
