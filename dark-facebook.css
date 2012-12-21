@@ -3,7 +3,7 @@
  * https://github.com/dtinth/dark-facebook
  */
 /* this is compiled source code, for original source code see src/main.styl */
-/* generated: Wed Dec 19 2012 20:40:51 GMT+0100 (CET) */body{background-color:#252423 !important;}
+/* generated: Fri Dec 21 2012 11:30:25 GMT+0700 (ICT) */body{background-color:#252423 !important;}
 body,body *{border-color:#31302f !important}
 body,body *{color:#e9e8e7 !important}
 body *{background-color:transparent !important}
@@ -59,6 +59,7 @@ body:not(.timelineLayout) .uiSideHeader a,body:not(.timelineLayout) .uiSideHeade
 .right .uiTooltipX i.arrow{border-right-color:#090807 !important}
 .-cx-PRIVATE-uiContextualDialog__content{background-color:#353433 !important;}
 .uiBoxGray{background-color:#252423 !important;}
+.uiContextualLayer ._k5{background-color:#090807 !important;}
 .uiOverlay{background-color:transparent !important;}
 .uiOverlay .uiOverlayContent{background-color:#353433 !important;}
 .uiOverlay .uiOverlayContent,.uiOverlay .uiOverlayContent *{border-color:#454443 !important}
