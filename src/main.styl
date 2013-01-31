@@ -154,6 +154,13 @@ body
 		text-color: sidenav-color($highlight-color)
 		box-shadow: inset 0 0 1px sidenav-color($highlight-border) !important
 
+#leftCol > .uiHeader.uiHeaderNav.uiHeaderTopBorder
+	sidenav-color($target)
+		deopacify($page-background, 0.6, $target)
+	opacity: 0.6 !important
+	h4
+		text-color: sidenav-color(mix($dim-color, $page-background, 70%))
+		
 
 // navigation items
 // shared with links
@@ -449,7 +456,7 @@ ui-button()
 
 
 // the notifications beeper, new in facebook
-.enableBeeper#fbNotificationsFlyout
+.enableBeeper#fbNotificationsFlyout, ul._2a9 > li, ._3sod
 	.beeperNub
 		background: url('images/jewel-beeper-nub.png') 0 0 no-repeat !important
 	colorize: $side-header-background, $side-header-border
@@ -457,6 +464,7 @@ ui-button()
 #fbNotificationsList
 	.notification.fbJewelBeep
 		colorize: $side-header-background, $side-header-border
+
 
 
 // legend and splitter

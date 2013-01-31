@@ -3,7 +3,7 @@
  * https://github.com/dtinth/dark-facebook
  */
 /* this is compiled source code, for original source code see src/main.styl */
-/* generated: Fri Dec 21 2012 11:31:29 GMT+0700 (ICT) */body{background-color:#252423 !important;}
+/* generated: Thu Jan 31 2013 23:31:15 GMT+0700 (ICT) */body{background-color:#252423 !important;}
 body,body *{border-color:#31302f !important}
 body,body *{color:#e9e8e7 !important}
 body *{background-color:transparent !important}
@@ -17,6 +17,8 @@ body *{background-color:transparent !important}
 [id="sideNav"] .uiSideNavCount{background-color:#403f93 !important;box-shadow:inset 0 0 1px #5c5baf !important}
 [id="sideNav"] .uiSideNavCount,[id="sideNav"] .uiSideNavCount *{border-color:#5c5baf !important}
 [id="sideNav"] .uiSideNavCount,[id="sideNav"] .uiSideNavCount *{color:#aaa9fd !important}
+#leftCol > .uiHeader.uiHeaderNav.uiHeaderTopBorder{opacity:.6 !important;}
+#leftCol > .uiHeader.uiHeaderNav.uiHeaderTopBorder h4,#leftCol > .uiHeader.uiHeaderNav.uiHeaderTopBorder h4 *{color:#9b9796 !important}
 .uiStreamPrivacy,.attachmentLink .img,.uiStreamFooter .img,.uiUfiLike .UIImageBlock .UIImageBlock_Image,.ego_action .img,.fbCurrentStory .img,.uiBlingBox .img{opacity:.6 !important}
 [id="contentCol"]{background-color:#353433 !important;}
 [id="contentCol"],[id="contentCol"] *{border-color:#454443 !important}
@@ -138,9 +140,9 @@ div.uiMenu li.uiMenuSeparator,.uiMenuXWrapper li.uiMenuSeparator,ul.navigation l
 .uiStream .uiStreamHeader .uiStreamHeaderChronologicalForm .uiSelectorButton,.uiStream .uiStreamHeader .uiStreamHeaderChronologicalForm .uiSelectorButton:active,.uiStream .uiStreamHeader .uiStreamHeaderChronologicalForm .uiSelectorButton:focus,.uiStream .uiStreamHeader .uiStreamHeaderChronologicalForm .uiSelectorButton:hover{background-color:transparent !important}
 .uiButtonConfirm{background:#252447 !important;}
 .uiButtonConfirm:hover{background:#353466 !important}
-.enableBeeper#fbNotificationsFlyout{background-color:#683433 !important;box-shadow:0 0 8px rgba(139,86,85,0.50)}
-.enableBeeper#fbNotificationsFlyout .beeperNub{background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALAgMAAAACZ0XQAAAADFBMVEUAAABoNDN3QkGDTk3YBgUVAAAAAXRSTlMAQObYZgAAAD5JREFUeF4NyTENwDAMBdEvdQ8fS6HxvZSC6aQ4AsFkMoVEb3nDnaQp0AU9X+PwxnDh8UteziabEVhkMxbmD53ND7B+/8SwAAAAAElFTkSuQmCC") 0 0 no-repeat !important}
-.enableBeeper#fbNotificationsFlyout,.enableBeeper#fbNotificationsFlyout *{border-color:#8b5655 !important}
+.enableBeeper#fbNotificationsFlyout,ul._2a9 > li,._3sod{background-color:#683433 !important;box-shadow:0 0 8px rgba(139,86,85,0.50)}
+.enableBeeper#fbNotificationsFlyout .beeperNub,ul._2a9 > li .beeperNub,._3sod .beeperNub{background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALAgMAAAACZ0XQAAAADFBMVEUAAABoNDN3QkGDTk3YBgUVAAAAAXRSTlMAQObYZgAAAD5JREFUeF4NyTENwDAMBdEvdQ8fS6HxvZSC6aQ4AsFkMoVEb3nDnaQp0AU9X+PwxnDh8UteziabEVhkMxbmD53ND7B+/8SwAAAAAElFTkSuQmCC") 0 0 no-repeat !important}
+.enableBeeper#fbNotificationsFlyout,ul._2a9 > li,._3sod,.enableBeeper#fbNotificationsFlyout *,ul._2a9 > li *,._3sod *{border-color:#8b5655 !important}
 #fbNotificationsList .notification.fbJewelBeep{background-color:#683433 !important;}
 #fbNotificationsList .notification.fbJewelBeep,#fbNotificationsList .notification.fbJewelBeep *{border-color:#8b5655 !important}
 .separator .text,.uiStreamHeader .uiSelector{background-color:#353433 !important;}
