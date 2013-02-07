@@ -5,8 +5,12 @@
  */
 
 mix(color1, color2, weight = 50%)
-	w = weight / 100%
-	color1 * (w) + color2 * (1 - w)
+	w = unit(weight / 100%, '')
+	y = 1 - w
+	rgb(
+		red(color1) * w + red(color2) * y,
+		green(color1) * w + green(color2) * y,
+		blue(color1) * w + blue(color2) * y)
 
 deopacify($background, $alpha, $target)
 	dv($bg-v, $target-v)
@@ -58,8 +62,7 @@ colorize($background, $border = null)
 		border-color: $border !important
 
 text-color($color)
-	&, *
-		color: $color !important
+	color: $color !important
 
 transparent()
 	background-color: transparent !important;
@@ -101,14 +104,14 @@ text-field-style()
 
 
 // page elements
+*
+	transparent()
+	color: inherit !important
+	border-color: inherit !important
 
 body
 	colorize: $page-background, $page-border
 	color: $color !important
-	*
-		transparent()
-		color: inherit !important
-		border-color: inherit !important
 
 [id="blueBar"]
 	colorize: $dark-background, $page-border
@@ -197,6 +200,7 @@ body
 
 
 // links
+.dfb-link
 .UIActionLinks
 .attachmentLink
 .fbxWelcomeBoxName
@@ -211,6 +215,7 @@ body
 .timelineUnitContainer a
 .fbPhotoSnowbox a
 .generic_dialog a
+ul.UFIList a
 	text-color: $link-color
 	.uiTooltipText
 		text-color: $color
@@ -390,8 +395,8 @@ ul#bfb_option_list#bfb_option_list
 // chat sidebar
 .fbChatSidebar
 	&, .uiTypeahead
-		&, *
-			colorize: $main-background, $main-border
+	.fbFeedTicker .fbFeedTickerStory
+		colorize: $main-background, $main-border
 	&, *
 		box-shadow: none !important
 
@@ -874,3 +879,4 @@ div.photocrop
 		background: $main-background !important
 		&, *
 			color: $color !important
+
