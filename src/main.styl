@@ -376,6 +376,14 @@ tooltipx-border(pos)
 	.fbNubFlyoutHeader
 		colorize: $page-background
 
+// blinking popup chat titlebar
+.fbMercuryChatTab.highlightTitle .fbNubFlyout .titlebar
+	colorize: lighten($side-header-background, 15%), $side-header-border
+
+._7f.typingIndicator
+	text-color: $dim-color !important
+	._9r
+		opacity: 0.36
 
 // hover ticket
 .fbFeedTicker .tickerStoryActive, .fbFeedTicker .tickerStoryClickable:hover
@@ -557,6 +565,7 @@ ul.search
 	.topBorder
 		border-bottom: 1px solid $main-border !important
 	.bottomBorder
+	.topSectionBottomBorder
 		border-top: 2px solid $main-border !important
 	.spinePointer
 		display: none
@@ -570,6 +579,8 @@ ul.search
 	.timelineTimestamp .uiSelectorButton
 		transparent()
 		border-width: 0 !important
+	i.topSectionBottomBorder
+		background-image: none !important
 	.stickyHeaderWrap
 		colorize: $dark-background, $main-border
 		.back

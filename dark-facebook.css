@@ -3,7 +3,7 @@
  * https://github.com/dtinth/dark-facebook
  */
 /* this is compiled source code, for original source code see src/main.styl */
-/* generated: Thu Jan 31 2013 23:31:15 GMT+0700 (ICT) */body{background-color:#252423 !important;}
+/* generated: Fri Feb 08 2013 01:26:11 GMT+0700 (ICT) */body{background-color:#252423 !important;}
 body,body *{border-color:#31302f !important}
 body,body *{color:#e9e8e7 !important}
 body *{background-color:transparent !important}
@@ -99,6 +99,10 @@ body:not(.timelineLayout) .uiSideHeader a,body:not(.timelineLayout) .uiSideHeade
 .fbNubFlyout .titlebar .uiMenuInner li:hover,.fbNubFlyout .titlebar .uiMenuInner li a:hover,.fbNubFlyout .titlebar .uiMenuInner li:hover *,.fbNubFlyout .titlebar .uiMenuInner li a:hover *{border-color:#464577 !important}
 .fbNubFlyout .titlebar .uiMenuInner li.uiMenuSeparator,.fbNubFlyout .titlebar .uiMenuInner li.uiMenuXSeparator{border-color:#31302f !important}
 .fbNubFlyout .fbNubFlyoutHeader{background-color:#252423 !important;}
+.fbMercuryChatTab.highlightTitle .fbNubFlyout .titlebar{background-color:#8c4645 !important;}
+.fbMercuryChatTab.highlightTitle .fbNubFlyout .titlebar,.fbMercuryChatTab.highlightTitle .fbNubFlyout .titlebar *{border-color:#8b5655 !important}
+._7f.typingIndicator,._7f.typingIndicator *{color:#8b8685 !important}
+._7f.typingIndicator ._9r{opacity:.36}
 .fbFeedTicker .tickerStoryActive,.fbFeedTicker .tickerStoryClickable:hover{background-color:#353466 !important;}
 div.uiMenu,.uiMenuXWrapper,ul.navigation,#bfb_options_button_li ul#bfb_option_list,#fbf-bookmark-list{background-color:#090807 !important;}
 div.uiMenu,.uiMenuXWrapper,ul.navigation,#bfb_options_button_li ul#bfb_option_list,#fbf-bookmark-list,div.uiMenu *,.uiMenuXWrapper *,ul.navigation *,#bfb_options_button_li ul#bfb_option_list *,#fbf-bookmark-list *{border-color:#454443 !important}
@@ -192,13 +196,14 @@ ul.search li.selected .text,ul.search li.selected .text *{color:#bef !important}
 .timelineLayout .counter{background-color:#252423 !important;}
 .timelineLayout .topBorder,.timelineLayout .bottomBorder{background-image:none !important}
 .timelineLayout .topBorder{border-bottom:1px solid #454443 !important}
-.timelineLayout .bottomBorder{border-top:2px solid #454443 !important}
+.timelineLayout .bottomBorder,.timelineLayout .topSectionBottomBorder{border-top:2px solid #454443 !important}
 .timelineLayout .spinePointer{display:none}
 .timelineLayout .spineHoverPlus{background-image:url("data:image/png;base64,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") !important}
 .timelineLayout .fbTimelineCapsule,.timelineLayout .fbTimelineTimePeriod{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAABAQMAAAAhLob3AAAAA1BMVEUwMDB6jt4VAAAAEklEQVR4XgXAgQgAAAAAoP2pjwACAAF0O1JHAAAAAElFTkSuQmCC") !important}
 .timelineLayout .profilePicThumb{background-color:#090807 !important;}
 .timelineLayout .profilePicThumb,.timelineLayout .profilePicThumb *{border-color:#454443 !important}
 .timelineLayout .timelineTimestamp .uiSelectorButton{background-color:transparent !important;border-width:0 !important}
+.timelineLayout i.topSectionBottomBorder{background-image:none !important}
 .timelineLayout .stickyHeaderWrap{background-color:#090807 !important;}
 .timelineLayout .stickyHeaderWrap,.timelineLayout .stickyHeaderWrap *{border-color:#454443 !important}
 .timelineLayout .stickyHeaderWrap .back{background-color:#090807 !important;}
