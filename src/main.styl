@@ -55,8 +55,7 @@ $side-header-link-color = lighten($side-header-background, 50%)
 colorize($background, $border = null)
 	background-color: $background !important
 	if $border != null
-		&, *
-			border-color: $border !important
+		border-color: $border !important
 
 text-color($color)
 	&, *
@@ -99,30 +98,17 @@ text-field-style()
 	text-field-colors()
 	plain-input-style()
 
-// menus
-menu-style()
-	colorize: $dark-background, $main-border
-	li
-		colorize: $dark-background, $dark-background
-		&, *, a
-			text-color: $color
-		&:hover, a:hover
-			colorize: $highlight-background, $highlight-border
-		&.uiMenuSeparator, &.uiMenuXSeparator
-			border-color: $page-border !important
-
-menu-style-fix()
-	.uiMenuInner
-		menu-style()
 
 
 // page elements
 
 body
 	colorize: $page-background, $page-border
-	text-color: $color
+	color: $color !important
 	*
 		transparent()
+		color: inherit !important
+		border-color: inherit !important
 
 [id="blueBar"]
 	colorize: $dark-background, $page-border
@@ -327,6 +313,51 @@ tooltipx-border(pos)
 	colorize: $dark-background
 
 
+
+
+// ========= menus ==========
+.dfb-menu
+	colorize: $dark-background, $main-border
+
+menu-style($item='li', $separator='li.uiMenuSeparator, li.uiMenuXSeparator', $separatorMode='border')
+	@extend .dfb-menu
+	{$item}
+		colorize: $dark-background, $dark-background
+		text-color: $color
+		&:hover
+			colorize: $highlight-background, $highlight-border
+	if $separatorMode == 'border'
+		{$separator}
+			border-color: $page-border !important
+			&:hover
+				transparent()
+	else if $separatorMode == 'background'
+		{$separator}
+			background-color: $page-border !important
+
+menu-style-fix()
+	.uiMenuInner
+		menu-style()
+
+div.uiMenu
+.uiMenuXWrapper
+ul.navigation
+// ffixer
+#fbf-bookmark-list
+	menu-style()
+
+// for social fixer
+.bfb_hide_menu
+	menu-style('.bfb_item')
+
+ul#bfb_option_list#bfb_option_list
+	menu-style('li a', '.menuDivider', 'background')
+
+
+
+
+
+
 // overlays
 .uiOverlay
 	transparent()
@@ -391,15 +422,6 @@ tooltipx-border(pos)
 
 
 
-// menus
-div.uiMenu
-.uiMenuXWrapper
-ul.navigation
-// social fixer menu
-#bfb_options_button_li ul#bfb_option_list
-// ffixer
-#fbf-bookmark-list
-	menu-style()
 
 // try lists menu
 .FlyoutFriendListMenuNUX
