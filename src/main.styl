@@ -56,10 +56,14 @@ $side-header-border = lighten($side-header-background, 0.2) + #222
 $side-header-text-color = lighten($side-header-background, 60%) + #333
 $side-header-link-color = lighten($side-header-background, 50%)
 
+// -------------- dry stuff --------------
+
+colorize-border($border)
+	border-color: $border !important
 colorize($background, $border = null)
 	background-color: $background !important
 	if $border != null
-		border-color: $border !important
+		colorize-border($border)
 
 text-color($color)
 	color: $color !important
@@ -74,6 +78,55 @@ dim-image-more()
 	opacity: 0.2 !important
 
 
+// -------- override background images and box shadows -------
+
+.dfb-nbi
+	background-image: none !important
+.dfb-nbs
+	box-shadow: none !important
+
+no-background-image($extend=false)
+	if $extend
+		@extend .dfb-nbi
+	else
+		background-image: none !important
+
+no-box-shadow($extend=false)
+	if $extend
+		@extend .dfb-nbs
+	else
+		box-shadow: none !important
+
+
+// -------- useful classes --------
+
+.dfb-ds
+	box-shadow: 3px 3px 0 rgba(0,0,0,0.3) !important
+.dfb-db
+	colorize: $dark-background
+.dfb-pb
+	colorize: $page-background
+.dfb-mb
+	colorize: $main-background
+.dfb-mbd
+	colorize-border: $main-border
+
+drop-shadow()
+	@extend .dfb-ds
+dark-background()
+	@extend .dfb-db
+page-background()
+	@extend .dfb-pb
+main-background()
+	@extend .dfb-mb
+main-border()
+	@extend .dfb-mbd
+main-colors()
+	@extend .dfb-mb
+	@extend .dfb-mbd
+
+
+// --------- input styles ----------
 
 $text-field-background = #090807
 $text-field-placeholder-color = $dim-color
@@ -181,7 +234,7 @@ body
 
 // content column
 [id="contentCol"]
-	colorize: $main-background, $main-border
+	main-colors()
 
 
 
@@ -210,6 +263,8 @@ body
 .fcg
 	text-color: $dim-color
 
+dim-text()
+	@extend .dfb-dim
 
 // links
 .dfb-link
@@ -274,7 +329,7 @@ a.timestamp
 .shareRedesign .exploded .shareText, .shareRedesignText:before, .shareRedesign .shareRedesignContainer:before
 	border-color: $main-border !important
 .shareRedesign
-	box-shadow: 3px 3px 0 rgba(0,0,0,0.3) !important
+	drop-shadow()
 	.uiAttachmentTitle
 		text-color: $color
 
@@ -282,12 +337,12 @@ a.timestamp
 // news feed story image
 .fbMainStreamAttachment
 	.uiScaledImageContainer
-		box-shadow: 3px 3px 0 rgba(0,0,0,0.3) !important
+		drop-shadow()
 	.uiPhotoThumb, .uiMediaThumb, .uiVideoThumb
 		border: 0 !important
 		img, i
 			margin: 0 3px 3px 0 !important
-			box-shadow: 3px 3px 0 rgba(0,0,0,0.3) !important
+			drop-shadow()
 
 
 
@@ -315,7 +370,7 @@ a.timestamp
 	.uiTypeahead
 		text-field-colors()
 	.fbChatTypeahead input
-		background-image: none !important
+		no-background-image(true)
 
 .DOMControl_placeholder
 	text-color: $text-field-placeholder-color
@@ -371,11 +426,11 @@ tooltipx-border(pos)
 
 // user hover popup
 .-cx-PRIVATE-uiContextualDialog__content
-	colorize: $main-background
+	main-background()
 .uiBoxGray
-	colorize: $page-background
+	page-background()
 .uiContextualLayer ._k5
-	colorize: $dark-background
+	dark-background()
 
 
 
@@ -427,7 +482,7 @@ ul#bfb_option_list#bfb_option_list
 .uiOverlay
 	transparent()
 	.uiOverlayContent
-		colorize: $main-background, $main-border
+		main-colors()
 		menu-style-fix()
 
 
@@ -456,9 +511,9 @@ ul#bfb_option_list#bfb_option_list
 .fbChatSidebar
 	&, .uiTypeahead
 	.fbFeedTicker .fbFeedTickerStory
-		colorize: $main-background, $main-border
+		main-colors()
 	&, *
-		box-shadow: none !important
+		no-box-shadow(true)
 
 
 // chat popup
@@ -490,7 +545,7 @@ ul#bfb_option_list#bfb_option_list
 
 // try lists menu
 .FlyoutFriendListMenuNUX
-	colorize: $main-background, $main-border
+	main-colors()
 
 
 // hovercards
@@ -522,6 +577,19 @@ ul#bfb_option_list#bfb_option_list
 .notifNegativeBase .fbJewelFlyout, #tinymanNavWrapper .fbJewelFlyout
 	top: 31px !important;
 
+// -- fix for message popout --
+.notifNegativeBase #fbMessagesFlyout .jewelContent a.messagesContent
+.notifNegativeBase #fbMessagesFlyout .jewelContent li.jewelItemNew a.messagesContent
+	&:hover, &:active, &:focus
+		colorize: $highlight-background, $highlight-border
+	
+.jewelItemNew a.messagesContent
+	.author
+		text-color: $link-color
+
+
+
+
 // poll results
 .fbQuestionsPollResultsBar
 	colorize: $dark-background
@@ -533,7 +601,7 @@ ul#bfb_option_list#bfb_option_list
 // selector buttons
 ui-button()
 	colorize: $dark-background, $dark-background
-	background-image: none !important;
+	no-background-image()
 	&:hover
 		colorize: $dark-background, $main-border
 .uiSelectorNormal
@@ -565,8 +633,8 @@ ui-button()
 // legend and splitter
 .separator .text
 .uiStreamHeader .uiSelector
-	colorize: $main-background
-	text-color: $dim-color
+	dim-text()
+	main-background()
 	menu-style-fix()
 
 
@@ -585,7 +653,6 @@ ui-button()
 ul.search
 	colorize: $dark-background, $dark-background
 	li
-		text-color: $dim-color
 		.text
 			text-color: $link-color
 		&.header
@@ -613,7 +680,7 @@ ul.search
 .uiProgressBar
 	colorize: $dark-background, $main-border
 	.fill
-		colorize: $dim-color
+		dim-text()
 .clickToTagMessage
 	colorize: $dark-background
 .footerBox, .typeaheadBackdrop
@@ -631,18 +698,18 @@ ul.search
 // timeline
 .timelineLayout
 	[id="contentCol"]
-		colorize: $page-background
+		page-background()
 	.fbTimelineTopSection
 	.timelineUnitContainer
-		colorize: $main-background
+		main-background()
 	.frame.detail
 	.fbTimelineRibbon
-		colorize: $dark-background
+		dark-background()
 	.counter
-		colorize: $page-background
+		page-background()
 	.topBorder
 	.bottomBorder
-		background-image: none !important
+		no-background-image(true)
 	.topBorder
 		border-bottom: 1px solid $main-border !important
 	.bottomBorder
@@ -661,7 +728,7 @@ ul.search
 		transparent()
 		border-width: 0 !important
 	i.topSectionBottomBorder
-		background-image: none !important
+		no-background-image(true)
 	.stickyHeaderWrap
 		colorize: $dark-background, $main-border
 		.back
@@ -691,7 +758,7 @@ ul.search
 		background: rgba($dim-color, 0.7) !important
 		border-color: rgba($dim-color, 0.7) !important
 	.dialog_buttons, .uiOverlayFooter
-		colorize: $main-background, $main-border
+		main-colors()
 	h2.dialog_title, ._1yw
 		colorize: $side-header-background, $side-header-border
 
@@ -702,20 +769,20 @@ ul.search
 .cx-uiDialog__body, .-cx-PRIVATE-uiDialog__body
 	border-color: $main-border !important
 .uiDialog .dialogFooter, .cx-uiDialog__footer, .-cx-PRIVATE-uiDialog__footer
-	colorize: $main-background, $main-border
+	main-colors()
 .uiDialog .dialogTitle, .cx-uiDialog__title, .-cx-PRIVATE-uiDialog__title
 	colorize: $side-header-background, $side-header-border
 
 
 // messaging
 [id="MessagingShelf"], .MessagingReadHeader
-	colorize: $main-background, $main-border
+	main-colors()
 
 
 
 // social fixer / better facebook
 #better_fb_cp
-	text-color: $dim-color
+	dim-text()
 	#bfb_status_older_posts_input
 		text-field-style()
 	input[type="checkbox"]
@@ -738,7 +805,7 @@ ul.search
 		colorize: $dark-background, $page-border
 		.bfb_tab_selected
 		#bfb_options_content
-			colorize: $main-background, $main-border
+			main-colors()
 			include-button-style()
 		.bfb_tab_search
 			colorize: $page-background, $main-border
@@ -752,8 +819,8 @@ ul.search
 
 .bfb_tabs
 	.bfb_tab
-		colorize: $main-background, $main-border
-		text-color: $dim-color
+		main-colors()
+		dim-text()
 	.bfb_tab_selected
 		colorize: $main-border, $main-border
 		text-color: $color
@@ -795,7 +862,7 @@ center(w, h, x = 0, y = 0)
 			.rfloat
 				float: none !important
 				.menu_login_container
-					colorize: $main-background, $main-border
+					main-colors()
 					border-style: dotted !important
 					border-width: 1px !important
 					center: 480px, 120px, -1px, -1px
@@ -807,8 +874,8 @@ center(w, h, x = 0, y = 0)
 	#globalContainer
 		absolute: 100%, 0, auto, 0
 	.gradient
-		colorize: $main-background, $main-border
-		background-image: none !important
+		main-colors()
+		no-background-image(true)
 	input, select
 		text-field-style()
 
@@ -840,9 +907,8 @@ search-bar-style()
 			margin-right: -1px !important
 	.topNavLink
 	.DOMControl_placeholder
-		text-color: $dim-color
 	#pageNav a
-		color: $dim-color !important
+		dim-text()
 	#navAccountLink .menuPulldown
 		dim-image()
 .slimHeader #pageNav li.tinyman:after, .slimHeader #pageNav li.middleLink:after
@@ -894,8 +960,8 @@ div.photocrop
 
 .devsitePage
 	.body .content
-		colorize: $main-background, $main-border
-		background-image: none !important
+		main-colors()
+		no-background-image(true)
 		.uiHeader
 			colorize: $side-header-background, $side-header-border
 		.insightsDateHeader
@@ -920,7 +986,7 @@ div.photocrop
 		background: $dark-background !important
 
 .fbDockChatTab .sheetContainer .sheet
-	colorize: $main-background, $main-border
+	main-colors()
 
 
 // groups jump bar
@@ -933,4 +999,38 @@ div.photocrop
 		background: $main-background !important
 		&, *
 			color: $color !important
+
+
+
+
+// app center style fixes
+.app_center #contentCol
+	page-background()
+.appCenterTab
+	dark-background()
+	&, *
+		no-background-image(true)
+		no-box-shadow(true)
+	.singleTab.selected
+		main-background()
+		border-bottom-color: $main-background !important
+
+.appsListAreaHeader
+.appCenterBox
+.suggestedAppsArea
+	dark-background()
+	no-box-shadow(true)
+	drop-shadow()
+
+.app_center #contentCol .apps_list
+	drop-shadow()
+	main-background()
+	.appsListHeader
+		dark-background()
+
+.appInfoArea
+	main-background()
+
+
+
 
