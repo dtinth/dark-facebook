@@ -3,7 +3,7 @@
  * https://github.com/dtinth/dark-facebook
  */
 /* this is compiled source code, for original source code see src/main.styl */
-/* generated: Fri Feb 08 2013 14:01:10 GMT+0700 (ICT) */.dfb-nbi,[id="globalContainer"] .fbChatTypeahead input,.timelineLayout .topBorder,.timelineLayout .bottomBorder,.timelineLayout i.topSectionBottomBorder,.UIPage_LoggedOut.fbIndex .gradient,.devsitePage .body .content,.appCenterTab,.appCenterTab *{background-image:none !important}
+/* generated: Sat Feb 09 2013 01:57:24 GMT+0700 (ICT) */.dfb-nbi,[id="globalContainer"] .fbChatTypeahead input,.timelineLayout .topBorder,.timelineLayout .bottomBorder,.timelineLayout i.topSectionBottomBorder,.UIPage_LoggedOut.fbIndex .gradient,.devsitePage .body .content,.appCenterTab,.appCenterTab *{background-image:none !important}
 .dfb-nbs,.fbChatSidebar,.fbChatSidebar *,.appCenterTab,.appCenterTab *,.appsListAreaHeader,.appCenterBox,.suggestedAppsArea{box-shadow:none !important}
 .dfb-ds,.shareRedesign,.fbMainStreamAttachment .uiScaledImageContainer,.fbMainStreamAttachment .uiPhotoThumb img,.fbMainStreamAttachment .uiMediaThumb img,.fbMainStreamAttachment .uiVideoThumb img,.fbMainStreamAttachment .uiPhotoThumb i,.fbMainStreamAttachment .uiMediaThumb i,.fbMainStreamAttachment .uiVideoThumb i,.appsListAreaHeader,.appCenterBox,.suggestedAppsArea,.app_center #contentCol .apps_list{box-shadow:3px 3px 0 rgba(0,0,0,0.3) !important}
 .dfb-db,.uiContextualLayer ._k5,.timelineLayout .frame.detail,.timelineLayout .fbTimelineRibbon,.appCenterTab,.appsListAreaHeader,.appCenterBox,.suggestedAppsArea,.app_center #contentCol .apps_list .appsListHeader{background-color:#090807 !important;}
@@ -38,6 +38,7 @@ body{background-color:#252423 !important;border-color:#31302f !important;color:#
 .storyContent .uiStreamMessage .actorName,.storyContent .uiStreamMessage .actorDescription,.storyContent .uiStreamMessage.uiStreamPassive{font:14px/1.2 Helvetica,sans-serif !important;color:#8b8685 !important;}
 .storyContent .uiStreamMessage .actorName a,.storyContent .uiStreamMessage .actorDescription a,.storyContent .uiStreamMessage.uiStreamPassive a{color:#9c9796 !important}
 .storyContent .uiStreamMessage .actorDescription .actorName,.storyContent .uiStreamMessage .actorName a,.storyContent .uiStreamMessage a.passiveName{color:#bef !important;font-weight:bold !important}
+.selectedStoryIndicator{background-color:#454443 !important;box-shadow:2px 0 0 rgba(0,0,0,0.1)}
 .shareRedesignText,.shareRedesignContainer,.shareRedesign .shareMediaVideo{background-color:rgba(0,0,0,0.1) !important;}
 .shareRedesign .exploded .shareText,.shareRedesignText:before,.shareRedesign .shareRedesignContainer:before{border-color:#454443 !important}
 .shareRedesign .uiAttachmentTitle{color:#e9e8e7 !important}
