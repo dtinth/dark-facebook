@@ -151,6 +151,14 @@ body
 		text-color: sidenav-color(mix($dim-color, $page-background, 70%))
 		
 
+// ads
+#pagelet_ego_pane_w .ego_column:not(.egoOrganicColumn)
+	opacity: 0.6 !important
+	.ego_unit, .ego_unit a
+		text-color: deopacify($page-background, 0.6, $dim-color)
+
+
+
 // navigation items
 // shared with links
 .uiStreamPrivacy
@@ -167,6 +175,7 @@ body
 // like comments share box
 .uiBlingBox .img
 	dim-image()
+
 
 
 
@@ -193,9 +202,12 @@ body
 .highlightSelector.openToggler .uiStreamContextButton { background-position: -42px -415px !important }
 
 // dimmed texts
+.dfb-dim
 .uiAttachmentDesc
 .fbEmu
 .ego_unit a
+// font color gray
+.fcg
 	text-color: $dim-color
 
 
@@ -255,6 +267,38 @@ a.timestamp
 		text-color: $name-color
 		font-weight: bold !important
 
+
+// news feed share story link
+.shareRedesignText, .shareRedesignContainer, .shareRedesign .shareMediaVideo
+	colorize: rgba(0,0,0,0.1)
+.shareRedesign .exploded .shareText, .shareRedesignText:before, .shareRedesign .shareRedesignContainer:before
+	border-color: $main-border !important
+.shareRedesign
+	box-shadow: 3px 3px 0 rgba(0,0,0,0.3) !important
+	.uiAttachmentTitle
+		text-color: $color
+
+
+// news feed story image
+.fbMainStreamAttachment
+	.uiScaledImageContainer
+		box-shadow: 3px 3px 0 rgba(0,0,0,0.3) !important
+	.uiPhotoThumb, .uiMediaThumb, .uiVideoThumb
+		border: 0 !important
+		img, i
+			margin: 0 3px 3px 0 !important
+			box-shadow: 3px 3px 0 rgba(0,0,0,0.3) !important
+
+
+
+
+
+
+
+
+
+
+
 // comments list
 .UFIList
 	.UFIRow
@@ -278,11 +322,27 @@ a.timestamp
 
 
 // sidebar header
-body:not(.timelineLayout) .uiSideHeader
+.dfb-side-header
 	colorize: $side-header-background, $side-header-border
 	text-color: $side-header-text-color
 	a
 		text-color: $side-header-link-color
+
+body:not(.timelineLayout) .uiSideHeader
+#rightCol .uiHeaderSection
+	@extend .dfb-side-header
+
+// reminders
+
+#pagelet_reminders
+	#birthday_reminders_link:not([ajaxify]):not([data-gt]):not([role]) .fbRemindersTitle
+		@extend .dfb-link
+	img.img
+		dim-image()
+
+
+
+
 
 
 // tooltips
@@ -559,15 +619,9 @@ ul.search
 .footerBox, .typeaheadBackdrop
 	colorize: $dark-background
 
-// image
-.fbMainStreamAttachment
-	.uiScaledImageContainer
-		box-shadow: 3px 3px 0 rgba(0,0,0,0.3) !important
-	.uiPhotoThumb, .uiMediaThumb, .uiVideoThumb
-		border: 0 !important
-		img, i
-			margin: 0 3px 3px 0 !important
-			box-shadow: 3px 3px 0 rgba(0,0,0,0.3) !important
+
+
+
 
 // counters
 .jewelCount
