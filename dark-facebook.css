@@ -3,7 +3,7 @@
  * https://github.com/dtinth/dark-facebook
  */
 /* this is compiled source code, for original source code see src/main.styl */
-/* generated: Sat Feb 09 2013 01:57:24 GMT+0700 (ICT) */.dfb-nbi,[id="globalContainer"] .fbChatTypeahead input,.timelineLayout .topBorder,.timelineLayout .bottomBorder,.timelineLayout i.topSectionBottomBorder,.UIPage_LoggedOut.fbIndex .gradient,.devsitePage .body .content,.appCenterTab,.appCenterTab *{background-image:none !important}
+/* generated: Sat Feb 09 2013 02:03:21 GMT+0700 (ICT) */.dfb-nbi,[id="globalContainer"] .fbChatTypeahead input,.timelineLayout .topBorder,.timelineLayout .bottomBorder,.timelineLayout i.topSectionBottomBorder,.UIPage_LoggedOut.fbIndex .gradient,.devsitePage .body .content,.appCenterTab,.appCenterTab *{background-image:none !important}
 .dfb-nbs,.fbChatSidebar,.fbChatSidebar *,.appCenterTab,.appCenterTab *,.appsListAreaHeader,.appCenterBox,.suggestedAppsArea{box-shadow:none !important}
 .dfb-ds,.shareRedesign,.fbMainStreamAttachment .uiScaledImageContainer,.fbMainStreamAttachment .uiPhotoThumb img,.fbMainStreamAttachment .uiMediaThumb img,.fbMainStreamAttachment .uiVideoThumb img,.fbMainStreamAttachment .uiPhotoThumb i,.fbMainStreamAttachment .uiMediaThumb i,.fbMainStreamAttachment .uiVideoThumb i,.appsListAreaHeader,.appCenterBox,.suggestedAppsArea,.app_center #contentCol .apps_list{box-shadow:3px 3px 0 rgba(0,0,0,0.3) !important}
 .dfb-db,.uiContextualLayer ._k5,.timelineLayout .frame.detail,.timelineLayout .fbTimelineRibbon,.appCenterTab,.appsListAreaHeader,.appCenterBox,.suggestedAppsArea,.app_center #contentCol .apps_list .appsListHeader{background-color:#090807 !important;}
@@ -173,6 +173,7 @@ ul.search li.selected .text{color:#bef !important}
 .bfb_tabs .bfb_tab_selected{background-color:#454443 !important;border-color:#454443 !important;color:#e9e8e7 !important}
 .bfb_post_action_container:not(:hover){opacity:.2 !important}
 .bfb_image_preview{background-color:#090807 !important;border-color:#454443 !important}
+.bfb_frame{border-color:#f88 !important;background:rgba(255,136,136,0.5) !important}
 .UIPage_LoggedOut.fbIndex{width:100% !important;height:100% !important;}
 .UIPage_LoggedOut.fbIndex .loggedOut#blueBarHolder{top:0 !important;right:0 !important;bottom:0 !important;left:0 !important;width:auto !important;height:auto !important;position:absolute !important;z-index:100 !important}
 .UIPage_LoggedOut.fbIndex .loggedOut#blueBarHolder #blueBar{top:0 !important;right:0 !important;bottom:0 !important;left:0 !important;width:auto !important;height:auto !important;position:absolute !important;}
