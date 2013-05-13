@@ -433,7 +433,7 @@ tooltipx-border(pos)
 	main-background()
 .uiBoxGray
 	page-background()
-.uiContextualLayer ._k5
+.uiContextualLayer > div
 	dark-background()
 
 
@@ -681,7 +681,7 @@ ul.search
 	colorize: $side-header-background, $side-header-border
 
 // image upload
-.uiProgressBar
+.uiProgressBar, .uiProgressBarSmall
 	colorize: $dark-background, $main-border
 	.fill
 		dim-text()
@@ -1039,5 +1039,10 @@ div.photocrop
 	main-background()
 
 
+// graph search
+ul._21c
+	colorize: $dark-background
+	li.selected
+		colorize: $main-background
 
 
