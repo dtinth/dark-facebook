@@ -1,0 +1,19 @@
+
+common-body:
+  selector: body
+  info: The web page body.
+  found: Any page
+  date: 2013-11-21
+
+common-content:
+  selector: "#contentCol"
+  info: The content column.
+  found: News feed
+  date: 2013-11-21
+
+common-main-container:
+  selector: "#mainContainer"
+  info: The main container in the web page.
+  found: Any page
+  date: 2013-11-21
+

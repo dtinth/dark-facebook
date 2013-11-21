@@ -1,0 +1,9 @@
+
+comments:
+  selector: ".UFIList"
+  children:
+    row:
+      selector: ".UFIRow"
+      children:
+        unseen:
+          selector: "&.UFIUnseenItem"

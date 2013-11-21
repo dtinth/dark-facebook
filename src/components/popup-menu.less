@@ -1,0 +1,24 @@
+
+:::popup-menu {
+  background: @bg0;
+  border-color: @border1;
+  &--item {
+    &, &--text {
+      .make-text-color;
+    }
+    border-color: @bg0;
+    background-color: @bg0;
+    &:hover {
+      border-color: @border3;
+      background-color: @bg3;
+    }
+  }
+  &--separator {
+    border-color: @border1;
+  }
+  &--separator-bg {
+    // like &--separator, but uses background color
+    // instead of border color
+    background: @border1;
+  }
+}

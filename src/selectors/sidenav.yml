@@ -1,0 +1,24 @@
+
+sidenav-welcomebox:
+  info: The user's name and photo at the top of the side-navigation bar.
+  selector: ".fbxWelcomeBox"
+  children:
+    link:
+      selector: "& a"
+    name:
+      selector: ".fbxWelcomeBoxName"
+    profile-picture:
+      selector: ".fbxWelcomeBoxImg"
+
+sidenav-list:
+  info: A list of links in each side nav section.
+  selector: ".uiSideNav"
+  children:
+    item:
+      selector: ".sideNavItem .item"
+      children:
+        active:
+          selector: ".sideNavItem.selectedItem .item"
+        count:
+          info: The count at the right of each sidenav item.
+          selector: ".uiSideNavCount"

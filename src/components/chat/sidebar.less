@@ -1,0 +1,38 @@
+
+:::chat-sidebar {
+  
+  @bg:       @bg1;
+  @bg-hover: @bg0;
+  
+  
+  background: @bg;
+
+  &--friend {
+    .make-text-color;
+    &:hover {
+      background: @bg-hover;
+    }
+  }
+  
+  &--section-separator {
+    @color: @mute-color;
+    color: @color;
+    background: @bg;
+    &--border {
+      border-color: @color;
+    }
+  }
+
+  &--gripper {
+    border-color: @border1;
+    &--inner {
+      background: @bg;
+      border-color: @bg0;
+      &--nuclear {
+        background: lighten(@bg, 20%);
+        border-color: darken(@bg, 20%);
+      }
+    }
+  }
+  
+}

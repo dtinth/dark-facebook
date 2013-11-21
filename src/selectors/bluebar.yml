@@ -1,0 +1,4 @@
+
+common-bluebar:
+  selector: "#blueBar"
+  date: 2013-11-21

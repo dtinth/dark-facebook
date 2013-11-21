@@ -1,0 +1,24 @@
+
+
+:::sidenav-welcomebox {
+  &--link { .make-link; }
+}
+
+:::sidenav-list {
+  &--item {
+    border-color: transparent;
+    color: @mute-color;
+    &:hover {
+      background-color: mix(@bg1, @bg2, 50%);
+    }
+    &--active {
+      background: @bg1;
+      box-shadow: 0 2px 0 fade(black, 33%);
+    }
+    &--count {
+      background-color: @bg3;
+      box-shadow: inset 0 0 1px @border3;
+      color: @fg3;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+
+news-feed-post:
+  selector: ".userContentWrapper"
+  children:
+    comment-button:
+      selector: ".uiLinkButton.comment_link input"
+      info: |
+        The comment button in a post.
+        Because it is a button and not a link,
+        it needs special treatment here...
+    headline:
+      selector: "h5._5pbw"
+      info: |
+        The headline of an item in the news feed,
+        usually they contain the author of the post and some descriptive items.
+      children:
+        author:
+          selector: "& .fwb a"
+          info: The main author of the news feed post.
+    link:
+      selector: "& a"

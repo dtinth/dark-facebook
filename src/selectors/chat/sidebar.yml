@@ -1,0 +1,31 @@
+
+chat-sidebar:
+  selector: ".fbChatSidebar"
+  info: The chat sidebar at the right hand side of the page.
+  date: 2013-11-21
+  
+  children:
+  
+    friend:
+      selector: "ul.fbChatOrderedList li a"
+      info: A single item in the friend list.
+    
+    section-separator:
+      selector: ".fbChatSidebar ._554p"
+      info: The separator in the friend list, between favorite friends and other online friends.
+      children:
+        border:
+          selector: ".fbChatSidebar ._554r"
+          info: The border
+  
+    gripper:
+      selector: ".fbSidebarGripper"
+      info: Gripper that separates the friend list from the ticker.
+      children:
+        inner:
+          selector: ".fbSidebarGripper div"
+          info: The inside of `chat-sidebar-gripper`.
+          children:
+            nuclear:
+              selector: ".fbSidebarGripper .gripNuclear"
+              info: The little bevel thingy inside the grip.

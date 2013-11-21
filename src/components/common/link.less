@@ -1,0 +1,11 @@
+
+:::common-link {
+  color: @link-color !important;
+  &:hover {
+    color: lighten(@link-color, 10%);
+  }
+}
+
+.make-link() {
+  &:extend(:::common-link all);
+}
