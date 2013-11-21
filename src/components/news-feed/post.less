@@ -1,10 +1,14 @@
 
 :::news-feed-post {
+  &--body {
+    .make-text-color;
+  }
   &--link, &--comment-button {
     .make-link;
   }
   &--headline {
     font: 14px Helvetica Neue, Helvetica, Arial, Verdana, sans-serif;
+    .make-mute-color;
     &--author {
       color: @name-color;
     }

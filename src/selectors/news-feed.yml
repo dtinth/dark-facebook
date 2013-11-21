@@ -1,6 +1,8 @@
 
-news-feed-post:
-  selector: ".userContentWrapper"
+news-feed-post(uistory):
+  selector: ".uiStreamStory"
+  info: |
+    A news feed post (facebook calls it a "story").
   children:
     comment-button:
       selector: ".uiLinkButton.comment_link input"
@@ -9,10 +11,30 @@ news-feed-post:
         Because it is a button and not a link,
         it needs special treatment here...
     headline:
-      selector: "h5._5pbw"
+      selector: "h5.uiStreamHeadline"
       info: |
         The headline of an item in the news feed,
         usually they contain the author of the post and some descriptive items.
+      children:
+        author(active):
+          selector: "& .actorName a"
+          info: The main author of the news feed post, when they are standalone.
+        author(passive):
+          selector: "& a.passiveName"
+          info: The main author of the news feed post, when they appear along with other text.
+    link:
+      selector: "& a"
+    body:
+      selector: ".uiStreamMessage .messageBody"
+      info: The message body.
+
+
+news-feed-post(new):
+  selector: ".userContentWrapper"
+  found: Discovered on the news feed on 2013-11-22.
+  children:
+    headline:
+      selector: "h5._5pbw"
       children:
         author:
           selector: "& .fwb a"
