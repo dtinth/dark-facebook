@@ -32,12 +32,15 @@ The Next Approach
   and where to find it.
 * __Contribution friendly.__
   I should invest more time in making this project as documentation-friendly as possible.
+* __No Global Override.__
+  This time, we will add dark styles to facebook,
+  component by component.
 
 
 The Build Process
 -----------------
 
-
+![The Build Process](docs/images/compile-process.png)
 
 
 
