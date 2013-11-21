@@ -1,8 +1,8 @@
 
-news-feed-post(uistory):
+stream-story(uistory):
   selector: ".uiStreamStory"
   info: |
-    A news feed post (facebook calls it a "story").
+    A story in a stream, such as news feed, of list stream, and so on.
   children:
     comment-button:
       selector: ".uiLinkButton.comment_link input"
@@ -29,7 +29,7 @@ news-feed-post(uistory):
       info: The message body.
 
 
-news-feed-post(new):
+stream-story(2013-11-22):
   selector: ".userContentWrapper"
   found: Discovered on the news feed on 2013-11-22.
   children:
@@ -41,3 +41,6 @@ news-feed-post(new):
           info: The main author of the news feed post.
     link:
       selector: "& a"
+
+
+
