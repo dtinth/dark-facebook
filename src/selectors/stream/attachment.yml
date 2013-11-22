@@ -41,3 +41,17 @@ stream-attachment:
         When someone gets a powerup or an item in game or something.
       children:
         border(text): { selector: "._4hq" }
+
+stream-attachment(news-feed):
+  info: "Another kind of stream attachment on news feed..."
+  selector: "._5pb0"
+  children:
+    container: { selector: "._5pb0" }
+    quote: { selector: "._5pcm" }
+
+stream-attachment(suggested-page):
+  found: Suggested Page section in news feed
+  selector: "._4un0"
+  children:
+    container: { selector: "._4un0" }
+    title: { selector: "& .title" }

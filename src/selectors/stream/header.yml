@@ -1,0 +1,10 @@
+
+stream-header:
+  found: News feed
+  info: |
+    The stream header in the news feed
+    that lets the user sort their news feed by
+    "Top Stories" or "Most Recent".
+  selector: ".uiStreamHeader"
+  children:
+    sorter: { selector: ".uiStream .uiStreamHeader .uiStreamHeaderChronologicalForm" }

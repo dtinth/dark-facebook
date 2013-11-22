@@ -61,6 +61,14 @@ stream-story(2013-11-22):
           info: The main author of the news feed post.
     link:
       selector: "& a"
+    separator:
+      selector: "._5srp"
 
-
-
+stream-story(suggested-page):
+  children:
+    headline:
+      selector: "._5srp ._66m"
+      children:
+        author: { selector: "& ._706 a" }
+    link: { selector: "& a" }
+    

@@ -1,6 +1,6 @@
 
 :::common-textbox {
-  background: @bg0;
+  background-color: @bg0;
   color: @text-color;
   border-color: @border1;
 }
@@ -10,7 +10,10 @@
   & > .wrap {
     border-color: @border1;
   }
-  textarea:not(.DOMControl_placeholder) {
-    color: @text-color;
+  textarea, input {
+    background-color: @bg0;
+    &:not(.DOMControl_placeholder) {
+      color: @text-color;
+    }
   }
 }

@@ -29,3 +29,22 @@ chat-sidebar:
             nuclear:
               selector: ".fbSidebarGripper .gripNuclear"
               info: The little bevel thingy inside the grip.
+    
+    message:
+      selector: ".fbChatSidebarMessage"
+      info: |
+        The message box that says,
+        "Unable to connect to chat. Try again."
+    
+    search:
+      selector: ".fbChatTypeahead"
+      info: The search at the bottom.
+      children:
+        input: { selector: ".fbChatSidebar .fbChatTypeahead .textInput" }
+    
+    button:
+      selector: "._4oes .button"
+      info: The button at the bottom right of the chat sidebar.
+    
+    button-link(options): { selector: "div._5qth .uiCloseButton" }
+    button-link(hide-sidebar): { selector: "._4oes .button" }
