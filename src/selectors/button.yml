@@ -1,0 +1,6 @@
+
+button:
+  selector: ".uiButton"
+  children:
+    text:
+      selector: "& .uiButtonText"

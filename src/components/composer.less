@@ -1,0 +1,34 @@
+
+:::composer {
+  
+  &--type {
+    .make-link;
+    &--active {
+      .make-text-color;
+    }
+  }
+  
+  &--panel, &--toolbar, &--toolbar--button-left {
+    border-color: @border4;
+  }
+  
+  &--toolbar {
+    background: @bg4;
+    border-color: @border1;
+    &--button-left {
+      &:hover { background-color: @bg3; }
+    }
+  }
+  
+  &--typeahead {
+    &:extend(:::typeahead);
+    &--text {
+      .make-text-color;
+    }
+  }
+
+  &--border {
+    border-color: @border1;
+  }
+  
+}

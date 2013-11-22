@@ -11,6 +11,13 @@
     &:hover {
       background-color: mix(@bg1, @bg2, 50%);
     }
+    &:focus {
+      background-color: mix(@bg1, @bg2, 75%);
+    }
+    &:active {
+      color: darken(@mute-color, 10%);
+      background: transparent;
+    }
     &--active {
       background: @bg1;
       box-shadow: 0 2px 0 fade(black, 33%);
@@ -19,6 +26,9 @@
       background-color: @bg3;
       box-shadow: inset 0 0 1px @border3;
       color: @fg3;
+    }
+    &--loading {
+      background: @bg1;
     }
   }
 }

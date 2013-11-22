@@ -19,6 +19,8 @@ sidenav-list:
       children:
         active:
           selector: ".sideNavItem.selectedItem .item"
+        loading:
+          selector: ".uiSideNav .loading .item, .uiSideNav .sideNavItem .loading .subitem"
         count:
           info: The count at the right of each sidenav item.
           selector: ".uiSideNavCount"

@@ -1,0 +1,35 @@
+
+composer:
+  info: |
+    The status update box, one that asks you, "what's on your mind?"
+  children:
+    type:
+      selector: "._9lb"
+      info: |
+        The post type, such as "Update Status", "Add Photos/Video" text.
+      children:
+        active: { selector: "._519b ._9lb" }
+    panel:
+      selector: "._2yg"
+      info: |
+        The composer box that holds the whole composer panel.
+    toolbar:
+      selector: "._1dsp"
+      info: |
+        The composer toolbar
+      children:
+        button-left:
+          selector: "._1dsq"
+          info: |
+            The buttons at the bottom left of the composer toolbar.
+            The buttons to "Tag Location" or add a "Feeling".
+    typeahead:
+      selector: ".composerTypeahead"
+      info: The text box to enter your status.
+      children:
+        text: { selector: "& textarea" }
+    border:
+      selector: "._50zb"
+      info: |
+        The border that separates the composer from the rest of the stream posts.
+      found: Close friends stream

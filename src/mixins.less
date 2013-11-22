@@ -1,5 +1,4 @@
 
-
 ._-text-color { color: @text-color; }
 ._-mute-color { color: @mute-color; }
 ._-link-color { color: @link-color; }
@@ -16,3 +15,6 @@
 
 ._-shadow { box-shadow: 3px 3px 0 rgba(0,0,0,0.3); }
 .shadow() { &:extend(._-shadow all); }
+
+.link-colors() { a { .make-link } }
+.muted-link-colors() { a { .muted-link } }

@@ -20,10 +20,12 @@ stream-attachment:
       info: |
         The link information box, the one with background.
       found: Inside `share-box`.
-      children:
-        border(top): { selector: ".shareRedesignTopBorder" }
-        border(bottom): { selector: ".shareRedesignBottomBorder" }
-        border(right): { selector: ".shareRedesignRightBorder" }
+    border:
+      info: The border around a share box.
+      selector:
+        - ".shareRedesignTopBorder"
+        - ".shareRedesignBottomBorder"
+        - ".shareRedesignRightBorder"
     title:
       selector: ".uiAttachmentTitle"
       info: |
@@ -46,9 +48,16 @@ stream-attachment(news-feed):
   info: "Another kind of stream attachment on news feed..."
   selector: "._5pb0"
   children:
-    container: { selector: "._5pb0" }
+    container:
+      selector: "._5pb0"
     quote: { selector: "._5pcm" }
     share-box: { selector: "&" }
+    border-bg:
+      selector:
+        - "._5pas" # left
+        - "._5par" # bottom
+        - "._5pap" # top
+        - "._5paq" # right
 
 stream-attachment(suggested-page):
   found: Suggested Page section in news feed
@@ -57,3 +66,17 @@ stream-attachment(suggested-page):
     container: { selector: "._4un0" }
     title: { selector: "& .title" }
     share-box: { selector: "&" }
+    border:
+      selector:
+        - "._62_" # left
+        - "._630" # right
+        - "._631" # top
+        - "._632" # bottom
+
+stream-attachment(page-link):
+  found: News feed
+  selector: "._5084"
+  children:
+    container: { selector: "&" }
+    share-box: { selector: "&" }
+    border: { selector: "&" }
