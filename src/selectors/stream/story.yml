@@ -59,10 +59,11 @@ stream-story(2013-11-22):
           info: The main author of the news feed post.
     separator:
       selector: "._5srp"
-    separator(multiple-first):
+    separator(multiple):
       selector:
-        - "._5pbz"
-        - "._4ks > li"
+        - "._5pbz"      # when multiple people share the same link (first)
+        - "._4ks > li"  # when multiple people share the same link (subsequent)
+        - "._5pbv"      # when multiple people comment on same post
       info: |
         When multiple people shares the same link,
         there's another class of separator.

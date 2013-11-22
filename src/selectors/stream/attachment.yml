@@ -48,6 +48,7 @@ stream-attachment(news-feed):
   children:
     container: { selector: "._5pb0" }
     quote: { selector: "._5pcm" }
+    share-box: { selector: "&" }
 
 stream-attachment(suggested-page):
   found: Suggested Page section in news feed
@@ -55,3 +56,4 @@ stream-attachment(suggested-page):
   children:
     container: { selector: "._4un0" }
     title: { selector: "& .title" }
+    share-box: { selector: "&" }
