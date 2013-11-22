@@ -1,0 +1,16 @@
+
+:::common-textbox {
+  background: @bg0;
+  color: @text-color;
+  border-color: @border1;
+}
+
+:::typeahead {
+  &:extend(:::common-textbox all);
+  & > .wrap {
+    border-color: @border1;
+  }
+  textarea:not(.DOMControl_placeholder) {
+    color: @text-color;
+  }
+}

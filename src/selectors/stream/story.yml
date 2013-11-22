@@ -27,6 +27,26 @@ stream-story(uistory):
     body:
       selector: ".uiStreamMessage .messageBody"
       info: The message body.
+    separator-bg:
+      selector: ".uiStreamEdgeStoryLine hr"
+      info: |
+        The separator line between the subject an object.
+        
+        For example, in a close friends stream,
+        you'll see when a close friend likes something.
+        It's the line between the headline and that thing
+        that your friend liked.
+      found: Like-style post.
+    selected-story-indicator:
+      selector: ".selectedStoryIndicator"
+      info: |
+        The indicator at the left of the story.
+        It will be shown when you use a keyboard to navigate facebook.
+    bling-box:
+      selector: ".UFIBlingBox"
+      info: |
+        In a story of a friend liking another photo,
+        the box that contains "likes count, comment count, and share count" in one single box.
 
 
 stream-story(2013-11-22):

@@ -1,5 +1,6 @@
 
 :::comments {
+  
   &--row {
     background: @comments-bg;
     &--unseen {
@@ -7,4 +8,9 @@
       border-color: lighten(@comments-new-bg, 20%);
     }
   }
+  
+  &--textbox {
+    &:extend(:::typeahead all);
+  }
+  
 }

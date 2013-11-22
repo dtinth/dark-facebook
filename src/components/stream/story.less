@@ -1,5 +1,6 @@
 
 :::stream-story {
+  border-color: @border1;
   &--body {
     .make-text-color;
   }
@@ -12,5 +13,15 @@
     &--author {
       color: @name-color;
     }
+  }
+  &--separator-bg {
+    background: @border1;
+  }
+  &--selected-story-indicator {
+    background: @border1;
+  }
+  &--bling-box {
+    border-color: transparent;
+    &:hover { background: @bg3; }
   }
 }

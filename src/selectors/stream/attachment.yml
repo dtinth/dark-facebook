@@ -1,0 +1,43 @@
+
+stream-attachment:
+  selector: ".uiStreamAttachments"
+  info: |
+    An attachment is a link, photo, statuses,
+    or other things that's attached to the post,
+    other than the author's status text.
+  found: Share story
+  children:
+    quote:
+      selector: ".shareSubtext"
+      info: |
+        When sharing a photo,
+        the original photo description is put in a blockquote
+        underneath the shared photo.
+        This is that blockquote.
+      found: Photo share story
+    container:
+      selector: ".shareRedesignContainer"
+      info: |
+        The link information box, the one with background.
+      found: Inside `share-box`.
+      children:
+        border(top): { selector: ".shareRedesignTopBorder" }
+        border(bottom): { selector: ".shareRedesignBottomBorder" }
+        border(right): { selector: ".shareRedesignRightBorder" }
+    title:
+      selector: ".uiAttachmentTitle"
+      info: |
+        The link title..
+    share-box(link):
+      selector: ".shareRedesign"
+      info: |
+        The link information box.
+    share-box(item):
+      selector: "._4hp"
+      info: An item, like in games.
+    item:
+      selector: "._4hq ._4hs"
+      info: |
+        When someone gets a powerup or an item in game or something.
+      children:
+        border(text): { selector: "._4hq" }

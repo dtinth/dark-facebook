@@ -1,9 +1,13 @@
 
 comments:
   selector: ".UFIList"
+  info: The comments list found throughout facebook.
   children:
     row:
       selector: ".UFIRow"
       children:
         unseen:
           selector: "&.UFIUnseenItem"
+    textbox:
+      selector: "& .uiTypeahead"
+      info: The input box to post comment.
