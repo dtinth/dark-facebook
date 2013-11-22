@@ -1,4 +1,20 @@
 
 bluebar:
   selector: "#blueBar"
-  date: 2013-11-21
+  info: |
+    The "blue bar" at the top of facebook page.
+  children:
+    search:
+      selector: ._585-
+      info: The search box.
+      children:
+        text: { selector: "._5861 ._586f, ._5861 ._586i" }
+        result-popup:
+          info: The (graph) search result popup.
+          selector: "._50c9"
+          children:
+            item:
+              selector: "._202"
+              children:
+                text: { selector: "._53ad, ._5av" }
+                selected: { selector: "&.selected" }

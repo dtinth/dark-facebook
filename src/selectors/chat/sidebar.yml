@@ -42,6 +42,12 @@ chat-sidebar:
       children:
         input: { selector: ".fbChatSidebar .fbChatTypeahead .textInput" }
     
+    toolbar:
+      selector: "._4oes"
+      info: |
+        The toolbar at the bottom of the sidebar
+        that contains the search box, options, and hide buttons.
+    
     button:
       selector: "._4oes .button"
       info: The button at the bottom right of the chat sidebar.

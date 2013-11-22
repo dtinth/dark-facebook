@@ -6,13 +6,19 @@
 @bg3: @bg1 + #003;
 @bg4: #454443;
 
+@bg5: @bg1 + #300;
+
 @fg1: #e9e8e7;
 @fg0: #8b8685;
 @fg3: @bg3 + #404040;
+@fg5: lighten(@bg5, 60%);
+@fg5-link: lighten(@bg5, 50%);
 
 @border1: @bg1 + #111;
 @border3: @bg3 + #111;
 @border4: mix(@fg0, @bg4, 50%);
+@border5: lighten(@bg5, 20%) + #222;
+
 
 @page-bg:    @bg2;
 

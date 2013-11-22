@@ -1,0 +1,18 @@
+
+
+
+beeper:
+  info: |
+    The notification popup
+    that appears at the bottom-left corner of the screen.
+    It used to be called a "uiBeeper",
+    hence the name beeper.
+  selector: "._3sod"
+  children:
+    text: { selector: "._3sod ._3soi" }
+    time: { selector: "._3sod ._3som" }
+
+beeper-list:
+  info: |
+    The notification popup list.
+  selector: '._50d1'

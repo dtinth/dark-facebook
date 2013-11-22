@@ -1,9 +1,38 @@
 
 :::bluebar {
   
-  @top:    @bg1;
+  @top:    @bg4;
   @bottom: @bg0;
   
   .gradient(@bottom, @bottom, @top);
+  
+  &--search {
+    
+    @top:    @bg0;
+    @bottom: @bg1;
+    .gradient(@bottom, @bottom, @top);
+    box-shadow: inset 0 0 0 1px @border1,
+      inset 0 1px 3px 2px black,
+      0 1px 2px black;
+    
+    &--text {
+      .make-text-color;
+    }
+    
+    &--result-popup {
+      background: @bg0;
+      box-shadow: inset 0 0 0 1px @border1,
+        0 2px 16px fade(black, 64%); 
+      &--item {
+        &--text {
+          .make-text-color;
+        }
+        &--selected {
+          background: @bg3;
+        }
+      }
+    }
+    
+  }
   
 }
