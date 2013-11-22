@@ -7,7 +7,7 @@ var result
 
 function doCompile() {
   compile().then(function(data) {
-    console.log(new Date() + ' - recompiled >> ' + connections.length)
+    console.log(new Date() + ' - recompiled >> active connection: ' + connections.length)
     result = data
     connections.forEach(function(connection) {
       connection.send(result)
@@ -31,10 +31,10 @@ var connections = [ ]
 server.on('connection', function(connection) {
   connections.push(connection)
   connection.send(result)
-  console.log('connected >> ' + connections.length)
+  console.log('connected >> active connections: ' + connections.length)
   connection.on('close', function() {
     connections.splice(connections.indexOf(connection), 1)
-    console.log('connected >> ' + connections.length)
+    console.log('disconnected >> active connections: ' + connections.length)
   })
 })
 
