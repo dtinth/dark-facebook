@@ -22,8 +22,6 @@ stream-story(uistory):
         author(passive):
           selector: "& a.passiveName"
           info: The main author of the news feed post, when they appear along with other text.
-    link:
-      selector: "& a"
     body:
       selector: ".uiStreamMessage .messageBody"
       info: The message body.
@@ -50,7 +48,7 @@ stream-story(uistory):
 
 
 stream-story(2013-11-22):
-  selector: ".userContentWrapper"
+  selector: "._5srp"
   found: Discovered on the news feed on 2013-11-22.
   children:
     headline:
@@ -59,10 +57,15 @@ stream-story(2013-11-22):
         author:
           selector: "& .fwb a"
           info: The main author of the news feed post.
-    link:
-      selector: "& a"
     separator:
       selector: "._5srp"
+    separator(multiple-first):
+      selector:
+        - "._5pbz"
+        - "._4ks > li"
+      info: |
+        When multiple people shares the same link,
+        there's another class of separator.
 
 stream-story(suggested-page):
   children:
@@ -70,5 +73,4 @@ stream-story(suggested-page):
       selector: "._5srp ._66m"
       children:
         author: { selector: "& ._706 a" }
-    link: { selector: "& a" }
     
