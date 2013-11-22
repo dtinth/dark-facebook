@@ -1,6 +1,9 @@
 
 :::composer {
   
+  background-color: @bg2;
+  .make-text-color;
+  
   &--type {
     .make-link;
     &--active {
@@ -29,6 +32,19 @@
 
   &--border {
     border-color: @border1;
+  }
+  
+  &--share-stage {
+    border-color: @border1;
+    &--inline-edit-link {
+      .make-text-color;
+      &:hover {
+        background: @bg3;
+      }
+    }
+    &--inline-edit-input {
+      &:extend(:::common-textbox all);
+    }
   }
   
 }

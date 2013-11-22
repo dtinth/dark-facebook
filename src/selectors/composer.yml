@@ -1,5 +1,6 @@
 
 composer:
+  selector: "._55d0"
   info: |
     The status update box, one that asks you, "what's on your mind?"
   children:
@@ -33,3 +34,15 @@ composer:
       info: |
         The border that separates the composer from the rest of the stream posts.
       found: Close friends stream
+    share-stage:
+      selector: "._4_4e"
+      info: |
+        The "link preview".
+      children:
+        inline-edit-link:
+          selector:
+            - ".UIShareStage a.inline_edit"
+        inline-edit-input:
+          selector:
+            - ".UIShareStage input.inline_edit"
+            - ".UIShareStage textarea.inline_edit"
