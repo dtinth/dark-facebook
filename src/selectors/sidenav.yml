@@ -1,4 +1,8 @@
 
+sidenav:
+  info: The left column that contains the side navigation.
+  selector: "#leftCol"
+
 sidenav-welcomebox:
   info: The user's name and photo at the top of the side-navigation bar.
   selector: ".fbxWelcomeBox"

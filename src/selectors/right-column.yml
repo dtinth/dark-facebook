@@ -1,0 +1,29 @@
+
+right-column:
+  info: |
+    The right column at the right of each page.
+  selector: "#rightCol"
+  children:
+    section:
+      selector: ".ego_unit_container"
+      info: |
+        Each section in the right column.
+    unit:
+      selector: ".ego_unit"
+      info: |
+        Each unit in each section.
+    side-header:
+      selector: "#rightCol .uiHeader"
+      info: |
+        The header of each section in the right column.
+      children:
+        link:
+          selector:
+            - "& a"
+            - "& a span"   # in Sponsored section
+
+right-column-add-friend-typeahead:
+  info: |
+    Add friends to this list textbox.
+  found: Close friend stream, right of page
+  selector: ".friendListAddTypeahead"
