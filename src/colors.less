@@ -3,10 +3,12 @@
 @bg1: #353433;
 @bg2: #252423;
 
-@bg3: @bg1 + #003;
-@bg4: #454443;
+// We need to wrap color addition with fade(_, 100%)
+// because of a less.js bug - see issue #1673.
+@bg3: fade(@bg1 + #003, 100%);
+@bg4: fade(@bg1 + #101010, 100%);
 
-@bg5: @bg1 + #300;
+@bg5: fade(@bg1 + #300, 100%);
 
 @fg1: #e9e8e7;
 @fg0: #8b8685;
@@ -14,10 +16,10 @@
 @fg5: lighten(@bg5, 60%);
 @fg5-link: lighten(@bg5, 50%);
 
-@border1: @bg1 + #111;
-@border3: @bg3 + #111;
+@border1: fade(@bg1 + #111, 100%);
+@border3: fade(@bg3 + #111, 100%);
 @border4: mix(@fg0, @bg4, 50%);
-@border5: lighten(@bg5, 20%) + #222;
+@border5: fade(lighten(@bg5, 20%) + #222, 100%);
 
 
 @page-bg:    @bg2;

@@ -1,10 +1,15 @@
 
 stream-header:
-  found: News feed
+  found: News feed and group with pinned posts
   info: |
     The stream header in the news feed
     that lets the user sort their news feed by
     "Top Stories" or "Most Recent".
+
+    Also, this can be a section separator.
+    For example, in group page, the header that says,
+    "Pinned Post" and "Recent Posts".
   selector: ".uiStreamHeader"
   children:
     sorter: { selector: ".uiStream .uiStreamHeader .uiStreamHeaderChronologicalForm" }
+    text: { selector: ".uiStreamHeaderText" }

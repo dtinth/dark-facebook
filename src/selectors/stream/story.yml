@@ -4,6 +4,13 @@ stream-story(uistory):
   info: |
     A story in a stream, such as news feed, of list stream, and so on.
   children:
+    highlighted:
+      selector: "&[style^='background-color']"
+      info: |
+        A highlighted story.
+        For example, when clicking on a notification for a post in a group,
+        the user is taken to that post.
+        That post is highlighted briefly in yellow.
     comment-button:
       selector: ".uiLinkButton.comment_link input"
       info: |

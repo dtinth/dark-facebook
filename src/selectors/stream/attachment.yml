@@ -16,7 +16,9 @@ stream-attachment:
         This is that blockquote.
       found: Photo share story
     container:
-      selector: ".shareRedesignContainer"
+      selector:
+        - ".shareRedesignContainer"   # when link contains pictures
+        - ".shareRedesignText"        # when link contains only text
       info: |
         The link information box, the one with background.
       found: Inside `share-box`.

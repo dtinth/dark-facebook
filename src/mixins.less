@@ -18,3 +18,13 @@
 
 .link-colors() { a { .make-link } }
 .muted-link-colors() { a { .muted-link } }
+
+.make-transition(@stuff) {
+  -webkit-transition: @stuff;
+  -moz-transition: @stuff;
+  -o-transition: @stuff;
+  transition: @stuff;
+}
+
+
+

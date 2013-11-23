@@ -1,7 +1,12 @@
 
 :::stream-story {
   border-color: @border1;
+  background-color: @bg1;
+  .make-transition(1s background-color);
   .link-colors;
+  &--highlighted {
+    background-color: mix(@bg1, @bg5, 50%);
+  }
   &--body {
     .make-text-color;
   }
