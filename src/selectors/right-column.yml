@@ -22,6 +22,17 @@ right-column:
             - "& a"
             - "& a span"   # in Sponsored section
 
+right-column-reminder:
+  selector: ".fbRemindersStory"
+  info: |
+    The reminders. For example, birthday, upcoming events, and so on.
+  children:
+    title:
+      selector: ".fbRemindersTitle"
+      info: |
+        The reminder title. e.g. the friend's name.
+        Need to make it look like a link.
+
 right-column-add-friend-typeahead:
   info: |
     Add friends to this list textbox.
