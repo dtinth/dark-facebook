@@ -1,0 +1,15 @@
+<strong><em>
+================================================
+WORK IN PROGRESS. This theme is being actively developed, but it is not complete yet (facebook has a lot of pages).
+
+Meanwhile, please check the <a href="https://github.com/dtinth/dark-facebook">GitHub project</a>.
+================================================
+</em></strong>
+
+A simple and dark theme for facebook. 
+
+This is a rewrite of style 56731. However, theming is done using a radically different approach, which aims for ease of maintenance and contribution.
+
+<em>dark-facebook is open source</em>. You can see the source code and contribute to it at this GitHub repository: https://github.com/dtinth/dark-facebook
+
+
