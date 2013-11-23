@@ -1,0 +1,13 @@
+
+chat-window:
+  info: The chat window...
+  children:
+    textarea:
+      selector: ".fbNubFlyoutFooter textarea"
+      info: |
+        The text area that you'd use to type in chat messages.
+      children:
+        container:
+          selector: "._552h"
+          info: |
+            Its container. It contains a white border which should be changed.

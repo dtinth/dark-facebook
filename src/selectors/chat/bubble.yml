@@ -1,0 +1,22 @@
+
+chat-bubble:
+  info: |
+    A chat bubble in the new theme in Facebook chat.
+  selector: ".bubbles ._kso, .bubbles ._kso:before"
+  children:
+    pointy:
+      info: The pointy in the chat bubble.
+      children:
+        background: { selector: ".bubbles ._kso:before" }
+        mask: { selector: ".bubbles ._kso:after" }
+    theirs:
+      selector: ".bubbles ._50kd ._kso, .bubbles ._50kd ._kso:before"
+    profile-picture:
+      selector: ".bubbles ._50dw .profileLink"
+      children:
+        image: { selector: "._50dw .profileLink .profilePhoto" }
+        frame: { selector: "&:after" }
+    time-separator:
+      selector: ".bubbles ._511m"
+      children:
+        text: { selector: ".bubbles div._511n" }

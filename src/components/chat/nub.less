@@ -1,0 +1,27 @@
+
+:::chat-nub {
+  &--button {
+    .make-text-color;
+    background: darken(@bg2, 3%);
+    border-color: @border1;
+    box-shadow: inset 0 1px 0 fade(white, 5%);
+  }
+  &--online-count {
+    .make-mute-color;
+  }
+}
+
+:::chat-nub-flyout {
+  box-shadow: 0 1px 12px fade(black, 50%);
+  &--content {
+    background: @bg1;
+    border-color: @border1;
+  }
+  &--footer {
+    background: @bg0;
+  }
+  &--titlebar {
+    background: @bg5;
+    border-color: @border5;
+  }
+}

@@ -1,0 +1,36 @@
+
+:::chat-bubble {
+  box-shadow: 0 1px 0 fade(white, 10%), 0 2px 3px fade(black, 50%);
+  text-shadow: 0 1px 1px black;
+  border-color: @border1;
+  .gradient(@bg0, @bg0, @bg1);
+  .make-text-color;
+  &--theirs {
+    .gradient(@bg3, @bg3, @bg3 + #111);
+    border-color: @border3;
+  }
+  &--profile-picture, &--profile-picture--image {
+    border-radius: 4px;
+  }
+  &--profile-picture {
+    box-shadow: 0 2px 3px fade(black, 50%);
+  }
+  &--pointy--background, &--pointy--mask, &--profile-picture--frame {
+    background: transparent;
+    opacity: 0;
+  }
+  &--time-separator {
+    @color: @mute-color;
+    @outer: fade(@color, 0%);
+    @inner: fade(@color, 75%);
+    background: -moz-linear-gradient(left, @outer 0%, @inner 50%, @outer 100%);
+    background: -webkit-linear-gradient(left, @outer 0%, @inner 50%, @outer 100%);
+    background: -o-linear-gradient(left, @outer 0%, @inner 50%, @outer 100%);
+    background: -ms-linear-gradient(left, @outer 0%, @inner 50%, @outer 100%);
+    background: linear-gradient(left, @outer 0%, @inner 50%, @outer 100%);
+    &--text {
+      background: @bg1;
+      .make-mute-color;
+    }
+  }
+}

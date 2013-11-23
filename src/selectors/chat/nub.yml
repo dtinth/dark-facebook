@@ -1,0 +1,54 @@
+
+chat-nub:
+  selector: ".fbDock .rNubContainer"
+  info: |
+    The chat tabs that appear at the bottom of the page,
+    at the left of the chat sidebar.
+
+    Not sure why, but facebook calls them "nub".
+    It's a cute name though, I think.
+  children:
+    button:
+      selector: ".fbNubButton"
+      info: |
+        The tab buttons. This may refer to
+        
+        - the translation button
+        - the chat tab (closed one)
+        - the chat button (when the sidebar is closed)
+    online-count:
+      selector: ".fbNubButton .label .count"
+      info: |
+        The friend count in the chat button.
+
+chat-nub-flyout:
+  selector: ".fbNubFlyout"
+  info: |
+    When you click on a nub button, it expands!
+    It became a nub flyout. For example, an opened chat tab.
+  children:
+    content:
+      info: The contents of the nub flyout, which should be styled black.
+      selector:
+        - ".fbNubFlyoutHeader"
+        - ".fbNubFlyoutBody"
+        - ".fbNubFlyoutAttachments"
+        - ".fbNubFlyoutFooter"
+    body:
+      selector: ".fbNubFlyoutBody"
+    footer:
+      selector: ".fbNubFlyoutFooter"
+      info: This footer contains the message input box for chat tabs.
+    titlebar:
+      selector: ".fbNubFlyoutTitlebar"
+      children:
+        active:
+          selector: ".focusedTab .fbNubFlyoutTitlebar"
+
+
+
+
+
+
+
+
