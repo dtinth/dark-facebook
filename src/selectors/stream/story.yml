@@ -52,7 +52,7 @@ stream-story(2013-11-22):
   found: Discovered on the news feed on 2013-11-22.
   children:
     headline:
-      selector: "h5._5pbw"
+      selector: "._5pbw"
       children:
         author:
           selector: "& .fwb a"
@@ -67,6 +67,11 @@ stream-story(2013-11-22):
       info: |
         When multiple people shares the same link,
         there's another class of separator.
+
+stream-story(2013-11-23):
+  selector: "._5uch"
+  children:
+    separator: { selector: "._5uch" }
 
 stream-story(suggested-page):
   children:
