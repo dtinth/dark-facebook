@@ -4,8 +4,13 @@ filename = ARGV[0]
 data = File.read(filename)
 
 File.open(filename, 'w') do |io|
+  components_changed = (
+    data.scan(/selectors\/(.*?)\.yml/).map { |x| x[0] } +
+    data.scan(/components\/(.*?)\.less/).map { |x| x[0] }
+  ).uniq.sort
   text = <<COMMIT
-# some text!
+# For major style changes, put this in:
+# [#{components_changed.join(', ')}]
 COMMIT
   io << data.sub('#', text + '#')
 end

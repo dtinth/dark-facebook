@@ -15,4 +15,7 @@ This is a rewrite of style 56731. However, theming is done using a radically dif
 
 <em>dark-facebook is open source</em>. You can see the source code and contribute to it at this GitHub repository: https://github.com/dtinth/dark-facebook
 
+<strong>Changelog:</strong>
+$CHANGELOG$
+2013-11-22 (e1f5676) Initial work started on dark-facebook 2.
 

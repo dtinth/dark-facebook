@@ -16,7 +16,8 @@ casper.start('http://userstyles.org/styles/' + id + '/edit')
 
 casper.then(function() {
 
-  var themeInfo = fs.read('theme-info.txt')
+  var themeInfo = fs.read('dist/theme-description.txt')
+
   var css =
         '@namespace url(http://www.w3.org/1999/xhtml);\n' +
         '@-moz-document domain("facebook.com") {\n' +
