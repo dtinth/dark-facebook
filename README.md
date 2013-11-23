@@ -37,7 +37,7 @@ The Next Approach
   component by component.
 
 
-Contribution
+Contributing
 ------------
 
 Because facebook is a big website,

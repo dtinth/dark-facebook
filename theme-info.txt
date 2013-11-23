@@ -1,8 +1,11 @@
 <strong><em>
 ================================================
-WORK IN PROGRESS. This theme is being actively developed, but it is not complete yet (facebook has a lot of pages).
+THIS IS WORK IN PROGRESS. This theme is being actively developed, but it is not complete yet (facebook has a lot of pages).
 
 Meanwhile, please check the <a href="https://github.com/dtinth/dark-facebook">GitHub project</a>.
+Also see the progress of the work at the <a href="https://github.com/dtinth/dark-facebook/issues?milestone=1&amp;state=open">milestones page</a> on the issue tracker.
+
+You can help contribute! <a href="https://github.com/dtinth/dark-facebook#contributing">See the contributing section on the project page for more info</a>.
 ================================================
 </em></strong>
 
