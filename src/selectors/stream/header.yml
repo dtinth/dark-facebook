@@ -11,5 +11,12 @@ stream-header:
     "Pinned Post" and "Recent Posts".
   selector: ".uiStreamHeader"
   children:
-    sorter: { selector: ".uiStream .uiStreamHeader .uiStreamHeaderChronologicalForm" }
-    text: { selector: ".uiStreamHeaderText" }
+    sorter:
+      selector: ".uiStream .uiStreamHeader .uiStreamHeaderChronologicalForm"
+      info: The "Top Stories / Most Recent text" text.
+      found: News feed
+    text:
+      selector: ".uiStreamHeaderText"
+      info: The "Pinned Post / Recent Posts" text.
+      found: Group with pinned posts
+

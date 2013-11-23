@@ -37,10 +37,17 @@ The Next Approach
   component by component.
 
 
-The Build Process
------------------
+Contribution
+------------
 
-![The Build Process](docs/images/compile-process.png)
+Because facebook is a big website,
+your contribution would help this theme become more complete.
+
+Please check out
+
+* [the theming process](docs/theming-process.md),
+* [the contribution guidelines](CONTRIBUTING.md), and
+* the development section, below.
 
 
 Development
