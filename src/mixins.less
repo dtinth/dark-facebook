@@ -1,17 +1,15 @@
 
+/* normal text color */
 ._-text-color { color: @text-color; }
+
+/* muted text color */
 ._-mute-color { color: @mute-color; }
+
+/* link text color */
 ._-link-color { color: @link-color; }
 .make-text-color() { &:extend(._-text-color all); }
 .make-mute-color() { &:extend(._-mute-color all); }
 .make-link-color() { &:extend(._-link-color all); }
-
-._-bg0 { background-color: @bg0; }
-._-bg1 { background-color: @bg1; }
-._-bg2 { background-color: @bg2; }
-.make-bg0() { &:extend(._-bg0 all); }
-.make-bg1() { &:extend(._-bg1 all); }
-.make-bg2() { &:extend(._-bg1 all); }
 
 ._-shadow { box-shadow: 3px 3px 0 rgba(0,0,0,0.3); }
 .shadow() { &:extend(._-shadow all); }

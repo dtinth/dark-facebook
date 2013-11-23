@@ -1,15 +1,23 @@
 
 :::common-link {
-  color: @link-color;
+
+  .make-link-color;
+
+  /* hovered link color */
   &:hover {
     color: lighten(@link-color, 10%);
   }
+
 }
+
 :::common-muted-link {
-  color: @mute-color;
+  .make-mute-color;
+
+  /* muted hovered link color */
   &:hover {
     color: lighten(@mute-color, 10%);
   }
+
 }
 
 .make-link() {
