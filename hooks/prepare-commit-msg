@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+
+filename = ARGV[0]
+data = File.read(filename)
+
+File.open(filename, 'w') do |io|
+  text = <<COMMIT
+# some text!
+COMMIT
+  io << data.sub('#', text + '#')
+end
+
+
