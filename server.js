@@ -8,7 +8,7 @@ var result
 function doCompile() {
   compile().then(function(data) {
     console.log(new Date() + ' - recompiled >> active connection: ' + connections.length)
-    result = data
+    result = '/* compiled: ' + new Date() + ' */\n' + data
     connections.forEach(function(connection) {
       connection.send(result)
     })
