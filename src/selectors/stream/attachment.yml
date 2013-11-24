@@ -98,3 +98,12 @@ stream-attachment(page-link):
     container: { selector: "&" }
     share-box: { selector: "&" }
     border: { selector: "&" }
+
+stream-attachment(sponsored-page):
+  found: News feed
+  selector: "._5eh4"
+  children:
+    container: { selector: "._5eh8" }
+    share-box: { selector: "&" }
+    border: { selector: "&" }
+    title: { selector: "._5eha" }
