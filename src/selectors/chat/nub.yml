@@ -44,6 +44,14 @@ chat-nub-flyout:
       children:
         active:
           selector: ".focusedTab .fbNubFlyoutTitlebar"
-
+    attachments:
+      selector: ".fbNubFlyoutAttachments"
+      info: |
+        When sharing a link, the link information displays in the attachment.
+      children:
+        shelf:
+          selector: "& .chatAttachmentShelf"
+          children:
+            border: { selector: "._2qh" }
 
 
