@@ -7,8 +7,15 @@ chat-sidebar:
   children:
   
     friend:
-      selector: "ul.fbChatOrderedList li a"
+      selector:
+        - "ul.fbChatOrderedList li a"   # normal mode
+        - "._55ln"                      # search mode
       info: A single item in the friend list.
+      children:
+        selected:
+          selector:
+            - "ul.fbChatOrderedList li a:hover"     # normal mode
+            - ".fbChatTypeaheadView li.selected a"  # search mode
     
     section-separator:
       selector: "._554p"
