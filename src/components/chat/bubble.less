@@ -2,12 +2,12 @@
 :::chat-bubble {
   box-shadow: 0 1px 0 fade(white, 10%), 0 2px 3px fade(black, 50%);
   text-shadow: 0 1px 1px black;
-  border-color: @border1;
+  border-color: @border1 + #111;
   .gradient(@bg0, @bg0, @bg1);
   .make-text-color;
   &--theirs {
     .gradient(@bg3, @bg3, @bg3 + #111);
-    border-color: @border3;
+    border-color: @border3 + #111;
   }
   &--profile-picture, &--profile-picture--image {
     border-radius: 4px;
