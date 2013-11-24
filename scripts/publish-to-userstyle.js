@@ -35,6 +35,13 @@ casper.then(function() {
 
 })
 
+casper.waitForSelector('#long-description', function() {
+  console.log('Form submitted successfully!')
+}, function() {
+  console.log('Cannot submit form!')
+  casper.capture('/tmp/dfb2-form.png')
+}, 1000 * 20)
+
 casper.then(function() {
   console.log(this.getCurrentUrl())
 })

@@ -1,8 +1,17 @@
 
+
 stream-story(uistory):
   selector: ".uiStreamStory"
   info: |
     A story in a stream, such as news feed, of list stream, and so on.
+
+    __Notes about separator__:
+    There are two types of separators
+    (the horizontal rule line that separates a story from another):
+
+    * `stream-story--separator` - use `border-color` to theme
+    * `stream-story--separator-bg` - use `background` to theme
+
   children:
     highlighted:
       selector: "&[style^='background-color']"
@@ -42,6 +51,13 @@ stream-story(uistory):
         It's the line between the headline and that thing
         that your friend liked.
       found: Like-style post.
+    separator(like-page-box):
+      selector: ".uiStreamShareLikePageBox"
+      info: |
+        When someone shares a photo of another page,
+        sometimes a like button for that page appears.
+        There is another separator line there.
+      found: Close friend list, when a friend shared a photo of another page.
     selected-story-indicator:
       selector: ".selectedStoryIndicator"
       info: |

@@ -3,4 +3,6 @@ button:
   selector: ".uiButton"
   children:
     text:
-      selector: "& .uiButtonText"
+      selector:
+        - ".uiButtonText"    # for most buttons
+        - "& input"          # ex. like page, respond to friend request

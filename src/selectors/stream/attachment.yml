@@ -36,15 +36,22 @@ stream-attachment:
       selector: ".shareRedesign"
       info: |
         The link information box.
-    share-box(item):
-      selector: "._4hp"
-      info: An item, like in games.
-    item:
+
+stream-attachment(item):
+  info: |
+    An item or activity type attachment.
+    It comes in a form of a portrait box.
+
+    For examples,
+    when someone gets a powerup or an item in game or something.
+  children:
+    container:
       selector: "._4hq ._4hs"
-      info: |
-        When someone gets a powerup or an item in game or something.
-      children:
-        border(text): { selector: "._4hq" }
+    share-box:
+      selector: "._4hp"
+    border:
+      selector: "._4hq"
+        
 
 stream-attachment(news-feed):
   info: "Another kind of stream attachment on news feed..."
