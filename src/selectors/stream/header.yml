@@ -19,4 +19,11 @@ stream-header:
       selector: ".uiStreamHeaderText"
       info: The "Pinned Post / Recent Posts" text.
       found: Group with pinned posts
-
+    text(related-post):
+      selector: "._5pbe"
+      info: |
+        In the news feed,
+        sometimes facebook injects a story like:
+        "Friend A and Friend B like Page X".
+        Under that story exists a section called "Related Post"
+        which displays a related post from Page X.
