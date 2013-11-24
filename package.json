@@ -18,7 +18,8 @@
     "it.js": "~0.7.0",
     "ws": "~0.4.31",
     "watchr": "~2.4.4",
-    "when": "~2.6.0"
+    "when": "~2.6.0",
+    "clean-css": "~2.0.2"
   },
   "devDependencies": {
     "mocha": "~1.14.0"
