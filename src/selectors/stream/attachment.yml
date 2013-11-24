@@ -67,6 +67,15 @@ stream-attachment(news-feed):
         - "._5par" # bottom
         - "._5pap" # top
         - "._5paq" # right
+    notification:
+      info: |
+        When you like a link that is associated with a page,
+        sometimes, facebook will offer you to like that page.
+      selector: "._5rnz"
+    notification(ad):
+      info: |
+        An ad about creating an ad...
+      selector: "._5q81"
 
 stream-attachment(suggested-page):
   found: Suggested Page section in news feed
