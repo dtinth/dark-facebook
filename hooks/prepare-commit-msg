@@ -11,7 +11,7 @@ components_changed = (
 exit if components_changed.empty?
 
 File.open(filename, 'w') do |io|
-  io << "[#{components_changed.join(', ')}] \n"
+  io << "# [#{components_changed.join(', ')}] \n"
   io << data
 end
 
