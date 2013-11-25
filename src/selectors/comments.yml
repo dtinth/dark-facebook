@@ -8,6 +8,32 @@ comments:
       children:
         unseen:
           selector: "&.UFIUnseenItem"
+        reply:
+          selector: ".UFIReplyList .UFIRow"
+          children:
+            border:
+              selector: ".UFIReplyList .UFIRow.UFIPartialBorder .UFICommentContent"
+        featured:
+          selector: ".UFIFeaturedComment"
+          info: |
+            When the comment is featured.
+            e.g. the page's owner replies to a post.
+          children:
+            name:
+              info: |
+                The name of the actor for the featured comment.
+                Usually, this name is highlighted to indicate that
+                the page is replying.
+              selector: "& .UFICommentActorName"
     textbox:
       selector: "& .uiTypeahead"
       info: The input box to post comment.
+    reply-list:
+      selector: ".UFIReplyList"
+      info: |
+        The list that contains the replies
+        (when hierarchical comment is turned on,
+        for some pages).
+    media:
+      selector: ".uiMediaThumb"
+      info: The image attached with the comment.

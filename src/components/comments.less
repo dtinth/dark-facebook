@@ -1,16 +1,36 @@
 
 :::comments {
   
-  &--row {
+  &--row, &--reply-list {
     background: @comments-bg;
-    &--unseen {
-      background: @comments-new-bg;
-      border-color: lighten(@comments-new-bg, 20%);
+  }
+  
+  &--row--reply {
+    background: @comments-bg + #080808;
+    border-color: @comments-bg;
+    &--border {
+      border-color: @comments-bg;
     }
+  }
+  
+  &--row--featured--name {
+    background: @comments-bg - #111;
+    border-color: @comments-bg + #0b0b0b;
+  }
+  
+  &--row--unseen {
+    background: @comments-new-bg;
+    border-color: lighten(@comments-new-bg, 20%);
   }
   
   &--textbox {
     &:extend(:::typeahead all);
+  }
+  
+  &--media {
+    background: darken(@bg1, 3%);
+    border-color: @border1;
+    .shadow;
   }
   
 }

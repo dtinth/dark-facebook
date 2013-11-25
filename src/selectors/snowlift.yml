@@ -1,0 +1,13 @@
+
+snowlift:
+  info: |
+    The snowlift is that screen that you view image in a lightbox format.
+    
+    Facebook calls it a "fbPhotoSnowlift", hence the name "snowlift."
+    A more general name of it is "Facebook Photo Theater."
+  selector: ".fbPhotoSnowlift"
+  children:
+    popup-container:
+      selector: ".fbPhotoSnowliftContainer"
+    right-hand-column:
+      selector: ".fbPhotoSnowlift .rhc"
