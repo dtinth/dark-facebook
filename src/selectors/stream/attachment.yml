@@ -8,7 +8,9 @@ stream-attachment:
   found: Share story
   children:
     quote:
-      selector: ".shareSubtext"
+      selector:
+        - ".shareSubtext"             # when there is a picture
+        - ".uiAttachmentNoMedia"      # when there is just text
       info: |
         When sharing a photo,
         the original photo description is put in a blockquote
