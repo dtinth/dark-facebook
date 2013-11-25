@@ -53,5 +53,8 @@ chat-nub-flyout:
           selector: "& .chatAttachmentShelf"
           children:
             border: { selector: "._2qh" }
-
+    unread-count:
+      selector: "._51jt .unreadCount"
+      info: |
+        The unread count in the more menu.
 
