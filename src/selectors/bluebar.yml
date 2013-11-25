@@ -4,6 +4,12 @@ bluebar:
   info: |
     The "blue bar" at the top of facebook page.
   children:
+    line:
+      selector: ".hasSmurfbar #blueBarHolder #blueBar:after"
+      info: |
+        The blue line with the shadow.
+        Seriously, why can't you just use box-shadow?
+        Or the box-shadow leaves you with a blur at the side and that seems unacceptable?
     search:
       selector: ._585-
       info: The search box.

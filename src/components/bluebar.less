@@ -6,6 +6,11 @@
   
   .gradient(@bottom, @bottom, @top);
   
+  &--line {
+    .gradient(fade(black, 0%), fade(black, 0%), fade(black, 12%));
+    border-top: 1px solid @top;
+  }
+  
   &--search {
     
     @top:    @bg0;
