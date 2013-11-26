@@ -1,0 +1,36 @@
+
+:::timeline {
+  &--content-column {
+    background: transparent;
+  }
+  &--scrubber {
+    background: transparent;
+    &--item { border-color: mix(@bg2, @border1, 50%); color: @mute-color; }
+    &--item--selected { border-color: @border4; }
+  }
+  &--unit {
+    .make-text-color;
+    .link-colors;
+    .shadow;
+    &--border {
+      background: transparent;
+    }
+    &--title {
+      background: @bg0;
+      border-color: @border1;
+    }
+    &--container {
+      background: @bg1;
+      border: 1px solid @border1;
+      &--container {
+        border-width: 0;
+      }
+    }
+  }
+  &--separator {
+    border-color: @border1;
+  }
+  &--attachment {
+    border-color: @border1;
+  }
+}

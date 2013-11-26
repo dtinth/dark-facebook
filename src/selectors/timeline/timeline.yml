@@ -1,0 +1,59 @@
+
+timeline:
+  selector: ".timelineLayout"
+  children:
+    content-column:
+      info: |
+        The content column in a timeline.
+        Must reset its background color to transparent.
+      selector: ".timelineLayout #contentCol"
+    scrubber:
+      info: |
+        The scrubber at the right side of the timeline.
+        It contains a list of times to travel, like, um...
+        Recent, 2010s, 2009, ..., Born.
+      selector: "#contentCol .fbTimelineScrubber"
+        # we need #contentCol so that the selector wins
+        # and we can override the link color again
+      children:
+        item: { selector: "& li a" }
+        item--selected: { selector: "& li.selected a" }
+    unit:
+      info: |
+        A timeline unit.
+      selector: ".fbTimelineUnit"
+      children:
+        container:
+          info: |
+            The timeline unit container,
+            one that contains the background.
+          selector:
+            - ".fbTimelineCapsule .timelineUnitContainer"
+            - "._4lh .timelineReportContainer"
+          children:
+            container:
+              info: |
+                But when a container is inside a container (what?!)
+                we have to cancel one border out.
+              selector: ".timelineReportContainer .timelineUnitContainer"
+        border:
+          info: |
+            Each unit contains a top border and bottom border.
+            Facebook uses images to make these unit look rounder.
+          selector:
+            - ".fbTimelineCapsule .topBorder"
+            - ".fbTimelineCapsule .bottomBorder"
+        title:
+          selector: "._70l"
+    separator:
+      info: |
+        Separators between list items.
+      selector:
+        - "._5gf9"                # about
+        - "._1ln2 .uiList > li"   # places
+        - "._55-w"                # photos > tag more photos
+    attachment:
+      info: |
+        Things like book thumbnails, and stuffs.
+      selector:
+        - "._4jul ._ph5"          # books
