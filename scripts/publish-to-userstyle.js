@@ -40,6 +40,7 @@ casper.waitForSelector('#long-description', function() {
 }, function() {
   console.log('Cannot submit form!')
   casper.capture('/tmp/dfb2-form.png')
+  casper.exit(1)
 }, 1000 * 20)
 
 casper.then(function() {
