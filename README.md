@@ -50,8 +50,8 @@ Please check out
 * the development section, below.
 
 
-Development
------------
+Development (Firefox)
+---------------------
 
 ### Prerequisites
 
@@ -74,6 +74,16 @@ Remarks
 
 * When you quit the server, the script is finished. When you start a server, you have to run the script again.
 
+
+Development (Chrome)
+--------------------
+
+TODO: Explain this.
+
+For the moment,
+there's a script `chrome-previewer.js`
+that you can copy and run on Stylish's editor page
+that will syncs the editing style code with the server.
 
 
 
