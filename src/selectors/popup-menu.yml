@@ -32,4 +32,14 @@ popup-menu(page-nav):
         text:
           selector: "& input"
     separator-bg:
-      selector: "& .menuDivider"
+      selector: "#pageNav .menuDivider"
+
+popup-menu(social-fixer):
+  selector:
+    - "#bfb_options_button_li ul"
+    - ".bfb_hide_menu"
+  children:
+    item:
+      selector:
+        - "#bfb_options_button_li ul a"
+        - ".bfb_hide_menu div.bfb_item"
