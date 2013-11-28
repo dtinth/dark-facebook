@@ -26,7 +26,7 @@ timeline:
         container:
           info: |
             The timeline unit container,
-            one that contains the background.
+            one that contains the background and border.
           selector:
             - ".fbTimelineCapsule .timelineUnitContainer"
             - "._4lh .timelineReportContainer"
@@ -36,6 +36,11 @@ timeline:
                 But when a container is inside a container (what?!)
                 we have to cancel one border out.
               selector: ".timelineReportContainer .timelineUnitContainer"
+        background:
+          info: |
+            Other elements that need some background treatment.
+          selector:
+            - ".fbTimelineUFI"
         border:
           info: |
             Each unit contains a top border and bottom border.
@@ -45,6 +50,25 @@ timeline:
             - ".fbTimelineCapsule .bottomBorder"
         title:
           selector: "._70l"
+        comments:
+          info: |
+            The comments section.
+          selector: ".fbTimelineUFI"
+          children:
+            container:
+              info: |
+                The container that contains the comments section.
+                They need some background treatment.
+              selector:
+                - ".fbTimelineFeedbackActions"
+                - ".timelineUnitContainer .UFIList"
+            separator:
+              info: |
+                The separator between the buttons 'Like / Comment / Share'
+                and the sentence that says (someone likes this).
+                We need to color its line.
+              selector:
+                - ".timelineUnitContainer .UFIRow"
     separator:
       info: |
         Separators between list items.

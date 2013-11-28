@@ -29,5 +29,6 @@
 @link-color: mix(#8ad, @fg1, 80%);
 @name-color: #bef;
 
-@comments-bg:     @bg1 + #001 + #080808;
-@comments-new-bg: @bg1 + #002 + #080808;
+@comments-bg:       fade(@bg1 + #001 + #080808, 100%);
+@comments-new-bg:   fade(@bg1 + #002 + #080808, 100%);
+@comments-reply-bg: fade(@comments-bg + #080808, 100%);

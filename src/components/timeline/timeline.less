@@ -12,6 +12,9 @@
     .make-text-color;
     .link-colors;
     .shadow;
+    &--background {
+      background: @bg1;
+    }
     &--border {
       background: transparent;
     }
@@ -24,6 +27,16 @@
       border: 1px solid @border1;
       &--container {
         border-width: 0;
+      }
+    }
+    &--comments {
+      .make-text-color;
+      &--container {
+        background: @comments-bg;
+        border-color: @border1;
+      }
+      &--separator {
+        border-color: @comments-bg + #080808;
       }
     }
   }
