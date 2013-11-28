@@ -109,3 +109,11 @@ stream-attachment(sponsored-page):
     share-box: { selector: "&" }
     border: { selector: "&" }
     title: { selector: "._5eha" }
+
+stream-attachment(timeline):
+  found: Timeline
+  selector: "._4lh ._1xz"
+  children:
+    container: { selector: "&" }
+    share-box: { selector: "&" }
+    border: { selector: "&" }
