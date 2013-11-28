@@ -16,3 +16,10 @@ beeper-list:
   info: |
     The notification popup list.
   selector: '._50d1'
+
+
+beeper-notification-jewel:
+  selector: "._53ii ._53ij"
+  info: |
+    The notification popup
+    that appears briefly on the notifications jewel.
