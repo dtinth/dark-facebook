@@ -1,7 +1,7 @@
 
 :::right-column {
   .link-colors;
-  &--unit {
+  &--unit, &--border {
     border-color: @border1;
   }
   &--side-header {
@@ -22,5 +22,18 @@
   }
   &--title {
     .make-link-color;
+  }
+}
+
+:::right-column-sponsored {
+  @opacity: 0.6;
+  @deopacified-mute-color: fade((@mute-color - @bg1 * (1 - @opacity)) / @opacity, 100%);
+  opacity: @opacity;
+  &--title {
+    /** duerp */
+    color: @deopacified-mute-color;
+  }
+  &--domain, &--description {
+    color: @mute-color;
   }
 }

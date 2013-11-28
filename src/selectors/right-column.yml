@@ -12,6 +12,10 @@ right-column:
       selector: ".ego_unit"
       info: |
         Each unit in each section.
+    border:
+      selector: ".rhcFooterBorder"
+      info: |
+        The footer border that separates the rest of the right-hand column from the footer.
     side-header:
       selector: "#rightCol .uiHeader"
       info: |
@@ -38,3 +42,14 @@ right-column-add-friend-typeahead:
     Add friends to this list textbox.
   found: Close friend stream, right of page
   selector: ".friendListAddTypeahead"
+
+
+right-column-sponsored:
+  info: |
+    The sponsored section with a lot of links.
+  found: News feed.
+  selector: "#pagelet_ego_pane .ego_unit"
+  children:
+    title:  { selector: "._5fxj ._5fxk" }
+    domain: { selector: "._5fxj ._5fxl" }
+    description: { selector: "._5fxm ._5fxn" }
