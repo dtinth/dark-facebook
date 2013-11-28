@@ -32,8 +32,12 @@
     }
   }
   &--titlebar {
-    background: @bg5;
-    border-color: @border5;
+    background: mix(@bg0, @bg5, 25%);
+    border-color: mix(@bg0, @border5, 25%);
+    &--active {
+      background: @bg5;
+      border-color: @border5;
+    }
   }
   &--unread-count {
     background-color: @bg3;
