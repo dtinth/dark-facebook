@@ -1,0 +1,37 @@
+
+jewel-flyout:
+  info: |
+    The friend request icon, messages icon, and notifications icons...
+    they are so-called "jewels."
+    
+    When you click on it,
+    a popup appears.
+    That's called the jewel flyout.
+  selector: ".jewelFlyout"
+  children:
+    header:
+      selector: ".jewelHeader"
+    border:
+      selector:
+        - "._33c"
+        - ".messagesContent"
+        - "#fbRequestsJewel #fbRequestsFlyout .hasPYMK" # wtf?
+    item:
+      selector:
+        - "._33e"
+        - ".messagesContent"
+      children:
+        highlighted:
+          selector:
+            - "._4af ._33e"
+            - ".jewelItemNew"
+            - ".jewelItemNew .messagesContent"
+    text:
+      selector:
+        - "._33e"
+        - ".messagesContent .author"
+        - ".messagesContent:hover .author span"
+    see-more:
+      selector: ".jewelFooter a"
+    see-more-border:
+      selector: "#fbRequestsList .uiScrollableArea.contentAfter"
