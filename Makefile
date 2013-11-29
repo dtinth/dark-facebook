@@ -8,6 +8,11 @@ all: $(OUT_CSS) $(MIN_CSS)
 clean:
 	rm -rf $(DIST)
 
+docs: .FORCE
+	rm -rf docs/selectors
+	mkdir docs/selectors
+	node scripts/generate-docs.js
+
 publish: clean $(MIN_CSS) theme-info.txt
 	node scripts/generate-description.js > dist/theme-description.txt
 	casperjs scripts/publish-to-userstyle.js
@@ -18,4 +23,6 @@ $(OUT_CSS):
 
 $(MIN_CSS): $(OUT_CSS)
 	./node_modules/.bin/cleancss -b $(OUT_CSS) -o $(MIN_CSS)
+
+.FORCE:
 
