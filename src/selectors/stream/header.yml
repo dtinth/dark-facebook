@@ -27,3 +27,9 @@ stream-header:
         "Friend A and Friend B like Page X".
         Under that story exists a section called "Related Post"
         which displays a related post from Page X.
+    text(similar-pages):
+      selector: ".uiStreamEdgeStoryLineTx"
+      info: |
+        In the news feed,
+        when you like a post by some page,
+        sometimes Facebook will offer you to like pages they think are similar.
