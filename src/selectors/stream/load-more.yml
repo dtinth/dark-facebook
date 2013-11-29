@@ -1,0 +1,6 @@
+
+
+stream-load-more:
+  selector: ".uiBoxLightblue"
+  info: |
+    The load more thingy at the bottom of the feed.
