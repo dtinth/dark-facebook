@@ -1,0 +1,15 @@
+
+a(category):
+  info: Hello
+  selector:
+    - x
+    - y
+  children:
+    g(x): { selector: ['c', '& d'] }
+    g(y): { selector: ['e'] }
+
+a(another):
+  info: World
+  selector: z
+  children:
+    g: { selector: ['a', 'b'] }

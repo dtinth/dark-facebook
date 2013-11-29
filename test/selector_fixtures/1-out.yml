@@ -1,0 +1,31 @@
+
+- name: a
+  id: a(category)
+  info: Hello
+  selectors:
+    - x
+    - y
+
+- name: a--g
+  id: a(category)--g(x)
+  selectors:
+    - c
+    - x d
+    - y d
+
+- name: a--g
+  id: a(category)--g(y)
+  selectors:
+    - e
+
+- name: a
+  id: a(another)
+  info: World
+  selectors:
+    - z
+
+- name: a--g
+  id: a(another)--g
+  selectors:
+    - a
+    - b

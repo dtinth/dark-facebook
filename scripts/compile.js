@@ -14,4 +14,4 @@ function annotate(css) {
   })
 }
 
-compile().then(annotate).then(console.log, console.error)
+compile().then(annotate).done(console.log)
