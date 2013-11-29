@@ -1,0 +1,15 @@
+
+permalink-view:
+  info: |
+    The permalink view, when you are viewing a single post.
+    For example, <https://www.facebook.com/dtinth/posts/10200488232002504>.
+  found: When viewing single post
+  selector: ".permalinkBody #contentCol"
+  children:
+    box:
+      selector:
+        - ".permalinkBody #rightCol"
+        - ".permalinkBody #contentArea"
+    separator:
+      selector:
+        - ".fbStreamPermalinkHeader"
