@@ -4,6 +4,12 @@
   background-color: @bg0;
   border-color: @border1;
 }
+:::common-inputtext {
+  background-color: @bg0;
+  &:not(.DOMControl_placeholder) {
+    .make-text-color;
+  }
+}
 
 :::typeahead {
   &:extend(:::common-textbox all);
@@ -11,10 +17,19 @@
     border-color: @border1;
   }
   textarea, input {
-    background-color: @bg0;
-    &:not(.DOMControl_placeholder) {
-      .make-text-color;
-    }
+    &:extend(:::common-inputtext all);
   }
 }
 
+:::search-input {
+  &:extend(:::common-textbox all);
+  span {
+    border: 0;
+    input {
+      .make-text-color;
+    }
+  }
+  button {
+    background-color: @border1;
+  }
+}

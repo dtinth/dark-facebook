@@ -1,0 +1,5 @@
+
+search-input:
+  info: |
+    A search input.
+  selector: ".uiSearchInput"

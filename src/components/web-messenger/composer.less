@@ -1,0 +1,16 @@
+
+:::web-messenger-composer {
+  background: @bg2;
+  &, &--border {
+    border-color: @border1;
+  }
+  &--input {
+    background-color: @bg0;
+    &--textarea {
+      &:extend(:::common-inputtext all);
+    }
+  }
+  &--toolbar {
+    background-color: @bg4;
+  }
+}

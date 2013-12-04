@@ -1,0 +1,24 @@
+
+web-messenger:
+  selector: "._ksg"
+  info: |
+    The web messenger is your Inbox and stuff.
+    That's the place where you "view full conversation."
+  found: "https://www.facebook.com/messages/"
+  
+  children:
+    text:
+      selector:
+        - ".selectedFolder ._1n"    # Inbox and Other title
+        - "._l1"                    # Friend's name in the left
+        - "._r7, ._r7 a"            # Friend's name at the top
+    header:
+      info: |
+        The header at the top of the messenger.
+      selector:
+        - "ul._281"   # Left
+        - "._3db"     # Right
+    side-separator:
+      info: |
+        The separator between the left and the right side of the messenger.
+      selector: "._2nb"

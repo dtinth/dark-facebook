@@ -1,0 +1,17 @@
+web-messenger-composer:
+  info: |
+    The bottom toolbar of the web messenger, where you
+    write your message text.
+  selector: "._1rs"
+  children:
+    border:
+      selector:
+        - "._2pt"     # top (input)
+        - "._1rw"     # bottom (toolbar)
+        - "._2pu"     # separator
+    input:
+      selector: "._2pt"
+      children:
+        textarea: { selector: "& textarea" }
+    toolbar:
+      selector: "._1rw"

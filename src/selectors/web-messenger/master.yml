@@ -1,0 +1,20 @@
+
+web-messenger-master:
+  info: |
+    The master view, that is, the left side with contacts list.
+    Perhaps this came from the name "Master-Detail Application" view in iOS apps.
+  selector: ".wmMasterView"
+  children:
+    item:
+      info: |
+        A thread item at the left side of the web messenger.
+      selector:
+        - "._k-"
+      children:
+        selected: { selector: "&._kv" }
+        hover: { selector: "&:hover" }
+        new: { selector: "&._kx" }
+    search:
+      info: |
+        The search box that lets you search messages.
+      selector: "._3b"

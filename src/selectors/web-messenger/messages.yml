@@ -1,0 +1,9 @@
+web-messenger-messages:
+  info: |
+    The messages area of your web messenger.
+  selector: "#webMessengerRecentMessages"
+  children:
+    date-separator:
+      selector: "._2nb ._2n3"
+      children:
+        text: { selector: "& .timestamp" }
