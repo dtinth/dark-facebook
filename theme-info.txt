@@ -16,5 +16,6 @@ This is a rewrite of style 56731. However, theming is done using a radically dif
 
 <strong>Changelog:</strong>
 $CHANGELOG$
+⋮
 2013-11-22 (e1f5676) Initial work started on dark-facebook 2.
 
