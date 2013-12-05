@@ -1,6 +1,6 @@
 
 :::timeline {
-  &--content-column {
+  &--content-column, &--time-period {
     background: transparent;
   }
   &--scrubber {
@@ -8,42 +8,18 @@
     &--item { border-color: mix(@bg2, @border1, 50%); color: @mute-color; }
     &--item--selected { border-color: @border4; }
   }
-  &--unit {
-    .make-text-color;
-    .link-colors;
-    .shadow;
-    &--background {
-      background: @bg1;
-    }
-    &--border {
-      background: transparent;
-    }
-    &--title {
-      background: @bg0;
-      border-color: @border1;
-    }
-    &--container {
-      background: @bg1;
-      border: 1px solid @border1;
-      &--container {
-        border-width: 0;
-      }
-    }
-    &--comments {
-      .make-text-color;
-      &--container {
-        background: @comments-bg;
-        border-color: @border1;
-      }
-      &--separator {
-        border-color: @comments-bg + #080808;
-      }
-    }
-  }
   &--separator {
     border-color: @border1;
   }
   &--attachment {
     border-color: @border1;
   }
+  &--spine-pointer {
+    visibility: hidden;
+  }
+}
+
+:::timeline-button-pagelet {
+  background: @page-bg;
+  border-color: @border1;
 }

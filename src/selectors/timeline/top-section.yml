@@ -1,0 +1,50 @@
+
+timeline-top-section:
+  info: |
+    The timeline top section that,
+    for a page,
+    contains the page name,
+    brief information,
+    the like button,
+    and other links.
+  selector: ".fbTimelineTopSection"
+  children:
+    base:
+      selector: ".fbTimelineTopSectionBase"
+    bottom-border:
+      info: |
+        At the very bottom of the top section of the timeline,
+        there is a curved border image at the bottom.
+        Thus, we need to eliminate it.
+      selector: ".topSectionBottomBorder"
+    frame:
+      info: |
+        Those rectangle links in the timeline.
+      selector: ".fbTimelineNavigationWrapper .frame"
+      children:
+        inner:
+          selector: "& .mat"
+        detail:
+          selector: ".fbTimelineNavigationWrapper .detail"
+          info: |
+            We need a separate detail selector
+            because that's where the background gets applied.
+            
+            If we just apply the background to the frame,
+            some pictures will go missing.
+        blurb:
+          info: |
+            The short information about the page. The about section.
+          selector: ".fbTimelineSummarySection span.fbLongBlurb"
+        title-text:
+          info: |
+            The title text of each frame item.
+          selector: ".fbTimelineNavigationWrapper .title .text"
+    ribbon:
+      info: |
+        The more button at the timeline header.
+      selector: ".fbTimelineMoreButton .fbTimelineRibbon"
+    headline:
+      info: |
+        The page name.
+      selector: "#fbTimelineHeadline h2"

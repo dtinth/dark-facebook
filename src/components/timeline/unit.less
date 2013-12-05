@@ -1,0 +1,39 @@
+:::timeline-unit {
+  .make-text-color;
+  .link-colors;
+  .shadow;
+  background: @bg1;
+  border: 1px solid @border1;
+  &--background {
+    background: @bg1;
+  }
+  &--border {
+    border-color: @border1;
+  }
+  &--rounded-border {
+    background: transparent;
+  }
+  &--title {
+    background: @bg0;
+    border-color: @border1;
+  }
+  &--container {
+    background: transparent;
+    border: 0;
+  }
+  &--comments {
+    .make-text-color;
+    &--container {
+      background: @comments-bg;
+      border-color: @border1;
+    }
+    &--separator {
+      border-color: @comments-bg + #080808;
+    }
+  }
+  
+  
+  &--num-friends-like {
+    .make-link-color;
+  }
+}

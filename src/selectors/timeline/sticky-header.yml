@@ -1,0 +1,6 @@
+
+timeline-sticky-header:
+  info: |
+    That sticky header when you scroll down...
+    You know what I mean.
+  selector: ".fbTimelineStickyHeader .back"

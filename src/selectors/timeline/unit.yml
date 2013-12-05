@@ -1,0 +1,66 @@
+timeline-unit:
+  info: |
+    A timeline unit.
+  selector: ".fbTimelineUnit"
+  children:
+    container:
+      info: |
+        The timeline unit container,
+        one that contains the background and border.
+      selector:
+        - ".fbTimelineCapsule .timelineUnitContainer"
+        - "._4lh .timelineReportContainer"
+      children:
+        container:
+          info: |
+            But when a container is inside a container (what?!)
+            we have to cancel one border out.
+          selector: ".timelineReportContainer .timelineUnitContainer"
+    background:
+      info: |
+        Other elements that need some background treatment.
+      selector:
+        - ".fbTimelineUFI"
+        - "& .uiMorePagerLight .uiMorePagerPrimary"
+    border:
+      info: |
+        Things that need border color treatment.
+      selector:
+        - "._1_m"                                   # Separator between post author and post content.
+        - ".pageFriendSummaryContainer .header"     # N friends like page (top)
+        - ".fbPageFriendSummarySection.needsBorder" # N friends like page (after friend pictures)
+        - ".timelinePageMostRecentLabel"            # Recent posts by others on ... (top)
+        - "& .uiMorePagerLight .uiMorePagerPrimary" # Recent posts by others on ... (bottom)
+        - ".timelinePageLikedPagesLabel"            # Header label: Likes
+    rounded-border:
+      info: |
+        Each unit contains a top border and bottom border.
+        Facebook uses images to make these unit look rounder.
+      selector:
+        - ".fbTimelineCapsule .topBorder"
+        - ".fbTimelineCapsule .bottomBorder"
+    title:
+      selector: "._70l"
+    comments:
+      info: |
+        The comments section.
+      selector: ".fbTimelineUFI"
+      children:
+        container:
+          info: |
+            The container that contains the comments section.
+            They need some background treatment.
+          selector:
+            - ".fbTimelineFeedbackActions"
+            - ".timelineUnitContainer .UFIList"
+        separator:
+          info: |
+            The separator between the buttons 'Like / Comment / Share'
+            and the sentence that says (someone likes this).
+            We need to color its line.
+          selector:
+            - ".timelineUnitContainer .UFIRow"
+    num-friends-like:
+      info: |
+        The number of friends that likes this page.
+      selector: ".pageFriendSummaryContainer .headerDigit"

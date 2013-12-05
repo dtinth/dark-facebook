@@ -1,0 +1,45 @@
+
+:::timeline-top-section {
+  
+  background: transparent;
+  border-color: @border1;
+  .link-colors;
+  
+  &--base {
+    background: @bg1;
+    .shadow;
+  }
+  
+  &--bottom-border {
+    background: transparent;
+    box-shadow:
+      inset 1px -1px 0 @border1,
+      inset -1px -1px 0 @border1;
+  }
+  
+  &--headline {
+    .make-text-color;
+  }
+  
+  &--frame {
+    border-color: @border1;
+    &--detail {
+      background-color: @bg2;
+    }
+    &--inner {
+      border-color: @bg0;
+    }
+    &--blurb {
+      .make-text-color;
+    }
+    &--title-text {
+      .make-link-color;
+    }
+  }
+  
+  &--ribbon {
+    border-color: @border1;
+    background-color: @bg0;
+  }
+  
+}
