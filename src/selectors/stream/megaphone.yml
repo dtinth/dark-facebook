@@ -1,0 +1,15 @@
+
+stream-megaphone:
+  info: |
+    A megaphone is a huge popup that appears at the top of the page.
+    Sometimes it appear on the [pages feed](https://www.facebook.com/pages/feed),
+    suggesting you to like more pages.
+  selector: ".megaphone_box"
+  children:
+    header-text:
+      selector:
+        - ".sourceSuggestionMegaphoneFirstHeader"
+        - ".sourceSuggestionMegaphoneSecondHeader"
+    separator:
+      selector:
+        - ".sourceSuggestionMegaphoneContent #source_suggestion_picker"
