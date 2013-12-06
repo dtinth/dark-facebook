@@ -11,6 +11,8 @@ jewel-flyout:
   children:
     header:
       selector: ".jewelHeader"
+    header(privacy-shortcuts):
+      selector: "._8-b ._26y1"
     border:
       selector:
         - "._33c"
@@ -33,5 +35,9 @@ jewel-flyout:
         - ".messagesContent:hover .author span"
     see-more:
       selector: ".jewelFooter a"
+    see-more(privacy-shortcuts):
+      selector:
+        - "._26y3 ._5cw0"
+        - "._26y3 ._5cw1" 
     see-more-border:
       selector: "#fbRequestsList .uiScrollableArea.contentAfter"
