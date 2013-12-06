@@ -3,3 +3,18 @@ search-input:
   info: |
     A search input.
   selector: ".uiSearchInput"
+
+common-inputtext:
+  info: |
+    All text input boxes in the page.
+    
+    I believe they should all be styled black...
+    We can fix the surrounding colors later.
+  selector:
+    - ".inputtext"
+    - ".textInput"
+
+common-placeholder:
+  info: |
+    The placeholder controls.
+  selector: ".DOMControl_placeholder"

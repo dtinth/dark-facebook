@@ -4,6 +4,11 @@
   background-color: @bg0;
   border-color: @border1;
 }
+
+:::common-placeholder {
+  .make-mute-color;
+}
+
 :::common-inputtext {
   background-color: @bg0;
   &:not(.DOMControl_placeholder) {
@@ -15,9 +20,6 @@
   &:extend(:::common-textbox all);
   & > .wrap {
     border-color: @border1;
-  }
-  textarea, input {
-    &:extend(:::common-inputtext all);
   }
 }
 
