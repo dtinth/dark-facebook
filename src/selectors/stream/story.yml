@@ -58,6 +58,11 @@ stream-story(uistory):
         sometimes a like button for that page appears.
         There is another separator line there.
       found: Close friend list, when a friend shared a photo of another page.
+    separator(pages-stream):
+      selector: "div#pagelet_home_stream"
+      found: https://www.facebook.com/pages/feed
+      info: |
+        The separator between the title of the stream and the first post.
     selected-story-indicator:
       selector: ".selectedStoryIndicator"
       info: |
