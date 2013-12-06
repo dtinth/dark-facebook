@@ -1,0 +1,13 @@
+
+social-fixer-tabs:
+  info: |
+    The tabs in social fixer news feed.
+  selector: ".bfb_tabs"
+  children:
+    tab:
+      selector: ".bfb_tab"
+      children:
+        selected:
+          selector:
+            - "&.bfb_tab_selected"
+            - "&.bfb_tab_selected:hover"

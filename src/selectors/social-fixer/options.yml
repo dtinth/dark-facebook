@@ -1,0 +1,18 @@
+
+social-fixer-options:
+  info: |
+    The main options window of social fixer.
+  selector: ".GM_options_wrapper_inner"
+  
+  children:
+    header: { selector: ".GM_options_header" }
+    content: { selector: "#bfb_option_container .content" }
+    option:
+      selector: "#bfb_option_container .option"
+    tab:
+      selector:
+        - "#bfb_option_container .tab_list .bfb_tab_selector"
+        - "#bfb_option_container .tab_list .bfb_tab_search"
+      children:
+        selected:
+          selector: "#bfb_option_container .tab_list .bfb_tab_selected"

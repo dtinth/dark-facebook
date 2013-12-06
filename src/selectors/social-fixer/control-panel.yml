@@ -1,0 +1,12 @@
+
+social-fixer-control-panel:
+  info: |
+    The control panel in the news feed,
+    with buttons like
+    "Mark All Read", "Show Hidden Posts", "Mute All",
+    and so on and so forth.
+  selector: ".better_fb_cp"
+  children:
+    version:
+      info: The version number.
+      selector: ".better_fb_cp .sfx_cp_version"
