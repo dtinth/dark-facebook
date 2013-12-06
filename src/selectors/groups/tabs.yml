@@ -1,0 +1,36 @@
+groups-tabs:
+  info: |
+    The tabs at the top of a group.
+  selector: ".groupsJumpBarTop"
+  children:
+    tab:
+      selector: ".groupsJumpBarTop .groupsCleanLink"
+      children:
+        active:
+          info: "The active tab."
+          selector: ".groupsJumpBarTop .groupsCleanLinksSelected .groupsJumpTitle"
+          children:
+            background:
+              selector:
+                - "&"
+                - ".groupsJumpBarTop .groupsCleanLinksSelected"
+                - ".groupsJumpBarTop .groupsCleanLinksBorder"
+    border:
+      info: "Things that need some border treatment."
+      selector:
+        - "&"
+        - ".groupsJumpBarTop .groupsCleanLink"
+        - ".groupsJumpBarTop .groupsCleanLinkBorder"
+    actions:
+      info: |
+        The actions button bar in the group tabs:
+        
+         * Notifications,
+         * Create Group button,
+         * Settings buttons, and
+         * the search pane.
+      selector: ".groupsJumpActions"
+      children:
+        button:
+          info: "The buttons on these tabs need some special treatment."
+          selector: ".groupsJumpActions .uiButton"
