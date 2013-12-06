@@ -1,0 +1,20 @@
+
+ticker-popup:
+  info: |
+    When you hover a ticker item,
+    more details pops up.
+    That's the ticker pop up!
+  selector: ".uiOverlayContent"
+  children:
+    photo:
+      info: |
+        When a ticker story is associated with a photo.
+      selector:
+        - ".fbFlyoutDialog .photoWrapper"
+        - ".fbFlyoutDialog .tickerFullPhoto"
+        - ".fbFlyoutDialog .uiMediaThumb i"
+    footer:
+      info: |
+        A ticker dialog's footer.
+        That's where you can post new comments.
+      selector: ".fbFlyoutDialog .tickerDialogFooter"

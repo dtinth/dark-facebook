@@ -1,0 +1,32 @@
+
+ticker:
+  info: |
+    The facebook ticker,
+    or as some Thais call it,
+    "Tab Suek (stalkers' panel)."
+  selector: ".fbFeedTicker"
+  children:
+    story:
+      info: |
+        A story in the ticker.
+      selector: ".fbFeedTickerStory"
+      children:
+        active:
+          selector:
+            - ".fbFeedTicker .tickerStoryActive"
+            - ".fbFeedTicker .tickerStoryClickable:hover"
+    pagelet:
+      info: |
+        This is the ticker pagelet that you open when
+        the screen is not wide enough to show the ticker in a sidebar.
+        We need to adjust its border color a bit.
+      selector: ".home_right_column .fbFeedTicker"
+
+ticker-toggler:
+  info: |
+    When the screen is not wide enough to show the chat sidebar,
+    a ticker toggler appears at the top of the news feed.
+  selector: ".tickerToggleWrapper"
+  children:
+    button:
+      selector: ".tickerLineToggle"
