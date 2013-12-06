@@ -16,6 +16,17 @@
   }
 }
 
+:::common-mentions-input {
+  &--typeahead, &--textarea {
+    background: transparent;
+  }
+  &--highlight {
+    background: @comments-bg;
+    box-shadow: 0 0 0 1px @comments-border,
+      0 1px 4px black;
+  }
+}
+
 :::typeahead {
   &:extend(:::common-textbox all);
   & > .wrap {

@@ -27,8 +27,6 @@ composer:
     typeahead:
       selector: ".composerTypeahead"
       info: The text box to enter your status.
-      children:
-        text: { selector: "& textarea" }
     border:
       selector: "._50zb"
       info: |

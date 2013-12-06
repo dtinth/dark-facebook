@@ -43,3 +43,13 @@ popup-menu(social-fixer):
       selector:
         - "#bfb_options_button_li ul a"
         - ".bfb_hide_menu div.bfb_item"
+
+popup-menu(typeahead):
+  info: The popup menu when completing mentions.
+  selector: ".uiTypeaheadView ul"
+  children:
+    item:
+      selector: ".uiTypeaheadView li"
+      children:
+        selected:
+          selector: ".uiTypeaheadView li.selected"
