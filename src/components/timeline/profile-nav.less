@@ -1,0 +1,19 @@
+
+:::timeline-profile-nav {
+  &--border {
+    border-color: @border1;
+  }
+  &--item {
+    &:hover {
+      background: @bg0;
+    }
+    &--active {
+      background: @bg2;
+      box-shadow: 0 5px 0 @bg2,
+        inset 0 1px @border1;
+    }
+    &--pointy {
+      opacity: 0;
+    }
+  }
+}

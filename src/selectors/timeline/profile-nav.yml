@@ -1,0 +1,18 @@
+
+timeline-profile-nav:
+  info: |
+    The navigation bar at the top of your profile timeline.
+  children:
+    border:
+      info:
+        Things that need border treatment...
+      selector:
+        - "._6_7"    # the leftmost border
+        - "._6-6"    # border between items
+    item:
+      selector: "._6-6"
+      children:
+        active:
+          selector: "&._6-7"
+        pointy:
+          selector: "& ._513x"
