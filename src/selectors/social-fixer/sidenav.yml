@@ -1,0 +1,10 @@
+
+social-fixer-sidenav:
+  info: |
+    The side navigation bar that contains all pages and groups.
+  selector: ".uiHeaderTopBorder.uiHeaderNav"
+  children:
+    border:
+      selector:
+        - "&"
+        - "ul.bfb_uiSideNav"
