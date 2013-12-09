@@ -1,0 +1,7 @@
+
+dialog-box-share:
+  info: |
+    For the components inside a share box."
+  children:
+    title:
+      selector: ".UIShareStage_Title"

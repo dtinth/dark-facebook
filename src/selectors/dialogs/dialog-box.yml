@@ -1,0 +1,22 @@
+dialog-box(share):
+  info: |
+    A popup dialog box!
+  found: "Share This Photo dialog"
+  selector: "._1yv"
+  children:
+    backdrop:
+      selector: "._4-hy"
+      info: |
+        The dark background...
+    title-bar:
+      selector: "._1yw"
+    content:
+      selector: "& ._t"
+    footer:
+      selector: "& .uiBoxGray"
+    border:
+      info: |
+        Things that need border treatment...
+      selector:
+        - "._b_0"
+        - "._b--"
