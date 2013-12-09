@@ -17,6 +17,10 @@ stream-attachment:
         underneath the shared photo.
         This is that blockquote.
       found: Photo share story
+    quote(timeline):
+      selector:
+        - "._4lh .attachmentUnit"
+      found: On the timeline.
     container:
       selector:
         - ".shareRedesignContainer"   # when link contains pictures

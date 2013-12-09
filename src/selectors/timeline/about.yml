@@ -1,0 +1,10 @@
+
+timeline-about:
+  info: |
+    The about section in your profile...
+  children:
+    item:
+      selector: "._5bkm"
+      children:
+        text:
+          selector: "._4_ug"

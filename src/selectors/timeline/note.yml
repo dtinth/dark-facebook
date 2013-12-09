@@ -1,0 +1,5 @@
+
+timeline-note:
+  info: |
+    A note in the notes section of your timeline.
+  selector: ".note .uiBoxWhite"

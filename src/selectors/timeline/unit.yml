@@ -68,3 +68,8 @@ timeline-unit:
       info: |
         The number of friends that likes this page.
       selector: ".pageFriendSummaryContainer .headerDigit"
+
+timeline-unit(year-in-review):
+  info: |
+    The Year in Review unit..
+  selector: "._4-u2"

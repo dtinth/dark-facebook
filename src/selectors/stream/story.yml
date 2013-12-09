@@ -69,7 +69,9 @@ stream-story(uistory):
         The indicator at the left of the story.
         It will be shown when you use a keyboard to navigate facebook.
     bling-box:
-      selector: ".UFIBlingBox"
+      selector:
+        - ".UFIBlingBox"   # usual
+        - ".uiBlingBox"    # another one... are you kidding me, facebook?
       info: |
         In a story of a friend liking another photo,
         the box that contains "likes count, comment count, and share count" in one single box.
