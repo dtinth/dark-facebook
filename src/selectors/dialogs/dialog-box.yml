@@ -20,3 +20,17 @@ dialog-box(share):
       selector:
         - "._b_0"
         - "._b--"
+
+dialog-box(shares):
+  info: |
+    Another kind of popup box...
+    
+    Again and again, it kept me thinking,
+    why does facebook have so many classes that mean essentially the same thing?
+  found: "People Who Shared This dialog"
+  selector: ".uiLayerPage .uiOverlayContent"
+  children:
+    backdrop:
+      selector: "._3qw"
+    title-bar:
+      selector: ".shareOverlay .overlayTitle"
