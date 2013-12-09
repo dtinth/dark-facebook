@@ -41,6 +41,10 @@ timeline-unit:
         - ".fbTimelineCapsule .bottomBorder"
     title:
       selector: "._70l"
+    image-container:
+      info: |
+        The image container in a featured story in timeline.
+      selector: ".uiScaledImageCentered"
     comments:
       info: |
         The comments section.

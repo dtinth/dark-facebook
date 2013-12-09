@@ -23,3 +23,13 @@ common-header:
       selector: ".uiHeaderTitle"
     subtitle:
       selector: ".uiHeaderSubtitle"
+
+common-footer:
+  info: |
+    The page footer.
+  selector: "#pageFooter"
+  children:
+    border:
+      selector: "#contentCurve"
+    has-left-col:
+      selector: ".hasLeftCol #pageFooter"

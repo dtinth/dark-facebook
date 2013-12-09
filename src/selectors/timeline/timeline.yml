@@ -42,6 +42,12 @@ timeline:
         Things like book thumbnails, and stuffs.
       selector:
         - "._4jul ._ph5"          # books
+    time-marker:
+      info: |
+        The blue time marker, like "Earlier in 2013"
+      selector:
+        - ".fbTimelineContentHeader h3.uiHeaderTitle"
+        - ".fbTimelineInlineSectionHeader h3.uiHeaderTitle"
 
 timeline-button-pagelet:
   selector: ".pagesTimelineButtonPagelet"
