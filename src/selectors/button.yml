@@ -6,3 +6,13 @@ button:
       selector:
         - ".uiButtonText"    # for most buttons
         - "& input"          # ex. like page, respond to friend request
+
+button(share-dialog):
+  info: |
+    Buttons found in share dialog...
+  found: Share Dialog
+  selector: "._42fu._42fu._42fu"   # repeat the selector so it wins the link colors
+  children:
+    primary:
+      info: This is a primary button. Usually it is in blue.
+      selector: "&._42g-"
