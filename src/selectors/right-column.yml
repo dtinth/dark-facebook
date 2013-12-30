@@ -53,3 +53,5 @@ right-column-sponsored:
     title:  { selector: "._5fxj ._5fxk" }
     domain: { selector: "._5fxj ._5fxl" }
     description: { selector: "._5fxm ._5fxn" }
+    title(2013-12-30): { selector: "._5vwg ._5vwh" }
+    description(2012-12-30): { selector: "._5vwj ._5vwk" }
