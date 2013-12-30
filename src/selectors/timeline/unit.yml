@@ -69,7 +69,16 @@ timeline-unit:
         The number of friends that likes this page.
       selector: ".pageFriendSummaryContainer .headerDigit"
 
-timeline-unit(year-in-review):
+timeline-unit(2014):
   info: |
-    The Year in Review unit..
+    The upcoming version of the timeline unit.
+    Used in Year in Review and Notes.
   selector: "._4-u2"
+  children:
+    text(title):
+      description: "Things that need text color treatment."
+      selector: "& h1, & h2, & h3, & h4, & h5, & h6"
+    comments:
+      children:
+        container:
+          selector: "._6kb"

@@ -3,6 +3,7 @@
   
   &--row, &--reply-list {
     background: @comments-bg;
+    .make-text-color;
   }
   
   &--row--reply {
@@ -17,7 +18,7 @@
     background: @comments-bg - #111;
     border-color: @comments-bg + #0b0b0b;
   }
-  
+    
   &--row--unseen {
     background: @comments-new-bg;
     border-color: @comments-border;
@@ -31,6 +32,10 @@
     background: darken(@bg1, 3%);
     border-color: @border1;
     .shadow;
+  }
+  
+  &--border {
+    border-color: @comments-bg + #0b0b0b;
   }
   
 }

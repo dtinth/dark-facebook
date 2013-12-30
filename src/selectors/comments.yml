@@ -37,3 +37,11 @@ comments:
     media:
       selector: ".uiMediaThumb"
       info: The image attached with the comment.
+
+comments(2014):
+  children:
+    border(like-sentence):
+      description: "A and N others like this"
+      selector: "._6kb ._6mv .UFIRow.UFILikeSentence"
+    border(fist-comment):
+      selector: ".UFIRow.UFIFirstCommentComponent"

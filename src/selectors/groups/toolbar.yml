@@ -1,0 +1,5 @@
+groups-toolbar:
+  description: A toolbar in a group page.
+  selector:
+    - ".groupsSkyContentHeader .uiBoxWhite"     # Files
+    - ".groupsSkyContentWideHeader .uiBoxWhite" # Members
