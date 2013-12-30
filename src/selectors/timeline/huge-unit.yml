@@ -1,0 +1,35 @@
+timeline-huge-unit:
+  description: |
+    A huge timeline unit, seen on about pages.
+  selector: "._2w3 > ._30f"
+  children:
+    title:
+      description: The section title, e.g., "About".
+      selector: "._3cz"
+      children:
+        text: { selector: "._3c_:hover ._3sz, ._3s- ._3sz, ._3c- a" }
+    see-all:
+      description: The "see all" footer.
+      selector: "._3t3"
+      children:
+        text: { selector: "&" }
+    content:
+      description: The content that need link color treatments.
+      selector:
+        - ".fbTimelineSection"      # Timeline section in about.
+        - "._698"                   # Friend item in Friends section.
+        - "._538q"                  # Group item in Groups section.
+        - "#pagelet_timeline_medley_notes .note"  # Note item in Notes section.
+    background:
+      description: Things that need background treatment...
+      selector:
+        - ".fbTimelineSection"      # Work and Education, Places Lived, ...
+        - "._53a7._5pst._5psw"      # Apps and Games
+        - "._53a7._5psw"            # Sport Teams
+    border:
+      description: Things that need border color treatment...
+      selector:
+        - "._4q0 .fbTimelineSection"  # Horizontal lines in about
+        - "._4q0 > ._4_g5"            # Vertical separator in about
+        - "._698"                     # Friend item in Friends section.
+        - "._538q"                    # Group item in Groups section.
