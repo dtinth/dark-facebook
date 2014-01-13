@@ -43,5 +43,5 @@ comments(2014):
     border(like-sentence):
       description: "A and N others like this"
       selector: "._6kb ._6mv .UFIRow.UFILikeSentence"
-    border(fist-comment):
+    border(first-comment):
       selector: ".UFIRow.UFIFirstCommentComponent"

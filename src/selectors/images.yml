@@ -1,0 +1,19 @@
+
+icon-comment-photo:
+  info: |
+    In the comment section, the "attach a photo" button.
+  selector:
+    - ".UFICommentPhotoIcon"    # home timeline
+    - "._4q61 ._509w"           # chat
+  children:
+    hover:
+      selector:
+        - ".UFIPhotoAttachLinkWrapper:hover .UFICommentPhotoIcon"
+        - "._4q61:hover ._509w"
+
+icon-chat-emoticons:
+  info: |
+    The the chat box, the emoticons button.
+  selector: ".emoticonsPanel .emoteTogglerImg"
+  children:
+    hover: { selector: "&:hover" }
