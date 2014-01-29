@@ -16,7 +16,7 @@ beeper-list:
   selector: '._50d1'
 
 beeper-notification-jewel:
-  selector: "._53ii ._53ij" # TODO: refine this selector!
+  selector: "._53ii .uiContextualLayerBelowRight ._53ij"
   info: |
     The notification popup
     that appears briefly on the notifications jewel.
