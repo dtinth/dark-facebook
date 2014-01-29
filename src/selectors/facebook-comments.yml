@@ -1,0 +1,18 @@
+
+facebook-comments:
+  info: |
+    The facebook comments on other sites,
+    also known as `fbFeedback`.
+  selector:
+    ".fbFeedbackContent"
+  children:
+    text:
+      selector:
+        - ".fbFeedbackPost .postText" # comment text
+    border:
+      selector:
+        - ".fbFeedbackContent .fbFeedbackPost" # comment separator
+        - ".fbConnectWidgetFooter .fbFooterBorder" # footer
+    composer:
+      selector:
+        - ".fbFeedbackContent .composer"
