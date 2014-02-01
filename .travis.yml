@@ -12,12 +12,26 @@ before_script:
   - casperjs --version
 script:
   - make
+  - curl "$NOTIFY" -s
 after_success:
+  - curl "$NOTIFY" -d key=$NOTIFY_KEY -d app=dfb2travis --data-urlencode 'text=Deploying...'
   - make publish
+  - curl "$NOTIFY" -d key=$NOTIFY_KEY -d app=dfb2travis --data-urlencode 'text=Deployed to Userstyles.org'
+after_failure:
+  - curl "$NOTIFY" -d key=$NOTIFY_KEY -d app=dfb2travis --data-urlencode 'text=Build Failed'
 env:
   global:
+
+    # This is the userstyles.org cookie, in encrypted form
     - secure: "pBPWegv7ztZfQZW7xvhXxpC8X7Y8FXV3p5csvQMvCgEeCoa/3whCOWyQnwW4uHYlE37j2bRuyO3t0vEVAQgBAwd2lJFZb4i8fOw/fSIirhlGBgwL8eBVT+dVzrEW1EUwzETRZa/2j5nBn6djrgxw6RBpA+AT+P0gwIGFIxL/3N8="
+
+    # The target style ID
     - DFB2_ID=95359
+
+    # For notification...
+    - secure: "kLxX/CYNgFUy0minItmjrjEgZNLoRuM2UPm1M0smxkMd1VHF80+pf7V17wAzk3FaUVpWRVgadiQ8NpFhgaEc9Jhry1bmo+hgQcohHezkncNuMyub85Z2SNWzvnuLdYMsh9hk2/lF4sUmT+poWBIqSXKIc3imW/VvD3kntrTEG7I="
+    - secure: "JAlgWWGbAqL87LTgQ42kHPS8EFPgDZzLJnXTD/FwiAoWkMKikso2fUYS/fGzDjZWpwyi5LMm1WHv50xxzEC0WU3N4b7KZVgAYxxgH6b2c4WacQ6XbxCMtnGiMnZ6CHfX7a4Iamgb+G40IMGUtb8GEk8DpeaCSvEBey308sNdVSo="
+
 branches:
   only:
     - dfb2
