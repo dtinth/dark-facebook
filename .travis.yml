@@ -1,0 +1,23 @@
+language: node_js
+node_js:
+  - '0.10'
+before_install:
+  - git clone git://github.com/n1k0/casperjs.git ~/casperjs
+  - cd ~/casperjs
+  - git checkout tags/1.0.4
+  - export PATH=$PATH:`pwd`/bin
+  - cd -
+before_script:
+  - phantomjs --version
+  - casperjs --version
+script:
+  - make
+after_success:
+  - make publish
+env:
+  global:
+    - secure: "pBPWegv7ztZfQZW7xvhXxpC8X7Y8FXV3p5csvQMvCgEeCoa/3whCOWyQnwW4uHYlE37j2bRuyO3t0vEVAQgBAwd2lJFZb4i8fOw/fSIirhlGBgwL8eBVT+dVzrEW1EUwzETRZa/2j5nBn6djrgxw6RBpA+AT+P0gwIGFIxL/3N8="
+    - DFB2_ID=95359
+branches:
+  only:
+    - dfb2

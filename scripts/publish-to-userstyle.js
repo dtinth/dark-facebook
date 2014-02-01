@@ -3,12 +3,20 @@ var casper = require('casper').create()
 var fs = require('fs')
 var system = require('system')
 
-var config = JSON.parse(fs.read(system.env.HOME + '/.dfb2.conf.json'))
-var id = config.userstyles.id
+var id, cookie
+
+if (system.env.DFB2_COOKIE) {
+  cookie = system.env.DFB2_COOKIE
+  id = system.env.DFB2_ID
+} else {
+  var config = JSON.parse(fs.read(system.env.HOME + '/.dfb2.conf.json'))
+  id = config.userstyles.id
+  cookie = config.userstyles.cookie
+}
 
 phantom.addCookie({
   name: 'login',
-  value: config.userstyles.cookie,
+  value: cookie,
   domain: 'userstyles.org'
 })
 
