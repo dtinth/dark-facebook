@@ -3,7 +3,7 @@ hovercard:
   info: |
     When you hover over a friend and their more information pops up,
     that's a hovercard!
-  selector: "._53ip ._53ij"
+  selector: "._53ij"
   children:
     toolbar:
       info: |
