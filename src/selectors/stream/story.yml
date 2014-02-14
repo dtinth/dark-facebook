@@ -41,6 +41,11 @@ stream-story(uistory):
     body:
       selector: ".uiStreamMessage .messageBody"
       info: The message body.
+    separator:
+      info: |
+        The separator line in stories in stream pages,
+        such as between the `[name] liked this.` and the actual story that's being liked.
+      selector: "._5mxv"
     separator-bg:
       selector: ".uiStreamEdgeStoryLine hr"
       info: |

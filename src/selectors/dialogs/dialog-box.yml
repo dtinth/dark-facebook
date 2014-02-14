@@ -34,3 +34,15 @@ dialog-box(shares):
       selector: "._3qw"
     title-bar:
       selector: ".shareOverlay .overlayTitle"
+
+dialog-box(share-2014-02-14):
+  info: |
+    Another kind of share dialog box.
+  selector: "._59s7"
+  children:
+    title-bar: { selector: "& ._4-i0" }
+    content: { selector: "& div._4-i2" }
+    footer: { selector: "& ._5a8u" }
+    border:
+      selector:
+        - "._5a8u ._59jt, ._5a8u .uiBoxGray"

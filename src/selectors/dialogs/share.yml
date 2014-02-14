@@ -5,3 +5,7 @@ dialog-box-share:
   children:
     title:
       selector: ".UIShareStage_Title"
+    text:
+      info: For the things that need text treatment.
+      selector:
+        - "._59s7 .uiInputLabelLegacy label" # no thumbnail label
