@@ -3,11 +3,17 @@
   &--button {
     .make-text-color;
     background: darken(@bg2, 3%);
-    border-color: @border1;
+    border: 1px solid @border1;
     box-shadow: inset 0 1px 0 fade(white, 5%);
+  }
+  &--name {
+    .make-text-color;
   }
   &--online-count {
     .make-mute-color;
+  }
+  &--decoration {
+    display: none;
   }
 }
 

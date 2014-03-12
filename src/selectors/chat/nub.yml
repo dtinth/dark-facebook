@@ -20,6 +20,15 @@ chat-nub:
       selector: ".fbNubButton .label .count"
       info: |
         The friend count in the chat button.
+    name:
+      selector: ".fbChatTab .name"
+    decoration:
+      info: |
+        In the new Facebook UI design (March 2014),
+        facebook added rounded borders to chat tabs.
+      selector:
+        - "._5q5b .fbNubButton:before"
+        - "._5q5b .fbNubButton:after"
 
 chat-nub-flyout:
   selector: ".fbNubFlyout"
