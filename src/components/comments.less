@@ -1,9 +1,13 @@
 
 :::comments {
   
-  &--row, &--reply-list {
+  &, &--row, &--reply-list {
     background: @comments-bg;
     .make-text-color;
+  }
+  
+  &--row {
+    border-color: @comments-border;
   }
   
   &--row--reply {
@@ -22,6 +26,10 @@
   &--row--unseen {
     background: @comments-new-bg;
     border-color: @comments-border;
+  }
+  
+  &--row--unseen-mar2014 {
+    background: @comments-border;
   }
   
   &--textbox {

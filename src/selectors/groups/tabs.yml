@@ -21,6 +21,11 @@ groups-tabs:
         - "&"
         - ".groupsJumpBarTop .groupsCleanLink"
         - ".groupsJumpBarTop .groupsCleanLinkBorder"
+    separator-bg:
+      info: |
+        The separator between group tabs.
+      selector:
+        - "._3v07 .groupsJumpBarTop .groupsCleanLinkBorder:after"
     actions:
       info: |
         The actions button bar in the group tabs:

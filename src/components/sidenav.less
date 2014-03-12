@@ -45,7 +45,10 @@
     &--count {
       background-color: @sidenav-bg3;
       box-shadow: inset 0 0 1px @sidenav-border3;
-      color: @sidenav-fg3;
+      border-radius: 5px;
+      &, &--text {
+        color: @sidenav-fg3;
+      }
     }
     &--loading {
       background: @bg1;

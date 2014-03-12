@@ -15,7 +15,8 @@ composer:
       info: |
         The composer box that holds the whole composer panel.
     toolbar:
-      selector: "._1dsp"
+      selector:
+        - "._1dsp"
       info: |
         The composer toolbar
       children:
@@ -24,6 +25,19 @@ composer:
           info: |
             The buttons at the bottom left of the composer toolbar.
             The buttons to "Tag Location" or add a "Feeling".
+    toolbar-mar2014(mar2014):
+      selector:
+        - "._5t_y ._1dsl"
+      info: |
+        The composer toolbar, in March 2014 redesign of Facebook.
+      children:
+        separator:
+          selector: "& li:after"
+        info: |
+          The separator between each toolbar item
+          (e.g. write post, add photo / video, add question)
+        hover-button:
+          selector: "._5t_y ._9lb:hover"
     typeahead:
       selector: ".composerTypeahead"
       info: The text box to enter your status.

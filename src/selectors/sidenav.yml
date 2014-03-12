@@ -28,3 +28,8 @@ sidenav-list:
         count:
           info: The count at the right of each sidenav item.
           selector: ".uiSideNavCount"
+          children:
+            text:
+              selector:
+                - ".countValue"
+                - ".maxCountIndicator"

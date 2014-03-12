@@ -7,6 +7,9 @@ button:
         - ".uiButtonText"    # for most buttons
         - "& input"          # ex. like page, respond to friend request
 
+button(mar2014):
+  selector: "._4jy0, a._4jy0, ._59pe:focus, ._59pe:hover"
+
 button(share-dialog):
   info: |
     Buttons found in share dialog...

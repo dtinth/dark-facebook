@@ -8,6 +8,15 @@ comments:
       children:
         unseen:
           selector: "&.UFIUnseenItem"
+          info: |
+            The marker for an unseen item.
+            This is the original version.
+        unseen-mar2014:
+          selector: "&.UFIUnseenItem:after"
+          info: |
+            The marker for an unseen item.
+            This is the version in March 2014 Facebook redesign,
+            which uses background to style instead of border.
         reply:
           selector: ".UFIReplyList .UFIRow"
           children:
