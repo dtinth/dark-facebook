@@ -53,3 +53,14 @@ popup-menu(typeahead):
       children:
         selected:
           selector: ".uiTypeaheadView li.selected"
+
+popup-menu(mar2013):
+  selector: "._54nf"
+  children:
+    item:
+      selector: "._558b ._54nc"
+      children:
+        selected:
+          selector: "._558b ._54ne ._54nc"
+    separator:
+      selector: "._558b ._54ak"
