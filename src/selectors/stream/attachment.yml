@@ -121,3 +121,8 @@ stream-attachment(timeline):
     container: { selector: "&" }
     share-box: { selector: "&" }
     border: { selector: "&" }
+
+stream-attachment(mar2014):
+  selector: "._6m2"
+  children:
+    container: { selector: "&" }
