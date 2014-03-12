@@ -1,0 +1,6 @@
+
+stream-loading:
+  selector: "._2iwq"
+  children:
+    background:
+      selector: "& div"
