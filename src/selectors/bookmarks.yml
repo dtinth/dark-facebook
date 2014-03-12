@@ -1,0 +1,11 @@
+
+bookmarks:
+  info: |
+    A page with several links on it. For example,
+    
+    * https://www.facebook.com/bookmarks/groups
+    * https://www.facebook.com/bookmarks/pages
+  selector: "#bookmarksSeeAllSection"
+  children:
+    text:
+      selector: ".fbBookmarksSeeAllList .itemLabel"
