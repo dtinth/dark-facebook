@@ -7,4 +7,25 @@
       border-color: @border1;
     }
   }
+  &--time-separator {
+    @color: @mute-color;
+    @outer: fade(@color, 0%);
+    @inner: fade(@color, 75%);
+    background: -moz-linear-gradient(left, @outer 0%, @inner 50%, @outer 100%);
+    background: -webkit-linear-gradient(left, @outer 0%, @inner 50%, @outer 100%);
+    background: -o-linear-gradient(left, @outer 0%, @inner 50%, @outer 100%);
+    background: -ms-linear-gradient(left, @outer 0%, @inner 50%, @outer 100%);
+    background: linear-gradient(left, @outer 0%, @inner 50%, @outer 100%);
+    &--text {
+      background: @bg1;
+      .make-mute-color;
+    }
+  }
+  &--message {
+    background: @bg1;
+    color: @mute-color;
+    &--bottom {
+      opacity: 0.2;
+    }
+  }
 }

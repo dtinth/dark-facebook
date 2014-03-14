@@ -16,7 +16,3 @@ chat-bubble:
       children:
         image: { selector: "._50dw .profileLink .profilePhoto" }
         frame: { selector: "&:after" }
-    time-separator:
-      selector: "._511m"
-      children:
-        text: { selector: "div._511n" }

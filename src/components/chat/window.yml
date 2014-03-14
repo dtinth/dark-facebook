@@ -11,3 +11,18 @@ chat-window:
           selector: "._552h"
           info: |
             Its container. It contains a white border which should be changed.
+    time-separator:
+      selector: "._511m"
+      children:
+        text: { selector: "div._511n" }
+    time-separator(mar2014):
+      selector: "._5w-5"
+      children:
+        text: { selector: "div._5w-6" }
+    message:
+      info: |
+        The message text, such as:
+        "We were unable to fetch previous messages in this conversation."
+      selector: "._5w0o"
+      children:
+        bottom: { selector: "&:after" }
