@@ -24,5 +24,10 @@
   transition: @stuff;
 }
 
+.gradient-bg(@from; @to; @stops) {
+  background-image: -webkit-linear-gradient(@from, @stops);
+  background-image: linear-gradient(to @to, @stops);
+}
+
 
 
