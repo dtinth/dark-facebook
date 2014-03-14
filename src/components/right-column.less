@@ -9,6 +9,10 @@
     border-color: @border5;
     color: @fg5;
     &--link { color: @fg5-link; }
+    &--override {
+      background: transparent;
+      &--title, &--link { color: @mute-color; }
+    }
   }
 }
 

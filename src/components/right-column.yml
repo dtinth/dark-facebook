@@ -25,6 +25,14 @@ right-column:
           selector:
             - "& a"
             - "& a span"   # in Sponsored section
+        override(mar2014):
+          info: |
+            Override the side header colors for March 2014 redesign.
+          selector:
+            - "#rightCol ._5rzs .uiHeader"
+          children:
+            title: { selector: "& .uiHeaderTitle" }
+            link: { selector: "& a.uiHeaderActions" }
 
 right-column-reminder:
   selector: ".fbRemindersStory"

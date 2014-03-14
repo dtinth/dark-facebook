@@ -8,6 +8,12 @@ common-content:
   selector: "#contentCol"
   info: The content column.
   found: News feed
+  children:
+    mar2014:
+      info: |
+        In the redesign of March 2014,
+        background is now removed because each content has its own box now.
+      selector: "._5vb_ &"
 
 common-main-container:
   selector: "#mainContainer"
