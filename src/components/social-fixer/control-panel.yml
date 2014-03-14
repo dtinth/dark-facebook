@@ -10,3 +10,6 @@ social-fixer-control-panel:
     version:
       info: The version number.
       selector: ".better_fb_cp .sfx_cp_version"
+    mar2014:
+      info: Some extra styling for March 2014 redesign...
+      selector: "._5l9_ &"
