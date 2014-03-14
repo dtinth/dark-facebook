@@ -19,7 +19,7 @@ stream-attachment:
       found: Photo share story
     quote(timeline):
       selector:
-        - "._4lh .attachmentUnit"
+        - ".attachmentUnit"
       found: On the timeline.
     container:
       selector:

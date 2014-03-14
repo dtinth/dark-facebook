@@ -1,0 +1,10 @@
+
+timeline-image:
+  info: |
+    The image posts on page timeline.
+    When the image is too tall,
+    there is white letterboxing.
+  selector:
+    - ".photoUnit .photoWrap.letterboxedImage"
+    - ".timelineUnitContainer .videoUnit"
+

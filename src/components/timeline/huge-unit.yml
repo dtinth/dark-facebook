@@ -23,7 +23,7 @@ timeline-huge-unit:
     background:
       description: Things that need background treatment...
       selector:
-        - ".fbTimelineSection"      # Work and Education, Places Lived, ...
+        - ".fbTimelineSection:not(.fbTimelineSectionTransparent)"  # Work and Education, Places Lived, ...
         - "._53a7._5pst._5psw"      # Apps and Games
         - "._53a7._5psw"            # Sport Teams
     border:
@@ -33,3 +33,10 @@ timeline-huge-unit:
         - "._4q0 > ._4_g5"            # Vertical separator in about
         - "._698"                     # Friend item in Friends section.
         - "._538q"                    # Group item in Groups section.
+    border(about):
+      selector:
+        - ".fbTimelineSection:not(.fbTimelineSectionTransparent)" 
+    border-bg(about):
+      selector:
+        - ".pagesAboutDivider"
+        - "._5e37 .profileInfoTable hr"

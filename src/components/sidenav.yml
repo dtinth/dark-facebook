@@ -33,3 +33,7 @@ sidenav-list:
               selector:
                 - ".countValue"
                 - ".maxCountIndicator"
+    combo-box-button:
+      info: |
+        The combo box button on the "News Feed" item.
+      selector: "._3479 ._2jq5"
