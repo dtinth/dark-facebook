@@ -1,0 +1,38 @@
+
+:::page-admin-panel {
+  .link-colors;
+  background: @bg1;
+  &--header {
+    background: @bg5;
+    border-color: @border5;
+  }
+  &, &--border {
+    border-color: @border1;
+  }
+  &--post-table {
+    &--column-header {
+      background: @bg0;
+      border-color: @border1;
+      &--text {
+        color: @mute-color;
+      }
+    }
+    td {
+      border-color: @border1;
+      .make-text-color;
+    }
+    &--odd-row td {
+      background: @bg2;
+    }
+    &--highlighted-row td {
+      background: @bg3;
+    }
+  }
+  &--foot-link {
+    background: @bg0;
+    border-color: @border1;
+  }
+  &--text-color {
+    .make-text-color;
+  }
+}

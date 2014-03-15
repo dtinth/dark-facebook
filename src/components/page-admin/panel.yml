@@ -1,0 +1,36 @@
+
+page-admin-panel:
+  info: |
+    The Admin Panel of a page.
+  selector: "#admin_panel"
+  children:
+    header: { selector: "& .uiHeaderSection" }
+    post-table:
+      selector: "& .uiDataTable"
+      children:
+        column-header:
+          selector: "& th"
+          children:
+            text: { selector: "& span.columnLabel" }
+        odd-row: { selector: "& .odd" }
+        highlighted-row: { selector: "& ._59ip" }
+    border:
+      info: Things that need border treatement
+      selector:
+        - ".adminPanelBorderRight"        # separator
+        - ".adminPanelContentTall"        # messages
+        - ".adminPanelContentFanAcq"      # get more likes box border
+        - "& .uiBoxWhite"                 # promote page video
+        - ".adminPanelContent"            # insight box
+        - "& .AdminTipContent"            # page tips
+        - ".adminPanelList li"            # message item
+    foot-link:
+      info: |
+        The "Check out page insights" link.
+      selector:
+        - "& ._55o9"
+    text-color:
+      info: |
+        Things that we need to fix the text color
+      selector:
+        - ".adminPanelList .author, #admin_panel_notifications .blueName" # user name
