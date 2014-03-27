@@ -1,0 +1,6 @@
+
+timeline-only-me-border:
+  info: |
+    The border that appears above and below items which are "Only Me".
+  selector:
+    - ".onlyMeBorder"
