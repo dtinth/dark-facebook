@@ -1,0 +1,16 @@
+
+timeline-section-header:
+  info: |
+    The section header of the timeline, e.g., the year in the timeline.
+  selector: "._5vf"
+  children:
+    line:
+      selector: "& ._5vg"
+    text:
+      selector:
+        - "& .uiHeaderTitle" # the title text
+        - "& .uiHeaderActions" # highlight / all stories
+    action:
+      selector:
+        - "& .uiHeaderActions a" # highlight / all stories
+

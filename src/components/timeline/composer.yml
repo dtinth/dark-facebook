@@ -1,0 +1,17 @@
+
+timeline-composer:
+  info: |
+    The place where you create a Status Update, post Photo, or add a Life Event
+    in your timeline.
+  
+  selector: ".fbTimelineComposerUnit"
+
+  children:
+    toolbar:
+      selector: "._6dh ._5142"
+      children:
+        action-list:
+          selector: "._6dh ._1dsl"
+          children:
+            current-item:
+              selector: "._6dh ._519b ._2-s"
