@@ -1,0 +1,11 @@
+
+timeline-show-more:
+  info: |
+    In the timeline, when you select "Born",
+    there will be a button to show more info during that time.
+
+    For example, "Show 19xx - 2014"
+
+  selector:
+    - "._4lh .fbTimelineTimePeriodSuppressed .forceLoad"
+    - "._4lh .fbTimelineShowOlderSections"
