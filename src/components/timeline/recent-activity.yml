@@ -1,0 +1,8 @@
+
+timeline-recent-activity:
+  info: The recent activity box in the timeline.
+  selector: ".timelineUnitContainer.recentActivityUnit"
+  children:
+    story:
+      selector: ".timelineRecentActivityStory"
+
