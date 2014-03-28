@@ -11,17 +11,16 @@ before_install:
 before_script:
   - phantomjs --version
   - casperjs --version
-  - echo -e "Host github.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
+  - mkdir -p .travis
+  - echo "-----BEGIN RSA PRIVATE KEY----- $DEPLOY_KEY_A $DEPLOY_KEY_B $DEPLOY_KEY_C $DEPLOY_KEY_D $DEPLOY_KEY_E $DEPLOY_KEY_F $DEPLOY_KEY_G $DEPLOY_KEY_H $DEPLOY_KEY_I $DEPLOY_KEY_J $DEPLOY_KEY_K $DEPLOY_KEY_L $DEPLOY_KEY_M $DEPLOY_KEY_N $DEPLOY_KEY_O $DEPLOY_KEY_P -----END RSA PRIVATE KEY-----" > .travis/deploy_key
+  - chmod 600 .travis/deploy_key # this key should have push access
+  - echo -e "Host github.com\n\tStrictHostKeyChecking no\n\tIdentityFile `pwd`/.travis/deploy_key\n" >> ~/.ssh/config
 script:
   - make
 after_success:
   - curl "$NOTIFY" -d key=$NOTIFY_KEY -d app=dfb2travis --data-urlencode 'text=Deploying...'
   - make publish
   - curl "$NOTIFY" -d key=$NOTIFY_KEY -d app=dfb2travis --data-urlencode 'text=Deployed to Userstyles.org!'
-  - mkdir -p .travis
-  - echo "-----BEGIN RSA PRIVATE KEY----- $DEPLOY_KEY_A $DEPLOY_KEY_B $DEPLOY_KEY_C $DEPLOY_KEY_D $DEPLOY_KEY_E $DEPLOY_KEY_F $DEPLOY_KEY_G $DEPLOY_KEY_H $DEPLOY_KEY_I $DEPLOY_KEY_J $DEPLOY_KEY_K $DEPLOY_KEY_L $DEPLOY_KEY_M $DEPLOY_KEY_N $DEPLOY_KEY_O $DEPLOY_KEY_P -----END RSA PRIVATE KEY-----" > .travis/deploy_key
-  - chmod 600 .travis/deploy_key # this key should have push access
-  - ssh-add .travis/deploy_key
   - make publish-site
   - curl "$NOTIFY" -d key=$NOTIFY_KEY -d app=dfb2travis --data-urlencode 'text=Website Deployed!'
 after_failure:
