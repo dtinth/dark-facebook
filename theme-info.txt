@@ -1,14 +1,10 @@
 <strong><em>
 ================================================
-THIS IS WORK IN PROGRESS. This theme is being actively developed, but it is not complete yet (facebook has a lot of pages). So, while this theme is in WIP state, make sure to check for updates often; I <a href="https://en.wikipedia.org/wiki/Release_early,_release_often">release early, release often</a>—sometimes several times a day.
-
-Meanwhile, please check the <a href="https://github.com/dtinth/dark-facebook">GitHub project</a>. You can also see the progress of the work at the <a href="https://github.com/dtinth/dark-facebook/issues?milestone=1&amp;state=open">milestones page</a> on the issue tracker.
-
-You can help contribute! <a href="https://github.com/dtinth/dark-facebook#contributing">See the contributing section on the project page for more info</a>.
+dark-facebook has an <a href="https://github.com/dtinth/dark-facebook/issues">official issue tracker</a>!
 ================================================
 </em></strong>
 
-A simple and dark theme for facebook. 
+This is a simple and dark theme for facebook. 
 
 This is a rewrite of style 56731. However, theming is done using a radically different approach, which aims for ease of maintenance and contribution.
 
