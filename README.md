@@ -1,7 +1,10 @@
-dark-facebook 2
+dark-facebook 2 [![Build Status](https://travis-ci.org/dtinth/dark-facebook.svg?branch=dfb2)](https://travis-ci.org/dtinth/dark-facebook)
 ===============
 
 __dark-facebook__ is a dark theme for facebook that you can install in your browser.
+
+<a href='https://pledgie.com/campaigns/24695'><img alt='Click here to lend your support to: dark-facebook and make a donation at pledgie.com !' src='https://pledgie.com/campaigns/24695.png?skin_name=chrome' border='0' ></a>
+
 
 
 The Second Generation

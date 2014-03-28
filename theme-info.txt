@@ -1,14 +1,14 @@
 <strong><em>
 ================================================
-dark-facebook has an <a href="https://github.com/dtinth/dark-facebook/issues">official issue tracker</a>!
+dark-facebook has an <a href="https://github.com/dtinth/dark-facebook/issues">official issue tracker</a>!</em></strong>
+
+<em>If you want to support the development and maintenance of this user style, dark-facebook is also <a href="https://pledgie.com/campaigns/24695">open for donation</a> and is <a href="https://github.com/dtinth/dark-facebook/">open source</a>, so you can help contribute.</em><strong><em>
 ================================================
 </em></strong>
 
-This is a simple and dark theme for facebook. 
+A plain simple dark theme for facebook.
 
-This is a rewrite of style 56731. However, theming is done using a radically different approach, which aims for ease of maintenance and contribution.
-
-<em>dark-facebook is open source</em>. You can see the source code and contribute to it at this GitHub repository: https://github.com/dtinth/dark-facebook
+Works alone and works with <a href="http://socialfixer.com/">Social Fixer</a>.
 
 <strong>Changelog:</strong>
 $CHANGELOG$
