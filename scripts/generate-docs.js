@@ -2,6 +2,7 @@
 var when = require('when')
 var lift = require('when/node/function').lift
 var fs = require('fs')
+var path = require('path')
 
 var glob = lift(require('glob'))
 var It = require('it.js')
@@ -11,18 +12,19 @@ var readFile = lift(fs.readFile)
 var writeFile = lift(fs.writeFile)
 
 loadImageMap().then(function(imageMap) {
-  return when.map(glob('src/selectors/**/*.yml'), process(imageMap))
+  return when.map(glob('src/components/**/*.yml'), process(imageMap))
   .tap(function() {
     console.log('Unused images:')
     console.log(imageMap.unused())
   })
   .then(function(filenames) {
-    var readme = 'An automatically generated documentation of selectors used in dark-facebook 2:\n\n'
+    var readme = '---\nlayout: default\ntitle: Selectors\n---\n' + 'An automatically generated documentation of selectors used in dark-facebook 2:\n\n'
     filenames.sort()
     filenames.forEach(function(filename) {
-      readme += ' * [' + filename + '](' + filename + ')\n'
+      var basename = path.basename(filename, '.md')
+      readme += ' * [' + basename + '](' + basename + '.html)\n'
     })
-    return writeFile('docs/selectors/README.md', readme, 'utf-8')
+    return writeFile('site/selectors/index.md', readme, 'utf-8')
   })
 }).done()
 
@@ -57,35 +59,41 @@ function loadImageMap() {
   })
 }
 
+function mdesc(text) {
+  return text.replace(/[_\*\\#]/g, function(x) { return '\\' + x })
+}
+
 function process(imageMap) {
   return function(fileName) {
     var outBasename = fileName
-          .substr("src/selectors/".length)
+          .substr("src/components/".length)
           .replace(/\//g, '_')
           .replace(/\.yml$/, '.md')
-    var outFilename = 'docs/selectors/' + outBasename
+    var outFilename = 'site/selectors/' + outBasename
     return readFile(fileName, 'utf-8')
       .then(jsyaml.safeLoad)
       .then(selectorDefinition.load)
       .then(function(info) {
-        var sections = ['# ' + fileName.substr(14) + '\n\n']
+        var name = fileName.substr(15)
+        var sections = ['# ' + name + '\n\n']
         info.forEach(function(component) {
           var section = ['## ' + component.id + '\n\n']
           var images = imageMap.fetch(component.id)
           images.forEach(function(image) {
-            section.push('![' + image + '](../' + image.substr(5) + ')\n\n')
+            section.push('![' + image + '](https://github.com/dtinth/dark-facebook/blob/dfb2/' + image + '?raw=true)\n\n')
           })
           if (component.info) section.push(component.info + '\n\n')
           if (component.found) section.push('__Found:__ ' + component.found + '\n\n')
           if (component.selectors) {
             section.push('__Selectors:__\n\n')
             component.selectors.forEach(function(selector) {
-              section.push(' * ' + selector + '\n')
+              section.push(' * ' + mdesc(selector) + '\n')
             })
             section.push('\n')
           }
           sections.push(section.join(''))
         })
+        sections.unshift('---\nlayout: default\ntitle: "Selectors in ' + name + '"\n---')
         return sections.join('\n\n')
       })
       .then(function(output) {

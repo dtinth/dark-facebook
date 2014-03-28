@@ -8,10 +8,15 @@ all: $(OUT_CSS) $(MIN_CSS)
 clean:
 	rm -rf $(DIST)
 
-docs: .FORCE
-	rm -rf docs/selectors
-	mkdir docs/selectors
+clone-site: .FORCE
+	rm -rfv site
+	git clone -b gh-pages git@github.com:dtinth/dark-facebook.git site
+
+publish-site: clone-site $(MIN_CSS)
+	rm -rfv site/selectors
+	mkdir site/selectors
 	node scripts/generate-docs.js
+	cp $(MIN_CSS) site/dark-facebook.min.css
 
 publish: clean $(MIN_CSS) theme-info.txt
 	node scripts/generate-description.js > dist/theme-description.txt
