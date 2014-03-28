@@ -17,6 +17,7 @@ publish-site: clone-site $(MIN_CSS)
 	mkdir site/selectors
 	node scripts/generate-docs.js
 	cp $(MIN_CSS) site/dark-facebook.min.css
+	./scripts/push-site.sh
 
 publish: clean $(MIN_CSS) theme-info.txt
 	node scripts/generate-description.js > dist/theme-description.txt
