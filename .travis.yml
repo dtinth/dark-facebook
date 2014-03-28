@@ -11,12 +11,6 @@ before_install:
 before_script:
   - phantomjs --version
   - casperjs --version
-  - mkdir -p .travis
-  - echo "-----BEGIN RSA PRIVATE KEY-----" > .travis/deploy_key
-  - echo "$DEPLOY_KEY_A $DEPLOY_KEY_B $DEPLOY_KEY_C $DEPLOY_KEY_D $DEPLOY_KEY_E $DEPLOY_KEY_F $DEPLOY_KEY_G $DEPLOY_KEY_H $DEPLOY_KEY_I $DEPLOY_KEY_J $DEPLOY_KEY_K $DEPLOY_KEY_L $DEPLOY_KEY_M $DEPLOY_KEY_N $DEPLOY_KEY_O $DEPLOY_KEY_P" >> .travis/deploy_key
-  - echo "-----END RSA PRIVATE KEY-----" >> .travis/deploy_key
-  - chmod 600 .travis/deploy_key # this key should have push access
-  - echo -e "Host github.com\n\tStrictHostKeyChecking no\n\tIdentityFile `pwd`/.travis/deploy_key\n" >> ~/.ssh/config
 script:
   - make
 after_success:
@@ -39,24 +33,6 @@ env:
     # For notification...
     - secure: "kLxX/CYNgFUy0minItmjrjEgZNLoRuM2UPm1M0smxkMd1VHF80+pf7V17wAzk3FaUVpWRVgadiQ8NpFhgaEc9Jhry1bmo+hgQcohHezkncNuMyub85Z2SNWzvnuLdYMsh9hk2/lF4sUmT+poWBIqSXKIc3imW/VvD3kntrTEG7I="
     - secure: "JAlgWWGbAqL87LTgQ42kHPS8EFPgDZzLJnXTD/FwiAoWkMKikso2fUYS/fGzDjZWpwyi5LMm1WHv50xxzEC0WU3N4b7KZVgAYxxgH6b2c4WacQ6XbxCMtnGiMnZ6CHfX7a4Iamgb+G40IMGUtb8GEk8DpeaCSvEBey308sNdVSo="
-
-    # Deploy key for Travis...
-    - secure: "gImak1SuegXd39QdSPvHg8cNFyXH/Wohi8N029DXf05RY+FssxNCOKMpdP/Boy+EmsLNYekjX82dcqSW+rrhn12va9OtHz7+zA0Vr+ZAG5fWrJS+BejwnIcZ3j3zflz1H/LgyOkQ8BhLZctlvqRWk+TTAZgPjaMT8P0v1QwSbU0="
-    - secure: "gtpPCwTOlxgId8vyCgyWbqeZ/+sPsFXccQ0DJz9rwZTRwOiGPGwUeaWckaCD9CqUsw0Tmb0KPAOH48SNEr9TsuHh7FWAnk7zBiFFdLEoRciOtNGpe+9PhXgOnMwmHZ1pTBFBg8W5sTkHglPfbCIykk6fb0r/nqhtbEjyGqgeVfw="
-    - secure: "j0rWqquzbMeN0ufN4tv3JF2QepJ+enxWfGbbt6ZkXEPZTHTLdoCsPqxNFEVmZURkidq9mNguGm0Alb6CMjLAySMopEMdEuEB185Sovg8surFdQTV5Nk1o+F8Cv/LGIiw8uuhEuvg+GggCUiqfWgFjBzFJlgGjbPMzvC6r6ny36s="
-    - secure: "Rrd4/CxfWTh1eMLdg7x7byzjfuALVEFNLDOcNOJByVYmzYhn8/ux55bktXGpq1AGvgCQDtFlMPfOo8EFQBp4yyOyw7fEG9t+yV/LorySlFTX+dYzhVfa+fkqrHSTkUkygnbUn2smihA3SFg2q1ktFZNTDiW9OPmJAFpPlycpPf8="
-    - secure: "DJfXgRZnpY1vR0DSyNr7dsO9hTqeEwUo2d5lH0eYCy6bTP0Ofo1WdBX9PGbslSqx5q7XTtirzgB0bIy1Vg+kLOxuHbC24yfIDITWyDcZWVYho0zeEq7W6I7y0+j1CVr13+AdHBy9oiBQX/yNWR2ahGIJ3c8FFZ7KCukQnZNuRpo="
-    - secure: "jFTIKEHPt9JwKhGUpmcbgRP/nottlKpvP+QqmXgjfIIlwpaNxSbludOzrflQYjnRAhroz6+XNaLb0FFZwYRimY5FaLxP+ut2sGAmTr7TU4rlBQEdBslj3wZJVIfuor0TSXyzuUaqPYUpRaxp4wQpdY6mK0cBH6MeTKT8ezCsfKA="
-    - secure: "krZHy/4IWb2TNjJ9ZKtl9c8zn99l1DuqLcx4i2UxpSlVMcoZeZsHlB1hot5ZcWG4b7cv5s7IP/ZYQwyCRYDwuQblUXZ3RxPlbJkUC65O9FyYDfFxJxZ5B2Mjzh6xAt+uRBMgJPThyCvAGNzSnJpUcid74OqdfoECaiGHgHZF9ak="
-    - secure: "nk8/W8XfmECNWhlFnjkds3HjnWnX+amxm2PoRLqSn1CxDvhLjy6t1+oAHVRsI1Hk1niW1QD/Ah5cEfybPdrWPhQngEQ9Vrb4axlznLlLVOjZHcwDl7vvPHMr5Iqm4clRCh+oERx7v6yU4z/1vHNFaKovyAoXqRNVE/y3gKJJkOg="
-    - secure: "IFQhP1fp9GD8UHLBujUgCeyLBL7rZBv43eGJgT8w9wbLf5gIb7Bp8rGADKrDDqyVMVu8qk5GwYZtX8dR+tgT/GhqKHs+6M43ZUMIq/E0t4ywVVtI2rKURG96pJgzkUqi1RDe2PBqO+2uZPNDAZJCnMhv2NLpaCTrlWyEYjqMCA0="
-    - secure: "C/zZokUxZThqZrRNjmFVvtfajo7SWLdSDR2lqpY5z+P68GRFsxNgdBxXcnCWhWejYirhkqmXKWx744Yf+EHqa9Fswxm+gY05OSkWrQDQ9PpRl939K1O1aNkrRxWBieOgMINxTZmJ9s32hviJpMmX6fdgmo6FO7MAJG7Zy7VEry4="
-    - secure: "kLfnzeIuRsmieiDpuyPAAIZUg3+LJtjIuOEhbXCo/IAqRMW72DQz5M3Kk9GvKOdQSVAs0Kq8iJkqp7wu2E/ZzMRPc8X+vc60XoePz5zzV4ZGHNEdUcGO7+yvD8Y9L6VqGfwS4o4ByJPpnKzfEkohf9Pf72HApMr3ZmXVchZU3RQ="
-    - secure: "fy0ZKtEoR1Wo6wMS7ND3INz8juBSe7wZ4X+IvCc8e++YdZrKwiSLRGJvadgXjtvLXYzQGUt2JjCbyx9xhsE4DSkiTHiGduOLEkn5EdxZ6h3NFgjpj1/WIk+svq5hFwime8rsHw33W1+VP7XFQfWE4XBG9C7DV56dVuWQfkXEmD8="
-    - secure: "fZYMh1P99/NXzwJEw/O/oHbNw37UlfU0vExpKoRc/2x8JpIreMYrftdUC1ySroy/tjK/CUqLPPBmC0wCGR3ETLhP3GHT7UwjHwbYUX3BEngPdQFxr41salNJcsRxLgATqYAg97Y5B6DYGQKwTHUElLGoL+xPKYn/Rs8rRz07L1A="
-    - secure: "OrTmNLDEZiMvXz6vSZ/DSTEtsVVC1Xi0WbXXTNzVH5yKyE8A+tXe7Is8sSgYZbHIzTD7FHQBmP7B9Zgm4JgI5v5BV1+sb+I77SoxMHsq4E0uYLVJl0JVcDHs0yXB9MZqOH3DgorapdrCHJ/mHg/j0GaE1Vd8Kv2y/v7AhtROhVg="
-    - secure: "X5kK1/38qwpsYxrmlw1RyVgsXSF6HAlWXadwc4nxhSOKZ1D604+tXiWUGQlChplN7wLeKle/h0tBi2HzuXuUaMLU0nCqhz5KCcSISiRulcfhgWA9pf0RVFjzpQySBmvhsGUXEWvkT53crjZ0UUubInCYyHWnxFnOadDFVB1oUAc="
-    - secure: "ak6SGasf08mouyROfzRS9lxSrXopcodeDXKiX1mn7dis19Bxw4t0ASVNlgGBQexvHqKS4VhPIEgdLBMIxDW3NtNeL6nzEF+Cvvty4a89QIhcSzY5HJJF2AIxGToF3x0f0bbe0MeXpVFClRKgXbIKXUsbYrLqztHBdK9vwHRZQNo="
 
 branches:
   only:
