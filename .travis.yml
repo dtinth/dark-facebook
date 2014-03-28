@@ -18,6 +18,8 @@ after_success:
   - curl "$NOTIFY" -d key=$NOTIFY_KEY -d app=dfb2travis --data-urlencode 'text=Deploying...'
   - make publish
   - curl "$NOTIFY" -d key=$NOTIFY_KEY -d app=dfb2travis --data-urlencode 'text=Deployed to Userstyles.org!'
+  - chmod 600 .travis/deploy_key.pem # this key should have push access
+  - ssh-add .travis/deploy_key.pem
   - make publish-site
   - curl "$NOTIFY" -d key=$NOTIFY_KEY -d app=dfb2travis --data-urlencode 'text=Website Deployed!'
 after_failure:
