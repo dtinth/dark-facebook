@@ -12,7 +12,9 @@ before_script:
   - phantomjs --version
   - casperjs --version
   - mkdir -p .travis
-  - echo "-----BEGIN RSA PRIVATE KEY----- $DEPLOY_KEY_A $DEPLOY_KEY_B $DEPLOY_KEY_C $DEPLOY_KEY_D $DEPLOY_KEY_E $DEPLOY_KEY_F $DEPLOY_KEY_G $DEPLOY_KEY_H $DEPLOY_KEY_I $DEPLOY_KEY_J $DEPLOY_KEY_K $DEPLOY_KEY_L $DEPLOY_KEY_M $DEPLOY_KEY_N $DEPLOY_KEY_O $DEPLOY_KEY_P -----END RSA PRIVATE KEY-----" > .travis/deploy_key
+  - echo "-----BEGIN RSA PRIVATE KEY-----" > .travis/deploy_key
+  - echo "$DEPLOY_KEY_A $DEPLOY_KEY_B $DEPLOY_KEY_C $DEPLOY_KEY_D $DEPLOY_KEY_E $DEPLOY_KEY_F $DEPLOY_KEY_G $DEPLOY_KEY_H $DEPLOY_KEY_I $DEPLOY_KEY_J $DEPLOY_KEY_K $DEPLOY_KEY_L $DEPLOY_KEY_M $DEPLOY_KEY_N $DEPLOY_KEY_O $DEPLOY_KEY_P" >> .travis/deploy_key
+  - echo "-----END RSA PRIVATE KEY-----" >> .travis/deploy_key
   - chmod 600 .travis/deploy_key # this key should have push access
   - echo -e "Host github.com\n\tStrictHostKeyChecking no\n\tIdentityFile `pwd`/.travis/deploy_key\n" >> ~/.ssh/config
 script:
