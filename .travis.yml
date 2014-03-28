@@ -11,6 +11,7 @@ before_install:
 before_script:
   - phantomjs --version
   - casperjs --version
+  - echo -e "Host github.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 script:
   - make
 after_success:
