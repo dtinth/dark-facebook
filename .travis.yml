@@ -17,6 +17,8 @@ after_success:
   - curl "$NOTIFY" -d key=$NOTIFY_KEY -d app=dfb2travis --data-urlencode 'text=Deploying...'
   - make publish
   - curl "$NOTIFY" -d key=$NOTIFY_KEY -d app=dfb2travis --data-urlencode 'text=Deployed to Userstyles.org!'
+  - make upload
+  - curl "$NOTIFY" -d key=$NOTIFY_KEY -d app=dfb2travis --data-urlencode 'text=Uploaded to dark-facebook.appspot.com!'
 after_failure:
   - curl "$NOTIFY" -d key=$NOTIFY_KEY -d app=dfb2travis --data-urlencode 'text=Build Failed'
 env:
@@ -31,6 +33,9 @@ env:
     # For notification...
     - secure: "kLxX/CYNgFUy0minItmjrjEgZNLoRuM2UPm1M0smxkMd1VHF80+pf7V17wAzk3FaUVpWRVgadiQ8NpFhgaEc9Jhry1bmo+hgQcohHezkncNuMyub85Z2SNWzvnuLdYMsh9hk2/lF4sUmT+poWBIqSXKIc3imW/VvD3kntrTEG7I="
     - secure: "JAlgWWGbAqL87LTgQ42kHPS8EFPgDZzLJnXTD/FwiAoWkMKikso2fUYS/fGzDjZWpwyi5LMm1WHv50xxzEC0WU3N4b7KZVgAYxxgH6b2c4WacQ6XbxCMtnGiMnZ6CHfX7a4Iamgb+G40IMGUtb8GEk8DpeaCSvEBey308sNdVSo="
+
+    # For deployment
+    - secure: "M9QSRKgv0bMjRfcCj75bEY/GsGL37KcER23mVWNHLJNVhs6q3tyOxlNt7h7cUseOZXuarVdNGVtD0uw98Kh4UaU+X3hckIIyarSxv60yb09XesojVcOELyHh7wn5WKKEkDQJj2invA8z8u/vId2hcCDvZ0YotxBYZSZX1PvU4nw="
 
 branches:
   only:

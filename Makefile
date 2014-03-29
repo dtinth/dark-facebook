@@ -16,12 +16,15 @@ publish-site: clone-site $(MIN_CSS)
 	rm -rfv site/selectors
 	mkdir site/selectors
 	node scripts/generate-docs.js
-	cp $(MIN_CSS) site/dark-facebook.min.css
 	./scripts/push-site.sh
 
 publish: clean $(MIN_CSS) theme-info.txt
 	node scripts/generate-description.js > dist/theme-description.txt
 	casperjs scripts/publish-to-userstyle.js
+
+upload: $(MIN_CSS)
+	curl https://dark-facebook.appspot.com/dark-facebook.css --data-urlencode admin_key=$(ADMIN_KEY) --data-urlencode value@$(MIN_CSS)
+	curl https://dark-facebook.appspot.com/dark-facebook.commit --data-urlencode admin_key=$(ADMIN_KEY) --data-urlencode value=`git rev-parse HEAD`
 
 $(OUT_CSS):
 	mkdir -p $(DIST)
