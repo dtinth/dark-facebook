@@ -1,14 +1,12 @@
-<strong><em>
-================================================
-dark-facebook has an <a href="https://github.com/dtinth/dark-facebook/issues">official issue tracker</a>!</em></strong>
+<strong>[<a href="http://dtinth.github.io/dark-facebook/">Official Website</a>]</strong> A plain simple dark theme for facebook that's updated frequently.
 
-<em>If you want to support the development and maintenance of this user style, dark-facebook is also <a href="https://pledgie.com/campaigns/24695">open for donation</a> and is <a href="https://github.com/dtinth/dark-facebook/">open source</a>, so you can help contribute.</em><strong><em>
-================================================
-</em></strong>
-
-A plain simple dark theme for facebook.
-
-Works alone and works with <a href="http://socialfixer.com/">Social Fixer</a>.
+<ul>
+<li><strong>We have an <a href="https://github.com/dtinth/dark-facebook/issues">official issue tracker</a>.</strong> <em>(please report issues there)</em></li>
+<li><em>dark-facebook</em> is <a href="https://github.com/dtinth/dark-facebook/">open source</a>. You can help contribute to make this theme more complete.</li>
+<li>Also available as a theme for <a href="http://socialfixer.com/">Social Fixer</a>, which updates automatically. Just select "dark-facebook" in the themes section.</li>
+<li>Also available as a <a href="http://userscripts.org/scripts/show/433987">user style</a> for Greasemonkey / Tampermonkey</li>
+<li>If you want to support the author of this theme (me), it is <a href="https://pledgie.com/campaigns/24695">open for donation</a>.</li>
+</ul>
 
 <strong>Changelog:</strong>
 $CHANGELOG$
