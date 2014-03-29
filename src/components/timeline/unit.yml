@@ -82,3 +82,34 @@ timeline-unit(2014):
       children:
         container:
           selector: "._6kb"
+
+timeline-unit(activity-log):
+  selector:
+    - "._guu"   # timeline review
+    - "._z6j"   # big box
+    - "._kj3"   # sticky header (top)
+    - "._2o49"  # sticky header (toolbar)
+  children:
+    background:
+      selector: ".uiBoxWhite"
+    border:
+      selector: ".bottomborder"
+    text:
+      selector:
+        - "._2o49 .uiInputLabelLegacy label" # include only me activity (toolbar)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
