@@ -46,3 +46,14 @@ dialog-box(share-2014-02-14):
     border:
       selector:
         - "._5a8u ._59jt, ._5a8u .uiBoxGray"
+
+
+dialog-box(report):
+  children:
+    text-mute:
+      selector:
+        - ".socialReport .fcb" # label on report
+    text:
+      selector:
+        - ".socialReport li label" # label on report
+        - ".socialReport .fwb.fcb" # label on report
