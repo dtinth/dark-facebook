@@ -11,5 +11,6 @@ a(category):
 a(another):
   info: World
   selector: z
+  appearance: cool
   children:
     g: { selector: ['a', 'b'] }

@@ -21,10 +21,6 @@ right-column:
       info: |
         The header of each section in the right column.
       children:
-        link:
-          selector:
-            - "& a"
-            - "& a span"   # in Sponsored section
         override(mar2014):
           info: |
             Override the side header colors for March 2014 redesign.

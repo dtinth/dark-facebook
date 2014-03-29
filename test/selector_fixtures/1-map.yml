@@ -4,6 +4,9 @@ a:
   - y
   - z
 
+cool:
+  - z
+
 a--g:
   - c
   - x d

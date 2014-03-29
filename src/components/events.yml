@@ -1,0 +1,12 @@
+
+events:
+  info: |
+    The events page
+  selector: "#fbCalendarWrapper"
+  children:
+    header:
+      selector: ".fbCalendar .fbCalendarHeader"
+    heading:
+      selector:
+        - "& .uiHeaderSection"
+        - "& .uiSideHeader"

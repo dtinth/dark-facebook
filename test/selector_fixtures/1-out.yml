@@ -2,12 +2,14 @@
 - name: a
   id: a(category)
   info: Hello
+  appearances: []
   selectors:
     - x
     - y
 
 - name: a--g
   id: a(category)--g(x)
+  appearances: []
   selectors:
     - c
     - x d
@@ -15,17 +17,21 @@
 
 - name: a--g
   id: a(category)--g(y)
+  appearances: []
   selectors:
     - e
 
 - name: a
   id: a(another)
   info: World
+  appearances:
+    - cool
   selectors:
     - z
 
 - name: a--g
   id: a(another)--g
+  appearances: []
   selectors:
     - a
     - b

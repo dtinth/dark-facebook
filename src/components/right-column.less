@@ -5,10 +5,7 @@
     border-color: @border1;
   }
   &--side-header {
-    background: @bg5;
-    border-color: @border5;
-    color: @fg5;
-    &--link { color: @fg5-link; }
+    &:extend(:::common-side-header all);
     &--override {
       background: transparent;
       &--title, &--link { color: @mute-color; }
