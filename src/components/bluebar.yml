@@ -10,17 +10,44 @@ bluebar:
         The blue line with the shadow.
         Seriously, why can't you just use box-shadow?
         Or the box-shadow leaves you with a blur at the side and that seems unacceptable?
-    search:
-      selector: ._585-
-      info: The search box.
+
+bluebar-search(no-graph-search):
+  info: The search box, but for those who have not received Facebook Graph Search yet.
+  selector: ".__wu #headNav #navSearch.roundedBox"
+  children:
+    no-graph-search-fix:
+      info: |
+        Temporary hacks to make the search bar without graph search look nice.
+      selector: "&"
       children:
-        text: { selector: "._5861 ._586f, ._5861 ._586i" }
-        result-popup:
-          info: The (graph) search result popup.
-          selector: "._50c9"
+        rounded-border-fix:
+          selector:
+            - ".__wu .roundedBox .smurfbarTopBorder"
+            - ".__wu .roundedBox .smurfbarBottomBorder"
+        height-fix:
+          selector:
+            - ".__wu #headNav #navSearch.roundedBox .uiTypeahead"
+            - ".__wu #navSearch.roundedBox .uiSearchInput .inputtext"
+    text:
+      selector:
+        - ".__wu .uiSearchInput.textInput#u_0_h"
+
+
+bluebar-search:
+  selector: ._585-
+  info: The search box.
+  children:
+    text:
+      selector:
+        - "._5861 ._586f"
+        - "._5861 ._586i"
+        - "._585- ._5861"
+    result-popup:
+      info: The (graph) search result popup.
+      selector: "._50c9"
+      children:
+        item:
+          selector: "._202"
           children:
-            item:
-              selector: "._202"
-              children:
-                text: { selector: "._53ad, ._5av" }
-                selected: { selector: "&.selected" }
+            text: { selector: ["._53ad", "._5av"] }
+            selected: { selector: "&.selected" }
