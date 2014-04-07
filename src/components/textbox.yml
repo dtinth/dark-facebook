@@ -42,3 +42,20 @@ common-placeholder:
   info: |
     The placeholder controls.
   selector: ".DOMControl_placeholder"
+
+
+common-tokenizer:
+  info: |
+    A tokenizer input box is an input box that user can enter "tokens",
+    a token is one value.
+
+    An example is the friend input box
+    in the "Invite your friends to like this page" section
+    of a page's timeline.
+  appearance: common-textbox
+  selector:
+    - ".uiTokenizer"
+    - ".uiInlineTokenizer"
+  children:
+    token:
+      selector: ".uiToken"
