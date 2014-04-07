@@ -1,0 +1,16 @@
+
+timeline-invite-your-friends:
+
+  info: |
+    The "invite your friends to like this page" section.
+
+  children:
+
+    typeahead:
+      selector: "#inviteTypeahead"
+      appearance: common-textbox
+
+    list:
+      selector: ".nonAdminInviteContainer .uiScrollableAreaContent"
+      children:
+        item: { selector: ".inlineFriendInviterList li" }
