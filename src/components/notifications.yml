@@ -1,0 +1,5 @@
+
+notifications-page:
+  children:
+    item:
+      selector: "._1hin._1hio"

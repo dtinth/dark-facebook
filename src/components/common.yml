@@ -15,11 +15,13 @@ common-content:
         background is now removed because each content has its own box now.
       selector: "._5vb_ &"
 
-
 common-main-container:
   selector: "#mainContainer"
   info: The main container in the web page.
   found: Any page
+
+common-standard-frame:
+  selector: ".UIStandardFrame_Container"
 
 common-header:
   selector: ".uiHeader"
