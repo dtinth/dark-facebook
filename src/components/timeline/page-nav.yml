@@ -1,0 +1,13 @@
+
+timeline-page-nav:
+  selector: "._5otg"
+  children:
+    border:
+      selector:
+        - "&:after"         # outer border
+        - "._2ih ._4ltp"    # item separator
+        - "._2ih ._45hd"    # more separator
+    item:
+      selector: "._4ltp a"
+    active-item-indicator:
+      selector: "._2ih._2ij ._4ltr ._4lts" 

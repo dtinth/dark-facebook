@@ -98,6 +98,22 @@ timeline-unit(activity-log):
       selector:
         - "._2o49 .uiInputLabelLegacy label" # include only me activity (toolbar)
 
+timeline-unit(page-apr2014):
+  info: |
+    Certain page timelines changed to a single column layout.
+
+    Unfortunately, they did not use the same selector.
+  selector: "._5sem .timelineUnitContainer"
+  children:
+    rounded-border:
+      selector: ['._2d12', '._2d11']
+    title:
+      selector: "._5qqf"
+    comments:
+      children:
+        separator-bg:
+          selector:
+            - "._5sem .timelineUnitContainer .UFIContainer"
 
 
 

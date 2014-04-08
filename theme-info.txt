@@ -11,5 +11,5 @@
 <strong>Changelog:</strong>
 $CHANGELOG$
 ⋮
-2013-11-22 (e1f5676) Initial work started on dark-facebook 2.
+2013-11-22 (<code>e1f5676</code>) Initial work started on dark-facebook 2.
 
