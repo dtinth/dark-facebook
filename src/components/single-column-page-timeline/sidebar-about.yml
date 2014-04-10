@@ -1,0 +1,7 @@
+
+single-column-page-timeline-sidebar-about:
+  info: The about section on the left.
+  children:
+    text:
+      appearance: common-text
+      selector: "._5ay5 ._52id"
