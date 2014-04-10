@@ -1,5 +1,5 @@
 
-events:
+page-events:
   info: |
     The events page
   selector: "#fbCalendarWrapper"
