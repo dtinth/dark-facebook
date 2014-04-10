@@ -1,0 +1,31 @@
+
+page-settings:
+  info: |
+    The settings page, where you can change your name, etc...
+  selector: "[id='SettingsPage_Content']"
+  children:
+    text:
+      info: Things that needs text color treatment...
+      appearance: common-text
+      selector:
+        - ".fbSettingsList .fbSettingsListItemLabel"
+          # The settings section at the left side (Name, Username, ...)
+        - ".fbSettingsSectionsItemName"
+          # An even bigger one in the hierarchy, can be seen on Notifications Settings.
+          # e.g. How You Get Notifications, What You Get Notified About, ...
+    link:
+      info: Things that need link color treatment...
+      appearance: common-link
+      selector:
+        - ".fbSettingsList .fbSettingsListItemSaved"  # edit and view link
+        - ".fbSettingsList .fbSettingsListItemEdit"   # edit and view link
+    item:
+      info: A settings item.
+      selector: ".fbSettingsList a.fbSettingsListLink"
+      children:
+        expanded:
+          selector:
+            - ".fbSettingsEditor.uiBoxGray"   # outer
+        toolbar:
+          selector:
+            - ".fbSettingsEditor .uiBoxGray"  # inner
