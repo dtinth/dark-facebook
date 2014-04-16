@@ -5,9 +5,13 @@ timeline-page-nav:
     border:
       selector:
         - "&:after"         # outer border
-        - "._2ih ._4ltp"    # item separator
-        - "._2ih ._45hd"    # more separator
+        - "._5vx4 ._5vwz"    # item separator
+        - "._5vx4 ._45hd"    # more separator
     item:
-      selector: "._4ltp a"
+      selector: "._5vx4 li"
+      children:
+        link: { selector: "& a" }
+        hover: { selector: "&:hover" }
+        hover(more): { selector: "._5vx7 ._45hd:hover" }
     active-item-indicator:
-      selector: "._2ih._2ij ._4ltr ._4lts" 
+      selector: "._5vx4._5vx6 ._5vwy ._13xf" 

@@ -1,9 +1,8 @@
+
 :::timeline-unit {
-  .make-text-color;
-  .link-colors;
-  .shadow;
-  background: @bg1;
-  border: 1px solid @border1;
+
+  &:extend(:::dfb-box all);
+
   &--background {
     background: @bg1;
   }
@@ -12,10 +11,6 @@
   }
   &--rounded-border {
     background: transparent;
-  }
-  &--title {
-    background: @bg0;
-    border-color: @border1;
   }
   &--container {
     background: transparent;
@@ -43,4 +38,5 @@
   &--text {
     .make-text-color;
   }
+
 }

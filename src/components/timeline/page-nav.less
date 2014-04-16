@@ -5,7 +5,12 @@
     border-color: @border1;
   }
   &--item {
-    .make-text-color;
+    &--link {
+      .make-text-color;
+    }
+    &--hover {
+      background: @bg1;
+    }
   }
   &--active-item-indicator {
     background: @border1;

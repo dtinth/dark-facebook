@@ -5,3 +5,11 @@ single-column-page-timeline-sidebar-about:
     text:
       appearance: common-text
       selector: "._5ay5 ._52id"
+    muted-text:
+      appearance: common-mute
+      selector: "._5ay5 ._c24"
+    separator:
+      appearance: common-border-color
+      info: |
+        Separator between each section in the about.
+      selector: "._4-u2 > ._4-u3"

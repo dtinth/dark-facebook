@@ -40,6 +40,7 @@ timeline-unit:
         - ".fbTimelineCapsule .topBorder"
         - ".fbTimelineCapsule .bottomBorder"
     title:
+      appearance: dfb-box--title
       selector: "._70l"
     image-container:
       info: |
@@ -108,7 +109,9 @@ timeline-unit(page-apr2014):
     rounded-border:
       selector: ['._2d12', '._2d11']
     title:
-      selector: "._5qqf"
+      selector:
+        - "._5qqf"
+        - "._g3h" # detected 2014-04-16
     comments:
       children:
         separator-bg:
