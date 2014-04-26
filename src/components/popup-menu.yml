@@ -54,7 +54,7 @@ popup-menu(typeahead):
         selected:
           selector: ".uiTypeaheadView li.selected"
 
-popup-menu(mar2013):
+popup-menu(mar2014):
   selector: "._54nf"
   children:
     item:
@@ -64,3 +64,12 @@ popup-menu(mar2013):
           selector: "._558b ._54ne ._54nc"
     separator:
       selector: "._558b ._54ak"
+
+popup-menu(usernavigation-apr2014):
+  selector: "#pageNav ._4z6w #userNavigation"
+  children:
+    item:
+      selector: "#pageNav #navAccount .navSubmenu"
+      children:
+        text:
+          selector: "& input"
