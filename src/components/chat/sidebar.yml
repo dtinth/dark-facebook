@@ -1,6 +1,8 @@
 
 chat-sidebar:
-  selector: ".fbChatSidebar"
+  selector:
+    - ".fbChatSidebar"
+    - "._1ht9"                          # when loading
   info: The chat sidebar at the right hand side of the page.
   date: 2013-11-21
   
@@ -50,7 +52,8 @@ chat-sidebar:
         input: { selector: ".fbChatSidebar .fbChatTypeahead .textInput" }
     
     toolbar:
-      selector: "._4oes"
+      selector:
+        - "._4oes"
       info: |
         The toolbar at the bottom of the sidebar
         that contains the search box, options, and hide buttons.
