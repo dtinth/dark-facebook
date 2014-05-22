@@ -73,3 +73,10 @@ popup-menu(usernavigation-apr2014):
       children:
         text:
           selector: "& input"
+
+popup-menu--badge:
+  info: |
+    The number count on some popup menu.
+  selector:
+    - "._5ugf"                         # nav account -> page activities.
+    - ".navSubmenu .uiSideNavCount"    # nav account -> activity logs.
