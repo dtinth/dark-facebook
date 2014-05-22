@@ -16,3 +16,24 @@ chat-bubble:
       children:
         image: { selector: "._50dw .profileLink .profilePhoto" }
         frame: { selector: "&:after" }
+
+chat-bubble(may2014):
+  selector:
+    - "._1nc6 ._5w1r"
+    - "._1nc6 ._5w1r:before"
+    - "._1nc7 ._5w1r"
+    - "._1nc7 ._5w1r:before"
+  children:
+    pointy:
+      children:
+        background: { selector: "._5w1r:before" }
+        mask: { selector: "._5w1r:after" }
+    theirs:
+      selector:
+        - "._1nc7 ._5w1r"
+        - "._1nc7 ._5w1r:before"
+    profile-picture:
+      selector: "._5ys_"
+      children:
+        image: { selector: "& img" }
+        frame: { selector: "&:after" }
