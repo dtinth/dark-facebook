@@ -13,6 +13,19 @@
       background: @bg3;
     }
   }
+  &--blank {
+    @bg-mix: mix(@bg2, @bg1, 50%);
+    background: @bg2;
+    background: @bg2 linear-gradient(to bottom, @bg2 0%, @bg-mix 98%, @border1 98%, @border1 100%);
+    background-size: 100px 61px;
+  }
+  &--wrapper {
+    background: @bg1;
+  }
+  &--tips {
+    border-color: @border1;
+    .link-colors;
+  }
   &--search {
     background: @bg1;
     border-color: @border1;

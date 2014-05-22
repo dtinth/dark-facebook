@@ -7,3 +7,7 @@ web-messenger-messages:
       selector: "._2nb ._2n3"
       children:
         text: { selector: "& .timestamp" }
+    error:
+      selector:
+        - "& .uiBoxYellow"
+        - "& .uiBoxGray"

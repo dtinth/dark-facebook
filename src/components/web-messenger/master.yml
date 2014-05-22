@@ -14,6 +14,18 @@ web-messenger-master:
         selected: { selector: "&._kv" }
         hover: { selector: "&:hover" }
         new: { selector: "&._kx" }
+    blank:
+      info: |
+        This class is applied when there is nothing to show...
+      selector: "._3j6"
+    wrapper:
+      info: |
+        The div that wraps the search box and tips.
+      selector: "._3j5"
+    tips:
+      info: |
+        The tip message container.
+      selector: "._4yj"
     search:
       info: |
         The search box that lets you search messages.
