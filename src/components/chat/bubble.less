@@ -3,10 +3,10 @@
   box-shadow: 0 1px 0 fade(white, 10%), 0 2px 3px fade(black, 50%);
   text-shadow: 0 1px 1px black;
   border-color: @border1 + #111;
-  .gradient(@bg0, @bg0, @bg1);
+  background: @bg0 linear-gradient(to bottom, @bg0, @bg1);
   .make-text-color;
   &--theirs {
-    .gradient(@bg3, @bg3, @bg3 + #111);
+    background: @bg3 linear-gradient(to bottom, @bg3, @bg3 + #111);
     border-color: @border3 + #111;
   }
   &--profile-picture, &--profile-picture--image {
