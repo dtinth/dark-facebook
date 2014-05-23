@@ -1,0 +1,42 @@
+
+app-center-title:
+  selector: ".app_center .leftNavTitle a"
+
+app-center-content-column:
+  info: |
+    The content column for app center.
+    We need to remove the background.
+  selector: ".app_center #contentCol"
+
+app-center-banner:
+  selector: ".appCenterCategoryBanner"
+  children:
+    description:
+      selector: "& .description"
+
+app-center-header:
+  selector:
+    - ".appCenterRequests .appRequests .header"
+    - ".appCenterInvite .header"
+
+app-center-box:
+  selector:
+    - ".app_center #contentCol .apps_list"    # application item
+    - ".appCenterSmallCuratedSlot"            # at the right sidebar
+
+app-center-tab:
+  selector:
+    - "._5o3n"
+  children:
+    tab:
+      selector: "._5o3p"
+      children:
+        hover:
+          selector: "._5o3p:hover"
+        selected:
+          selector: "._5o3p.selected"
+    description:
+      selector: ".appsListDescription"
+      children:
+        header:
+          selector: ".appsListHeader"

@@ -1,0 +1,51 @@
+
+:::app-center-title {
+  .make-text-color;
+}
+
+:::app-center-content-column {
+  background: transparent;
+}
+
+:::app-center-banner {
+  &:extend(:::dfb-box all);
+  &--description {
+    background: @bg1;
+    .make-text-color;
+  }
+}
+
+:::app-center-header {
+  background: @bg4;
+  .make-text-color;
+}
+
+:::app-center-box {
+  &:extend(:::dfb-box all);
+}
+
+:::app-center-tab {
+  background: @bg2;
+  .make-text-color;
+  border-color: @border1;
+  box-shadow: none;
+  &--tab {
+    box-shadow: none;
+    .make-mute-color;
+    border-color: @border1;
+    &--hover {
+      background: @bg1;
+    }
+    &--selected {
+      background: @bg1;
+      .make-text-color;
+    }
+  }
+  &--description {
+    background: @bg1;
+    .make-text-color;
+    &, &--header {
+      border-color: @border1;
+    }
+  }
+}

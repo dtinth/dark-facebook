@@ -1,0 +1,5 @@
+
+app-center-requests:
+  children:
+    box:
+      selector: ".appCenterInvite"
