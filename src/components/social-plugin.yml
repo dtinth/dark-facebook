@@ -1,0 +1,12 @@
+
+social-plugin:
+  children:
+    body:
+      info: |
+        The body for Facebook Social Plugin.
+        Must make background transparent.
+      selector: "body.plugin"
+    feedback:
+      info: |
+        The Feedback plugin is the Facebook comments.
+      selector: ".fbFeedbackContent"

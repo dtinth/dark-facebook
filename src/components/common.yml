@@ -1,6 +1,6 @@
 
 common-body:
-  selector: body
+  selector: body:not(.plugin)
   info: The web page body.
   found: Any page
 
