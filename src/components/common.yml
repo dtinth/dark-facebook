@@ -46,3 +46,7 @@ common-footer:
 common-error-box:
   selector: ".uiBoxRed"
   info: The error boxes on various pages.
+
+common-highlight:
+  selector:
+    - ".highlight[style]"
