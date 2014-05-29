@@ -11,3 +11,8 @@ web-messenger-messages:
       selector:
         - "& .uiBoxYellow"
         - "& .uiBoxGray"
+    group:
+      selector: ".webMessengerMessageGroup"
+      children:
+        new:
+          selector: "&[style]:not([style=''])"
