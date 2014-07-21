@@ -1,0 +1,28 @@
+
+album-upload:
+  selector: ".flashUploaderOverlay"
+  children:
+    toolbar:
+      selector:
+        - "& .headerBox"
+        - "& .footerBox"
+    content:
+      selector:
+        - "& .uiOverlayContent"
+    photo:
+      selector: ".editablePhoto"
+      children:
+        photo-wrap:
+          selector: "& .photoWrap"
+        photo:
+          selector: "& .photo"
+        caption-area:
+          selector: "& .captionArea"
+          children:
+            input:
+              selector: "& .uiMentionsInput"
+        toolbar:
+          selector: "& .metadataControls .inner"
+          children:
+            item:
+              selector: "& .metaIcon"

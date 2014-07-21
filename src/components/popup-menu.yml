@@ -66,7 +66,7 @@ popup-menu(mar2014):
       selector: "._558b ._54ak"
 
 popup-menu(usernavigation-apr2014):
-  selector: "#pageNav ._4z6w #userNavigation"
+  selector: "#userNavigation"
   children:
     item:
       selector: "#pageNav #navAccount .navSubmenu"
