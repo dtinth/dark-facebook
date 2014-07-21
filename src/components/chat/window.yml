@@ -26,3 +26,8 @@ chat-window:
       selector: "._5w0o"
       children:
         bottom: { selector: "&:after" }
+    emoticons-button:
+      info: |
+        The "emoticons" button.
+        Used to remove the buggy outline mentioned in #44.
+      selector: ".uiToggle.emoticonsPanel a"
