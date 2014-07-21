@@ -42,6 +42,10 @@ timeline-unit:
     title:
       appearance: dfb-box--title
       selector: "._70l"
+    reach-footer:
+      selector: ".__jh"
+      info: |
+        As a page admin, below the post is the number of people reached.
     image-container:
       info: |
         The image container in a featured story in timeline.
