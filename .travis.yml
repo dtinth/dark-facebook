@@ -2,7 +2,7 @@ language: node_js
 node_js:
   - '0.10'
 before_install:
-  - $PUSH_NOTIFICATION $PUSH_ARGS --data-urlencode 'message=Hi! Travis is here...'
+  - curl https://$PUSH_ENDPOINT/1/messages.json -d token=$PUSH_TOKEN -d user=$PUSH_USER -d device=$PUSH_DEVICE --data-urlencode 'message=Hi! Travis is here...'
   - git clone git://github.com/n1k0/casperjs.git ~/casperjs
   - cd ~/casperjs
   - git checkout tags/1.1-beta3
@@ -14,13 +14,13 @@ before_script:
 script:
   - make
 after_success:
-  - $PUSH_NOTIFICATION $PUSH_ARGS --data-urlencode 'message=Deploying...'
+  - curl https://$PUSH_ENDPOINT/1/messages.json -d token=$PUSH_TOKEN -d user=$PUSH_USER -d device=$PUSH_DEVICE --data-urlencode 'message=Deploying...'
   - make publish
-  - $PUSH_NOTIFICATION $PUSH_ARGS --data-urlencode 'message=Deployed to Userstyles.org!'
+  - curl https://$PUSH_ENDPOINT/1/messages.json -d token=$PUSH_TOKEN -d user=$PUSH_USER -d device=$PUSH_DEVICE --data-urlencode 'message=Deployed to Userstyles.org!'
   - make upload
-  - $PUSH_NOTIFICATION $PUSH_ARGS --data-urlencode 'message=Uploaded to dark-facebook.appspot.com!'
+  - curl https://$PUSH_ENDPOINT/1/messages.json -d token=$PUSH_TOKEN -d user=$PUSH_USER -d device=$PUSH_DEVICE --data-urlencode 'message=Uploaded to dark-facebook.appspot.com!'
 after_failure:
-  - $PUSH_NOTIFICATION $PUSH_ARGS --data-urlencode 'message=Build Failed'
+  - curl https://$PUSH_ENDPOINT/1/messages.json -d token=$PUSH_TOKEN -d user=$PUSH_USER -d device=$PUSH_DEVICE --data-urlencode 'message=Build Failed'
 env:
   global:
 
@@ -30,9 +30,11 @@ env:
     # The target style ID
     - DFB2_ID=95359
 
-    # For notification... $PUSH_NOTIFICATION, $PUSH_ARGS
-    - secure: "B4vTxg9oswtDi5du2dof3o5DQXNh08pyPFei57jDZwjD14uguY4Vrq8YW60oDFMrvk7OXthes/9T1WJT6K69ZALTdUNymhCaHCbRRgZYGOx765Kv2ruy1afR0JxE46P0mxcYIMpeRYcimixd3mvd//dPFhjTiplWfBEI+UtEJ4E="
-    - secure: "IIOFiPlY6TSV3VVHJgmBlxRWt5fp+mxl/3S4yGDvu01gu3Dpgr0M7MbCGgtJ6sH6GAEICx+DQCognGD/wSQK/xBjil/ypPsqtNUPJiJgqpIQfO19qVLDHVLNL8C3L7VPTwhsRToPH5FTRH+slHY9+aYJ4LREALu4ELiTcv4zWtQ="
+    # For notification...
+    - secure: "dmLTKcDz3g9nuqsywsIxu+UTbtOYSfaEN15dxZa7itfchCarGwCUwYBpsjfcBlLmvqgRPvwo3nI50l5Ya2JZ1ipQFExxcEVM+ssxWZL08jlwEFEwox5dyQF0NIr0vpqvzgcSuECb0ZY951Zh1KzRB0H9h4jEoNBvRjzvJ9neLZ4="
+    - secure: "NMWsIPwAPMf1W0ezWLwRj+yLAX766ryK69B3TANif38eOVIeeeh3bHxs8VBihqnMCAVc8fvOPjiDUHFuZ/6oDID5s+iLWWB9cfVoKNAk/iCPss/WVZDu1rGn9pMudvhTy+mWIx3KYNzWRSEhutkQwtrDP8lrbqSRLchpZrGb9fE="
+    - secure: "XKxRQmsy6IcYI42sXoRXh2ni9dgV4ht5sFGFkv7JZ8Dfr/rahi/4OkDJJm+1KMXjPCN1zftfJK01R3GYc2laeUvhIwPtklxZYKx/MPdXCbH7/c2pCjNKZycY2S+5LFcxOavcdTelmDIfogcSYcaPZFnP32nDKZKtoR8hgYHoOhk="
+    - secure: "VJk04YBBPdwMICtgsLxJqWe4aSHh6kS12T3/nvco9PZTQTW9QEKJ9eJpxOw9S0A+VrTnIaBhwUJfCksAuTkuTMNp58ELZcDY/1+VqL79fzuFPugFPF3XdENyZOEhy7pths0OfDlfz/pDvndZKe854EF5Q0EU3JPimylXsCwSIAg="
 
     # For deployment
     - secure: "M9QSRKgv0bMjRfcCj75bEY/GsGL37KcER23mVWNHLJNVhs6q3tyOxlNt7h7cUseOZXuarVdNGVtD0uw98Kh4UaU+X3hckIIyarSxv60yb09XesojVcOELyHh7wn5WKKEkDQJj2invA8z8u/vId2hcCDvZ0YotxBYZSZX1PvU4nw="
