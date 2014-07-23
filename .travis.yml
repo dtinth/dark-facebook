@@ -2,7 +2,7 @@ language: node_js
 node_js:
   - '0.10'
 before_install:
-  - curl "$NOTIFY" -d key=$NOTIFY_KEY -d app=dfb2travis --data-urlencode 'text=Hi! Travis is here!'
+  - $PUSH_NOTIFICATION $PUSH_ARGS --data-urlencode 'message=Hi! Travis is here...'
   - git clone git://github.com/n1k0/casperjs.git ~/casperjs
   - cd ~/casperjs
   - git checkout tags/1.1-beta3
@@ -14,13 +14,13 @@ before_script:
 script:
   - make
 after_success:
-  - curl "$NOTIFY" -d key=$NOTIFY_KEY -d app=dfb2travis --data-urlencode 'text=Deploying...'
+  - $PUSH_NOTIFICATION $PUSH_ARGS --data-urlencode 'message=Deploying...'
   - make publish
-  - curl "$NOTIFY" -d key=$NOTIFY_KEY -d app=dfb2travis --data-urlencode 'text=Deployed to Userstyles.org!'
+  - $PUSH_NOTIFICATION $PUSH_ARGS --data-urlencode 'message=Deployed to Userstyles.org!'
   - make upload
-  - curl "$NOTIFY" -d key=$NOTIFY_KEY -d app=dfb2travis --data-urlencode 'text=Uploaded to dark-facebook.appspot.com!'
+  - $PUSH_NOTIFICATION $PUSH_ARGS --data-urlencode 'message=Uploaded to dark-facebook.appspot.com!'
 after_failure:
-  - curl "$NOTIFY" -d key=$NOTIFY_KEY -d app=dfb2travis --data-urlencode 'text=Build Failed'
+  - $PUSH_NOTIFICATION $PUSH_ARGS --data-urlencode 'message=Build Failed'
 env:
   global:
 
@@ -30,9 +30,9 @@ env:
     # The target style ID
     - DFB2_ID=95359
 
-    # For notification...
-    - secure: "kLxX/CYNgFUy0minItmjrjEgZNLoRuM2UPm1M0smxkMd1VHF80+pf7V17wAzk3FaUVpWRVgadiQ8NpFhgaEc9Jhry1bmo+hgQcohHezkncNuMyub85Z2SNWzvnuLdYMsh9hk2/lF4sUmT+poWBIqSXKIc3imW/VvD3kntrTEG7I="
-    - secure: "JAlgWWGbAqL87LTgQ42kHPS8EFPgDZzLJnXTD/FwiAoWkMKikso2fUYS/fGzDjZWpwyi5LMm1WHv50xxzEC0WU3N4b7KZVgAYxxgH6b2c4WacQ6XbxCMtnGiMnZ6CHfX7a4Iamgb+G40IMGUtb8GEk8DpeaCSvEBey308sNdVSo="
+    # For notification... $PUSH_NOTIFICATION, $PUSH_ARGS
+    - secure: "B4vTxg9oswtDi5du2dof3o5DQXNh08pyPFei57jDZwjD14uguY4Vrq8YW60oDFMrvk7OXthes/9T1WJT6K69ZALTdUNymhCaHCbRRgZYGOx765Kv2ruy1afR0JxE46P0mxcYIMpeRYcimixd3mvd//dPFhjTiplWfBEI+UtEJ4E="
+    - secure: "IIOFiPlY6TSV3VVHJgmBlxRWt5fp+mxl/3S4yGDvu01gu3Dpgr0M7MbCGgtJ6sH6GAEICx+DQCognGD/wSQK/xBjil/ypPsqtNUPJiJgqpIQfO19qVLDHVLNL8C3L7VPTwhsRToPH5FTRH+slHY9+aYJ4LREALu4ELiTcv4zWtQ="
 
     # For deployment
     - secure: "M9QSRKgv0bMjRfcCj75bEY/GsGL37KcER23mVWNHLJNVhs6q3tyOxlNt7h7cUseOZXuarVdNGVtD0uw98Kh4UaU+X3hckIIyarSxv60yb09XesojVcOELyHh7wn5WKKEkDQJj2invA8z8u/vId2hcCDvZ0YotxBYZSZX1PvU4nw="
