@@ -42,6 +42,9 @@ jewel-flyout:
     see-more-border:
       selector: "#fbRequestsList .uiScrollableArea.contentAfter"
 
+jewel-flyout(july2014):
+  selector: ".__tw"
+
 jewel-flyout(popout-notification):
   selector: "._53ii .uiContextualLayerLeft ._53ij"
   children:
