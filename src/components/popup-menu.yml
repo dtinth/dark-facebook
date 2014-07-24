@@ -66,13 +66,17 @@ popup-menu(mar2014):
       selector: "._558b ._54ak"
 
 popup-menu(usernavigation-apr2014):
+  info: |
+    userNavigation is the new pageNav.
   selector: "#userNavigation"
   children:
     item:
-      selector: "#pageNav #navAccount .navSubmenu"
+      selector: "& .navSubmenu"
       children:
         text:
           selector: "& input"
+    separator-bg:
+      selector: "& .menuDivider"
 
 popup-menu--badge:
   info: |
