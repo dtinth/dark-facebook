@@ -12,10 +12,12 @@ bluebar:
         Or the box-shadow leaves you with a blur at the side and that seems unacceptable?
 
 bluebar(july2014):
-  selector: "._hdd"
+  selector:
+    - "._hdd"         # Earlier
+    - "._4f7n"        # July 30th
   children:
     line:
-      selector: "._hdd:after"
+      selector: "&:after"
 
 bluebar-search(no-graph-search):
   info: The search box, but for those who have not received Facebook Graph Search yet.
