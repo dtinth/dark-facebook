@@ -14,6 +14,10 @@ web-messenger-master:
         selected: { selector: "&._kv" }
         hover: { selector: "&:hover" }
         new: { selector: "&._kx" }
+    right-border:
+      info: |
+        The white right border of the toolbar.
+      selector: "&:after"
     blank:
       info: |
         This class is applied when there is nothing to show...
