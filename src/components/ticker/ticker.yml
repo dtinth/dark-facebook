@@ -13,14 +13,21 @@ ticker:
       children:
         active:
           selector:
-            - ".fbFeedTicker .tickerStoryActive"
-            - ".fbFeedTicker .tickerStoryClickable:hover"
+            - ".fbFeedTicker .tickerStoryActive.tickerStoryActive.tickerStoryActive.tickerStoryActive"
+            - ".fbFeedTicker .tickerStoryClickable.tickerStoryClickable.tickerStoryClickable.tickerStoryClickable:hover"
     pagelet:
       info: |
         This is the ticker pagelet that you open when
         the screen is not wide enough to show the ticker in a sidebar.
         We need to adjust its border color a bit.
       selector: ".home_right_column .fbFeedTicker"
+    text:
+      selector:
+        - ".fbFeedTicker .fbFeedTickerStory .tickerStoryLink"
+    separator:
+      selector:
+        - "._5pr2.fbChatSidebar .fbFeedTickerStory .fbFeedTickerBorder"
+
 
 ticker-toggler:
   info: |

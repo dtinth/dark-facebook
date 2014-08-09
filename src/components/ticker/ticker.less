@@ -4,12 +4,19 @@
     background-color: @bg1;
     border-top-color: fade(@border1, 50%);
     border-bottom-color: @bg1;
+    box-shadow: none;
     &--active {
       background-color: @bg0;
       border-color: @border1;
     }
   }
   &--pagelet {
+    border-color: @border1;
+  }
+  &--text {
+    .make-text-color
+  }
+  &--separator {
     border-color: @border1;
   }
 }
