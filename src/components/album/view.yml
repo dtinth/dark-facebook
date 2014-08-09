@@ -1,0 +1,8 @@
+
+album-view:
+  info: |
+    When you view an album (the page with thumbnail),
+    that's the album view!
+  children:
+    title:
+      selector: ".fbPhotoAlbumTitle"

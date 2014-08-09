@@ -57,3 +57,8 @@ dialog-box(report):
       selector:
         - ".socialReport li label" # label on report
         - ".socialReport .fwb.fcb" # label on report
+
+dialog-box(turn-off-chat):
+  children:
+    text:
+      selector: "._1yv .fcb"
