@@ -37,3 +37,15 @@ sidenav-list:
       info: |
         The combo box button on the "News Feed" item.
       selector: "._3479 ._2jq5"
+
+sidenav-list(aug2014):
+  selector: "._55y4 .homeSideNav"
+  children:
+    item:
+      selector: ".sideNavItem a._5afe"
+      children:
+        active:
+          selector: ".sideNavItem.selectedItem"
+        count:
+          selector: ".sideNavItem .count"
+        
