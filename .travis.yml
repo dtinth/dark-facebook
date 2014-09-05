@@ -42,3 +42,7 @@ env:
 branches:
   only:
     - dfb2
+
+notifications:
+  flowdock:
+    secure: "lxDpf9+NW25Ezgm4hDTVCi9vwSJIH3bXgSoh3oTdKmdKclbJPqSRTu8WKMTcpaQnhXJwk62hIk/3D7emdDb+xdmM7pDs//MpTsswz4Kyu3PQ5CdIQL9nx8AUqDKX2mXgrTMvtXBfqFx2EwIcfb1t3sUdq50CechFZjfeYX9MZqc="
