@@ -36,6 +36,8 @@ common-mentions-input:
       info: |
         A highlighted item.
       selector: ".uiMentionsInput .highlighter b"
+    highlight(oct2014):
+      selector: "._5u8u"
 
 
 common-placeholder:
