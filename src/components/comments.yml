@@ -54,3 +54,5 @@ comments(2014):
       selector: "._6kb ._6mv .UFIRow.UFILikeSentence"
     border(first-comment):
       selector: ".UFIRow.UFIFirstCommentComponent"
+    textbox(oct2014):
+      selector: ".UFIAddCommentInput"
