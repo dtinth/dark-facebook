@@ -1,0 +1,29 @@
+{
+  "name": "dark-facebook 2 development",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "dark-facebook 2 development extension",
+  "homepage_url": "https://dtinth.github.io/dark-facebook/",
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": true
+  },
+  "permissions": [
+    "http://localhost:7777/*",
+    "https://*.facebook.com/*",
+    "http://*.facebook.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.facebook.com/*",
+        "http://*.facebook.com/*"
+      ],
+      "js": [
+        "content-script.js"
+      ]
+    }
+  ]
+}

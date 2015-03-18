@@ -1,4 +1,6 @@
 
+var port = chrome.runtime.connect({ name: 'dfb2' })
+
 var activated = false
 
 var link = document.createElement('link')
@@ -7,7 +9,7 @@ link.rel = 'stylesheet'
 var head = document.getElementsByTagName('head')[0]
 head.insertBefore(link, head.firstChild)
 
-self.port.on('state', function(state) {
+port.onMessage.addListener(function(state) {
   if (activated) {
     link.href = 'data:text/css,' + encodeURIComponent(state.css +
       '\n/*# sourceURL=dark-facebook.css */')
@@ -23,7 +25,7 @@ waitActivate()
 function waitActivate() {
   waitButton(function() {
     activated = true
-    self.port.emit('activate')
+    port.postMessage('activate')
   })
 }
 
