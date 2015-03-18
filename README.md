@@ -6,9 +6,45 @@ __dark-facebook__ is a dark theme for facebook that you can install in your brow
 <a href='https://pledgie.com/campaigns/24695'><img alt='Click here to lend your support to: dark-facebook and make a donation at pledgie.com !' src='https://pledgie.com/campaigns/24695.png?skin_name=chrome' border='0' ></a>
 
 
+Usage
+-----
 
-The Second Generation
----------------------
+See the [website](https://dtinth.github.io/dark-facebook/)
+
+
+Contributing
+------------
+
+Because facebook is a big website,
+your contribution would help this theme become more complete.
+
+Please check out:
+
+* [the theming process](docs/theming-process.md),
+* [the contribution guidelines](CONTRIBUTING.md), and
+* the development section, below.
+
+
+Development
+-----------
+
+1. First, install Node.js.
+2. Download the source code.
+3. And run `npm install` to install the dependencies.
+4. Start the development server: `node server.js`
+5. Download and install the extensions for your browser:
+    - [Firefox .xpi](https://dl.dropboxusercontent.com/u/25097375/dark-facebook/dfb2.xpi) ([signature](https://dl.dropboxusercontent.com/u/25097375/dark-facebook/dfb2.xpi.asc)) ([source](firefox))
+    - [Chrome .crx](https://dl.dropboxusercontent.com/u/25097375/dark-facebook/chrome.crx) ([signature](https://dl.dropboxusercontent.com/u/25097375/dark-facebook/chrome.crx.asc)) ([source](chrome))
+    - You can verify file integrity using [Keybase](https://keybase.io). My account is [dtinth](https://keybase.io/dtinth).
+6. Disable the dark theme in Stylish/Social Fixer.
+7. When you go to Facebook, you should see: "Develop dark-facebook" button at the bottom-right corner of the screen. Click that button.
+8. Facebook should become dark.
+
+
+History
+-------
+
+### The Second Generation
 
 The first version suffers several serious problems:
 
@@ -19,8 +55,7 @@ The first version suffers several serious problems:
 * Facebook likes to change CSS classes easily.
 
 
-The Next Approach
------------------
+### The Next Approach
 
 * __Separate the component styles from facebook's selectors.__
   Since facebook likes to change CSS classes,
@@ -38,57 +73,6 @@ The Next Approach
 * __No Global Override.__
   This time, we will add dark styles to facebook,
   component by component.
-
-
-Contributing
-------------
-
-Because facebook is a big website,
-your contribution would help this theme become more complete.
-
-Please check out
-
-* [the theming process](docs/theming-process.md),
-* [the contribution guidelines](CONTRIBUTING.md), and
-* the development section, below.
-
-
-Development (Firefox)
----------------------
-
-### Prerequisites
-
-1. First, install Node.js.
-2. Download the source code.
-3. And run `npm install` to install the dependencies.
-4. [Set Firefox to allow Scratchpad to access Firefox internals](https://developer.mozilla.org/en-US/docs/Tools/Scratchpad#Using_Scratchpad_to_access_Firefox_internals) by going to `about:config` and setting `devtools.chrome.enabled` to `true`.
-5. Install __Stylish__ for Firefox.
-
-### Development (Live CSS Preview with Stylish)
-
-1. Start the server: `node server.js`
-2. In __Stylish__, select __Write new style__ and select __Blank style...__ and leave it like that.
-4. Open Firefox, __Tools__, __Web Developer__, __Scratchpad__.
-5. In Scratchpad, set __Environment__ to __Browser__.
-6. Click __Open File__ and select `firefox-previewer.js`.
-7. Click __Run__. The script will compile dark-facebook to CSS and put it in stylish, and previews it automatically. It will also auto-reload the CSS when you save file.
-
-Remarks
-
-* When you quit the server, the script is finished. When you start a server, you have to run the script again.
-
-
-Development (Chrome)
---------------------
-
-TODO: Explain this.
-
-For the moment,
-there's a script `chrome-previewer.js`
-that you can copy and run on Stylish's editor page
-that will syncs the editing style code with the server.
-
-
 
 
 
