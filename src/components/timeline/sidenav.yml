@@ -1,0 +1,9 @@
+timeline-sidenav:
+  info: |
+    The side navigation of the timeline at the right where it says:
+
+    - Recent
+    - 2010s
+    - ...
+    - Born
+  selector: "._4lh ._2-d1"
